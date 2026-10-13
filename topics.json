@@ -2,6 +2,7 @@
   "files": [
     "data/gened/rizal/rizal_law/rizal_law.json",
     "data/profed/teaching_profession/philosophical_heritage/philosophical_heritage.json",
-    "data/english_majorship/structure_of_english/basic_sentence_pattern/basic_sentence_pattern.json"
+    "data/english_majorship/structure_of_english/basic_sentence_pattern/basic_sentence_pattern.json",
+    "data/gened/purposive_communication/subject_verb_agreement/subject_verb_agreement.json"
   ]
 }
