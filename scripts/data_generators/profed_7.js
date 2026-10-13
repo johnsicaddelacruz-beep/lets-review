@@ -1,0 +1,531 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+function writeDataset(filePath, category, topic, subtopic, items) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  const dataset = {
+    category,
+    topic,
+    subtopic,
+    difficulty: 'medium',
+    items
+  };
+  fs.writeFileSync(filePath, JSON.stringify(dataset, null, 2), 'utf8');
+  console.log(`Generated ${filePath} with ${items.length} items`);
+}
+
+// 7. Child and Adolescent Learners and Learning Principles (50 items)
+const profed7Items = [
+  {
+    term: "Cephalocaudal Trend vs Proximodistal Trend",
+    definition: "Cephalocaudal development proceeds from head to toe (infants control head and neck before crawling with legs); Proximodistal development proceeds from the center of the body outward to the extremities (trunk and shoulder control before fine finger grasp).",
+    rationalization: "Fundamental biological laws of physical motor maturation in child development; explains why gross motor skills emerge before fine motor manipulation.",
+    mnemonic: { title: "Motor Trends", phrase: "Cephalo = Head to Toe; Proximo = Center Outward", items: ["Cephalocaudal: Head to feet control", "Proximodistal: Center trunk to fingertips"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze biological and physical motor developmental milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Piaget: Sensorimotor Stage (0 to 2 years) and Object Permanence",
+    definition: "The first cognitive stage where infants learn through sensory perceptions and motor activities, achieving the landmark milestone of Object Permanence around 8 months of age.",
+    rationalization: "Object permanence is the realization that objects continue to exist even when they are hidden from sight; enables peek-a-boo play and marks the start of internal mental representations.",
+    mnemonic: { title: "Sensorimotor & Object Permanence", phrase: "Out of Sight is No Longer Out of Mind", items: ["0-2 Years: Senses & motor reflexes", "Object Permanence at ~8 months", "Internal mental representation begins"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Piaget: Preoperational Stage (2 to 7 years) and Egocentrism",
+    definition: "The cognitive stage characterized by symbolic play, language explosion, and intuitive thought, yet limited by Egocentrism (inability to perceive another person's physical or mental perspective).",
+    rationalization: "Demonstrated by the Three Mountain Task; preoperational children assume everyone sees, hears, and feels exactly what they do; also marked by Centration, Animism, and Irreversibility.",
+    mnemonic: { title: "Preoperational Limits", phrase: "Symbolic Play But Egocentric View", items: ["2-7 Years: Symbolic play", "Egocentrism (My viewpoint only)", "Animism (Believing toys are alive)"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Centration and Conservation in Preoperational Thought",
+    definition: "Centration is the tendency to focus on only one salient perceptual aspect of a situation while ignoring others; Conservation is the understanding that quantity remains identical despite changes in shape or appearance.",
+    rationalization: "A 4-year-old insists that water poured into a tall, thin glass has 'more' water than in a short, wide bowl because they center strictly on height, lacking conservation.",
+    mnemonic: { title: "Centration & Conservation", phrase: "Centering on Height Ignores True Volume Conservation", items: ["Centration: Focuses on 1 feature", "Lack of Conservation: Fooled by shape", "Solved in Concrete Operations"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Piaget: Concrete Operational Stage (7 to 11 years)",
+    definition: "The cognitive stage where children master logical reasoning about concrete, physical objects, mastering Conservation, Reversibility, Decentration, Classification, and Seriation.",
+    rationalization: "Children can mentally reverse physical actions (water in tall glass can be poured back into the bowl) and arrange sticks in order of length (seriation), but struggle with purely abstract hypotheses.",
+    mnemonic: { title: "Concrete Operational", phrase: "Logical Thought for Concrete, Hands-On Reality", items: ["7-11 Years: Elementary school age", "Masters Conservation & Reversibility", "Decentration & Seriation achieved"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Piaget: Formal Operational Stage (12 years and above)",
+    definition: "The highest cognitive stage characterized by abstract thought, hypothetical-deductive reasoning, systematic combinatorial analysis, and idealistic philosophical thinking.",
+    rationalization: "Adolescents can formulate hypotheses ('If A occurs, then B follows') and test them systematically, thinking about abstract concepts like justice, love, and mortality.",
+    mnemonic: { title: "Formal Operational", phrase: "Hypothetical-Deductive Abstract Reasoning", items: ["12+ Years: Adolescence to adulthood", "Hypothetico-deductive logic", "Abstract, idealistic speculation"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Adolescent Egocentrism: Imaginary Audience and Personal Fable (David Elkind)",
+    definition: "Imaginary Audience is the adolescent belief that everyone is constantly watching, scrutinizing, and judging them; Personal Fable is the belief that one's feelings are entirely unique and that one is invulnerable to danger ('It won't happen to me').",
+    rationalization: "Explains adolescent hyper-self-consciousness over a minor pimple (imaginary audience) and dangerous sensation-seeking driving behaviors (personal fable).",
+    mnemonic: { title: "Elkind's Adolescent Traps", phrase: "Audience Watches Me; Fable Makes Me Invulnerable", items: ["Imaginary Audience: Everyone is staring", "Personal Fable: No one understands, I'm invincible"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze adolescent psychological phenomena and identity formation",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Erik Erikson: Stage 1 - Trust vs Mistrust (Infancy, 0-1 yr)",
+    definition: "The foundational psychosocial crisis where consistent, warm, and responsive maternal caregiving instills a sense of basic trust in the world and develops the virtue of Hope.",
+    rationalization: "Inconsistent, neglectful, or abusive care breeds pervasive mistrust, insecurity, and lifelong skepticism toward relationships.",
+    mnemonic: { title: "Erikson Stage 1", phrase: "Trust vs Mistrust yields Hope", items: ["Infancy (0-1 yr)", "Responsive care builds trust", "Basic virtue: Hope"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Erik Erikson: Stage 2 - Autonomy vs Shame and Doubt (Toddlerhood, 1-3 yrs)",
+    definition: "The psychosocial crisis where toddlers strive for bodily independence, self-control, and decision-making (toilet training, feeding self), developing the virtue of Will.",
+    rationalization: "Overprotective parenting or punitive shaming for accidents produces self-doubt, shame, and excessive dependence.",
+    mnemonic: { title: "Erikson Stage 2", phrase: "Autonomy vs Shame yields Will", items: ["Toddlerhood (1-3 yrs)", "Self-control and 'I do it!'", "Basic virtue: Will"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Erik Erikson: Stage 3 - Initiative vs Guilt (Preschool, 3-6 yrs)",
+    definition: "The psychosocial crisis where young children eagerly plan activities, initiate games, and explore environmental curiosity, developing the virtue of Purpose.",
+    rationalization: "If parents criticize or dismiss the child's self-initiated play as troublesome or destructive, the child develops debilitating guilt and passive hesitation.",
+    mnemonic: { title: "Erikson Stage 3", phrase: "Initiative vs Guilt yields Purpose", items: ["Preschool (3-6 yrs)", "Planning games & imaginative play", "Basic virtue: Purpose"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Erik Erikson: Stage 4 - Industry vs Inferiority (Elementary, 6-12 yrs)",
+    definition: "The crucial school-age psychosocial crisis where children must master academic skills, social cooperation, and productive tasks, developing the virtue of Competence.",
+    rationalization: "When teachers and peers celebrate student craftsmanship and academic progress, industry thrives; repeated failure or mockery fosters deep feelings of inferiority.",
+    mnemonic: { title: "Erikson Stage 4", phrase: "Industry vs Inferiority yields Competence", items: ["Elementary (6-12 yrs)", "School skills & productivity", "Basic virtue: Competence"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Erikson: Stage 5 - Identity vs Role Confusion (Adolescence, 12-18 yrs)",
+    definition: "The adolescent psychosocial crisis of exploring occupational roles, personal values, and sexual identity to achieve a cohesive sense of self and the virtue of Fidelity.",
+    rationalization: "Identity moratorium allows exploration; failure to resolve this crisis results in role confusion, vulnerability to delinquent peer pressure, and aimless drifting.",
+    mnemonic: { title: "Erikson Stage 5", phrase: "Identity vs Role Confusion yields Fidelity", items: ["Adolescence (12-18 yrs)", "Self-definition and career choice", "Basic virtue: Fidelity"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Erikson: Stage 6 - Intimacy vs Isolation (Young Adulthood, 18-40 yrs)",
+    definition: "The young adult psychosocial crisis of committing to reciprocal romantic relationships and deep interpersonal bonds, developing the virtue of Love.",
+    rationalization: "Requires a stable identity from Stage 5; fear of emotional vulnerability leads to social avoidance, self-absorption, and painful isolation.",
+    mnemonic: { title: "Erikson Stage 6", phrase: "Intimacy vs Isolation yields Love", items: ["Young Adulthood (18-40 yrs)", "Committed romance and deep friendship", "Basic virtue: Love"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Erikson: Stage 7 - Generativity vs Stagnation (Middle Adulthood, 40-65 yrs)",
+    definition: "The middle adulthood psychosocial crisis centered on nurturing, mentoring the younger generation, and contributing to society, developing the virtue of Care.",
+    rationalization: "Exemplified by devoted teachers, parents, and community leaders; failure to contribute leads to mid-life stagnation, boredom, and interpersonal impoverishment.",
+    mnemonic: { title: "Erikson Stage 7", phrase: "Generativity vs Stagnation yields Care", items: ["Middle Adulthood (40-65 yrs)", "Mentoring youth & community legacy", "Basic virtue: Care"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Erikson: Stage 8 - Ego Integrity vs Despair (Late Adulthood, 65+ yrs)",
+    definition: "The final psychosocial crisis of reflecting on one's lived life with peace, acceptance, and fulfillment, developing the crowning virtue of Wisdom.",
+    rationalization: "Achieving integrity means accepting one's life choices with zero major regrets; viewing past life as a series of missed opportunities produces bitter despair and terror of death.",
+    mnemonic: { title: "Erikson Stage 8", phrase: "Integrity vs Despair yields Wisdom", items: ["Late Adulthood (65+ yrs)", "Life review without bitter regret", "Basic virtue: Wisdom"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace Erikson's 8 psychosocial stages of lifespan development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Bronfenbrenner's Bioecological Systems Theory: Microsystem",
+    definition: "The innermost environmental layer with which the developing child has direct, face-to-face, everyday interactions: the family home, classroom, peers, and neighborhood playground.",
+    rationalization: "The most immediate and powerful influence on child development; bidirectional interactions occur between the child and parents/teachers.",
+    mnemonic: { title: "Microsystem Core", phrase: "Immediate Face-to-Face Daily Circles", items: ["Family, school, peers", "Direct daily interaction", "Bidirectional influence"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze Bronfenbrenner's Bioecological Systems Theory",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Bronfenbrenner: Mesosystem",
+    definition: "The system of linkages, interconnections, and relationships between two or more of the child's microsystems (e.g., the relationship between parents and classroom teachers).",
+    rationalization: "A child's academic success is strongly supported when parents and teachers maintain active, positive collaboration (strong mesosystem).",
+    mnemonic: { title: "Mesosystem Link", phrase: "Connections Between Microsystems (Parent-Teacher)", items: ["M - Mesosystem", "L - Link between home and school", "PTA conferences"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze Bronfenbrenner's Bioecological Systems Theory",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Bronfenbrenner: Exosystem",
+    definition: "Settings or social contexts that the child does not directly inhabit, but which indirectly exert a profound impact on the child's immediate development.",
+    rationalization: "Examples include parental workplace policies (parental leave or sudden job loss), the local school board's budget decisions, and community healthcare services.",
+    mnemonic: { title: "Exosystem Indirect", phrase: "Indirect Settings (Parent's Workplace, School Board)", items: ["E - Exosystem", "I - Indirect influence", "P - Parent's job stress affecting home"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze Bronfenbrenner's Bioecological Systems Theory",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Bronfenbrenner: Macrosystem",
+    definition: "The overarching cultural values, national laws, socioeconomic ideologies, religious belief systems, and political customs of the society in which all other systems are embedded.",
+    rationalization: "A culture's societal attitudes toward child labor, gender equality, disability rights, and public education funding originate in the macrosystem.",
+    mnemonic: { title: "Macrosystem Culture", phrase: "Cultural Values, National Laws, and Ideologies", items: ["M - Macrosystem", "C - Culture & national laws", "W - Wide societal worldview"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze Bronfenbrenner's Bioecological Systems Theory",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Bronfenbrenner: Chronosystem",
+    definition: "The temporal dimension of Bronfenbrenner's model encompassing life-cycle transitions, socio-historical events, and the historical era in which the child grows up.",
+    rationalization: "Growing up during the COVID-19 pandemic, living through a war, or experiencing parental divorce represents a chronosystem shift that permanently alters developmental trajectories.",
+    mnemonic: { title: "Chronosystem Time", phrase: "Time Dimension, Eras, and Life Transitions", items: ["C - Chrono = Time", "H - Historical events (Pandemic, war)", "T - Transitions across years"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze Bronfenbrenner's Bioecological Systems Theory",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Howard Gardner's Multiple Intelligences Theory (8+1 Intelligences)",
+    definition: "The cognitive pluralistic theory asserting that human intelligence is not a single unitary IQ, but a profile of distinct modalities: Linguistic, Logical-Mathematical, Spatial, Bodily-Kinesthetic, Musical, Interpersonal, Intrapersonal, Naturalistic, and Existential.",
+    rationalization: "Revolutionized teaching: teachers must differentiate instruction to tap into varied spatial, musical, and bodily intelligences rather than penalizing non-linguistic students.",
+    mnemonic: { title: "Gardner's 8 Intelligences", phrase: "Words, Numbers, Pictures, Body, Music, People, Self, Nature", items: ["Linguistic, Logical-Math, Spatial", "Bodily-Kinesthetic, Musical", "Interpersonal, Intrapersonal, Naturalistic"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Differentiate Gardner's Multiple Intelligences and Sternberg's Triarchic Theory",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Triarchic Theory of Intelligence (Robert Sternberg)",
+    definition: "The intelligence theory identifying three distinct types of intellectual competence: Analytical (componential / problem-solving & academic tasks), Creative (experiential / handling novel challenges), and Practical (contextual / street-smart adaptation to environment).",
+    rationalization: "Traditional IQ tests evaluate only analytical intelligence; real-world success requires creative innovation and practical common-sense application.",
+    mnemonic: { title: "Sternberg's Triarchic", phrase: "A-C-P: Analytical (Book), Creative (Novel), Practical (Street)", items: ["A - Analytical (Problem solving)", "C - Creative (Novelty & invention)", "P - Practical (Real-world adaptation)"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Differentiate Gardner's Multiple Intelligences and Sternberg's Triarchic Theory",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Strange Situation and 4 Attachment Styles (Mary Ainsworth)",
+    definition: "An observational assessment evaluating infant attachment to caregivers, identifying: Secure (uses parent as safe base), Insecure-Avoidant (ignores parent upon reunion), Insecure-Resistant/Ambivalent (clings angrily), and Disorganized (confused/fearful).",
+    rationalization: "Secure attachment in infancy predicts emotional resilience, higher self-esteem, and healthy peer friendships in adolescent schooling.",
+    mnemonic: { title: "4 Attachment Styles", phrase: "Secure, Avoidant, Ambivalent, Disorganized", items: ["Secure: Confident explorer", "Avoidant: Suppressed detachment", "Ambivalent: Anxious & clingy", "Disorganized: Fearful confusion"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze attachment theories and socio-emotional development",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Diana Baumrind's 4 Parenting Styles",
+    definition: "The classic parenting framework based on Responsiveness (warmth) and Demandingness (control): Authoritative (high warmth, high control / optimal), Authoritarian (low warmth, high control), Permissive (high warmth, low control), and Neglectful (low warmth, low control).",
+    rationalization: "Authoritative parenting produces children who are socially competent, self-reliant, and academically successful; Authoritarian parenting breeds anxious, dependent children with low self-esteem.",
+    mnemonic: { title: "Baumrind's 4 Styles", phrase: "Authoritative is the Golden Standard", items: ["Authoritative: High Warmth + High Control (Ideal)", "Authoritarian: Low Warmth + High Control (Strict)", "Permissive: High Warmth + Low Control (Indulgent)", "Neglectful: Low Warmth + Low Control (Absent)"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze parenting styles and family dynamics in child development",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Noam Chomsky: Language Acquisition Device (LAD)",
+    definition: "The nativist biological theory proposing that human infants are born with an innate neurological faculty (LAD) and Universal Grammar that allows them to acquire spoken language rapidly without explicit instruction.",
+    rationalization: "Refuted B.F. Skinner's behaviorist claim that language is learned purely through imitation and conditioning, pointing out the 'poverty of the stimulus' in child grammar.",
+    mnemonic: { title: "Chomsky's LAD", phrase: "Innate Brain Hardware for Language Grammar", items: ["N - Nativist theory", "L - Language Acquisition Device", "U - Universal Grammar innate"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace language acquisition theories (Chomsky, Skinner, Vygotsky)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Critical Period vs Sensitive Period in Development",
+    definition: "A Critical Period is a rigid, biologically fixed time window during which specific environmental stimulation MUST occur for normal development (e.g., embryonic limb formation); A Sensitive Period is an optimal window where a skill is acquired most easily, but can still be learned later with difficulty (e.g., second language acquisition).",
+    rationalization: "Young children acquire native language pronunciation easily during their sensitive period (before puberty); learning a language as an adult requires far more conscious effort.",
+    mnemonic: { title: "Critical vs Sensitive", phrase: "Critical is All-or-Nothing; Sensitive is the Optimal Window", items: ["Critical: Fixed, irreversible window", "Sensitive: Ideal time, but flexible"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze biological and physical motor developmental milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "James Marcia: 4 Identity Statuses",
+    definition: "The adolescent identity framework based on Exploration (crisis) and Commitment: Identity Diffusion (no exploration, no commitment), Identity Foreclosure (commitment without exploration), Identity Moratorium (active exploration, no commitment), and Identity Achievement (commitment after exploration).",
+    rationalization: "A teenager who accepts their parents' career path without questioning is in Foreclosure; an adolescent who explores passions and chooses their own path reaches Identity Achievement.",
+    mnemonic: { title: "Marcia's 4 Statuses", phrase: "Diffusion (Drifting), Foreclosure (Blind), Moratorium (Searching), Achievement (Decided)", items: ["Diffusion: No explore, no commit", "Foreclosure: No explore, committed", "Moratorium: Exploring actively", "Achievement: Explored and committed"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze adolescent psychological phenomena and identity formation",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Puberty and Secondary Sexual Characteristics",
+    definition: "The biological period of rapid skeletal and sexual maturation during early adolescence triggered by hormonal surges (androgens and estrogens) leading to physical reproductive capability.",
+    rationalization: "Primary sexual characteristics involve reproductive organs directly; Secondary sexual characteristics involve visible external traits (breast development, facial hair, voice deepening).",
+    mnemonic: { title: "Puberty Changes", phrase: "Hormonal Surge Drives Physical Maturation", items: ["Primary: Reproductive organs", "Secondary: Voice, hair, body contours", "Growth spurt milestone"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze biological and physical motor developmental milestones",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Kohlberg: Heinz Dilemma",
+    definition: "The classic moral dilemma used by Lawrence Kohlberg to evaluate children's stages of moral reasoning, centered on whether a man (Heinz) should steal an overpriced drug to save his dying wife.",
+    rationalization: "Kohlberg evaluated the moral reasoning behind the answer, NOT whether the respondent said 'yes' or 'no'. Stealing to uphold human life represents Stage 5/6 reasoning.",
+    mnemonic: { title: "Heinz Dilemma", phrase: "Reasoning Matters More Than the Final Choice", items: ["H - Heinz dilemma", "R - Reasoning stage assessed", "L - Life vs property rights"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Carol Gilligan's Critique of Kohlberg",
+    definition: "The feminist psychological critique asserting that Kohlberg's research was biased because his original sample was exclusively male, mislabeling women's relationship-based care ethics as 'inferior' to men's abstract justice rules.",
+    rationalization: "Proposed the Ethics of Care; showed that women prioritize empathy, compassion, and preventing interpersonal harm over detached legalistic rules.",
+    mnemonic: { title: "Gilligan's Voice", phrase: "In a Different Voice: Care Over Cold Justice", items: ["C - Carol Gilligan", "E - Ethics of Care", "M - Male sample bias in Kohlberg"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Parten's Stages of Play (Mildred Parten)",
+    definition: "The developmental progression of social play in early childhood: 1. Unoccupied play; 2. Solitary play (alone); 3. Onlooker play (watching others); 4. Parallel play (playing side-by-side without interaction); 5. Associative play (sharing toys without common goal); 6. Cooperative play (organized teamwork toward a goal).",
+    rationalization: "Toddlers typically engage in parallel play; cooperative play emerges around ages 4-5 as social decentration develops.",
+    mnemonic: { title: "Parten's 6 Play Stages", phrase: "Solitary -> Parallel -> Associative -> Cooperative", items: ["1. Solitary (Alone)", "2. Parallel (Side-by-side)", "3. Associative (Sharing toys)", "4. Cooperative (Team goal)"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze play development and peer socialization stages",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Temperament: Easy, Difficult, and Slow-to-Warm-Up (Thomas and Chess)",
+    definition: "The biologically based individual differences in emotional reactivity and self-regulation: Easy children (40% - regular routines, cheerful, adapt quickly); Difficult children (10% - irregular routines, intense negative reactions); Slow-to-warm-up (15% - inactive, mild reactions, cautious with novelty).",
+    rationalization: "Success depends on 'Goodness of Fit' between the child's innate temperament and the teacher's classroom management style.",
+    mnemonic: { title: "Temperament Types", phrase: "Easy, Difficult, Slow-to-Warm-Up", items: ["Easy: Adaptable & cheerful", "Difficult: Intense & irregular", "Slow-to-Warm: Cautious & hesitant"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze infant and childhood socio-emotional temperament",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Goodness of Fit (Thomas and Chess)",
+    definition: "The degree of compatibility and harmony between a child's innate temperament and the demands, expectations, and physical environment provided by parents and teachers.",
+    rationalization: "A highly active, fidgety child thrives when an understanding teacher provides kinesthetic learning breaks rather than constantly punishing them for moving.",
+    mnemonic: { title: "Goodness of Fit", phrase: "Adapt the Environment to the Child's Nature", items: ["G - Goodness of Fit", "C - Compatibility of temperament", "E - Environmental adaptation"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze infant and childhood socio-emotional temperament",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Fine Motor Skills vs Gross Motor Skills",
+    definition: "Gross motor skills involve large muscle groups used for whole-body locomotion (running, jumping, kicking a ball); Fine motor skills involve small precise muscle coordination (holding a pencil, cutting with scissors, buttoning a shirt).",
+    rationalization: "Gross motor skills develop first under the proximodistal principle; kindergarten activities (playdough, tracing) are designed specifically to strengthen fine motor fingers.",
+    mnemonic: { title: "Gross vs Fine Motor", phrase: "Gross = Big Muscles; Fine = Small Fingers", items: ["Gross: Running, climbing", "Fine: Writing, cutting, lacing"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze biological and physical motor developmental milestones",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Adolescent Brain: Prefrontal Cortex vs Amygdala",
+    definition: "The neurodevelopmental reality that the emotional, sensation-seeking limbic system (Amygdala) matures years before the rational, impulse-controlling executive center (Prefrontal Cortex).",
+    rationalization: "Explains why intelligent teenagers make impulsive, emotionally charged, and risky decisions: their brain's 'gas pedal' (amygdala) is fully mature while the 'brakes' (prefrontal cortex) are still developing until age 25.",
+    mnemonic: { title: "Adolescent Brain Gap", phrase: "Amygdala Gas Pedal Ready; Prefrontal Brakes Still Under Construction", items: ["A - Amygdala (Emotional impulse)", "P - Prefrontal Cortex (Rational planning)", "Matures fully around age 25"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze adolescent psychological phenomena and identity formation",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Seriation and Transitivity (Piaget)",
+    definition: "Seriation is the ability to order items along a quantitative dimension (e.g., length, weight); Transitivity is the ability to logically combine relations to understand necessary conclusions (if Stick A > B and B > C, then Stick A > C).",
+    rationalization: "Hallmarks of Concrete Operational cognitive thought; essential for mathematical ordering and logical syllogisms.",
+    mnemonic: { title: "Seriation & Transitivity", phrase: "Order by Size, Deduce Transitive Relations", items: ["Seriation: Sort by length/weight", "Transitivity: If A > B and B > C, then A > C"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Animism and Artificialism (Preoperational Cognition)",
+    definition: "Animism is the belief that inanimate objects (clouds, dolls, sun) possess lifelike qualities, feelings, and conscious intentions; Artificialism is the belief that environmental features (mountains, rivers) were manufactured by human beings.",
+    rationalization: "A 4-year-old says 'The sun went down because it was tired' (animism) or 'People dug the ocean with giant shovels' (artificialism).",
+    mnemonic: { title: "Animism vs Artificialism", phrase: "Animism = Inanimate Objects Alive; Artificialism = Nature Built by Man", items: ["Animism: Sun is tired", "Artificialism: Mountains carved by humans"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Telegraphic Speech",
+    definition: "Early two-word speech utterances around 18 to 24 months of age consisting almost entirely of content words (nouns and verbs) omitting grammatical inflections, conjunctions, and prepositions (e.g., 'Mommy go', 'More juice').",
+    rationalization: "Named because it resembles the abbreviated syntax of old commercial telegrams; marks a major milestone in syntactic language development.",
+    mnemonic: { title: "Telegraphic Speech", phrase: "Two-Word Content Sentences ('Baby sleep')", items: ["T - Telegraphic", "2 Words - Noun + verb combo", "Omits grammatical filler"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace language acquisition theories (Chomsky, Skinner, Vygotsky)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Overregularization / Overgeneralization in Language",
+    definition: "A language development error where a child applies regular grammatical rules of past tense or pluralization to irregular words (e.g., 'I runned', 'Two tooths', 'He goed').",
+    rationalization: "Crucial proof for Chomsky's Universal Grammar: children do NOT simply imitate adult speech (no adult says 'runned'); their brains actively deduce and apply grammatical rules.",
+    mnemonic: { title: "Overregularization", phrase: "Applying Regular Rules to Irregular Words ('Runned')", items: ["O - Overregularization", "R - Rule applied too broadly", "P - Proves active mental grammar"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Trace language acquisition theories (Chomsky, Skinner, Vygotsky)",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Co-Regulation in Middle Childhood",
+    definition: "A transitional stage of behavioral control in school-age children where parents and teachers maintain general oversight and set broad boundaries, while children exercise moment-by-moment self-regulation.",
+    rationalization: "Prepares children for adolescent autonomy; shifts from direct parental command toward collaborative problem-solving and reasoned discussion.",
+    mnemonic: { title: "Co-Regulation", phrase: "Shared Control Between Adult and Child", items: ["C - Co-regulation", "S - School-age transition", "P - Prepares for autonomous self-discipline"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze parenting styles and family dynamics in child development",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Peer Acceptance Categories (Sociometric Status)",
+    definition: "Sociometric research classifying peer acceptance into 5 groups: Popular (frequently nominated as best friend, rarely disliked), Rejected (infrequently liked, actively disliked), Neglected (infrequently nominated as either liked or disliked / ignored), Controversial (frequently nominated as both liked and disliked), and Average.",
+    rationalization: "Rejected children are at highest risk for academic dropout, delinquency, and mental health crises; require proactive social skills coaching.",
+    mnemonic: { title: "5 Peer Statuses", phrase: "Popular, Rejected, Neglected, Controversial, Average", items: ["Popular: Well-liked", "Rejected: Actively disliked", "Neglected: Invisible/ignored", "Controversial: Polarizing"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze play development and peer socialization stages",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Epigenetics in Child Development",
+    definition: "The scientific study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence, driven by environmental influences (nutrition, stress, maternal care).",
+    rationalization: "Proves that Nature and Nurture are in constant dynamic dialogue; early childhood trauma or toxic stress can physically switch on or off genes regulating cortisol and anxiety.",
+    mnemonic: { title: "Epigenetic Switches", phrase: "Environment Turns Genes On or Off", items: ["E - Epigenetics", "N - Nature and Nurture dialogue", "S - Stress alters gene expression"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze biological and physical motor developmental milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Emotional Self-Regulation",
+    definition: "The capability of an individual to monitor, manage, and adapt their emotional reactions to meet the demands of the environment and achieve long-term goals.",
+    rationalization: "Children with strong emotional self-regulation can delay gratification, handle frustration without tantrums, and maintain concentration during difficult academic tasks.",
+    mnemonic: { title: "Emotional Regulation", phrase: "Cooling Down Impulses to Stay on Task", items: ["E - Emotional control", "D - Delay of gratification", "F - Frustration tolerance"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze attachment theories and socio-emotional development",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Gender Constancy (Lawrence Kohlberg)",
+    definition: "A child's cognitive realization that gender is permanent and remains constant despite changes in external appearance, hairstyle, or clothing, achieved around ages 6 to 7.",
+    rationalization: "Develops through three stages: Gender Identity (labeling self as boy/girl around age 2-3), Gender Stability (understanding gender stays same over time around age 4), and Gender Constancy (understanding superficial changes don't change sex).",
+    mnemonic: { title: "Gender Constancy", phrase: "Gender Remains Same Despite Hair or Clothes", items: ["Identity (Age 2-3)", "Stability (Age 4-5)", "Constancy (Age 6-7)"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze adolescent psychological phenomena and identity formation",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Adolescent Risk-Taking Behavior",
+    definition: "The heightened propensity of adolescents to engage in dangerous activities (reckless driving, substance experimentation, unprotected sex), heavily amplified by the presence of peers.",
+    rationalization: "Peer presence triggers dopamine reward sensitivity in the adolescent limbic brain, overriding rational caution.",
+    mnemonic: { title: "Peer Risk-Taking", phrase: "Peer Presence Amplifies Adolescent Risk", items: ["P - Peer presence effect", "D - Dopamine reward surge", "R - Risk taking in groups"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze adolescent psychological phenomena and identity formation",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Theory of Mind (ToM)",
+    definition: "The cognitive capacity to attribute mental states (beliefs, intents, desires, emotions, knowledge) to oneself and to understand that others possess beliefs and perspectives that differ from one's own.",
+    rationalization: "Tested using the False Belief Task (Sally-Anne test); typically achieved by age 4; fundamental for empathy, deceit, and social negotiation.",
+    mnemonic: { title: "Theory of Mind", phrase: "Knowing Others Have Different Thoughts", items: ["T - Theory of Mind", "F - False belief task", "E - Empathy foundation"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Classify Piaget's four stages of cognitive development and milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Bullying: Bully, Victim, and Bystander Dynamics",
+    definition: "The social triangle of bullying where the Bully exercises repeated power imbalance; the Victim suffers isolation and harm; and Bystanders either reinforce, passively watch, or proactively intervene (Upstanders).",
+    rationalization: "Research shows that when an Upstander bystander intervenes verbally, bullying stops within 10 seconds in over 50% of incidents.",
+    mnemonic: { title: "Upstander Power", phrase: "Bystanders Who Intervene Stop Bullying", items: ["B - Bully", "V - Victim", "U - Upstander stops harassment"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze play development and peer socialization stages",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Executive Functioning Skills in Children",
+    definition: "The suite of higher-order cognitive processes governed by the prefrontal cortex: Working Memory, Cognitive Flexibility (shifting gears), and Inhibitory Control (resisting distractions).",
+    rationalization: "Strong executive function in kindergarten is a more accurate predictor of future academic reading and math achievement than traditional IQ.",
+    mnemonic: { title: "3 Executive Functions", phrase: "Working Memory, Inhibitory Control, Cognitive Flexibility", items: ["1. Working Memory", "2. Inhibitory Control (Brakes)", "3. Cognitive Flexibility (Adaptability)"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze biological and physical motor developmental milestones",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Socioemotional Development in Infancy: Social Referencing",
+    definition: "The behavioral process where an infant actively looks at a trusted caregiver's facial expression and emotional reaction to appraise an unfamiliar or ambiguous situation before deciding how to act.",
+    rationalization: "Demonstrated in the Visual Cliff experiment: if the mother smiles encouragingly, the infant crawls over the glass cliff; if the mother looks fearful, the infant refuses to cross.",
+    mnemonic: { title: "Social Referencing", phrase: "Reading Mom's Face to Know If It's Safe", items: ["S - Social referencing", "V - Visual cliff experiment", "E - Emotional appraisal"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze attachment theories and socio-emotional development",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Resilience: Protective Factors in At-Risk Youth",
+    definition: "Internal or environmental variables that buffer at-risk children from psychological trauma and delinquency: a stable, caring adult relationship, strong self-regulation, positive school connection, and community support.",
+    rationalization: "The single most common factor for children who develop resilience is at least one stable, committed relationship with a supportive parent, teacher, or mentor.",
+    mnemonic: { title: "Resilience Factor", phrase: "One Caring Adult Can Save a Child's Life", items: ["R - Resilience", "P - Protective factor", "M - Mentor teacher impact"] },
+    source: "PRC BLEPT ProfEd Child Development Reviewer",
+    tosCompetency: "Analyze adolescent psychological phenomena and identity formation",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  }
+];
+
+// Write Child and Adolescent Learners and Learning Principles
+writeDataset(
+  'data/profed/child_adolescent/child_adolescent.json',
+  'Professional Education',
+  'Child and Adolescent Learners and Learning Principles',
+  'Developmental Milestones, Piaget, Erikson, Bronfenbrenner, & Attachment',
+  profed7Items
+);

@@ -1,0 +1,917 @@
+{
+  "category": "Professional Education",
+  "topic": "Methods and Strategies of Teaching",
+  "subtopic": "Direct & Indirect Instruction, Inquiry, Cooperative Learning, & Questioning Techniques",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Direct Instruction (Expository Approach)",
+      "definition": "A teacher-directed instructional approach characterized by explicit teaching of concepts, step-by-step lecture, structured demonstration, guided practice, and immediate corrective feedback.",
+      "rationalization": "Best used when teaching foundational skills, basic math algorithms, grammar rules, laboratory safety procedures, or step-by-step motor skills.",
+      "mnemonic": {
+        "title": "Direct Instruction",
+        "phrase": "Direct, Demonstrative, and Deductive Delivery",
+        "items": [
+          "D - Direct explanation",
+          "D - Demonstration of steps",
+          "P - Practice with feedback"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Distinguish direct vs indirect instructional strategies",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Indirect Instruction (Inquiry / Discovery Approach)",
+      "definition": "A student-centered instructional approach where the teacher acts as a facilitator, guiding students through active observation, inquiry, hypothesizing, problem-solving, and concept formation.",
+      "rationalization": "Fosters higher-order critical thinking, self-regulation, curiosity, and deep conceptual understanding rather than rote recall.",
+      "mnemonic": {
+        "title": "Indirect Instruction",
+        "phrase": "Inquiry Ignites Individual Insight",
+        "items": [
+          "I - Indirect",
+          "F - Facilitator teacher",
+          "D - Discovery through inquiry"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Distinguish direct vs indirect instructional strategies",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Deductive Teaching Strategy (Rule to Example)",
+      "definition": "A top-down instructional method that begins with the teacher stating a general rule, principle, or formula, followed by illustrative examples and student practice.",
+      "rationalization": "Efficient and time-saving; moves from General to Specific (G to S). E.g., presenting the formula Area = L x W first, then having students solve sample rectangles.",
+      "mnemonic": {
+        "title": "Deductive Strategy",
+        "phrase": "Deductive: Down from General to Specific",
+        "items": [
+          "D - Deductive",
+          "G - General rule first",
+          "S - Specific examples follow"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Differentiate deductive and inductive instructional models",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Inductive Teaching Strategy (Example to Rule)",
+      "definition": "A bottom-up instructional method that begins by presenting multiple concrete examples and observations, guiding students to discover patterns and formulate the general rule.",
+      "rationalization": "Promotes active thinking and retention; moves from Specific to General (S to G). Also known as the discovery approach.",
+      "mnemonic": {
+        "title": "Inductive Strategy",
+        "phrase": "Inductive: Increases from Specific to General",
+        "items": [
+          "I - Inductive",
+          "S - Specific examples first",
+          "G - General rule discovered"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Differentiate deductive and inductive instructional models",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "5E Instructional Model (Bybee)",
+      "definition": "An inquiry-based constructivist teaching sequence consisting of 5 phases: Engage (hook interest), Explore (hands-on investigation), Explain (clarify concepts), Elaborate (apply in new contexts), and Evaluate (assess mastery).",
+      "rationalization": "Extensively recommended in Science and Mathematics teaching to allow learners to build conceptual models before formal definitions are introduced.",
+      "mnemonic": {
+        "title": "5E Model",
+        "phrase": "Engage, Explore, Explain, Elaborate, Evaluate",
+        "items": [
+          "1 - Engage",
+          "2 - Explore",
+          "3 - Explain",
+          "4 - Elaborate",
+          "5 - Evaluate"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply the 5E inquiry cycle in lesson design",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "4As Lesson Design Framework",
+      "definition": "An experiential DepEd lesson planning model consisting of Activity (concrete experience), Analysis (processing reflections and questions), Abstraction (generalizing key concepts), and Application (transfer to authentic life).",
+      "rationalization": "Aligns with David Kolb's experiential learning theory, moving learners from concrete engagement through reflection to conceptual theory and practical usage.",
+      "mnemonic": {
+        "title": "4As Framework",
+        "phrase": "Activity, Analysis, Abstraction, Application",
+        "items": [
+          "A - Activity (do)",
+          "A - Analysis (think)",
+          "A - Abstraction (know)",
+          "A - Application (apply)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Design lessons using the 4As constructivist model",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Gradual Release of Responsibility (GRR)",
+      "definition": "A structured instructional progression moving from high teacher support to independent learner competence: 'I Do' (teacher modeling), 'We Do' (guided practice), 'You Do Together' (collaborative work), and 'You Do Alone' (independent application).",
+      "rationalization": "Developed by Pearson and Gallagher; prevents premature student failure by ensuring sufficient scaffolding before independent task execution.",
+      "mnemonic": {
+        "title": "Gradual Release",
+        "phrase": "I Do, We Do, You Do Together, You Do Alone",
+        "items": [
+          "I Do - Model",
+          "We Do - Guide",
+          "You Do Together - Collaborate",
+          "You Do - Independent"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Sequence instructional scaffolding via Gradual Release of Responsibility",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Problem-Based Learning (PBL)",
+      "definition": "A student-centered pedagogical strategy where learning is organized around solving an ill-structured, open-ended, real-world authentic problem with multiple possible solutions.",
+      "rationalization": "Students work in teams to define the problem, identify what they need to know, research independently, and present justified solutions.",
+      "mnemonic": {
+        "title": "Problem-Based Learning",
+        "phrase": "Problems Prompt Purposeful Pursuit",
+        "items": [
+          "P - Problem-based",
+          "I - Ill-structured authentic dilemma",
+          "F - Facilitator teacher role"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Implement Problem-Based and Project-Based learning",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Project-Based Learning (PjBL)",
+      "definition": "An instructional approach where students engage in sustained inquiry over an extended period to investigate and respond to an authentic, engaging question, culminating in a tangible product or public presentation.",
+      "rationalization": "Unlike problem-based learning which ends with a proposed solution, project-based learning always requires constructing a tangible artifact, model, or exhibition.",
+      "mnemonic": {
+        "title": "Project-Based Learning",
+        "phrase": "Projects Produce Public Products",
+        "items": [
+          "P - Project-based",
+          "E - Extended inquiry",
+          "T - Tangible product artifact"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Implement Problem-Based and Project-Based learning",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Cooperative Learning: Jigsaw Strategy",
+      "definition": "A cooperative learning structure by Elliot Aronson where students are assigned to 'home groups' and 'expert groups'; each expert masters a specific segment of material and returns to teach it to their home group.",
+      "rationalization": "Ensures positive interdependence and individual accountability because every member holds a vital piece of the learning puzzle.",
+      "mnemonic": {
+        "title": "Jigsaw Strategy",
+        "phrase": "Pieces Fit Together in Jigsaw Groups",
+        "items": [
+          "J - Jigsaw",
+          "H - Home group base",
+          "E - Expert group specialization"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply cooperative learning structures (Jigsaw, STAD, T-P-S)",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Think-Pair-Share (Lyman)",
+      "definition": "A three-step cooperative discussion strategy where students first reflect silently on a prompt (Think), discuss their thoughts with a peer (Pair), and share their insights with the whole class (Share).",
+      "rationalization": "Increases student wait time, eliminates fear of public failure, and guarantees 100% active participation compared to traditional call-and-response questioning.",
+      "mnemonic": {
+        "title": "Think-Pair-Share",
+        "phrase": "Think Alone, Pair with Pal, Share with School",
+        "items": [
+          "T - Think individually",
+          "P - Pair with neighbor",
+          "S - Share with class"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply cooperative learning structures (Jigsaw, STAD, T-P-S)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Student Teams-Achievement Divisions (STAD - Slavin)",
+      "definition": "A cooperative learning model where heterogeneous teams of 4-5 students study together after teacher presentation, take individual quizzes, and earn team rewards based on individual improvement scores.",
+      "rationalization": "Fairly recognizes and rewards lower-performing students because team points derive from surpassing one's own baseline score rather than absolute rank.",
+      "mnemonic": {
+        "title": "STAD Strategy",
+        "phrase": "Slavin's Teams Achieve Through Improvement",
+        "items": [
+          "S - STAD",
+          "T - Team study",
+          "I - Improvement points reward"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply cooperative learning structures (Jigsaw, STAD, T-P-S)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Fishbowl Discussion",
+      "definition": "A dynamic discussion technique where an inner circle of students discusses a controversial topic while an outer circle of students silently observes, takes notes, and later swaps seats.",
+      "rationalization": "Develops active listening, turn-taking, argumentation analysis, and constructive peer evaluation.",
+      "mnemonic": {
+        "title": "Fishbowl Discussion",
+        "phrase": "Inner Swimmers Speak, Outer Observers Seek",
+        "items": [
+          "F - Fishbowl",
+          "I - Inner talking circle",
+          "O - Outer observing ring"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Utilize classroom discussion and dialogue formats",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Socratic Questioning Method",
+      "definition": "A disciplined, probing questioning dialogue that challenges assumptions, clarifies definitions, examines evidence, explores consequences, and stimulates critical thinking.",
+      "rationalization": "Uses open-ended questions to guide students in recognizing contradictions in their reasoning and discovering truth autonomously.",
+      "mnemonic": {
+        "title": "Socratic Method",
+        "phrase": "Socrates' Questions Stimulate Self-Correction",
+        "items": [
+          "S - Socratic",
+          "P - Probing questions",
+          "A - Assumptions examined"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Demonstrate effective questioning and prompting techniques",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Wait Time (Mary Budd Rowe)",
+      "definition": "The deliberate pedagogical pause of at least 3 to 5 seconds observed by the teacher after asking a question (Wait Time 1) and after a student responds (Wait Time 2).",
+      "rationalization": "Significantly increases response length, participation of slower learners, higher-order thinking, and spontaneous student-to-student interactions.",
+      "mnemonic": {
+        "title": "Wait Time",
+        "phrase": "Three Seconds Pause Prompts Profound Thinking",
+        "items": [
+          "W1 - Wait after question (3-5s)",
+          "W2 - Wait after answer",
+          "B - Better responses"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Demonstrate effective questioning and prompting techniques",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Convergent vs Divergent Questions",
+      "definition": "Convergent questions require a single, predetermined, correct factual answer (low cognitive level), whereas Divergent questions invite multiple valid perspectives, creative solutions, and open-ended exploration (high cognitive level).",
+      "rationalization": "Effective teachers balance convergent recall questions during review with divergent analytical questions during concept development.",
+      "mnemonic": {
+        "title": "Questioning Types",
+        "phrase": "Convergent Closes to One, Divergent Drives Many",
+        "items": [
+          "C - Convergent = 1 right answer",
+          "D - Divergent = Multiple solutions"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Demonstrate effective questioning and prompting techniques",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Withitness (Jacob Kounin)",
+      "definition": "A teacher's constant perceptual awareness of everything transpiring in all corners of the classroom at all times ('having eyes in the back of one's head').",
+      "rationalization": "Allows the teacher to nip misbehavior in the bud before it escalates, demonstrating prompt and targeted intervention to the correct perpetrator.",
+      "mnemonic": {
+        "title": "Withitness",
+        "phrase": "With It: Knowing All What's Going On",
+        "items": [
+          "W - Withitness",
+          "K - Kounin",
+          "E - Eyes in the back of head"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Overlapping (Jacob Kounin)",
+      "definition": "The teacher's supervisory ability to attend to two or more separate classroom events, tasks, or student needs simultaneously without losing momentum.",
+      "rationalization": "E.g., helping a small reading group while quietly walking over to hand a pencil to an off-task student without interrupting the group lesson.",
+      "mnemonic": {
+        "title": "Overlapping",
+        "phrase": "Overlapping Two Tasks Together",
+        "items": [
+          "O - Overlapping",
+          "M - Multitasking supervisor",
+          "C - Continuous instruction"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Smoothness and Momentum (Jacob Kounin)",
+      "definition": "Smoothness is maintaining lesson flow without sudden teacher digressions or erratic jumps; Momentum is maintaining steady pacing without unnecessary pauses or dragging slowdowns.",
+      "rationalization": "Prevents behavioral flare-ups; lesson breakdowns occur when teachers get sidetracked by trivial matters (dangle, flip-flop, thrust).",
+      "mnemonic": {
+        "title": "Smoothness & Momentum",
+        "phrase": "Steady Flow Keeps Students Focused",
+        "items": [
+          "S - Smoothness (no abrupt jumps)",
+          "M - Momentum (good brisk pacing)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Kounin's Transition Errors: Flip-Flop",
+      "definition": "A pedagogical error where the teacher terminates an activity, initiates a new topic, and then abruptly returns to the previous topic, confusing the learners.",
+      "rationalization": "Disrupts students' mental frame and derails lesson continuity.",
+      "mnemonic": {
+        "title": "Flip-Flop",
+        "phrase": "Flipping Forward and Flopping Back",
+        "items": [
+          "F - Flip to new",
+          "F - Flop back to old",
+          "C - Causes confusion"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Kounin's Transition Errors: Dangle",
+      "definition": "Leaving an instructional thought, explanation, or sentence hanging in mid-air because the teacher gets distracted by something else in the room.",
+      "rationalization": "Leaves learners suspended without conceptual closure.",
+      "mnemonic": {
+        "title": "Dangle",
+        "phrase": "Dangling Thoughts Left Mid-Air",
+        "items": [
+          "D - Dangle",
+          "H - Hanging incomplete thoughts",
+          "D - Distraction caused"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Kounin's Transition Errors: Thrust",
+      "definition": "Bursting into a student activity with sudden announcements or instructions when students are deeply engrossed, breaking their concentration.",
+      "rationalization": "Teachers should wait for a natural lull or establish a gentle cue before interjecting new instructions.",
+      "mnemonic": {
+        "title": "Thrust",
+        "phrase": "Thrusting In Uninvited While Students Work",
+        "items": [
+          "T - Thrust",
+          "B - Bursting in abruptly",
+          "S - Shatters focus"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Kounin's Slowdown: Overdwelling",
+      "definition": "Spending excessive, unnecessary time preaching about misbehavior or repeating explanations long after students have already understood.",
+      "rationalization": "Bores students, kills lesson momentum, and invites secondary behavioral disruptions.",
+      "mnemonic": {
+        "title": "Overdwelling",
+        "phrase": "Dwelling Too Long On Dull Details",
+        "items": [
+          "O - Overdwelling",
+          "P - Preaching too long",
+          "K - Kills momentum"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Ripple Effect (Jacob Kounin)",
+      "definition": "The phenomenon where correcting the misbehavior of one student in a clear, firm, and calm manner influences and improves the behavior of other observing students.",
+      "rationalization": "Works best when the correction specifies the unacceptable behavior and names the alternative desired conduct without personal anger.",
+      "mnemonic": {
+        "title": "Ripple Effect",
+        "phrase": "Calm Correction Waves Across the Classroom",
+        "items": [
+          "R - Ripple effect",
+          "O - One student corrected",
+          "W - Whole class responds"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply Jacob Kounin's classroom management principles",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Differentiated Instruction (Tomlinson)",
+      "definition": "A proactive instructional philosophy that tailors Content (what students learn), Process (how they make sense), Product (how they show mastery), and Learning Environment to students' readiness, interest, and profile.",
+      "rationalization": "Rejects one-size-fits-all teaching; uses tiered activities, flexible grouping, and varied modalities to ensure all learners are challenged appropriately.",
+      "mnemonic": {
+        "title": "Differentiated Instruction",
+        "phrase": "Content, Process, Product, Environment (CPPE)",
+        "items": [
+          "C - Content",
+          "P - Process",
+          "P - Product",
+          "E - Environment"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Differentiate instruction for diverse learning profiles",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Tiered Instruction",
+      "definition": "A differentiation technique where students work on the same essential concept or standard, but the complexity of tasks, reading levels, or support varies across ability tiers.",
+      "rationalization": "Ensures equity and challenge; struggling learners receive scaffolded tasks while advanced learners work on higher-order abstract applications.",
+      "mnemonic": {
+        "title": "Tiered Instruction",
+        "phrase": "Same Goal, Different Ladders",
+        "items": [
+          "T - Tiered tasks",
+          "S - Same core standard",
+          "V - Varied complexity levels"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Differentiate instruction for diverse learning profiles",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Scaffolding (Lev Vygotsky / Jerome Bruner)",
+      "definition": "Temporary instructional support structures provided by the teacher or peer to help the learner perform a task within their Zone of Proximal Development (ZPD), gradually removed as autonomy increases.",
+      "rationalization": "Examples include graphic organizers, sentence stems, teacher modeling, checklist rubrics, and think-aloud protocols.",
+      "mnemonic": {
+        "title": "Scaffolding",
+        "phrase": "Support While Building, Removed When Strong",
+        "items": [
+          "S - Scaffolding",
+          "Z - ZPD support",
+          "F - Faded gradually"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply scaffolding within the Zone of Proximal Development",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Reciprocal Teaching (Palinscar & Brown)",
+      "definition": "An instructional reading strategy where teachers and students take turns leading structured dialogue using four comprehension strategies: Predicting, Questioning, Clarifying, and Summarizing (PQCS).",
+      "rationalization": "Dramatically boosts reading comprehension by scaffolding metacognitive monitoring and shifting students from passive readers to active meaning-makers.",
+      "mnemonic": {
+        "title": "Reciprocal Teaching",
+        "phrase": "Predict, Question, Clarify, Summarize",
+        "items": [
+          "P - Predicting",
+          "Q - Questioning",
+          "C - Clarifying",
+          "S - Summarizing"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Implement Reciprocal Teaching for reading comprehension",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "K-W-L Chart (Donna Ogle)",
+      "definition": "A three-column metacognitive graphic organizer tracking what students already Know (K), what they Want to know (W), and what they have Learned (L).",
+      "rationalization": "Activates prior schema, establishes personal inquiry goals, and provides reflective closure for new concepts.",
+      "mnemonic": {
+        "title": "K-W-L Chart",
+        "phrase": "Know, Want to Know, Learned",
+        "items": [
+          "K - Know (prior schema)",
+          "W - Want (purpose)",
+          "L - Learned (reflection)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Select graphic organizers for cognitive processing",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Venn Diagram",
+      "definition": "A visual organizer using overlapping circles to highlight similarities and differences between two or more concepts, characters, or phenomena.",
+      "rationalization": "Enhances comparative analysis and higher-order analytical evaluation.",
+      "mnemonic": {
+        "title": "Venn Diagram",
+        "phrase": "Overlapping Circles of Compare and Contrast",
+        "items": [
+          "V - Venn",
+          "C - Compare similarities (center)",
+          "C - Contrast differences (sides)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Select graphic organizers for cognitive processing",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Flipped Classroom Model",
+      "definition": "A blended pedagogical strategy where direct instruction/lecture is moved outside the classroom via pre-recorded videos or readings, dedicating precious classroom time to active collaborative problem-solving, debates, and hands-on projects.",
+      "rationalization": "Flips Bloom's taxonomy: lower-order remembering occurs at home at student's own pace; higher-order analyzing and creating occurs in class with teacher guidance.",
+      "mnemonic": {
+        "title": "Flipped Classroom",
+        "phrase": "Lecture at Home, Homework in Class",
+        "items": [
+          "F - Flipped",
+          "V - Videos at home",
+          "A - Active tasks in class"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply modern blended and flipped teaching models",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Demonstration Method (Modeling)",
+      "definition": "An instructional technique where the teacher performs a process, shows an experiment, or models a skill while explaining each step, followed by student imitation (return demonstration).",
+      "rationalization": "Essential in TVL courses, science laboratory setups, and psychomotor skills to ensure safety, precision, and error correction.",
+      "mnemonic": {
+        "title": "Demonstration Method",
+        "phrase": "Show and Tell Followed by Student Return Demo",
+        "items": [
+          "D - Demonstration",
+          "M - Model technique",
+          "R - Return demo by learners"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Design demonstration and psychomotor skill lessons",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Herbartian Steps of Teaching (Johann Friedrich Herbart)",
+      "definition": "The classical formal instructional sequence: 1. Preparation, 2. Presentation, 3. Association / Comparison, 4. Generalization, and 5. Application.",
+      "rationalization": "The historical ancestor of contemporary lesson plan structures, organizing instruction into a systematic pedagogical sequence.",
+      "mnemonic": {
+        "title": "Herbartian Steps",
+        "phrase": "Preparation, Presentation, Association, Generalization, Application",
+        "items": [
+          "1 - Preparation",
+          "2 - Presentation",
+          "3 - Association",
+          "4 - Generalization",
+          "5 - Application"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Trace historical lesson planning models (Herbartian, Madeline Hunter)",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Madeline Hunter's Instructional Design Model",
+      "definition": "A 7-step direct instruction lesson model: Anticipatory Set, Objective and Purpose, Input, Modeling, Checking for Understanding, Guided Practice, and Independent Practice.",
+      "rationalization": "Widely used in structured classroom teaching to guarantee that students do not practice errors during homework.",
+      "mnemonic": {
+        "title": "Madeline Hunter Model",
+        "phrase": "Hook, Teach, Model, Check, Guide, Independent",
+        "items": [
+          "A - Anticipatory set",
+          "I - Input & modeling",
+          "C - Check understanding",
+          "P - Practice"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Trace historical lesson planning models (Herbartian, Madeline Hunter)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "DepEd Order No. 42, s. 2016 (Policy Guidelines on Daily Lesson Preparation)",
+      "definition": "The DepEd policy standardizing lesson preparation: Newly-hired teachers prepare Detailed Lesson Plans (DLPs) for at least 1 year, while experienced teachers prepare Daily Lesson Logs (DLLs).",
+      "rationalization": "Ensures teachers systematically plan instructional flow, align with curriculum guides, and integrate formative assessment.",
+      "mnemonic": {
+        "title": "DO 42 s. 2016",
+        "phrase": "Detailed Lesson Plan vs Daily Lesson Log Guidelines",
+        "items": [
+          "DLP - For new teachers (1 year min)",
+          "DLL - For experienced teachers",
+          "DO 42 - DepEd standard"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply DepEd guidelines on lesson planning (DLP/DLL)",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Detailed Lesson Plan (DLP) vs Daily Lesson Log (DLL)",
+      "definition": "A DLP contains comprehensive verbatim teacher and student activities, questions, and responses across all lesson stages; a DLL is a concise template covering Objectives, Content, Learning Resources, Procedures, and Remarks.",
+      "rationalization": "DLL reduces clerical burden on master teachers while retaining systematic tracking of competencies.",
+      "mnemonic": {
+        "title": "DLP vs DLL",
+        "phrase": "Detailed Script vs Logged Summary",
+        "items": [
+          "DLP - Full script format",
+          "DLL - Template log format"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply DepEd guidelines on lesson planning (DLP/DLL)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Simulation and Role-Playing",
+      "definition": "Instructional experiential strategies that place students in simulated real-life roles, scenarios, or simulations (e.g., mock court trial, UN assembly, emergency evacuation).",
+      "rationalization": "Enhances empathy, problem-solving, communication skills, and affective perspective-taking in safe controlled settings.",
+      "mnemonic": {
+        "title": "Simulation & Role Play",
+        "phrase": "Stepping into Shoes in Safe Scenarios",
+        "items": [
+          "S - Simulation",
+          "R - Role-playing",
+          "E - Empathy and authentic rehearsal"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Implement simulation and role-playing strategies",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Case Study Method",
+      "definition": "An instructional technique using real-life descriptive narratives of complex dilemma situations, requiring students to diagnose issues, evaluate alternatives, and recommend ethical decisions.",
+      "rationalization": "Popularized by Harvard Business and Law schools; highly effective for ethics, educational leadership, and civic decision-making.",
+      "mnemonic": {
+        "title": "Case Study Method",
+        "phrase": "Real Stories Solving Real Situations",
+        "items": [
+          "C - Case study",
+          "D - Dilemma diagnosis",
+          "A - Alternative decisions evaluated"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Implement case study analysis in teaching",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Formative Questioning: Probing",
+      "definition": "A questioning follow-up technique that pushes students beyond superficial or initial answers to justify, clarify, elaborate, or provide concrete evidence.",
+      "rationalization": "E.g., 'What evidence made you conclude that?' or 'Can you explain the reasoning behind your step?'",
+      "mnemonic": {
+        "title": "Probing Questions",
+        "phrase": "Probing Deeper Past the Surface",
+        "items": [
+          "P - Probing",
+          "D - Deeper justification",
+          "E - Evidence requested"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Demonstrate effective questioning and prompting techniques",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Formative Questioning: Prompting",
+      "definition": "Providing subtle verbal hints, leading clues, or simplified rephrasing when a student is stuck or hesitant, helping them successfully formulate the correct response.",
+      "rationalization": "Prevents learner embarrassment, sustains confidence, and models problem-solving through guided scaffolding.",
+      "mnemonic": {
+        "title": "Prompting Clues",
+        "phrase": "Providing Prompts to Prevent Paralyzing Hesitation",
+        "items": [
+          "P - Prompting",
+          "H - Hints and clues",
+          "S - Scaffolding the response"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Demonstrate effective questioning and prompting techniques",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Formative Questioning: Redirecting",
+      "definition": "Asking another student or the whole class to react to, elaborate upon, evaluate, or answer a question initially answered by a peer.",
+      "rationalization": "Transforms teacher-centric dialogue into dynamic student-to-student discourse: 'Sarah, what do you think of Mark's solution?'",
+      "mnemonic": {
+        "title": "Redirecting Technique",
+        "phrase": "Redirecting the Ball Across the Court",
+        "items": [
+          "R - Redirecting",
+          "P - Peer response",
+          "D - Dynamic dialogue"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Demonstrate effective questioning and prompting techniques",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Positive Behavioral Interventions and Supports (PBIS)",
+      "definition": "A proactive school-wide framework that clearly teaches, models, and reinforces positive behavioral expectations rather than merely punishing misbehaviors.",
+      "rationalization": "Research proves that reinforcing desirable conduct produces longer-lasting behavioral improvements and creates a supportive classroom climate.",
+      "mnemonic": {
+        "title": "PBIS Framework",
+        "phrase": "Praising Positive Behavior Proactively",
+        "items": [
+          "P - Proactive",
+          "R - Reinforcement of positive acts",
+          "C - Clear behavioral norms"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply classroom management models (PBIS, Assertive Discipline)",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Assertive Discipline (Lee & Marlene Canter)",
+      "definition": "A classroom management approach emphasizing that teachers have the right to teach and students have the right to learn; the teacher establishes firm, clear rules and a transparent hierarchy of predictable consequences.",
+      "rationalization": "Contrasts with passive (wishy-washy) or hostile (aggressive) teaching; assertive teachers are calm, firm, consistent, and supportive.",
+      "mnemonic": {
+        "title": "Assertive Discipline",
+        "phrase": "Canters: Clear, Calm, and Consistent Consequences",
+        "items": [
+          "A - Assertive teacher",
+          "C - Canter model",
+          "F - Firm predictable rules"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply classroom management models (PBIS, Assertive Discipline)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Logical Consequences (Rudolf Dreikurs)",
+      "definition": "Disciplinary consequences that are logically, naturally, and directly related to the misbehavior (unlike arbitrary punishment), helping students learn responsibility.",
+      "rationalization": "E.g., if a student spills paint on the desk, the logical consequence is cleaning it up, not writing 100 sentences or sitting in the corner.",
+      "mnemonic": {
+        "title": "Logical Consequences",
+        "phrase": "Dreikurs: Consequences Directly Connect to the Crime",
+        "items": [
+          "D - Dreikurs",
+          "L - Logical consequence",
+          "R - Related and respectful"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply classroom management models (PBIS, Assertive Discipline)",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Dreikurs' Four Mistaken Goals of Misbehavior",
+      "definition": "The four underlying psychological goals motivating student misbehavior: Attention-seeking, Power and control, Revenge, and Display of inadequacy (assumed disability).",
+      "rationalization": "Teachers identify the goal by examining their own emotional reaction: Feeling annoyed = Attention; Feeling challenged/angry = Power; Feeling hurt = Revenge; Feeling helpless = Inadequacy.",
+      "mnemonic": {
+        "title": "Four Mistaken Goals",
+        "phrase": "Attention, Power, Revenge, Inadequacy",
+        "items": [
+          "A - Attention (annoyed)",
+          "P - Power (threatened)",
+          "R - Revenge (hurt)",
+          "I - Inadequacy (hopeless)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Diagnose mistaken goals of student misbehavior",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Peer Tutoring",
+      "definition": "An instructional arrangement where students act as tutors and tutees to help one another learn content, reinforcing knowledge for both participants (Docendo discimus).",
+      "rationalization": "Cross-age or same-age tutoring builds social confidence; the tutor consolidates mastery while the tutee receives personalized pacing.",
+      "mnemonic": {
+        "title": "Peer Tutoring",
+        "phrase": "Teaching Peers Teaches Both",
+        "items": [
+          "P - Peer tutor",
+          "T - Two-way mastery",
+          "D - Docendo discimus (by teaching we learn)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Implement peer-mediated instructional strategies",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Station Rotation Model",
+      "definition": "A blended classroom rotation model where students rotate on a set schedule through different learning stations, including at least one online learning station, one teacher-led small group station, and one collaborative station.",
+      "rationalization": "Allows the teacher to conduct high-impact small group differentiated instruction while remaining students work independently or in pairs.",
+      "mnemonic": {
+        "title": "Station Rotation",
+        "phrase": "Rotating Round Relevant Learning Stations",
+        "items": [
+          "S - Station rotation",
+          "T - Teacher-led station",
+          "O - Online station",
+          "C - Collaborative station"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply modern blended and flipped teaching models",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Classroom Climate: Warmth vs Demandingness",
+      "definition": "The optimal authoritative classroom climate characterized by high warmth (care, empathy, emotional support) combined with high demandingness (high academic and behavioral expectations).",
+      "rationalization": "Baumrind's authoritative style promotes high achievement and self-efficacy; indulgent (warm but low demands) or authoritarian (cold and harsh) styles harm growth.",
+      "mnemonic": {
+        "title": "Classroom Climate",
+        "phrase": "High Warmth, High Expectations",
+        "items": [
+          "A - Authoritative teacher",
+          "W - Warm emotional support",
+          "E - High expectations"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Establish positive, supportive classroom learning environments",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Metacognitive Modeling (Think-Aloud Protocol)",
+      "definition": "A teaching technique where the teacher verbalizes their internal problem-solving and thinking processes aloud while tackling a difficult text, problem, or decision.",
+      "rationalization": "Demystifies how expert minds think, enabling novices to observe internal strategies like monitoring, pausing, re-reading, and self-correcting.",
+      "mnemonic": {
+        "title": "Think-Aloud Protocol",
+        "phrase": "Speaking Thoughts Aloud to Show the Brain at Work",
+        "items": [
+          "T - Think-aloud",
+          "M - Metacognitive modeling",
+          "E - Expert thought made visible"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Model metacognitive and self-regulation strategies",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Nonverbal Classroom Management",
+      "definition": "Managing student attention and minor off-task behaviors using eye contact, physical proximity, subtle hand gestures, pausing, and facial expressions without interrupting verbal instruction.",
+      "rationalization": "Preserves lesson momentum, avoids public confrontation, and saves vocal energy.",
+      "mnemonic": {
+        "title": "Nonverbal Cues",
+        "phrase": "Proximity and Pacing Over Protesting",
+        "items": [
+          "P - Physical proximity",
+          "E - Eye contact",
+          "G - Gentle gestures",
+          "P - Pauses"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Teaching Strategies Reviewer",
+      "tosCompetency": "Apply nonverbal classroom management interventions",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    }
+  ]
+}

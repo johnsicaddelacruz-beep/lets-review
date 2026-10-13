@@ -1,0 +1,531 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+function writeDataset(filePath, category, topic, subtopic, items) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  const dataset = {
+    category,
+    topic,
+    subtopic,
+    difficulty: 'medium',
+    items
+  };
+  fs.writeFileSync(filePath, JSON.stringify(dataset, null, 2), 'utf8');
+  console.log(`Generated ${filePath} with ${items.length} items`);
+}
+
+// 6. The Teacher and the Community, School Culture and Organizational Leadership (50 items)
+const profed6Items = [
+  {
+    term: "Republic Act No. 9155 (Governance of Basic Education Act of 2001)",
+    definition: "The landmark Philippine law that decentralized educational management, instituting the principle of shared governance and empowering school heads with authority, accountability, and responsibility.",
+    rationalization: "Renamed the Department of Education, Culture and Sports (DECS) to the Department of Education (DepEd), transferring cultural agencies to NCCA and sports to the PSC.",
+    mnemonic: { title: "RA 9155 Decentralization", phrase: "9155 = School-Based Governance and Empowerment", items: ["9155 - Governance Act", "DECS renamed to DepEd", "School-Based Management mandate"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze RA 9155 and school decentralization governance",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Principle of Shared Governance (RA 9155)",
+    definition: "The administrative principle where every unit in the educational hierarchy (central, regional, division, school) has a particular role, task, and responsibility, but decisions are made collaboratively.",
+    rationalization: "Recognizes the school as the heart of the formal education system; higher administrative offices exist primarily to support, mentor, and resource school-level learning.",
+    mnemonic: { title: "Shared Governance", phrase: "School at the Center, Supported by All Levels", items: ["School is the core", "Collaborative responsibility", "Field offices support the school"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze RA 9155 and school decentralization governance",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "School-Based Management (SBM)",
+    definition: "A decentralized strategy that transfers the decision-making authority over budget, personnel, and curriculum from central and division offices directly to the individual school community.",
+    rationalization: "Empowers the school principal, teachers, parents, students, and community members to identify local needs and design localized solutions via the School Improvement Plan (SIP).",
+    mnemonic: { title: "SBM Essence", phrase: "Decisions Made by Those Closest to the Classroom", items: ["S - School", "B - Based", "M - Management (Local autonomy)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Evaluate School-Based Management (SBM) levels and implementation",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Levels of SBM Practice (DepEd Guidelines)",
+    definition: "The three progressive maturity levels of School-Based Management: Level I (Developing - basic structures initiated); Level II (Maturing - collaborative continuous improvement); Level III (Advanced - self-sustaining accredited excellence).",
+    rationalization: "Assessed across 4 principles: Leadership & Governance, Curriculum & Learning, Accountability & Continuous Improvement, and Management of Resources.",
+    mnemonic: { title: "3 SBM Levels", phrase: "Level 1 Developing, Level 2 Maturing, Level 3 Advanced", items: ["Level I: Developing", "Level II: Maturing", "Level III: Advanced / Accredited"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Evaluate School-Based Management (SBM) levels and implementation",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Edgar Schein's Three Levels of Organizational Culture",
+    definition: "The organizational framework dividing school culture into three layers: 1. Artifacts (visible symbols, ceremonies, dress code); 2. Espoused Values (stated mission, vision, slogans); 3. Basic Underlying Assumptions (deep unconscious beliefs and worldviews).",
+    rationalization: "True cultural reform requires changing basic underlying assumptions; simply painting new school mottos (espoused values) leaves deep school culture unchanged.",
+    mnemonic: { title: "Schein's 3 Layers", phrase: "Artifacts (Surface), Espoused Values (Motto), Assumptions (Core)", items: ["1. Artifacts: Visible symbols", "2. Espoused Values: Written mission", "3. Basic Assumptions: Unconscious beliefs"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze organizational school culture and climate frameworks",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "School Culture vs School Climate",
+    definition: "School Culture refers to the deep, historical values, traditions, unwritten rules, and assumptions developed over decades; School Climate refers to the current psychological feeling, morale, safety, and immediate atmosphere of the school ('the weather').",
+    rationalization: "School climate can change quickly with a new charismatic principal; school culture is deeply entrenched and takes years of persistent collaborative effort to shift.",
+    mnemonic: { title: "Culture vs Climate", phrase: "Culture is the Climate Over Decades; Climate is the Current Weather", items: ["Culture: Deep historical personality", "Climate: Current mood and feeling"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze organizational school culture and climate frameworks",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Transformational Leadership (Bass and Burns)",
+    definition: "A leadership theory where leaders inspire, motivate, and intellectually stimulate followers to transcend self-interest and work collaboratively toward a visionary, transcendent organizational goal.",
+    rationalization: "Characterized by the 4 Is: Idealized Influence (role modeling), Inspirational Motivation (vision), Intellectual Stimulation (challenging assumptions), and Individualized Consideration (coaching).",
+    mnemonic: { title: "Transformational 4 Is", phrase: "Influence, Inspiration, Intellectual stimulation, Individualized coaching", items: ["1. Idealized Influence", "2. Inspirational Motivation", "3. Intellectual Stimulation", "4. Individualized Consideration"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Servant Leadership (Robert Greenleaf)",
+    definition: "A leadership philosophy asserting that the primary duty of an educational leader is to serve others (teachers, students, parents) first, prioritizing their growth and well-being over personal power.",
+    rationalization: "Characteristics include active listening, empathy, healing, self-awareness, persuasion rather than coercion, stewardship, and building authentic community.",
+    mnemonic: { title: "Servant Leader", phrase: "Leader as Servant First, Boss Second", items: ["S - Servant leader", "E - Empathy & active listening", "S - Stewardship of school community"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Instructional Leadership",
+    definition: "A school leadership approach focused primarily on the core business of schooling: improving curriculum delivery, supervising classroom instruction, mentoring teachers, and analyzing student achievement data.",
+    rationalization: "The school head spends significant time in classrooms observing instruction and providing clinical supervision rather than remaining trapped behind an office desk doing administrative paperwork.",
+    mnemonic: { title: "Instructional Leader", phrase: "Focused on Curriculum, Teaching Quality, and Student Learning", items: ["I - Instructional supervision", "C - Curriculum coaching", "D - Data-driven achievement"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Distributed (Shared) Leadership",
+    definition: "A leadership model that views leadership not as the monopoly of a single heroic principal, but as a collective activity distributed across teachers, department chairs, and staff throughout the school.",
+    rationalization: "Fosters teacher leadership and professional agency; recognizes that teachers possess specialized pedagogical expertise that enriches school decision-making.",
+    mnemonic: { title: "Distributed Leadership", phrase: "Leadership is Stretched Over Many People", items: ["D - Distributed", "T - Teacher leadership empowered", "C - Collective intelligence"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Situational Leadership Model (Hersey and Blanchard)",
+    definition: "A leadership framework stating that effective leadership depends on matching the leader's style (Telling, Selling, Participating, Delegating) to the maturity and competence level of the followers.",
+    rationalization: "Directing/Telling is used for new, inexperienced teachers; Delegating is used for highly competent, confident master teachers.",
+    mnemonic: { title: "Situational 4 Styles", phrase: "T-S-P-D: Telling, Selling, Participating, Delegating", items: ["T - Telling (Low competence, high enthusiasm)", "S - Selling (Some competence, low confidence)", "P - Participating (High competence, low confidence)", "D - Delegating (High competence, high commitment)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Brigada Eskwela (National Schools Maintenance Week)",
+    definition: "DepEd's nationwide community-based initiative mobilizing teachers, parents, students, local government units, alumni, and private partners to repair, clean, and prepare public schools before classes open.",
+    rationalization: "The modern embodiment of the traditional Filipino 'Bayanihan' spirit; demonstrates that public education is a collective community responsibility, not the government's burden alone.",
+    mnemonic: { title: "Brigada Eskwela", phrase: "Bayanihan in Action: Community Cleans the School", items: ["B - Brigada Eskwela", "B - Bayanihan spirit", "C - Community volunteer maintenance"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Design school-community partnership programs (Brigada Eskwela, Adopt-a-School)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Adopt-a-School Act of 1998 (RA 8525)",
+    definition: "The Philippine law encouraging private sector entities, business corporations, and alumni to assist public schools in remote and disadvantaged areas by offering a 150% tax incentive deduction.",
+    rationalization: "Enables private companies to donate classrooms, science laboratories, computer packages, and teacher trainings in exchange for tax credits.",
+    mnemonic: { title: "RA 8525 Adopt-a-School", phrase: "8525 = 150% Tax Deduction for Private School Donors", items: ["8525 - Adopt-a-School Act", "150% - Tax incentive deduction", "P - Private sector partnership"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Design school-community partnership programs (Brigada Eskwela, Adopt-a-School)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Parent-Teacher Association (PTA / DepEd Order No. 54 s. 2009)",
+    definition: "The recognized school-level organization of parents, guardians, and teachers formed to foster harmonious relations, finance school improvements, and safeguard student welfare.",
+    rationalization: "Strict rules: Membership contributions must be voluntary and approved by majority vote; collection of fees is strictly prohibited during enrollment or exam periods.",
+    mnemonic: { title: "PTA Guidelines", phrase: "Voluntary Support, No Coercive Fees During Enrollment", items: ["Parent-Teacher Association", "Voluntary approved dues", "No collection during enrollment"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply DepEd policies on PTAs and School Governing Councils",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "School Governing Council (SGC)",
+    definition: "The apex policy-making and advisory body at the school level composed of the principal, teachers, parents, students, LGU officials, and community leaders ensuring transparent accountability.",
+    rationalization: "Provides broad community oversight, assists in formulating the School Improvement Plan (SIP), and ensures school programs reflect local cultural and economic needs.",
+    mnemonic: { title: "SGC Policy Body", phrase: "Community Stakeholder Board for School Governance", items: ["S - School", "G - Governing", "C - Council (Multi-stakeholder board)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply DepEd policies on PTAs and School Governing Councils",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "School Improvement Plan (SIP)",
+    definition: "A roadmap that lays out the school's three-year strategic goals, priorities, interventions, and financial plans to improve student learning outcomes and school environment.",
+    rationalization: "Developed participatory-style by the School-Community Planning Team (SPT) using data from the School Report Card (SRC) and Child-Friendly School System (CFSS).",
+    mnemonic: { title: "SIP Roadmap", phrase: "Three-Year Strategic Roadmap for School Excellence", items: ["S - School", "I - Improvement", "P - Plan (3-year strategic cycle)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze the School Improvement Plan (SIP) and Continuous Improvement (CI)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Annual Implementation Plan (AIP)",
+    definition: "The yearly operational blueprint derived directly from the three-year School Improvement Plan (SIP), outlining specific annual projects, activities, budget allocations, and performance indicators.",
+    rationalization: "Breaks down long-term 3-year objectives into manageable, measurable 12-month action steps funded by the school's Maintenance and Other Operating Expenses (MOOE).",
+    mnemonic: { title: "AIP Operational", phrase: "One-Year Action Plan Derived from the SIP", items: ["A - Annual", "I - Implementation", "P - Plan (1-year budget & timeline)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze the School Improvement Plan (SIP) and Continuous Improvement (CI)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Learning Action Cell (LAC / DepEd Order No. 35 s. 2016)",
+    definition: "A school-based professional learning community (PLC) where teachers meet regularly in small collaborative groups to engage in reflective dialogue, solve curriculum challenges, and improve teaching practice.",
+    rationalization: "The primary school-based continuing professional development strategy in DepEd, utilizing peer mentoring, lesson study, and action research to elevate student learning.",
+    mnemonic: { title: "LAC Sessions", phrase: "DO 35 s. 2016: Teachers Learning Together Every Month", items: ["L - Learning", "A - Action", "C - Cell (School-based teacher community)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Implement Learning Action Cell (LAC) sessions and Professional Learning Communities",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Thomas-Kilmann Conflict Mode Instrument: 5 Styles",
+    definition: "A conflict resolution model based on two dimensions (Assertiveness and Cooperativeness) identifying five conflict styles: Competing, Collaborating, Compromising, Avoiding, and Accommodating.",
+    rationalization: "Collaborating is the ideal win-win style (high assertiveness, high cooperativeness); Compromising finds a middle ground; Avoiding is appropriate when tensions are dangerously high and cooling down is needed.",
+    mnemonic: { title: "5 Conflict Styles", phrase: "Compete (Win-Lose), Collaborate (Win-Win), Compromise (Split), Avoid, Accommodate", items: ["Competing: High assert, low coop", "Collaborating: High assert, high coop (Win-Win)", "Compromising: Mid ground", "Avoiding: Low assert, low coop", "Accommodating: Low assert, high coop"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply conflict resolution strategies and collaborative decision-making",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Collaborating Conflict Style (Win-Win)",
+    definition: "The conflict management approach where both parties work together assertively and cooperatively to find a creative, integrative solution that fully satisfies the concerns of both sides.",
+    rationalization: "Best used when long-term relationships and mutual buy-in are vital (e.g., resolving curriculum disagreements between teachers and parents).",
+    mnemonic: { title: "Collaborating Style", phrase: "Win-Win: Both Sides Truly Satisfied", items: ["C - Collaborating", "W - Win-win solution", "H - High assertiveness & high cooperativeness"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply conflict resolution strategies and collaborative decision-making",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Compromising Conflict Style",
+    definition: "The conflict management approach where both parties give up something to find an expedient, mutually acceptable middle ground that partially satisfies both.",
+    rationalization: "Appropriate when time is scarce and a temporary, practical truce is needed, though neither party achieves complete satisfaction.",
+    mnemonic: { title: "Compromising Style", phrase: "Split the Difference: Both Give a Little", items: ["C - Compromising", "M - Middle ground", "S - Split the difference"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply conflict resolution strategies and collaborative decision-making",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Toxic School Culture vs Collegial School Culture",
+    definition: "A toxic school culture is plagued by gossip, cynicism, resistance to change, isolation, and fragmentation; A collegial culture fosters professional collaboration, high expectations, transparent trust, and celebration of teacher success.",
+    rationalization: "Educational leaders dismantle toxic cultures by establishing psychological safety, modeling ethical integrity, and recognizing positive peer innovations.",
+    mnemonic: { title: "School Culture Contrast", phrase: "Toxic Divides and Blames; Collegial Unites and Builds", items: ["Toxic: Cynicism, backbiting, fear", "Collegial: Shared vision, trust, celebration"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze organizational school culture and climate frameworks",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "School-Community Interdependence",
+    definition: "The sociological principle recognizing that the school and the community are symbiotic partners: the community provides cultural heritage, resources, and students, while the school supplies educated citizens and civic leadership.",
+    rationalization: "Schools that isolate themselves behind high walls fail; community-engaged schools utilize local farms, workshops, and elders as rich living textbooks.",
+    mnemonic: { title: "Symbiotic Partnership", phrase: "It Takes a Whole Village to Educate a Child", items: ["S - School needs community", "C - Community needs school", "I - Interdependent partnership"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Design school-community partnership programs (Brigada Eskwela, Adopt-a-School)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Maintenance and Other Operating Expenses (MOOE)",
+    definition: "The public school operational budget allocated by the national government to fund daily utilities, learning materials, office supplies, building maintenance, and minor school repairs.",
+    rationalization: "Liquidation of MOOE must be displayed publicly on the school's Transparency Board to uphold good governance and accountability under RA 9155.",
+    mnemonic: { title: "School MOOE", phrase: "MOOE = Public Operational Budget on Transparency Board", items: ["M - Maintenance", "O - Other Operating", "E - Expenses (Transparency mandated)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze RA 9155 and school decentralization governance",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Transparency Board in Public Schools",
+    definition: "A prominent bulletin board located at the school entrance displaying the school's budget allocations, MOOE disbursements, PTA financial reports, and academic performance indicators.",
+    rationalization: "Enforces anti-corruption standards and strengthens community trust by keeping fiscal management open to public scrutiny.",
+    mnemonic: { title: "Transparency Board", phrase: "Public Financial Receipts Build Community Trust", items: ["T - Transparency board", "F - Financial accounting displayed", "A - Anti-corruption mechanism"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze RA 9155 and school decentralization governance",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "School Report Card (SRC)",
+    definition: "A public accountability and communication tool produced annually by the school head to inform parents, community partners, and stakeholders of the school's academic achievements, dropout rates, and resource gaps.",
+    rationalization: "Presents vital data (National Achievement Test scores, retention rates, enrollment trends) in simple visual infographics to guide community-driven interventions.",
+    mnemonic: { title: "School Report Card", phrase: "The School's Annual Performance Showcase", items: ["S - School", "R - Report", "C - Card (NAT scores & completion data)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Evaluate School-Based Management (SBM) levels and implementation",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Continuous Improvement (CI) Program in DepEd",
+    definition: "A structured methodology utilizing the DMAIC (Define, Measure, Analyze, Improve, Control) problem-solving approach to continually eliminate waste and improve school delivery processes.",
+    rationalization: "Focuses on school-level pain points (e.g., reducing non-readers in Grade 3, speeding up enrollment queuing, reducing tardiness) through evidence-based cycles.",
+    mnemonic: { title: "CI Program DMAIC", phrase: "Define, Measure, Analyze, Improve, Control", items: ["D - Define", "M - Measure", "A - Analyze", "I - Improve", "C - Control"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze the School Improvement Plan (SIP) and Continuous Improvement (CI)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Transactional Leadership in Education",
+    definition: "A managerial leadership approach based on an exchange of rewards or sanctions for employee compliance, focusing on maintaining existing routines, rules, and contractual obligations.",
+    rationalization: "Uses Contingent Reward (bonus for meeting target) and Management by Exception (intervening only when things go wrong); good for administrative order, but fails to inspire vision.",
+    mnemonic: { title: "Transactional Model", phrase: "Rewards for Compliance, Penalties for Errors", items: ["T - Transactional", "C - Contingent rewards", "M - Maintains status quo routines"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Laissez-Faire Leadership in Schools",
+    definition: "A passive, hands-off leadership style where the school head abdicates decision-making authority, leaving staff without clear guidance, feedback, or supervision.",
+    rationalization: "Often results in organizational drift, confusion, low teacher accountability, and school climate deterioration.",
+    mnemonic: { title: "Laissez-Faire Style", phrase: "Hands-Off, Total Abdication of Direction", items: ["L - Laissez-faire", "P - Passive leadership", "A - Absence of feedback & guidance"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Authoritarian (Autocratic) School Leadership",
+    definition: "A directive leadership style where the school head makes all decisions unilaterally without consulting teachers or staff, demanding unquestioning obedience.",
+    rationalization: "Effective during immediate crisis management, but crushes teacher morale, squashes innovation, and breeds resentful compliance.",
+    mnemonic: { title: "Autocratic Leader", phrase: "One-Way Top-Down Command", items: ["A - Autocratic", "C - Command and control", "Z - Zero teacher consultation"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Democratic (Participative) School Leadership",
+    definition: "A leadership style where the school head encourages staff, parents, and teachers to participate actively in decision-making and policy formation.",
+    rationalization: "Builds high organizational commitment and team consensus, though decision-making can be slower due to collaborative consultation.",
+    mnemonic: { title: "Democratic Leader", phrase: "Shared Voices, Consensus Decision-Making", items: ["D - Democratic", "P - Participative consultation", "C - Consensus and buy-in"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Psychological Safety in Schools (Amy Edmondson)",
+    definition: "A shared belief that the school team is safe for interpersonal risk-taking, where teachers feel secure speaking up, asking for help, proposing new ideas, and admitting mistakes without fear of ridicule or retaliation.",
+    rationalization: "Harvard research proves psychological safety is the single most critical factor distinguishing high-performing teacher teams from mediocre ones.",
+    mnemonic: { title: "Psychological Safety", phrase: "Safe to Admit Mistakes and Propose Ideas", items: ["P - Psychological safety", "R - Risk-taking encouraged", "N - No humiliation for failure"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze organizational school culture and climate frameworks",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Teacher Induction Program (TIP / DO 43 s. 2017)",
+    definition: "DepEd's comprehensive institutionalized transition program providing structured orientation, mentorship, and pedagogical support to newly hired teachers during their first three years.",
+    rationalization: "Reduces early teacher attrition and burn-out, assisting Beginning Teachers to master DepEd systems and PPST proficiencies.",
+    mnemonic: { title: "TIP Program", phrase: "Three-Year Mentorship for New Teachers", items: ["T - Teacher", "I - Induction", "P - Program (Mentors support new hires)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Implement Learning Action Cell (LAC) sessions and Professional Learning Communities",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Clinical Supervision in Education (Goldhammer and Cogan)",
+    definition: "A collegial, non-evaluative supervisory process focused on improving classroom instruction through a 5-step cycle: Pre-observation conference, Observation, Analysis, Post-observation conference, and Post-conference analysis.",
+    rationalization: "Replaces intimidating inspection visits; the supervisor and teacher collaborate as professional partners to analyze objective teaching evidence.",
+    mnemonic: { title: "Clinical Supervision", phrase: "Pre-Conference, Observation, Post-Conference Dialogue", items: ["1. Pre-observation conference", "2. Classroom observation", "3. Analysis & strategy", "4. Post-observation conference", "5. Reflection"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply instructional supervision models and clinical observation",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Grievance Machinery in DepEd",
+    definition: "The formal administrative procedure established to resolve employee complaints and labor dissatisfaction at the lowest possible level before escalating to legal tribunals.",
+    rationalization: "Ensures harmonious labor relations; grievances begin with the immediate supervisor and move through school, division, and regional grievance committees.",
+    mnemonic: { title: "Grievance Procedure", phrase: "Resolve Disagreements at the Lowest Level First", items: ["G - Grievance machinery", "L - Lowest administrative level", "H - Harmonious dispute settlement"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply conflict resolution strategies and collaborative decision-making",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Stakeholder Engagement in School Governance",
+    definition: "The systematic process of identifying, consulting, and involving internal stakeholders (teachers, students) and external stakeholders (alumni, LGU, NGOs, business donors) in school policy development.",
+    rationalization: "Broad stakeholder buy-in ensures that educational programs survive changes in local political administrations and remain community-rooted.",
+    mnemonic: { title: "Stakeholder Buy-In", phrase: "Involve the Whole Community for Enduring Success", items: ["S - Stakeholder mapping", "C - Consultation", "S - Sustainable community buy-in"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Design school-community partnership programs (Brigada Eskwela, Adopt-a-School)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Local School Board (LSB / Local Government Code RA 7160)",
+    definition: "The provincial, city, or municipal body co-chaired by the Local Chief Executive (Governor/Mayor) and the Division Superintendent/District Supervisor, managing the Special Education Fund (SEF).",
+    rationalization: "Determines how the SEF tax collections are spent on constructing local school buildings, purchasing textbooks, and hiring supplementary volunteer teachers.",
+    mnemonic: { title: "Local School Board", phrase: "Mayor and Superintendent Direct the SEF Fund", items: ["L - Local School Board", "M - Mayor & Superintendent co-chairs", "S - Special Education Fund (SEF)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze RA 9155 and school decentralization governance",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Special Education Fund (SEF)",
+    definition: "A dedicated local tax fund generated from an additional 1% tax on real property collected by local government units, exclusively designated for public education financing.",
+    rationalization: "Funds the construction of classrooms, sports facilities, teacher training allowances, and emergency educational equipment under the direction of the Local School Board.",
+    mnemonic: { title: "SEF Real Property Tax", phrase: "1% Real Estate Tax for Local Schools", items: ["S - Special Education Fund", "1% - Real property tax levy", "L - Local School Board managed"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze RA 9155 and school decentralization governance",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Emotional Intelligence in School Leadership",
+    definition: "The capacity of a school head to perceive, regulate, and express emotions accurately and empathetically when managing teacher faculty and stressful community crises.",
+    rationalization: "Leaders with high EQ build trusting organizational climates, de-escalate faculty conflicts gracefully, and shield staff from burn-out.",
+    mnemonic: { title: "EQ Leadership", phrase: "Empathy and Self-Regulation Before Authority", items: ["E - Emotional awareness", "E - Empathic faculty support", "C - Calm crisis navigation"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Compare educational leadership styles and administrative models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Change Management: Kurt Lewin's Three-Step Model",
+    definition: "A foundational change framework for school organizational transitions: 1. Unfreezing (breaking comfortable status quo habits); 2. Changing/Transition (adopting new behaviors/curricula); 3. Refreezing (institutionalizing new practices into school culture).",
+    rationalization: "Educational leaders who skip 'unfreezing' face fierce faculty resistance because teachers do not understand why change is necessary.",
+    mnemonic: { title: "Lewin's 3 Steps", phrase: "Unfreeze, Change, Refreeze", items: ["1. Unfreeze (Create urgency)", "2. Change (Implement new methods)", "3. Refreeze (Cement new culture)"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze organizational school culture and climate frameworks",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Community Cultural Wealth (Tara Yosso)",
+    definition: "A critical race framework highlighting the rich array of knowledge, skills, abilities, and contacts possessed by marginalized and indigenous communities: Aspirational, Linguistic, Familial, Social, Navigational, and Resistant capital.",
+    rationalization: "Challenges deficit thinking; teachers view poor or indigenous students as entering school rich with ancestral resilience, bilingual agility, and community wisdom.",
+    mnemonic: { title: "Yosso's Cultural Wealth", phrase: "Deficit Thinking Eradicated: Culture is Capital", items: ["A - Aspirational capital", "L - Linguistic versatility", "F - Familial & social networks"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Design school-community partnership programs (Brigada Eskwela, Adopt-a-School)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Child-Friendly School System (CFSS)",
+    definition: "A joint DepEd and UNICEF initiative setting standards for schools to be inclusive, gender-sensitive, child-centered, healthy, protective of children, and actively engaging of families.",
+    rationalization: "Focuses on the rights and holistic well-being of the whole child, evaluating sanitation, nutrition, clean water, and emotional safety alongside exam scores.",
+    mnemonic: { title: "Child-Friendly School", phrase: "Safe, Healthy, Inclusive, Child-Centered", items: ["C - Child-friendly", "H - Healthy & safe physical grounds", "P - Protective against harm"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply child protection policies and school child rights protocols",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Disaster Risk Reduction and Management (DRRM in Schools / RA 10121)",
+    definition: "The institutional protocol in Philippine schools establishing safety drills, disaster evacuation maps, student emergency kits, and School DRRM Teams to prepare for earthquakes, typhoons, and fires.",
+    rationalization: "The Philippines' location in the typhoon belt and Pacific Ring of Fire requires mandatory quarterly nationwide earthquake drills in every public school.",
+    mnemonic: { title: "School DRRM", phrase: "Duck, Cover, Hold: Disaster Preparedness for All", items: ["D - Disaster Risk Reduction", "E - Earthquake & typhoon drills", "S - School safety team"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Implement school safety, emergency, and DRRM protocols",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Parent Engagement vs Parent Involvement",
+    definition: "Parent involvement is passive participation where parents simply attend meetings when summoned or donate money; Parent engagement is active, collaborative partnership where parents co-design student learning goals with teachers.",
+    rationalization: "Parent engagement creates shared ownership of educational success, resulting in significantly higher student attendance and achievement.",
+    mnemonic: { title: "Engagement vs Involvement", phrase: "Involvement is Doing To; Engagement is Doing With", items: ["Involvement: Passive attendance", "Engagement: Active co-designing partner"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Design school-community partnership programs (Brigada Eskwela, Adopt-a-School)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Mentorship in Professional Learning Communities",
+    definition: "A structured, ongoing professional relationship where experienced master teachers coach, advise, and nurture beginning teachers in pedagogy, classroom management, and ethics.",
+    rationalization: "Fosters collegiality and instructional consistency across grade levels, turning isolated teaching silos into vibrant learning ecosystems.",
+    mnemonic: { title: "Teacher Mentorship", phrase: "Master Teachers Nurturing Novices", items: ["M - Mentorship", "C - Coaching and feedback", "P - Peer support ecosystem"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Implement Learning Action Cell (LAC) sessions and Professional Learning Communities",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Ethical Stewardship of School Resources",
+    definition: "The professional obligation of educational leaders and teachers to administer public school funds, physical facilities, and donations with absolute honesty, transparency, and frugality.",
+    rationalization: "Upholds the Code of Conduct and Ethical Standards for Public Officials (RA 6713); strictly bans misappropriation of school property for personal gain.",
+    mnemonic: { title: "Ethical Stewardship", phrase: "Public Funds Dedicated Exclusively to Student Learning", items: ["E - Ethical stewardship", "T - Transparent accounts", "A - Anti-corruption fidelity"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "School Vision and Mission Statements",
+    definition: "A school's Vision describes its inspiring future aspiration (what it dreams to achieve), while its Mission defines its core daily purpose, primary beneficiaries, and operational commitments.",
+    rationalization: "Aligns all teachers and staff toward common organizational goals, guiding instructional priorities and school improvement plans.",
+    mnemonic: { title: "Vision vs Mission", phrase: "Vision is the Future Dream; Mission is the Daily Work", items: ["Vision: Where we want to be", "Mission: What we do every single day"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze organizational school culture and climate frameworks",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Peer Coaching (Show and Tell)",
+    definition: "A collaborative professional development strategy where two colleagues observe each other's classes, discuss pedagogical strategies, and provide non-judgmental reflective feedback.",
+    rationalization: "Fosters horizontal peer accountability without administrative grading pressure, encouraging teachers to experiment with innovative teaching techniques.",
+    mnemonic: { title: "Peer Coaching", phrase: "Teachers Observing Teachers for Mutual Growth", items: ["P - Peer coaching", "N - Non-evaluative feedback", "M - Mutual pedagogical growth"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Implement Learning Action Cell (LAC) sessions and Professional Learning Communities",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Community Asset Mapping",
+    definition: "An assessment process where schools identify the collective resources, talents, businesses, cultural elders, and institutions available within the local community that can enrich student learning.",
+    rationalization: "Replaces deficit perspectives with an appreciative inquiry approach; turns barangay carpenters, clinics, and artists into experiential classroom partners.",
+    mnemonic: { title: "Asset Mapping", phrase: "Cataloging Community Strengths for Education", items: ["A - Asset mapping", "C - Community talent inventory", "E - Experiential learning assets"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Design school-community partnership programs (Brigada Eskwela, Adopt-a-School)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Teacher Accountability in Student Learning",
+    definition: "The ethical and administrative principle that professional educators share responsibility for student academic growth, continuously reflecting on assessment data to refine their instructional practice.",
+    rationalization: "Rejects blaming student socioeconomic background for low scores; effective teachers proactively differentiate instruction to ensure every learner achieves mastery.",
+    mnemonic: { title: "Teacher Accountability", phrase: "Taking Ownership of Every Child's Academic Growth", items: ["T - Teacher accountability", "D - Data-driven instructional adjustments", "R - Rejecting deficit excuses"] },
+    source: "PRC BLEPT ProfEd Leadership Reviewer",
+    tosCompetency: "Analyze RA 9155 and school decentralization governance",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  }
+];
+
+// Write The Teacher and the Community, School Culture and Organizational Leadership
+writeDataset(
+  'data/profed/teacher_community_leadership/teacher_community_leadership.json',
+  'Professional Education',
+  'The Teacher and the Community, School Culture and Organizational Leadership',
+  'RA 9155, School-Based Management, Leadership Models, & School Culture',
+  profed6Items
+);

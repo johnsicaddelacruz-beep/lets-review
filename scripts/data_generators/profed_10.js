@@ -1,0 +1,531 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+function writeDataset(filePath, category, topic, subtopic, items) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  const dataset = {
+    category,
+    topic,
+    subtopic,
+    difficulty: 'medium',
+    items
+  };
+  fs.writeFileSync(filePath, JSON.stringify(dataset, null, 2), 'utf8');
+  console.log(`Generated ${filePath} with ${items.length} items`);
+}
+
+// 10. Assessment of Learning (50 items)
+const profed10Items = [
+  {
+    term: "Assessment FOR Learning (Formative Assessment)",
+    definition: "Assessment conducted during the instructional process to monitor learner progress, diagnose learning gaps, and provide immediate descriptive feedback to adjust teaching and learning.",
+    rationalization: "Formative assessment is not graded; its primary objective is to inform instruction and improve student learning before summative grading.",
+    mnemonic: { title: "Assessment FOR Learning", phrase: "FOR Feeding Progress and Informing Practice", items: ["FOR - Formative", "D - During instruction", "U - Ungraded feedback"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Distinguish Assessment FOR, OF, and AS Learning",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Assessment OF Learning (Summative Assessment)",
+    definition: "Assessment administered at the conclusion of an instructional unit, term, or semester to certify mastery, determine grades, evaluate program efficacy, and report achievement.",
+    rationalization: "Summative assessment is evaluative and graded; examples include quarterly exams, final projects, standardized achievement tests, and Licensure Exams.",
+    mnemonic: { title: "Assessment OF Learning", phrase: "OF is the Official Final Score", items: ["OF - Summative", "E - End of unit", "G - Graded / evaluative"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Distinguish Assessment FOR, OF, and AS Learning",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Assessment AS Learning (Metacognitive Assessment)",
+    definition: "Assessment that engages students as active participants who monitor their own thinking, self-assess against clear criteria, set personal goals, and reflect on their learning journey.",
+    rationalization: "Develops metacognitive awareness and autonomous self-regulation through student self-assessment and peer reflection checklists.",
+    mnemonic: { title: "Assessment AS Learning", phrase: "AS = Autonomous Self-Monitoring", items: ["AS - Assessment AS learning", "S - Self-assessment", "M - Metacognition"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Distinguish Assessment FOR, OF, and AS Learning",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Diagnostic Assessment",
+    definition: "Pre-instructional assessment designed to identify students' specific strengths, recurring weaknesses, misconceptions, and learning deficits prior to teaching.",
+    rationalization: "Unlike general pre-tests, diagnostic tests pinpoint specific underlying conceptual errors (e.g., misapplying decimal placement in division).",
+    mnemonic: { title: "Diagnostic Assessment", phrase: "Diagnosing Defects Before Designing Direction", items: ["D - Diagnostic", "P - Pre-instruction", "D - Deficits & errors pinpointed"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Differentiate types of assessment according to purpose",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Placement Assessment",
+    definition: "Assessment administered at the start of an academic course or program to determine entry-level prerequisites and assign learners into appropriate tracks, levels, or classes.",
+    rationalization: "Examples include college entrance exams, language proficiency placement tests, or reading level readiness inventories.",
+    mnemonic: { title: "Placement Assessment", phrase: "Placing Pupils in Proper Positions", items: ["P - Placement", "E - Entry level prerequisite", "T - Track / section sorting"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Differentiate types of assessment according to purpose",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Authentic Assessment (Performance-Based)",
+    definition: "Assessment requiring learners to apply knowledge and skills to perform realistic, real-world, meaningful tasks (e.g., conducting an experiment, staging a debate, building a model, publishing a newsletter).",
+    rationalization: "Directly evaluates real competence in context, contrasting with indirect paper-and-pencil multiple-choice tests.",
+    mnemonic: { title: "Authentic Assessment", phrase: "Authentic Action in the Real World", items: ["A - Authentic", "R - Real-world tasks", "P - Performance demonstrations"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Design authentic and performance-based assessments",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Traditional Assessment",
+    definition: "Conventional assessment methods typically utilizing indirect paper-and-pencil standardized tests, multiple-choice items, true-or-false, and matching types.",
+    rationalization: "Highly efficient for testing large numbers of students on broad cognitive content, but limited in measuring practical psychomotor and real-world skills.",
+    mnemonic: { title: "Traditional Assessment", phrase: "Paper, Pencil, and Prompt Recall", items: ["T - Traditional", "P - Paper and pencil", "O - Objective items"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Compare traditional and authentic assessment modalities",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Content Validity",
+    definition: "The extent to which an assessment tool adequately and representatively samples the full domain of content, topics, and objectives intended to be measured.",
+    rationalization: "Guaranteed by constructing and strictly adhering to a well-balanced Table of Specifications (TOS).",
+    mnemonic: { title: "Content Validity", phrase: "TOS Guarantees Thorough Content", items: ["C - Content validity", "T - Table of Specifications", "R - Representative sampling"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Analyze types of validity in educational measurement",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Construct Validity",
+    definition: "The degree to which a test measures the hypothetical psychological construct, trait, or psychological theory it claims to measure (e.g., intelligence, creativity, critical thinking).",
+    rationalization: "Verified through factor analysis and convergent/discriminant validity testing with related theoretical constructs.",
+    mnemonic: { title: "Construct Validity", phrase: "Capturing the Core Psychological Construct", items: ["C - Construct validity", "T - Theoretical trait", "F - Factor analysis proof"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Analyze types of validity in educational measurement",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Criterion-Related Validity: Concurrent vs Predictive",
+    definition: "Criterion validity correlates test scores with an external criterion; Concurrent validity measures against a current established benchmark simultaneously; Predictive validity forecasts future performance.",
+    rationalization: "College entrance exam scores predicting first-year college GPA is predictive validity; correlating a new depression test with the Beck Depression Inventory is concurrent.",
+    mnemonic: { title: "Criterion Validity", phrase: "Concurrent is Current, Predictive is Promising Future", items: ["C - Concurrent = Current benchmark", "P - Predictive = Future performance forecast"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Analyze types of validity in educational measurement",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Reliability (Consistency of Measurement)",
+    definition: "The degree to which an assessment instrument yields consistent, dependable, and stable scores upon repeated administrations across time or equivalent test forms.",
+    rationalization: "A test can be reliable without being valid, but a test CANNOT be valid without being reliable. Reliability is a necessary prerequisite for validity.",
+    mnemonic: { title: "Reliability vs Validity", phrase: "Reliability is Consistency, Validity is Truth", items: ["R - Reliability = Consistency", "V - Validity = Accuracy/Truth", "R before V"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Explain reliability concepts and relationship to validity",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Methods of Estimating Reliability",
+    definition: "Test-Retest (stability over time), Equivalent Forms (equivalence across parallel sets), Split-Half with Spearman-Brown (internal consistency), Cronbach's Alpha (internal consistency of non-dichotomous items), and Inter-Rater (scorer consistency).",
+    rationalization: "Split-half halves the test into odd and even items, using Spearman-Brown prophecy formula to calculate full test reliability without retesting.",
+    mnemonic: { title: "Reliability Methods", phrase: "Retest, Parallel, Split-Half, Alpha, Scorer", items: ["T - Test-Retest (stability)", "P - Parallel/Equivalent", "S - Split-Half / Alpha (internal)", "I - Inter-rater"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Compute and interpret reliability coefficients",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Item Difficulty Index (p-value)",
+    definition: "The proportion of total test-takers who answered a test item correctly: p = R / N (where R = number of correct answers, N = total test takers).",
+    rationalization: "Ranges from 0.00 to 1.00; p < 0.20 is very difficult, 0.21 - 0.80 is desirable/moderate difficulty, and p > 0.80 is very easy.",
+    mnemonic: { title: "Difficulty Index", phrase: "High P Means Plentiful Passed (Easy)", items: ["p = R / N", "0.20-0.80 - Ideal moderate range", "High p = Easy, Low p = Difficult"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Calculate and interpret item difficulty and discrimination",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Item Discrimination Index (D)",
+    definition: "The ability of a test item to differentiate between high-achieving and low-achieving students: D = (RU - RL) / n (where RU = upper group correct, RL = lower group correct, n = group size).",
+    rationalization: "Ranges from -1.00 to +1.00; D >= 0.40 is very good; 0.30 - 0.39 reasonably good; 0.20 - 0.29 needs revision; D < 0.20 or negative indicates poor item to be discarded.",
+    mnemonic: { title: "Discrimination Index", phrase: "Positive D = Upper Beats Lower Group", items: ["D = (RU - RL) / n", "D > 0.30 - Retain item", "Negative D - Discard / Defective item"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Calculate and interpret item difficulty and discrimination",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Negative Discrimination Index",
+    definition: "A fatal item condition where more students from the lower-scoring group answered the item correctly than students from the upper-scoring group (RL > RU).",
+    rationalization: "Indicates a miskeyed answer, ambiguous wording, trick phrasing, or that high-achievers overthought the question. The item MUST BE DISCARDED or revised.",
+    mnemonic: { title: "Negative Discrimination", phrase: "Negative Means Discard Immediately", items: ["N - Negative index", "L - Lower beat upper", "D - Discard or re-key"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Calculate and interpret item difficulty and discrimination",
+    bloomsTaxonomy: "Evaluating",
+    highYield: true
+  },
+  {
+    term: "Distractor Analysis (Distractor Efficiency)",
+    definition: "Evaluating the effectiveness of incorrect alternatives in multiple-choice items: a good distractor must attract more students from the lower group than from the upper group and attract at least some students.",
+    rationalization: "If a distractor attracts zero students, it is non-functioning and must be replaced; if it attracts more upper students, it may be confusing or partially correct.",
+    mnemonic: { title: "Distractor Efficiency", phrase: "Distractors Divert the Lower Scorers", items: ["D - Distractor efficiency", "L - Lower group attracted", "Z - Zero choices = Non-functioning"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Evaluate distractor efficiency in item analysis",
+    bloomsTaxonomy: "Evaluating",
+    highYield: true
+  },
+  {
+    term: "Table of Specifications (TOS)",
+    definition: "A two-way blueprint chart mapping the distribution of test items across instructional content topics and cognitive taxonomy levels (Bloom's).",
+    rationalization: "Guarantees content validity, prevents teacher test-making bias, and aligns item points with instructional time spent on each competency.",
+    mnemonic: { title: "Table of Specifications", phrase: "TOS: True Outline for Testing Standards", items: ["T - Two-way matrix", "O - Objective alignment", "S - Sampling of curriculum"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Construct a Table of Specifications (TOS)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Revised Bloom's Taxonomy (Anderson & Krathwohl)",
+    definition: "The 2001 revision of Bloom's cognitive domain using verbs: Remembering (recall), Understanding (explain), Applying (use), Analyzing (break down), Evaluating (judge/justify), and Creating (produce/design).",
+    rationalization: "Replaced synthesis with creating at the pinnacle and transformed static nouns into active cognitive process verbs.",
+    mnemonic: { title: "Revised Bloom's", phrase: "Remember, Understand, Apply, Analyze, Evaluate, Create", items: ["1 - Remembering", "2 - Understanding", "3 - Applying", "4 - Analyzing", "5 - Evaluating", "6 - Creating"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Classify test items according to Anderson-Krathwohl taxonomy",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Affective Domain Taxonomy (Krathwohl)",
+    definition: "The 5-stage hierarchy of values and attitudes: Receiving (willingness to hear), Responding (active participation), Valuing (attaching worth), Organization (harmonizing values), and Characterization (value internalized into lifestyle).",
+    rationalization: "Measures emotional growth, social attitudes, and ethical commitment in education.",
+    mnemonic: { title: "Affective Hierarchy", phrase: "Receive, Respond, Value, Organize, Characterize", items: ["R - Receiving", "R - Responding", "V - Valuing", "O - Organization", "C - Characterization"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Formulate affective domain assessment criteria",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Psychomotor Domain Taxonomy (Simpson)",
+    definition: "The 7 levels of motor skill acquisition: Perception (sensory cues), Set (readiness), Guided Response (imitation/trial), Mechanism (habitual basic skill), Complex Overt Response (skilled fluid execution), Adaptation (modifying for context), and Origination (creating new movements).",
+    rationalization: "Essential framework for assessing physical education, technical-vocational skills, laboratory techniques, and artistic performance.",
+    mnemonic: { title: "Simpson's Psychomotor", phrase: "Perceive, Set, Guide, Mechanism, Complex, Adapt, Originate", items: ["P - Perception", "S - Set", "G - Guided response", "M - Mechanism", "C - Complex response", "A - Adaptation", "O - Origination"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Formulate psychomotor domain assessment criteria",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Analytic Rubric",
+    definition: "A scoring guide that evaluates student work across multiple distinct, independent criteria or dimensions, assigning separate scores to each criterion.",
+    rationalization: "Provides granular, diagnostic descriptive feedback, showing learners exactly where they excelled and where they need improvement; takes longer to score than holistic rubrics.",
+    mnemonic: { title: "Analytic Rubric", phrase: "Analyzing Each Attribute Separately", items: ["A - Analytic rubric", "S - Separate criteria scores", "D - Detailed diagnostic feedback"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Construct and apply analytic and holistic rubrics",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Holistic Rubric",
+    definition: "A scoring guide that assesses the overall, integrated impression of a student product or performance as a whole, providing a single aggregate score.",
+    rationalization: "Fast and efficient for large-scale grading and exit evaluations, but provides limited specific feedback on individual weaknesses.",
+    mnemonic: { title: "Holistic Rubric", phrase: "Holistic Gives One Whole Grade", items: ["H - Holistic rubric", "O - One aggregate score", "W - Whole product viewed"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Construct and apply analytic and holistic rubrics",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Portfolio Assessment",
+    definition: "A purposeful, systematic collection of student work over time that exhibits the student's efforts, progress, achievements, and self-reflections in one or more areas.",
+    rationalization: "Includes showcase portfolios (best work), developmental/growth portfolios (working drafts over time), and assessment portfolios (competency evidence).",
+    mnemonic: { title: "Portfolio Assessment", phrase: "Progress, Performance, and Personal Reflection", items: ["P - Portfolio", "C - Collection over time", "R - Reflections included"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Implement portfolio assessment and evaluation",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Norm-Referenced Assessment vs Criterion-Referenced Assessment",
+    definition: "Norm-referenced compares a student's performance against peer group distribution (ranking / percentiles / grading on a curve); Criterion-referenced evaluates performance against fixed, predetermined standards or rubrics regardless of how others perform.",
+    rationalization: "DepEd K-12 grading is criterion-referenced; students earn grades based on demonstrating mastery of competencies, not class ranking.",
+    mnemonic: { title: "Norm vs Criterion", phrase: "Norm Compares to Peers, Criterion to Criteria", items: ["N - Norm = Peer comparison (curve)", "C - Criterion = Fixed mastery standard"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Differentiate norm-referenced and criterion-referenced assessment",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Mean, Median, and Mode",
+    definition: "Mean is the arithmetic average (sensitive to extreme outliers); Median is the middle score in an ordered distribution (best for skewed data); Mode is the most frequently occurring score (nominal data).",
+    rationalization: "When test distributions contain extreme high or low scores, the median is the most representative measure of central tendency.",
+    mnemonic: { title: "Measures of Central Tendency", phrase: "Mean is Average, Median is Middle, Mode is Most", items: ["Mean - Sum / N (outlier sensitive)", "Median - 50th percentile middle", "Mode - Most frequent"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Calculate and interpret measures of central tendency",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Standard Deviation (SD)",
+    definition: "The most stable measure of variability indicating how spread out scores are around the distribution mean; the square root of the variance.",
+    rationalization: "A small SD indicates a homogeneous group clustered close to the mean; a large SD indicates a heterogeneous group with widely scattered scores.",
+    mnemonic: { title: "Standard Deviation", phrase: "Spread of Distribution from the Mean", items: ["SD - Standard deviation", "Small SD = Homogeneous", "Large SD = Heterogeneous"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Compute and interpret measures of variability",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Positively Skewed Distribution (Right-Skewed)",
+    definition: "An asymmetric score distribution with a long tail extending toward high scores on the right, where the majority of students received low scores (Mean > Median > Mode).",
+    rationalization: "Indicates that the test was very difficult for the class, or students had inadequate preparation.",
+    mnemonic: { title: "Positively Skewed", phrase: "Positive Tail Points Right; Test was Tough", items: ["P - Positive skew (tail to right)", "M - Mean > Median > Mode", "D - Difficult test / low scores"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Interpret skewed and normal score distributions",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Negatively Skewed Distribution (Left-Skewed)",
+    definition: "An asymmetric score distribution with a long tail extending toward low scores on the left, where the majority of students received high scores (Mode > Median > Mean).",
+    rationalization: "Indicates that the test was very easy for the class, or students achieved outstanding mastery.",
+    mnemonic: { title: "Negatively Skewed", phrase: "Negative Tail Points Left; Learners Liked It (Easy)", items: ["N - Negative skew (tail to left)", "M - Mode > Median > Mean", "E - Easy test / high scores"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Interpret skewed and normal score distributions",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Normal Distribution (Bell Curve)",
+    definition: "A symmetrical bell-shaped score distribution where Mean = Median = Mode, with 68.26% of scores falling within ±1 SD, 95.44% within ±2 SD, and 99.72% within ±3 SD.",
+    rationalization: "The foundational theoretical model for standard scores and norm-referenced standardized examinations.",
+    mnemonic: { title: "Normal Curve Rule", phrase: "68-95-99.7 Rule of Bell Curve", items: ["±1 SD = 68.2%", "±2 SD = 95.4%", "±3 SD = 99.7%", "Mean = Median = Mode"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Interpret skewed and normal score distributions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Standard Score: z-Score",
+    definition: "A standardized score expressing raw score distance from the mean in standard deviation units: z = (X - Mean) / SD.",
+    rationalization: "Has a mean of 0 and SD of 1; a z-score of +2.0 means the student scored 2 standard deviations above the class average.",
+    mnemonic: { title: "z-Score Formula", phrase: "z = (Score - Mean) divided by SD", items: ["z = (X - Mean) / SD", "Mean = 0, SD = 1"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Compute and convert standard scores (z, T, Stanine)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Standard Score: T-Score",
+    definition: "A transformed standard score that eliminates negative numbers and decimals using the formula: T = 50 + 10(z).",
+    rationalization: "Has a mean of 50 and SD of 10; a student with z = +1.5 has a T-score of 50 + 10(1.5) = 65.",
+    mnemonic: { title: "T-Score Formula", phrase: "T = Fifty plus Ten times z", items: ["T = 50 + 10(z)", "Mean = 50, SD = 10", "No negative values"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Compute and convert standard scores (z, T, Stanine)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Percentile Rank",
+    definition: "The percentage of scores in a distribution that fall at or below a specific student's score (e.g., scoring at the 85th percentile means outperforming 85% of test-takers).",
+    rationalization: "Not a percentage correct score! A student can score 90% correct but be at the 50th percentile if half the group scored higher.",
+    mnemonic: { title: "Percentile Rank", phrase: "Percentile is Percentage Beaten Below", items: ["PR - Percentile rank", "B - Percentage below student", "N - Not percent correct"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Compute and convert standard scores (z, T, Stanine)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "DepEd Order No. 8, s. 2015 (K to 12 Grading System)",
+    definition: "The standard grading policy for Basic Education in the Philippines, weighting student grades across three components: Written Work (WW), Performance Tasks (PT), and Quarterly Assessment (QA).",
+    rationalization: "Abolished knowledge/process/understanding weightings; shifted primary emphasis to Performance Tasks (especially in MAPEH/TLE where PT is 60%).",
+    mnemonic: { title: "DepEd DO 8 s. 2015", phrase: "Written Work, Performance Tasks, Quarterly Assessment", items: ["WW - Written Work", "PT - Performance Tasks", "QA - Quarterly Assessment"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply DepEd grading policies (DO 8, s. 2015)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "DepEd Component Weights: Languages, AP, ESP",
+    definition: "Under DO 8, s. 2015: Written Work = 30%, Performance Tasks = 50%, and Quarterly Assessment = 20%.",
+    rationalization: "Performance tasks have the highest weight, reflecting communicative competence and authentic application in social and value contexts.",
+    mnemonic: { title: "Languages/AP/ESP Weights", phrase: "30 - 50 - 20 (Written, Performance, Quarterly)", items: ["WW - 30%", "PT - 50%", "QA - 20%"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply DepEd grading policies (DO 8, s. 2015)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "DepEd Component Weights: Science and Mathematics",
+    definition: "Under DO 8, s. 2015: Written Work = 40%, Performance Tasks = 40%, and Quarterly Assessment = 20%.",
+    rationalization: "Balanced equal weighting (40-40) between problem-solving/written analysis and laboratory/hands-on performance tasks.",
+    mnemonic: { title: "Math & Science Weights", phrase: "40 - 40 - 20 (Written, Performance, Quarterly)", items: ["WW - 40%", "PT - 40%", "QA - 20%"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply DepEd grading policies (DO 8, s. 2015)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "DepEd Component Weights: MAPEH and EPP/TLE",
+    definition: "Under DO 8, s. 2015: Written Work = 20%, Performance Tasks = 60%, and Quarterly Assessment = 20%.",
+    rationalization: "Heavy 60% emphasis on authentic psychomotor performance tasks, practical demonstrations, and tangible projects.",
+    mnemonic: { title: "MAPEH & TLE Weights", phrase: "20 - 60 - 20 (Written, Performance, Quarterly)", items: ["WW - 20%", "PT - 60%", "QA - 20%"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply DepEd grading policies (DO 8, s. 2015)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "DepEd Transmutation Table and Passing Mark",
+    definition: "The initial percentage score is transmuted to a report card grade; the minimum passing grade is 75%, which corresponds to an initial score of 60%.",
+    rationalization: "Protects learners from mathematical zero penalties and sets a standard baseline of 60% raw performance for mastery certification.",
+    mnemonic: { title: "DepEd Passing Mark", phrase: "60% Raw Initial Score Transmutes to 75% Passing", items: ["Initial = 60%", "Transmuted = 75% passing", "Descriptive = Fairly Satisfactory"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply DepEd grading policies (DO 8, s. 2015)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "DepEd Grading Descriptors",
+    definition: "90-100: Outstanding (O); 85-89: Very Satisfactory (VS); 80-84: Satisfactory (S); 75-79: Fairly Satisfactory (FS); Below 75: Did Not Meet Expectations (DNME).",
+    rationalization: "Used in formal reporting of quarterly student achievement to parents and school authorities.",
+    mnemonic: { title: "DepEd Descriptors", phrase: "O, VS, S, FS, DNME", items: ["90+ = Outstanding", "85-89 = Very Satisfactory", "80-84 = Satisfactory", "75-79 = Fairly Satisfactory", "<75 = Did Not Meet"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply DepEd grading policies (DO 8, s. 2015)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Remediation and Retention Guidelines (DepEd)",
+    definition: "A student who fails (below 75) in up to two learning areas must take remedial classes and pass them; failing three or more learning areas results in retention in the same grade level.",
+    rationalization: "Provides remedial intervention to prevent immediate retention while ensuring competency mastery before advancement.",
+    mnemonic: { title: "Remediation Rules", phrase: "1 to 2 Failed = Remedial; 3+ Failed = Retained", items: ["1-2 failed - Remedial classes", "3+ failed - Retained in grade"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply DepEd grading policies (DO 8, s. 2015)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Halo Effect in Assessment",
+    definition: "The rater scoring bias where the teacher's overall general positive impression of a student favorably inflates the rating of that student's specific academic performance.",
+    rationalization: "Avoided by using anonymous scoring (concealing student names) and grading question by question rather than student by student.",
+    mnemonic: { title: "Halo Effect", phrase: "Halo of General Likeability Inflates Scores", items: ["H - Halo effect", "A - Attractive or liked student favored", "A - Anonymous scoring cures it"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Identify and prevent scoring biases (Halo, Horns, Central Tendency)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Horns Effect (Reverse Halo)",
+    definition: "The rater scoring bias where a teacher's negative perception of a student's demeanor or past misconduct unfairly depresses the evaluation of their current academic work.",
+    rationalization: "Ensuring rubric-guided anonymous evaluation prevents personal biases from harming student ratings.",
+    mnemonic: { title: "Horns Effect", phrase: "Horns of Negative Prejudice Depress Scores", items: ["H - Horns effect", "N - Negative bias drags score down"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Identify and prevent scoring biases (Halo, Horns, Central Tendency)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Central Tendency Bias in Scoring",
+    definition: "The rater scoring bias where the teacher avoids giving very high or very low ratings, clustering all student evaluations safely in the middle.",
+    rationalization: "Fails to distinguish exceptional student talent from genuine deficiencies; minimized by clear behavioral rubric anchors.",
+    mnemonic: { title: "Central Tendency Bias", phrase: "Clustering Every Candidate in the Center", items: ["C - Central tendency bias", "M - Middle ratings for all", "L - Lacks differentiation"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Identify and prevent scoring biases (Halo, Horns, Central Tendency)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Standard Error of Measurement (SEM)",
+    definition: "A statistical estimate of the amount of random error associated with a student's test score; SEM = SD * sqrt(1 - Reliability).",
+    rationalization: "Allows educators to construct a confidence interval (Score ± SEM) around the observed score to reflect the learner's true score.",
+    mnemonic: { title: "Standard Error of Measurement", phrase: "High Reliability Reduces Error of Measurement", items: ["SEM = SD * sqrt(1 - r)", "Confidence band around score"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Interpret Standard Error of Measurement (SEM)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Kurtosis: Leptokurtic, Mesokurtic, Platykurtic",
+    definition: "The peakedness or flatness of a distribution curve: Leptokurtic is sharply peaked with clustered scores; Mesokurtic is normally curved; Platykurtic is flat with widely dispersed scores.",
+    rationalization: "Leptokurtic curves indicate homogeneous student performance; platykurtic indicates high variance and diversity in scores.",
+    mnemonic: { title: "Kurtosis Types", phrase: "Leptokurtic Leaps High, Platykurtic is Plateau Flat", items: ["L - Leptokurtic (peaked / homogeneous)", "M - Mesokurtic (normal)", "P - Platykurtic (flat / scattered)"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Interpret kurtosis and distribution shapes",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Stanine (Standard Nine)",
+    definition: "A 9-point normalized standard rating scale with a mean of 5 and standard deviation of 2, dividing the normal bell curve into 9 bands (1 lowest, 9 highest).",
+    rationalization: "Scores 4, 5, and 6 represent average performance (spanning 54% of the population).",
+    mnemonic: { title: "Stanine Scale", phrase: "Standard Nine: 1 to 9 with 5 as Center", items: ["Stanine - Standard Nine", "Mean = 5, SD = 2", "Band 5 is exact middle"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Compute and convert standard scores (z, T, Stanine)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Constructive Alignment (John Biggs)",
+    definition: "The principle that Intended Learning Outcomes (ILOs), Teaching and Learning Activities (TLAs), and Assessment Tasks (ATs) must be completely aligned and coherent.",
+    rationalization: "If the ILO requires students to 'analyze arguments', teaching must involve analytical exercises and the test must assess analysis—not rote memorization.",
+    mnemonic: { title: "Constructive Alignment", phrase: "Outcomes, Activities, and Assessments in Harmony", items: ["ILO - Outcomes", "TLA - Activities", "AT - Assessments"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Evaluate constructive alignment across instructional design",
+    bloomsTaxonomy: "Evaluating",
+    highYield: true
+  },
+  {
+    term: "Washback Effect (Backwash)",
+    definition: "The direct impact and influence that tests and high-stakes examinations exert on teaching, curriculum, and student study habits.",
+    rationalization: "Can be positive (tests encourage rigorous reading and problem solving) or negative (teachers teach to the test, abandoning unassessed creative inquiry).",
+    mnemonic: { title: "Washback Effect", phrase: "What is Tested Washes Back into What is Taught", items: ["W - Washback", "T - Testing drives teaching", "P - Positive or negative influence"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Analyze the social and educational impact of testing (washback)",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Ipsative Assessment",
+    definition: "An assessment mode that compares a learner's current performance against their own prior personal performance rather than against other students or external criteria.",
+    rationalization: "Highly motivating for struggling learners and special education students; highlights personal effort, persistence, and self-growth.",
+    mnemonic: { title: "Ipsative Assessment", phrase: "Ipsative: Improving Past Self", items: ["I - Ipsative", "P - Personal past baseline", "S - Self-growth measurement"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Differentiate norm-referenced, criterion-referenced, and ipsative assessment",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Self-Assessment and Peer Assessment",
+    definition: "Assessment practices where students use clear rubrics to evaluate their own work (self-assessment) or their classmates' work (peer-assessment), providing constructive feedback.",
+    rationalization: "Promotes metacognition, critical appraisal, objectivity, and autonomous accountability for learning standards.",
+    mnemonic: { title: "Self & Peer Assessment", phrase: "Students Scoring Standards Systematically", items: ["S - Self-assessment (metacognition)", "P - Peer-assessment (collaborative feedback)"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Implement self and peer assessment protocols",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Multiple-Choice Item Writing Guidelines",
+    definition: "Professional rules for drafting objective items: Stem must present a single clear problem; avoid negative stems (use capitalized NOT/EXCEPT if needed); alternatives must be grammatically parallel; avoid 'All of the above' or 'None of the above'.",
+    rationalization: "'All of the above' allows guessing with only two recognized correct options; negative stems increase cognitive reading load instead of measuring content mastery.",
+    mnemonic: { title: "Multiple Choice Rules", phrase: "Clear Stem, Plausible Distractors, Avoid All/None", items: ["S - Single problem in stem", "P - Parallel alternatives", "A - Avoid 'All of the above'"] },
+    source: "PRC BLEPT ProfEd Assessment Reviewer",
+    tosCompetency: "Apply best practices in crafting multiple-choice test items",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  }
+];
+
+// Write Assessment of Learning
+writeDataset(
+  'data/profed/assessment_of_learning/assessment_of_learning.json',
+  'Professional Education',
+  'Assessment of Learning',
+  'Assessment For/Of/As Learning, Validity/Reliability, Rubrics, & Item Analysis',
+  profed10Items
+);

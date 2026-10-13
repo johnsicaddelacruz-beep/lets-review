@@ -1,0 +1,909 @@
+{
+  "category": "Professional Education",
+  "topic": "The Teaching Profession",
+  "subtopic": "Legal Frameworks, Code of Ethics, PPST, & Philosophies",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Republic Act No. 7836 (Philippine Teachers Professionalization Act of 1994)",
+      "definition": "The landmark Philippine law that officially recognized teaching as a regulated profession, creating the Board for Professional Teachers under the Professional Regulation Commission (PRC) and mandating the Licensure Examination for Teachers (LET).",
+      "rationalization": "Enacted on December 15, 1994; transferred the regulation and licensure of professional teachers from the Civil Service Commission and DECS to the PRC.",
+      "mnemonic": {
+        "title": "RA 7836 Law",
+        "phrase": "7836 = Professional Licensure for Teachers",
+        "items": [
+          "7836 - Republic Act",
+          "PRC Board for Professional Teachers",
+          "LET licensure mandate"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Republic Act No. 9293",
+      "definition": "The law amending RA 7836 that introduced special temporary permits for para-teachers and required non-practicing professional teachers who have not taught for five consecutive years to take a 12-unit refresher course.",
+      "rationalization": "Signed in 2004 to address teaching shortages in remote areas and ensure that inactive licensed teachers update their pedagogical content knowledge before returning to the classroom.",
+      "mnemonic": {
+        "title": "RA 9293 Amendments",
+        "phrase": "9293 = Para-Teachers and 12-Unit Refresher",
+        "items": [
+          "9293 - Amendment to 7836",
+          "12 units - Refresher course after 5 inactive years",
+          "Special permits for para-teachers"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Presidential Decree No. 1006 (1977)",
+      "definition": "The initial decree signed by President Ferdinand Marcos declaring teaching as a profession and instituting the first Civil Service-administered teacher examinations in the Philippines.",
+      "rationalization": "Decree Professionalizing Teaching; established the National Board for Teachers (NBT); later superseded and modernized by Republic Act No. 7836.",
+      "mnemonic": {
+        "title": "PD 1006 Pioneer",
+        "phrase": "PD 1006 = First Decree Professionalizing Teaching",
+        "items": [
+          "1006 - Presidential Decree 1977",
+          "National Board for Teachers",
+          "Superseded by RA 7836"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Republic Act No. 4670 (Magna Carta for Public School Teachers)",
+      "definition": "The fundamental law promoting and improving the socio-economic status of public school teachers, their living and working conditions, employment terms, and career prospects.",
+      "rationalization": "Enacted in June 1966; provides landmark protections including maximum 6 hours of actual classroom teaching, hardship allowance, paid study leaves, and security of tenure.",
+      "mnemonic": {
+        "title": "Magna Carta RA 4670",
+        "phrase": "4670 = Rights and Welfare of Public Teachers",
+        "items": [
+          "4670 - Magna Carta",
+          "6 hours - Max classroom teaching",
+          "Hardship & study leave rights"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Six (6) Hours Maximum Classroom Teaching (RA 4670 Section 13)",
+      "definition": "The statutory limit mandating that any teacher engaged in actual classroom instruction shall not be required to render more than six hours of actual teaching a day.",
+      "rationalization": "The remaining two hours of the eight-hour working day are allocated to lesson preparation, checking exercises, grading, and parent conferences; teaching in excess of 6 hours requires additional compensation of at least 25% of regular pay.",
+      "mnemonic": {
+        "title": "Six-Hour Rule",
+        "phrase": "6 Hours Teaching + 2 Hours Preparation = 8 Hours",
+        "items": [
+          "6 Hours - Max actual teaching",
+          "2 Hours - Prep and grading",
+          "25% - Overtime premium"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Hardship Allowance (RA 4670 Section 19)",
+      "definition": "A special additional financial compensation of at least 25% of monthly salary paid to public school teachers assigned to remote, hazardous, isolated, or difficult hardship posts.",
+      "rationalization": "Compensates teachers who endure geographic hazards, lack of public transport, mountain treks, or insurgency risks in rural assignments.",
+      "mnemonic": {
+        "title": "Hardship Allowance",
+        "phrase": "At Least 25% Extra for Difficult Stations",
+        "items": [
+          "25% minimum extra pay",
+          "Remote/hardship stations",
+          "Section 19 of Magna Carta"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Study Leave with Pay (Sabbatical / RA 4670 Section 24)",
+      "definition": "The right of public school teachers who have rendered at least seven (7) years of continuous service to a study leave not exceeding one year with at least 60% of their regular monthly salary.",
+      "rationalization": "Granted to pursue graduate studies or academic specialization; requires a return service agreement of two years for every year of paid study leave.",
+      "mnemonic": {
+        "title": "Study Leave Rule",
+        "phrase": "7 Years Service = 1 Year Leave with 60% Pay",
+        "items": [
+          "7 Years - Continuous service needed",
+          "1 Year - Max leave duration",
+          "60% - Minimum monthly salary paid"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Republic Act No. 10533 (Enhanced Basic Education Act of 2013)",
+      "definition": "The law expanding the Philippine basic education cycle from 10 to 13 years, creating the K to 12 basic education program (Kindergarten, 6 years Elementary, 4 years JHS, 2 years SHS).",
+      "rationalization": "Mandated Mother Tongue-Based Multilingual Education (MTB-MLE) from Kindergarten to Grade 3, a spiral progression curriculum, and specialized Senior High School academic/technical tracks.",
+      "mnemonic": {
+        "title": "RA 10533 K-12",
+        "phrase": "10533 = K to 12 Enhanced Basic Education",
+        "items": [
+          "10533 - Republic Act",
+          "13 Years basic cycle",
+          "MTB-MLE & Spiral Progression"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Code of Ethics: Preamble",
+      "definition": "The foundational statement establishing that professional teachers are duly licensed professionals who possess dignity and reputation with high moral values, technical and professional competence.",
+      "rationalization": "Sets the high standard that teaching is not merely a job, but a noble public trust requiring continuous ethical dedication and adherence to professional standards.",
+      "mnemonic": {
+        "title": "Ethics Preamble",
+        "phrase": "Dignity, Moral Values, and Professional Competence",
+        "items": [
+          "Licensed professional",
+          "High moral values",
+          "Public trust stewardship"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Code of Ethics: Article II - The Teacher and the State",
+      "definition": "The ethical provisions outlining a teacher's civic responsibilities, including loyalty to the Constitution, obedience to laws, exercising the right to vote, and the strict prohibition against using one's position to proselytize or coerce partisan political votes.",
+      "rationalization": "Section 5 affirms academic freedom while emphasizing that teachers must not engage in partisan political campaigns in the classroom or spread subversive propaganda.",
+      "mnemonic": {
+        "title": "Article II State",
+        "phrase": "Loyal Citizen, Neutral in Partisan Politics",
+        "items": [
+          "Vote as a private citizen",
+          "No partisan coercion in class",
+          "Trustee of cultural heritage"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Code of Ethics: Article III - The Teacher and the Community",
+      "definition": "The ethical mandate that teachers must render leadership in community initiatives, refrain from gambling and drunkenness, and study local customs to foster mutual respect.",
+      "rationalization": "Section 1 declares that the teacher is a facilitator of learning and development in the community; expected to provide intellectual leadership in barangay projects without partisan bias.",
+      "mnemonic": {
+        "title": "Article III Community",
+        "phrase": "Community Leader, Respect Local Traditions",
+        "items": [
+          "Facilitator of community learning",
+          "Respect local culture",
+          "Refrain from vice (gambling, drinking)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Code of Ethics: Article VIII - The Teacher and the Learners",
+      "definition": "The ethical provisions governing teacher-student relationships, mandating fairness in grading, zero corporal punishment, and strict professional protocol regarding romantic relationships.",
+      "rationalization": "Section 7 dictates: In a situation where mutual attraction and subsequent love develop between teacher and student, the teacher shall exercise utmost professional discretion to avoid favoritism, and transfer the student to another teacher if necessary.",
+      "mnemonic": {
+        "title": "Article VIII Learners",
+        "phrase": "No Corporal Punishment, Pure Professional Discretion",
+        "items": [
+          "Fair grading on merit",
+          "Zero physical punishment",
+          "Professional boundary in attraction"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Prohibition of Corporal Punishment (Article VIII Section 8)",
+      "definition": "The strict ethical and legal mandate that no teacher shall inflict corporal punishment on offending learners nor make deductions from their scholastic ratings as a penalty for acts which are clearly not manifestations of poor scholarship.",
+      "rationalization": "Reinforced by the Child Protection Policy (DepEd Order No. 40 s. 2012); corporal punishment (slapping, pinching, kneeling on salt, verbal humiliation) constitutes administrative misconduct and child abuse.",
+      "mnemonic": {
+        "title": "No Corporal Punishment",
+        "phrase": "Zero Physical or Humiliating Discipline",
+        "items": [
+          "No hitting or pinching",
+          "No lowering grades for misconduct",
+          "Child Protection Policy DO 40"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Code of Ethics: Article X - The Teacher and Business",
+      "definition": "The ethical rule prohibiting teachers from using their authority to coerce students or parents to purchase personal commercial products, merchandise, or study materials.",
+      "rationalization": "Section 1 upholds that a teacher has the right to engage in legitimate business, provided it does not adversely affect professional performance; Section 2 forbids selling items directly to one's own students.",
+      "mnemonic": {
+        "title": "Article X Business",
+        "phrase": "No Peddling Merchandise to Your Students",
+        "items": [
+          "Legitimate business allowed",
+          "No selling goods to own pupils",
+          "No financial coercion"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Philippine Professional Standards for Teachers (PPST / DO 42 s. 2017)",
+      "definition": "The national framework establishing clear expectations of teacher quality across seven domains, 37 strands, and four developmental career stages.",
+      "rationalization": "Replaced the National Competency-Based Teacher Standards (NCBTS); aligns teacher performance with the K to 12 reform and the ASEAN Qualifications Reference Framework.",
+      "mnemonic": {
+        "title": "PPST Framework",
+        "phrase": "7 Domains, 37 Strands, 4 Career Stages",
+        "items": [
+          "7 Domains",
+          "37 Strands",
+          "4 Career stages"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "PPST Career Stage 1: Beginning Teachers",
+      "definition": "The entry career stage representing newly qualified licensed teachers who possess the required qualifications, strong content knowledge, and enthusiasm, seeking guidance from mentor teachers.",
+      "rationalization": "Beginning teachers need coaching in managing classroom behavior, addressing student diversity, and preparing valid assessment tools during their initial years.",
+      "mnemonic": {
+        "title": "PPST Stage 1",
+        "phrase": "Beginning = Newly Licensed, Needs Mentorship",
+        "items": [
+          "Stage 1 - Beginning",
+          "Strong content foundation",
+          "Requires coaching & induction"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "PPST Career Stage 2: Proficient Teachers",
+      "definition": "The career stage representing professionally independent practitioners who display pedagogical skill, effectively manage learning environments, and independently facilitate learner achievement.",
+      "rationalization": "They design engaging lesson plans, administer varied formative and summative assessments, and collaborate with colleagues to improve school outcomes.",
+      "mnemonic": {
+        "title": "PPST Stage 2",
+        "phrase": "Proficient = Professionally Independent Practitioner",
+        "items": [
+          "Stage 2 - Proficient",
+          "Independent practitioner",
+          "Consistent learner engagement"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "PPST Career Stage 3: Highly Proficient Teachers",
+      "definition": "The career stage representing experienced master teachers who consistently display high levels of classroom excellence, mentor colleagues, and lead instructional innovations in their department.",
+      "rationalization": "Master Teachers in this stage serve as demonstration teachers, action researchers, and mentors to Beginning and Proficient colleagues.",
+      "mnemonic": {
+        "title": "PPST Stage 3",
+        "phrase": "Highly Proficient = Master Teacher and Mentor",
+        "items": [
+          "Stage 3 - Highly Proficient",
+          "Master Teacher rank",
+          "Mentors and coaches peers"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "PPST Career Stage 4: Distinguished Teachers",
+      "definition": "The pinnacle career stage representing educational leaders recognized at the division, regional, and national levels who spearhead major curriculum policies and inspire the entire profession.",
+      "rationalization": "They embody the highest standard of teaching practice, formulate pedagogical research, and advise educational policymakers on national curriculum improvements.",
+      "mnemonic": {
+        "title": "PPST Stage 4",
+        "phrase": "Distinguished = Pinnacle Leader and Innovator",
+        "items": [
+          "Stage 4 - Distinguished",
+          "National/regional leadership",
+          "Policy and research trailblazer"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "PPST Domain 1: Content Knowledge and Pedagogy",
+      "definition": "The PPST domain requiring teachers to demonstrate deep mastery of subject matter, integrate interdisciplinary connections, use mother tongue, and apply research-based pedagogical principles.",
+      "rationalization": "Ensures teachers do not simply teach superficial facts, but facilitate critical thinking, problem-solving, and literacy across curriculum areas.",
+      "mnemonic": {
+        "title": "PPST Domain 1",
+        "phrase": "Domain 1 = Subject Mastery and Teaching Skills",
+        "items": [
+          "Mastery of subject matter",
+          "Research-based pedagogy",
+          "Literacy and numeracy focus"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "PPST Domain 2: Learning Environment",
+      "definition": "The PPST domain focused on establishing safe, secure, fair, and supportive physical and psychological classroom environments that promote purposeful learning.",
+      "rationalization": "Encompasses classroom management, positive discipline, motivating learner engagement, and fostering a collaborative, bully-free atmosphere.",
+      "mnemonic": {
+        "title": "PPST Domain 2",
+        "phrase": "Domain 2 = Safe, Secure, Positive Classroom",
+        "items": [
+          "Safe physical space",
+          "Positive discipline",
+          "Bully-free climate"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "PPST Domain 3: Diversity of Learners",
+      "definition": "The PPST domain emphasizing responsive teaching that accommodates learners' gender, needs, strengths, interests, socioeconomic status, disabilities, giftedness, and indigenous backgrounds.",
+      "rationalization": "Requires differentiated instruction and culturally sensitive pedagogies that ensure every child thrives regardless of exceptionality or background.",
+      "mnemonic": {
+        "title": "PPST Domain 3",
+        "phrase": "Domain 3 = Inclusive of All Diverse Learners",
+        "items": [
+          "Differentiated instruction",
+          "Special education needs",
+          "Indigenous & cultural respect"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "PPST Domain 4: Curriculum and Planning",
+      "definition": "The PPST domain addressing how teachers align lesson objectives with national curriculum standards (DepEd K to 12), sequence learning experiences, and select effective instructional materials.",
+      "rationalization": "Covers daily lesson planning (DLP/DLL), contextualizing lessons to local community reality, and ensuring seamless spiral progression.",
+      "mnemonic": {
+        "title": "PPST Domain 4",
+        "phrase": "Domain 4 = Lesson Planning and Curriculum Alignment",
+        "items": [
+          "Curriculum alignment",
+          "Lesson planning (DLP/DLL)",
+          "Contextualized materials"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "PPST Domain 5: Assessment and Reporting",
+      "definition": "The PPST domain mandating the design and use of diagnostic, formative, and summative assessments, data analysis, and transparent reporting of student progress to parents.",
+      "rationalization": "Ensures assessments are valid, reliable, and aligned with learning competencies; uses assessment data to provide constructive feedback and reteach unmastered concepts.",
+      "mnemonic": {
+        "title": "PPST Domain 5",
+        "phrase": "Domain 5 = Testing, Grading, and Parent Reporting",
+        "items": [
+          "Diagnostic, formative, summative",
+          "Data-driven feedback",
+          "Parent grade reporting"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "PPST Domain 6: Community Linkages and Professional Engagement",
+      "definition": "The PPST domain involving constructive partnerships with parents, barangay officials, local industry, and alumni to enrich the school environment.",
+      "rationalization": "Focuses on school-community synergy, organizing Brigada Eskwela, PTA assemblies, and upholding the Code of Ethics in community interactions.",
+      "mnemonic": {
+        "title": "PPST Domain 6",
+        "phrase": "Domain 6 = School-Community Partnerships",
+        "items": [
+          "PTA collaboration",
+          "Brigada Eskwela",
+          "Community resource tapping"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "PPST Domain 7: Personal Growth and Professional Development",
+      "definition": "The PPST domain prioritizing a teacher's continuous professional growth, reflective practice, attendance in seminars/workshops, mental health, and professional philosophy.",
+      "rationalization": "Recognizes that teacher quality requires lifelong learning; teachers continually evaluate their own practice to improve instructional impact.",
+      "mnemonic": {
+        "title": "PPST Domain 7",
+        "phrase": "Domain 7 = Lifelong Learning and Reflection",
+        "items": [
+          "Continuous professional development",
+          "Reflective self-evaluation",
+          "Mental health & ethics"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Differentiate the 7 Domains and 4 Career Stages of the PPST",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Idealism",
+      "definition": "The philosophical doctrine founded by Plato holding that reality is fundamentally spiritual, mental, and conceptual, with immutable ideas being the ultimate truth.",
+      "rationalization": "Curriculum emphasizes enduring ideas, literature, mathematics, and philosophy; teaching relies on the Socratic question-and-answer method to draw out latent knowledge.",
+      "mnemonic": {
+        "title": "Idealism Clue",
+        "phrase": "Plato: Ideas in the Mind are Real",
+        "items": [
+          "I - Idealism",
+          "P - Plato",
+          "S - Socratic method / Intellectual pursuit"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Realism",
+      "definition": "The philosophy founded by Aristotle holding that reality exists independently of the human mind, and that truth is discovered through sensory observation and empirical science.",
+      "rationalization": "Emphasizes the natural sciences, objective facts, sensory experiments, and direct demonstration; reality is what can be measured and observed.",
+      "mnemonic": {
+        "title": "Realism Clue",
+        "phrase": "Aristotle: Physical World Proven by Senses",
+        "items": [
+          "R - Realism",
+          "A - Aristotle",
+          "O - Objective facts & science"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Progressivism (Pragmatism)",
+      "definition": "The student-centered philosophy championed by John Dewey asserting that education is life itself, rooted in 'learning by doing', experiential problem-solving, and democratic inquiry.",
+      "rationalization": "Rejects passive rote memorization; students engage in hands-on projects, group cooperation, and real-life scientific experiments adapting to a changing world.",
+      "mnemonic": {
+        "title": "Progressivism Clue",
+        "phrase": "John Dewey: Learning by Doing",
+        "items": [
+          "P - Progressivism",
+          "D - Dewey",
+          "L - Learning by doing hands-on"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Essentialism",
+      "definition": "The traditional, teacher-centered philosophy formulated by William Bagley holding that schools should focus on rigorous mastery of the basic skills (the 3Rs: Reading, wRiting, aRithmetic) and core academic subjects.",
+      "rationalization": "The teacher is the sole authoritarian expert transmitting essential cultural heritage and academic discipline; emphasizes hard work and factual mastery.",
+      "mnemonic": {
+        "title": "Essentialism Clue",
+        "phrase": "Back to the Basics: 3 Rs and Core Subjects",
+        "items": [
+          "E - Essentialism",
+          "B - Bagley",
+          "3 Rs - Reading, Writing, Arithmetic"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Perennialism",
+      "definition": "The conservative educational philosophy spearheaded by Robert Hutchins and Mortimer Adler asserting that truth is universal and unchanging, and education should focus on timeless enduring ideas found in the 'Great Books'.",
+      "rationalization": "Believes human nature remains constant across centuries; students study Shakespeare, Aristotle, and Newton to cultivate timeless rational intellect.",
+      "mnemonic": {
+        "title": "Perennialism Clue",
+        "phrase": "Perennial = Everlasting Truths & Great Books",
+        "items": [
+          "P - Perennialism",
+          "H - Hutchins & Adler",
+          "G - Great Books curriculum"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Existentialism",
+      "definition": "The individualistic philosophy influenced by Jean-Paul Sartre and Soren Kierkegaard asserting that existence precedes essence, and education should empower learners to freely define their own identity and personal values.",
+      "rationalization": "Curriculum offers wide elective choices; students take complete personal responsibility for their choices, rejecting conformity and external dogmatic mandates.",
+      "mnemonic": {
+        "title": "Existentialism Clue",
+        "phrase": "Existence Precedes Essence: Freedom of Choice",
+        "items": [
+          "E - Existentialism",
+          "S - Sartre",
+          "F - Freedom to choose personal path"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Behaviorism",
+      "definition": "The educational philosophy founded by John Watson and B.F. Skinner holding that human behavior is shaped entirely by environmental stimuli, conditioning, and reinforcement.",
+      "rationalization": "Learning is defined as an observable change in behavior; teachers use positive reinforcement (rewards, praise) and negative reinforcement to condition student learning.",
+      "mnemonic": {
+        "title": "Behaviorism Clue",
+        "phrase": "Skinner: Stimulus, Response, Reinforcement",
+        "items": [
+          "B - Behaviorism",
+          "S - Skinner & Watson",
+          "R - Reinforcement shapes habits"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Social Reconstructionism",
+      "definition": "The transformative philosophy founded by Theodore Brameld and George Counts arguing that schools should be agents of social change, leading society to reconstruct and eliminate poverty, racism, and inequality.",
+      "rationalization": "Challenges oppressive social structures; teachers encourage students to critically examine real-world social injustices and propose revolutionary solutions for a better world.",
+      "mnemonic": {
+        "title": "Reconstructionism Clue",
+        "phrase": "Schools as Agents to Reconstruct Society",
+        "items": [
+          "S - Social Reconstructionism",
+          "B - Brameld & Counts",
+          "C - Change agents against injustice"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Educational Philosophy: Constructivism",
+      "definition": "The contemporary learning philosophy rooted in Piaget and Vygotsky asserting that learners actively construct their own subjective knowledge by connecting new information with existing cognitive schema.",
+      "rationalization": "The teacher acts as a facilitator and guide on the side rather than an all-knowing dispenser of facts, encouraging discovery, inquiry, and peer collaboration.",
+      "mnemonic": {
+        "title": "Constructivism Clue",
+        "phrase": "Learners Build Their Own Meaning",
+        "items": [
+          "C - Constructivism",
+          "P - Piaget & Vygotsky",
+          "B - Build understanding actively"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Compare classical and contemporary philosophies of education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Teaching as a Profession",
+      "definition": "The dimension of teaching characterized by long years of specialized tertiary preparation, a rigorous licensure examination, adherence to a Code of Ethics, and continuing professional development.",
+      "rationalization": "Differentiates teaching from casual employment; licensed teachers are members of an accredited professional organization bound by high public standards.",
+      "mnemonic": {
+        "title": "Teaching Profession",
+        "phrase": "Licensure, Specialized Preparation, Code of Ethics",
+        "items": [
+          "P - Preparation degree",
+          "L - Licensure examination",
+          "E - Ethical code"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Synthesize teaching as a profession, vocation, and mission",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Teaching as a Vocation",
+      "definition": "The perspective viewing teaching as an internal calling (from Latin 'vocare', to call) to dedicate one's life selflessly to educating and nurturing the young.",
+      "rationalization": "Teaching is undertaken not solely for monetary compensation, but out of personal passion, profound love for children, and inner fulfillment.",
+      "mnemonic": {
+        "title": "Teaching Vocation",
+        "phrase": "Vocare: A Sacred Calling from the Heart",
+        "items": [
+          "V - Vocation",
+          "V - Vocare (To call)",
+          "P - Passion for learners"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Synthesize teaching as a profession, vocation, and mission",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Teaching as a Mission",
+      "definition": "The perspective viewing teaching as an assigned task (from Latin 'mittere', to send) entrusted by society to make the world better by transforming student lives.",
+      "rationalization": "A teacher is 'sent' to eradicate ignorance, inspire dreams, and build upright citizens; involves clear objectives, accountability, and unrelenting perseverance.",
+      "mnemonic": {
+        "title": "Teaching Mission",
+        "phrase": "Mittere: Sent with a Sacred Task",
+        "items": [
+          "M - Mission",
+          "M - Mittere (To send)",
+          "T - Task to transform lives"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Synthesize teaching as a profession, vocation, and mission",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Batas Pambansa Blg. 232 (Education Act of 1982)",
+      "definition": "The comprehensive legislation establishing and maintaining an integrated system of education in the Philippines, delineating the rights and obligations of students, teachers, administrators, and parents.",
+      "rationalization": "Guarantees teachers the right to free expression of opinions, freedom from compulsory non-academic deductions, and professional advancement opportunities.",
+      "mnemonic": {
+        "title": "BP 232 Framework",
+        "phrase": "Education Act of 1982: Integrated Educational System",
+        "items": [
+          "232 - Batas Pambansa",
+          "R - Rights of students & teachers",
+          "O - Obligations of school personnel"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "DepEd Order No. 40 s. 2012: Child Protection Policy",
+      "definition": "The landmark policy adopting zero tolerance for all forms of child abuse, exploitation, violence, discrimination, bullying, and corporal punishment in basic education institutions.",
+      "rationalization": "Requires every public and private school to form a Child Protection Committee (CPC) to handle complaints and safeguard child rights in the classroom.",
+      "mnemonic": {
+        "title": "Child Protection Policy",
+        "phrase": "Zero Tolerance for Child Abuse and Bullying",
+        "items": [
+          "DO 40 s. 2012",
+          "CPC in every school",
+          "Absolute ban on corporal punishment"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply child protection policies and school child rights protocols",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Continuing Professional Development Act of 2016 (RA 10912)",
+      "definition": "The law requiring licensed professionals, including teachers, to earn CPD credit units through formal and non-formal trainings as a mandatory prerequisite for PRC professional license renewal.",
+      "rationalization": "Ensures teachers continually update their competencies with evolving global educational standards throughout their career lifecycle.",
+      "mnemonic": {
+        "title": "CPD Act RA 10912",
+        "phrase": "10912 = CPD Credit Units for PRC License",
+        "items": [
+          "10912 - CPD Act",
+          "Credit units for renewal",
+          "Lifelong professional upgrading"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Republic Act No. 10157 (Kindergarten Education Act)",
+      "definition": "The law institutionalizing kindergarten into the basic education system, making pre-school education mandatory and compulsory for all 5-year-old Filipino children before admission to Grade 1.",
+      "rationalization": "Passed in 2011 to establish the foundational cognitive, physical, and socio-emotional readiness essential for academic success in elementary schooling.",
+      "mnemonic": {
+        "title": "RA 10157 Kindergarten",
+        "phrase": "10157 = Mandatory Kindergarten at Age 5",
+        "items": [
+          "10157 - Kindergarten Act",
+          "Age 5 - Compulsory enrollment",
+          "Prerequisite for Grade 1"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Universal Access to Quality Tertiary Education Act (RA 10931)",
+      "definition": "The 2017 law providing tuition-free higher education to Filipino students enrolled in State Universities and Colleges (SUCs) and Local Universities and Colleges (LUCs).",
+      "rationalization": "Democratized access to tertiary education, significantly benefiting pre-service teacher education students from low-income families.",
+      "mnemonic": {
+        "title": "RA 10931 Free Tuition",
+        "phrase": "10931 = Free College Tuition in SUCs",
+        "items": [
+          "10931 - Free college law",
+          "SUCs & LUCs tuition waived",
+          "Tertiary education access"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Article XIV Section 5(5) of the 1987 Constitution: Education Budget Priority",
+      "definition": "The constitutional mandate directing that the State shall assign the highest budgetary priority to education to ensure that teaching will attract and retain its rightful share of the best available talents.",
+      "rationalization": "Ensures the Department of Education receives the largest budgetary allocation among all government executive departments in the national budget.",
+      "mnemonic": {
+        "title": "Highest Budget Mandate",
+        "phrase": "Constitution: Highest Budget to Education",
+        "items": [
+          "Article XIV Section 5",
+          "Highest budget priority",
+          "Attract the best talents to teaching"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Teacher's Academic Freedom in Higher Education",
+      "definition": "The constitutional right guaranteed to faculty members in institutions of higher learning to investigate, teach, and publish research findings without administrative or political censorship.",
+      "rationalization": "Recognized in Article XIV Section 5(2) of the 1987 Constitution; applies primarily to colleges and universities; basic education teachers follow the prescribed curriculum.",
+      "mnemonic": {
+        "title": "Academic Freedom",
+        "phrase": "Higher Ed Faculty Freedom to Research and Teach",
+        "items": [
+          "Higher education institutions",
+          "Protection from political censorship",
+          "Research and intellectual inquiry"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "DepEd Order No. 42 s. 2016: Lesson Preparation Policy",
+      "definition": "The policy guidelines on daily lesson preparation, distinguishing between the Detailed Lesson Plan (DLP) required of newly hired teachers and the Daily Lesson Log (DLL) used by experienced teachers.",
+      "rationalization": "Teachers with at least one year of teaching experience may use the DLL; teachers in their first year of service must prepare the DLP covering all instructional components.",
+      "mnemonic": {
+        "title": "DLP vs DLL Rules",
+        "phrase": "DLP for First-Year Teachers; DLL for Experienced",
+        "items": [
+          "DLP: Detailed plan (New teachers)",
+          "DLL: Log format (1+ year teachers)",
+          "DO 42 s. 2016 guidelines"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply DepEd policies on lesson planning and instructional delivery",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Teachers' Dignified Living and Decorum (Code of Ethics Article XI)",
+      "definition": "The ethical standard requiring that a teacher shall maintain a dignified personality, live a modest and moral life, and practice financial prudence to avoid scandalous debts.",
+      "rationalization": "Section 3 mandates: A teacher shall maintain at all times a dignified personality which could serve as a model worthy of emulation by learners, peers, and others.",
+      "mnemonic": {
+        "title": "Article XI Decorum",
+        "phrase": "Modest Life and Moral Role Model",
+        "items": [
+          "Dignified personal decorum",
+          "Model worthy of emulation",
+          "Avoid scandalous indebtedness"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Apply the Code of Ethics for Professional Teachers to ethical dilemmas",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Board for Professional Teachers (BPT / PRC)",
+      "definition": "The collegial body under the administrative supervision of the PRC composed of five members appointed by the President of the Philippines to formulate, administer, and supervise the LET.",
+      "rationalization": "Authorized to issue, suspend, or revoke professional teacher licenses for causes such as immoral conduct, gross incompetence, negligence, or malpractice.",
+      "mnemonic": {
+        "title": "BPT PRC Powers",
+        "phrase": "5 Members Who Administer and Regulate the LET",
+        "items": [
+          "5 Board members",
+          "PRC administrative supervision",
+          "License issuance and revocation"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Revocation of Professional License (RA 7836 Section 23)",
+      "definition": "The statutory penalty stripping a teacher of their certificate of registration and license for conviction of a crime involving moral turpitude, immoral conduct, gross incompetence, or cheating on the board exam.",
+      "rationalization": "A teacher whose license is revoked cannot practice teaching in any public or private school anywhere in the Philippines.",
+      "mnemonic": {
+        "title": "License Revocation",
+        "phrase": "Lost License for Immorality or Cheating",
+        "items": [
+          "Crimes of moral turpitude",
+          "Gross incompetence or malpractice",
+          "Banned from all teaching posts"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Analyze legal mandates governing the teaching profession in the Philippines",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "The Four Pillars of Education (UNESCO / Delors Report)",
+      "definition": "The international vision of lifelong education: Learning to KNOW (mastery of learning tools), Learning to DO (skills & application), Learning to LIVE TOGETHER (empathy & peace), and Learning to BE (complete human development).",
+      "rationalization": "Chaired by Jacques Delors in 1996; emphasizes that education must nurture holistic human potential rather than mere rote intellectual knowledge.",
+      "mnemonic": {
+        "title": "Four Delors Pillars",
+        "phrase": "Know, Do, Live Together, Be",
+        "items": [
+          "1. Learning to Know (Cognitive tools)",
+          "2. Learning to Do (Competence)",
+          "3. Learning to Live Together (Peace)",
+          "4. Learning to Be (Holistic self)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd Reviewer",
+      "tosCompetency": "Synthesize global frameworks (UNESCO 4 Pillars) in teacher education",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    }
+  ]
+}

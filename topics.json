@@ -1,8 +1,28 @@
 {
   "files": [
-    "data/gened/rizal/rizal_law/rizal_law.json",
-    "data/profed/teaching_profession/philosophical_heritage/philosophical_heritage.json",
-    "data/english_majorship/structure_of_english/basic_sentence_pattern/basic_sentence_pattern.json",
-    "data/gened/purposive_communication/subject_verb_agreement/subject_verb_agreement.json"
+    "data/gened/purposive_communication/purposive_communication.json",
+    "data/gened/malayuning_komunikasyon/malayuning_komunikasyon.json",
+    "data/gened/science_technology_society/science_technology_society.json",
+    "data/gened/mathematics_modern_world/mathematics_modern_world.json",
+    "data/gened/readings_philippine_history/readings_philippine_history.json",
+    "data/gened/life_works_rizal/life_works_rizal.json",
+    "data/gened/ethics/ethics.json",
+    "data/gened/contemporary_world/contemporary_world.json",
+    "data/gened/art_appreciation/art_appreciation.json",
+    "data/gened/understanding_self/understanding_self.json",
+    "data/profed/teaching_profession/teaching_profession.json",
+    "data/profed/facilitating_learner_centered/facilitating_learner_centered.json",
+    "data/profed/foundations_special_inclusive/foundations_special_inclusive.json",
+    "data/profed/new_literacies/new_literacies.json",
+    "data/profed/tech_teaching_learning/tech_teaching_learning.json",
+    "data/profed/teacher_community_leadership/teacher_community_leadership.json",
+    "data/profed/child_adolescent/child_adolescent.json",
+    "data/profed/teacher_and_curriculum/teacher_and_curriculum.json",
+    "data/profed/methods_and_strategies/methods_and_strategies.json",
+    "data/profed/assessment_of_learning/assessment_of_learning.json",
+    "data/profed/action_research/action_research.json",
+    "data/profed/field_study/field_study.json",
+    "data/profed/teaching_internship/teaching_internship.json",
+    "data/english_majorship/structure_of_english/basic_sentence_pattern/basic_sentence_pattern.json"
   ]
 }

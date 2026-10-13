@@ -1,0 +1,531 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+function writeDataset(filePath, category, topic, subtopic, items) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  const dataset = {
+    category,
+    topic,
+    subtopic,
+    difficulty: 'medium',
+    items
+  };
+  fs.writeFileSync(filePath, JSON.stringify(dataset, null, 2), 'utf8');
+  console.log(`Generated ${filePath} with ${items.length} items`);
+}
+
+// 9. Art Appreciation (50 items)
+const artItems = [
+  {
+    term: "Functions of Art: Personal, Social, and Physical",
+    definition: "Personal function serves self-expression, catharsis, and private aesthetic pleasure; Social function expresses collective identity, celebration, or political protest; Physical function pertains to utilitarian objects like architecture, jewelry, and furniture.",
+    rationalization: "A painting by Van Gogh serves a personal expressive function; Rizal's novels or national anthems serve a social function; a spoon or a bridge serves a physical utilitarian function.",
+    mnemonic: { title: "Art Functions", phrase: "PSP: Personal, Social, Physical", items: ["P - Personal (Inner emotion)", "S - Social (Community/politics)", "P - Physical (Utilitarian use)"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Classify the functions, subjects, and content of art",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Representational Art vs Non-Representational Art",
+    definition: "Representational (objective) art depicts recognizable objects, persons, landscapes, or scenes from the real world; Non-representational (non-objective) art uses pure colors, lines, and geometric shapes with no reference to recognizable reality.",
+    rationalization: "Da Vinci's Mona Lisa or Amorsolo's harvest landscapes are representational; Piet Mondrian's grid compositions or Jackson Pollock's drip paintings are non-representational.",
+    mnemonic: { title: "Art Subject Types", phrase: "Representational = Recognizable Reality; Non-Representational = Pure Form", items: ["R - Representational: Depicts real things", "N - Non-representational: Pure abstract design"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Classify the functions, subjects, and content of art",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Chiaroscuro",
+    definition: "The artistic painting technique utilizing strong, bold contrasts between light and dark shadow to model three-dimensional volume and evoke intense dramatic tension.",
+    rationalization: "Italian for 'light-dark'. Mastered by Leonardo da Vinci, Caravaggio, and Rembrandt; also adapted by Fernando Amorsolo to capture golden tropical Philippine sunlight.",
+    mnemonic: { title: "Chiaroscuro Light", phrase: "Chiaro = Light; Scuro = Dark", items: ["C - Chiaroscuro", "L - Light-dark contrast", "D - Dramatic 3D volume"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify painting techniques and mediums in visual arts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Sfumato",
+    definition: "The Renaissance painting technique of blending colors and tones so subtly that boundaries melt together without harsh outlines, producing a soft, smoky, haze-like atmosphere.",
+    rationalization: "Italian for 'vanished in smoke'. Leonardo da Vinci's signature technique, prominently displayed in the enigmatic facial expression and gentle shadows of the Mona Lisa.",
+    mnemonic: { title: "Sfumato Smoke", phrase: "Smoky Blending Without Sharp Outlines", items: ["S - Sfumato", "S - Smoke-like blending", "L - Leonardo's Mona Lisa"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify painting techniques and mediums in visual arts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Impasto",
+    definition: "The technique of laying paint thickly onto a canvas surface so that the brushstrokes and palette knife ridges stand out in three-dimensional relief.",
+    rationalization: "Celebrated in Vincent van Gogh's 'The Starry Night'; gives dynamic physical energy, texture, and emotional vibrancy to the painted surface.",
+    mnemonic: { title: "Impasto Thick Paste", phrase: "Paint as Thick as Paste", items: ["I - Impasto", "P - Paste-like thickness", "V - Van Gogh brushstrokes"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify painting techniques and mediums in visual arts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Linear Perspective",
+    definition: "The mathematical system of creating the optical illusion of depth and three-dimensional space on a flat surface using converging lines that meet at a horizon vanishing point.",
+    rationalization: "Pioneered in Renaissance Florence by architect Filippo Brunelleschi and codified by Leon Battista Alberti; revolutionized realistic European painting.",
+    mnemonic: { title: "Linear Perspective", phrase: "Converging Lines Meet at the Vanishing Point", items: ["B - Brunelleschi", "V - Vanishing point", "H - Horizon line"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze elements of art (space, color, texture, line)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Complementary Colors",
+    definition: "Pairs of colors located directly opposite each other on the color wheel, creating maximum visual contrast, vibrancy, and mutual enhancement when placed side-by-side.",
+    rationalization: "Primary complementary pairs: Red and Green, Blue and Orange, Yellow and Purple. When mixed together as pigments, they neutralize into a dull grey or brown.",
+    mnemonic: { title: "Complementary Pairs", phrase: "Opposites on the Wheel Attract", items: ["Red <-> Green", "Blue <-> Orange", "Yellow <-> Purple"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Apply color theory principles and harmonies",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Analogous Colors",
+    definition: "A color harmony scheme composed of three to four colors that sit immediately adjacent to each other on the color wheel, sharing a common dominant hue.",
+    rationalization: "Examples include yellow, yellow-green, and green; analogous schemes produce serene, comfortable, and visually cohesive compositions.",
+    mnemonic: { title: "Analogous Neighbors", phrase: "Side-by-Side Neighbors on the Wheel", items: ["A - Analogous", "N - Neighboring hues", "H - Harmonious blend"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Apply color theory principles and harmonies",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Principles of Design: Balance",
+    definition: "The distribution of visual weight of shapes, colors, and space in an artwork, occurring as Symmetrical (formal), Asymmetrical (informal), or Radial.",
+    rationalization: "Symmetrical balance creates calm, solemn dignity; Asymmetrical balance creates dynamic tension and modern interest without mirroring sides.",
+    mnemonic: { title: "Three Types of Balance", phrase: "Symmetrical (Mirror), Asymmetrical (Dynamic), Radial (Circle)", items: ["S - Symmetrical / Formal", "A - Asymmetrical / Informal", "R - Radial (Spokes from center)"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze principles of design in visual compositions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Fernando Amorsolo (1892-1972)",
+    definition: "The celebrated painter declared the first National Artist of the Philippines in 1972, famed as the 'Grand Old Man of Philippine Art' for his golden tropical backlighting and idyllic rural scenes.",
+    rationalization: "Famous masterworks include 'Planting Rice', 'Dalagang Bukid', and 'Defend Thy Honor'; captured the luminous brilliance of the Philippine sunlight.",
+    mnemonic: { title: "Amorsolo First National Artist", phrase: "Amorsolo = Golden Sunlight and Rice Fields", items: ["F - First National Artist 1972", "G - Golden backlighting", "P - Planting Rice"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Carlos 'Botong' Francisco (1912-1969)",
+    definition: "The legendary muralist from Angono, Rizal and National Artist who single-handedly revived the monumental art of the mural in the Philippines.",
+    rationalization: "Masterworks include 'Filipino Struggles Through History' at Manila City Hall; also co-discovered the ancient Angono Petroglyphs in 1965.",
+    mnemonic: { title: "Botong the Muralist", phrase: "Botong Murals and Angono Petroglyphs", items: ["C - Carlos Botong Francisco", "M - Monumental murals", "A - Angono petroglyphs discoverer"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Guillermo Tolentino (1890-1976)",
+    definition: "The classical master sculptor and National Artist for Visual Arts renowned for creating the iconic UP 'Oblation' and the majestic 'Bonifacio Monument' in Caloocan.",
+    rationalization: "The foremost champion of classical academic realism in Philippine sculpture; sculpted the seal of the Republic of the Philippines.",
+    mnemonic: { title: "Tolentino Statues", phrase: "Tolentino = UP Oblation & Bonifacio Monument", items: ["G - Guillermo Tolentino", "O - Oblation symbol", "B - Bonifacio Monument Caloocan"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Napoleon Abueva (1930-2018)",
+    definition: "The Boholano master recognized as the 'Father of Modern Philippine Sculpture' and youngest recipient of the National Artist award at age 46.",
+    rationalization: "Pioneered functional sculpture, direct carving in hardwood, brass, and alabaster; famous works include 'Kaganapan', 'Kiss of Judas', and the Sunburst at the Peninsula Manila.",
+    mnemonic: { title: "Abueva Modern Sculptor", phrase: "Father of Modern Philippine Sculpture", items: ["N - Napoleon Abueva", "F - Father of Modern Sculpture", "K - Kaganapan and Kiss of Judas"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Vicente Manansala (1910-1981)",
+    definition: "The National Artist for Visual Arts who developed 'Transparent Cubism', where delicate, geometric planes of translucent color overlap to depict Philippine urban and folk scenes.",
+    rationalization: "Celebrated works include 'Madonna of the Slums', 'Kalabaw', and 'Market Scene'; brought a uniquely Filipino warmth and spirituality to modern cubism.",
+    mnemonic: { title: "Manansala Cubism", phrase: "Transparent Cubism and Madonna of the Slums", items: ["V - Vicente Manansala", "T - Transparent Cubism", "M - Madonna of the Slums"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Victorio Edades (1895-1985)",
+    definition: "The revolutionary painter acclaimed as the 'Father of Modern Philippine Painting' who broke away from Amorsolo's bright pastoral style with his gritty 1928 work 'The Builders'.",
+    rationalization: "Led the vanguard 'Triumvirate' of modern art alongside Botong Francisco and Galo Ocampo, portraying the raw sweat, muscular strain, and somber realities of working-class laborers.",
+    mnemonic: { title: "Edades Modern Pioneer", phrase: "Father of Modern Philippine Painting", items: ["V - Victorio Edades", "B - The Builders (1928)", "T - Triumvirate leader"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Benedicto Cabrera (BenCab)",
+    definition: "The National Artist for Visual Arts renowned for creating the iconic figurative character 'Sabel', a scavenger woman symbolizing alienation, displaced humanity, and maternal strength.",
+    rationalization: "Based in Baguio City; founded the BenCab Museum and Tam-awan Village, blending contemporary printmaking, painting, and Cordillera cultural preservation.",
+    mnemonic: { title: "BenCab Sabel", phrase: "BenCab = The Iconic Sabel Scavenger", items: ["B - BenCab", "S - Sabel series", "B - Baguio museum founder"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Ang Kiukok (1931-2005)",
+    definition: "The Filipino-Chinese painter and National Artist known for his aggressive, expressionist, and cubist canvases featuring fighting cocks, howling dogs, and bleeding crucifixions.",
+    rationalization: "Captured the raw anguish, terror, and militarized violence of the Martial Law era through jagged geometric lines and visceral crimson palettes.",
+    mnemonic: { title: "Ang Kiukok Expressionism", phrase: "Screaming Dogs, Fighting Cocks, Agonized Crucifixions", items: ["A - Ang Kiukok", "F - Figurative expressionism", "M - Martial law anguish"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Spoliarium (Juan Luna, 1884)",
+    definition: "The colossal oil painting depicting dying Roman gladiators dragged into a dark subterranean chamber, winning the Gold Medal at the Exposición Nacional de Bellas Artes in Madrid.",
+    rationalization: "Rizal allegorized the Spoliarium as a symbol of the bleeding Filipino people dragged into ruin by the tyrannical Roman empire of Spanish friardom.",
+    mnemonic: { title: "Spoliarium Gold", phrase: "Luna Won Gold in Madrid with Spoliarium", items: ["J - Juan Luna", "1884 - Madrid Gold Medal", "G - Gladiators as colonial allegory"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze landmark historical Philippine paintings and sculptures",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Las Virgenes Cristianas Expuestas al Populacho (Felix Resurreccion Hidalgo)",
+    definition: "The masterwork painting depicting innocent Christian maidens subjected to the mocking gaze of Roman spectators, winning the Silver Medal in Madrid alongside Luna's Spoliarium.",
+    rationalization: "Praised by Rizal during his Brindis speech as embodying serenity, grace, and refined suffering, complementing Luna's thunderous rage.",
+    mnemonic: { title: "Hidalgo Virgins", phrase: "Hidalgo Won Silver with Christian Virgins", items: ["F - Felix Resurreccion Hidalgo", "S - Silver Medal 1884", "C - Christian Virgins"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze landmark historical Philippine paintings and sculptures",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "GAMABA (Gawad sa Manlilikha ng Bayan / RA 7355)",
+    definition: "The National Living Treasures Award conferred by the Philippine government to traditional folk artists who possess the highest degree of technical and artistic mastery in indigenous crafts.",
+    rationalization: "Administered by the National Commission for Culture and the Arts (NCCA); institutionalized under Republic Act No. 7355 in 1992.",
+    mnemonic: { title: "GAMABA Meaning", phrase: "National Living Treasures (RA 7355)", items: ["G - Gawad sa Manlilikha ng Bayan", "7355 - Republic Act", "I - Indigenous traditional masters"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Lang Dulay",
+    definition: "The T'boli dreamweaver from Lake Sebu, South Cotabato awarded the GAMABA in 1998 for her mastery in weaving sacred T'nalak cloth inspired by patterns revealed in her dreams by Fu Dalu.",
+    rationalization: "She knew over 100 traditional T'nalak patterns (including bulinglangit and kabangi) woven from abaca fibers dyed with boiled roots and bark.",
+    mnemonic: { title: "Lang Dulay Dreamweaver", phrase: "Lang Dulay = T'boli T'nalak Dreamweaver", items: ["L - Lang Dulay", "T - T'nalak cloth", "F - Fu Dalu abaca spirit"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Apo Whang-od",
+    definition: "The centenarian Kalinga traditional tattoo artist from Buscalan, Tinglayan who is celebrated as the last and oldest 'mambabatok' practicing the ancient hand-tapped batok tattooing.",
+    rationalization: "Uses a citrus thorn (calamansi/pomelo), a bamboo mallet, and soot charcoal ink; conferred the Dangal ng Haraya award by the NCCA for preserving living indigenous heritage.",
+    mnemonic: { title: "Whang-od Mambabatok", phrase: "Whang-od = Kalinga Mambabatok", items: ["W - Whang-od", "M - Mambabatok hand-tap tattoo", "B - Buscalan, Kalinga"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Salinta Monon",
+    definition: "The Tagabawa Bagobo master weaver from Bansalan, Davao del Sur awarded the GAMABA in 1998 for her unmatched artistry in weaving traditional Bagobo Inabal abaca cloth.",
+    rationalization: "Known for the highly intricate binuwaya (crocodile) pattern; spent months at her backstrap loom perfecting heirloom textile traditions.",
+    mnemonic: { title: "Salinta Monon", phrase: "Bagobo Inabal Master Weaver", items: ["S - Salinta Monon", "B - Bagobo Inabal", "B - Bansalan, Davao del Sur"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Magdalena Gamayo",
+    definition: "The Ilocano master weaver from Pinili, Ilocos Norte awarded the GAMABA in 2012 for her mastery of traditional Inabel weaving, particularly the complex binakol optical pattern.",
+    rationalization: "Her textiles display flawless weave density and intricate geometric motifs including the kusikos (whirlwind) intended to ward off malevolent spirits.",
+    mnemonic: { title: "Magdalena Gamayo", phrase: "Ilocano Inabel and Binakol Weaver", items: ["M - Magdalena Gamayo", "I - Inabel cloth", "P - Pinili, Ilocos Norte"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Manunggul Jar (890-710 BCE)",
+    definition: "The secondary burial jar discovered in the Tabon Caves of Palawan featuring a lid topped by two human figures paddling a boat toward the afterlife.",
+    rationalization: "Declared a National Cultural Treasure; proves ancient Austronesian maritime beliefs regarding the soul's journey across waters to the spiritual realm.",
+    mnemonic: { title: "Manunggul Jar", phrase: "Palawan Burial Jar Rowing to the Afterlife", items: ["M - Manunggul Jar", "T - Tabon Caves, Palawan", "B - Boat of souls"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze prehistoric and indigenous Philippine art artifacts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Bulul (Ifugao Rice God)",
+    definition: "An indigenous carved wooden anthropomorphic figure used by the Ifugao people of Northern Luzon to guard rice granaries and invoke bountiful harvests.",
+    rationalization: "Activated through sacred animal blood rituals (tunod) performed by mumbaki priests, transforming the carved narra wood into an inhabited dwelling for ancestral spirits.",
+    mnemonic: { title: "Bulul Granary Guardian", phrase: "Ifugao Wooden Rice Granary Spirit", items: ["B - Bulul", "I - Ifugao rice god", "M - Mumbaki rituals"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze prehistoric and indigenous Philippine art artifacts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Torogan and Panolong",
+    definition: "The traditional ancestral communal house of the Maranao royal datu nobility, famed for its protruding, carved wing-like beam ornaments called Panolong.",
+    rationalization: "Panolong beams are intricately carved with the okir motif (naga sea-serpent and floral fern patterns) to signify elite royal status and deflect calamity.",
+    mnemonic: { title: "Torogan and Panolong", phrase: "Maranao Royal House with Wing Beams", items: ["T - Torogan: Royal house", "P - Panolong: Wing beams", "N - Naga serpent carving"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze prehistoric and indigenous Philippine art artifacts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Okir (Ukkil)",
+    definition: "The traditional curvilinear geometric and flowing plant-based art design motif of the Maranao, Tausug, and Maguindanao peoples of Mindanao and Sulu.",
+    rationalization: "Differentiates into Okir a Datu (curvilinear floral scrolls and spiral motifs used by men in wood/metal) and Okir a Bay (geometric zigzags used by women in weaving).",
+    mnemonic: { title: "Okir Motifs", phrase: "Mindanao Curvilinear Wave Designs", items: ["O - Okir", "D - Datu (Spiral florals)", "B - Bay (Geometric weaving)"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze prehistoric and indigenous Philippine art artifacts",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Sarimanok",
+    definition: "The legendary mythical bird of Maranao folklore depicted with colorful wings, a feathered tail, and a fish perched on its beak or claws.",
+    rationalization: "Originates from Islamic and ancient folk totems symbolizing good fortune, prosperity, and high social nobility; an iconic visual symbol of Mindanaoan culture.",
+    mnemonic: { title: "Sarimanok Bird", phrase: "Mythical Maranao Bird with Fish", items: ["S - Sarimanok", "M - Maranao mythical bird", "F - Fish held in beak"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze prehistoric and indigenous Philippine art artifacts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Impressionism (19th Century)",
+    definition: "The art movement founded in France by Claude Monet, Edgar Degas, and Pierre-Auguste Renoir focusing on capturing the fleeting optical effects of light and atmosphere in the open air (en plein air).",
+    rationalization: "Named after Claude Monet's 1872 painting 'Impression, Sunrise'; rejected academic blending in favor of short, visible brushstrokes of pure unmixed color.",
+    mnemonic: { title: "Impressionism Features", phrase: "Fleeting Light, Visible Brushstrokes En Plein Air", items: ["M - Monet (Impression, Sunrise)", "L - Light and atmospheric effects", "P - Plein air painting"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Post-Impressionism",
+    definition: "The late 19th-century movement led by Vincent van Gogh, Paul Cezanne, Paul Gauguin, and Georges Seurat that moved beyond fleeting light to emphasize intense emotion, symbolism, and structural geometry.",
+    rationalization: "Cezanne laid the geometric foundation for Cubism, while Van Gogh's emotional brushstrokes paved the way for German Expressionism.",
+    mnemonic: { title: "Post-Impressionist Masters", phrase: "Cezanne (Form), Van Gogh (Emotion), Gauguin (Color)", items: ["C - Cezanne (Father of modern art)", "V - Van Gogh (Starry Night)", "G - Gauguin (Tahitian symbolism)"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Cubism (Pablo Picasso and Georges Braque)",
+    definition: "The revolutionary avant-garde art movement of the early 20th century that dismantled traditional single-point perspective, fragmenting subjects into geometric planes viewed from multiple angles simultaneously.",
+    rationalization: "Inaugurated by Picasso's 1907 masterpiece 'Les Demoiselles d'Avignon'; divided into Analytic Cubism (monochromatic deconstruction) and Synthetic Cubism (collage and bright surfaces).",
+    mnemonic: { title: "Cubism Multiple Views", phrase: "Multiple Angles on a Single Plane", items: ["P - Picasso", "B - Braque", "M - Multiple viewpoints simultaneously"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Surrealism (Salvador Dali and Rene Magritte)",
+    definition: "The 1920s cultural movement influenced by Freudian psychoanalysis that unlocked the creative potential of the unconscious mind through bizarre, dreamlike, and irrational juxtapositions.",
+    rationalization: "Famous masterworks include Dali's 'The Persistence of Memory' (melting clocks) and Magritte's 'The Treachery of Images' ('Ceci n'est pas une pipe').",
+    mnemonic: { title: "Surrealism Dreams", phrase: "Dreamscapes of the Unconscious Mind", items: ["D - Dali (Melting clocks)", "M - Magritte (Pipe paradox)", "F - Freudian dream logic"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Abstract Expressionism (Jackson Pollock)",
+    definition: "The mid-20th-century American art movement centered in New York characterized by spontaneous, non-representational, and emotionally charged 'action painting'.",
+    rationalization: "Pollock flung and dripped industrial enamel paint directly onto massive unprimed canvases laid on the floor, making the physical act of painting itself the primary subject.",
+    mnemonic: { title: "Action Painting", phrase: "Pollock's Drip and Splatter Energy", items: ["J - Jackson Pollock", "A - Action painting", "D - Drip and pour technique"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Pop Art (Andy Warhol and Roy Lichtenstein)",
+    definition: "The 1950s-1960s art movement that challenged fine art traditions by incorporating imagery from popular culture, consumer advertising, comic strips, and mass media.",
+    rationalization: "Andy Warhol used silkscreen printing to replicate mass-produced icons ('Campbell's Soup Cans', 'Marilyn Monroe'), blurring the line between commercial packaging and museum art.",
+    mnemonic: { title: "Pop Art Mass Media", phrase: "Soup Cans, Celebrities, and Comic Strips", items: ["W - Warhol (Campbell's soup)", "L - Lichtenstein (Comic dots)", "P - Popular consumer culture"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Baroque Art (Caravaggio and Bernini)",
+    definition: "The 17th-century European style characterized by grand drama, exuberant emotion, theatrical lighting, deep shadows (tenebrism), and sensory dynamism.",
+    rationalization: "Commissioned by the Catholic Counter-Reformation to inspire visceral piety in worshipers; seen in Gian Lorenzo Bernini's sculpture 'The Ecstasy of Saint Teresa'.",
+    mnemonic: { title: "Baroque Drama", phrase: "Theatrical Drama, Emotion, and Tenebrism", items: ["B - Baroque", "C - Caravaggio (Dark shadows)", "B - Bernini (Theatrical sculpture)"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Renaissance Art (Da Vinci, Michelangelo, Raphael)",
+    definition: "The 14th to 17th-century cultural rebirth characterized by the revival of classical antiquity, humanism, linear perspective, mathematical proportion, and anatomical precision.",
+    rationalization: "Known as the High Renaissance; exemplified by Da Vinci's 'The Last Supper', Michelangelo's Sistine Chapel ceiling and statue of 'David', and Raphael's 'School of Athens'.",
+    mnemonic: { title: "Renaissance Masters", phrase: "Humanism, Linear Perspective, Harmony", items: ["D - Da Vinci (Mona Lisa)", "M - Michelangelo (David)", "R - Raphael (School of Athens)"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Hue, Value, and Chroma (Saturation)",
+    definition: "The three fundamental physical properties of color: Hue is the name of the color family (e.g., blue); Value is its lightness or darkness; Chroma/Saturation is its purity, intensity, or dullness.",
+    rationalization: "Adding white creates a tint (higher value); adding black creates a shade (lower value); adding grey or complementary color desaturates the chroma.",
+    mnemonic: { title: "Color Dimensions", phrase: "H-V-C: Hue (Name), Value (Lightness), Chroma (Purity)", items: ["H - Hue: Color name", "V - Value: Lightness/Darkness", "C - Chroma: Intensity/Purity"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Apply color theory principles and harmonies",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Fresco Painting",
+    definition: "A painting technique where pigments mixed with water are applied directly onto wet lime plaster, chemically fusing into the wall as it cures.",
+    rationalization: "Known as Buon Fresco (true fresco); extraordinarily permanent, but requires rapid execution before the plaster dries (seen in Michelangelo's Sistine Chapel ceiling).",
+    mnemonic: { title: "Fresco Plaster", phrase: "Fresco = Fresh Wet Plaster", items: ["F - Fresco", "W - Wet lime plaster", "P - Permanent wall chemical bond"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify painting techniques and mediums in visual arts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Encaustic Painting",
+    definition: "An ancient painting technique where pigments are suspended in molten beeswax and applied to wooden panels, cured with a heat source.",
+    rationalization: "Famous in Greco-Roman Egyptian funerary mummy portraits from the Fayum oasis; remarkable for their preservation of fresh, luminous colors across thousands of years.",
+    mnemonic: { title: "Encaustic Beeswax", phrase: "Hot Beeswax Painting Technique", items: ["E - Encaustic", "B - Beeswax medium", "F - Fayum mummy portraits"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify painting techniques and mediums in visual arts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Negative Space vs Positive Space",
+    definition: "Positive space is the actual subject or focal object occupying area in an artwork; Negative space is the surrounding unoccupied or empty background area around and between the subjects.",
+    rationalization: "Mastery of negative space creates balance, guides eye flow, and can create dual optical illusions (such as Rubin's Vase where negative space reveals two faces).",
+    mnemonic: { title: "Space Concept", phrase: "Positive is the Subject; Negative is the Background", items: ["P - Positive: The main object", "N - Negative: Empty breathing room"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze elements of art (space, color, texture, line)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Art Nouveau",
+    definition: "The international decorative art style of the late 19th and early 20th centuries inspired by natural forms and structures, featuring sinuous, flowing 'whiplash' lines and plant motifs.",
+    rationalization: "Influenced architecture (Antoni Gaudí in Barcelona), glasswork (Louis Comfort Tiffany), and painting (Gustav Klimt's 'The Kiss').",
+    mnemonic: { title: "Art Nouveau Whiplash", phrase: "Organic Whiplash Curves and Floral Elegance", items: ["A - Art Nouveau", "W - Whiplash lines", "K - Klimt's The Kiss"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Dadaism (Marcel Duchamp)",
+    definition: "The anti-art, nihilistic avant-garde movement formed in Zurich during WWI that protested the horrors of war by ridiculing social conventions and aesthetic taste with absurdity and satire.",
+    rationalization: "Marcel Duchamp pioneered the 'Readymade', famously submitting an inverted porcelain urinal signed 'R. Mutt 1917' titled 'Fountain' to provoke questions about what constitutes art.",
+    mnemonic: { title: "Dada Absurdity", phrase: "Anti-Art Urinal of Marcel Duchamp", items: ["D - Dadaism", "R - Readymade art", "U - Urinal (Fountain 1917)"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Compare major Western art movements and historical styles",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Kaganapan (Napoleon Abueva, 1953)",
+    definition: "The iconic modernist marble sculpture by Napoleon Abueva depicting a stylized, pregnant woman carved with smooth, swelling organic contours, capturing female fulfillment and motherhood.",
+    rationalization: "Won the Grand Prize at the Art Association of the Philippines (AAP) exhibition in 1953, cementing modernism in Philippine sculpture.",
+    mnemonic: { title: "Kaganapan Fulfillment", phrase: "Pregnant Motherhood in Modern Marble", items: ["K - Kaganapan", "N - Napoleon Abueva", "P - Pregnancy fulfillment in stone"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify Philippine National Artists for Visual Arts and their masterworks",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "T'nalak Sacred Cloth",
+    definition: "The sacred, handwoven abaca cloth of the T'boli people dyed using natural tie-dye (ikat) techniques in traditional red, black, and ecru colors.",
+    rationalization: "Used in marriage dowries, peace treaties, and rituals; weavers never cut the cloth without offering prayers to Fu Dalu, the spirit of the abaca.",
+    mnemonic: { title: "T'nalak Colors", phrase: "Red, Black, and Ecru Dream Patterns", items: ["T - T'boli woven fabric", "I - Ikat tie-dye technique", "3 - Red, Black, Ecru colors"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Inabel (Abel Iloco)",
+    definition: "The traditional handwoven cotton textile heritage of the Ilocos region created on antique wooden pedal looms, renowned for its durability and intricate designs.",
+    rationalization: "Employs varied traditional weaving styles: binakol (geometric op-art dizzying patterns), inuritan (geometric stripes), and kusikos (spiraling protective motifs).",
+    mnemonic: { title: "Inabel Weaving", phrase: "Ilocano Loom Heritage Fabric", items: ["I - Inabel", "P - Pedal loom weaving", "B - Binakol optical designs"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Uwang Ahadas",
+    definition: "The blind Yakan musical genius from Lamitan, Basilan awarded the GAMABA in 2000 for his virtuosity on traditional Yakan instruments like the kwintangan kayu, gabbang, and agung.",
+    rationalization: "Overcame near-total blindness from childhood to master and teach the sacred agricultural and festive music of the Yakan people to future generations.",
+    mnemonic: { title: "Uwang Ahadas Virtuoso", phrase: "Blind Yakan Master of the Kwintangan", items: ["U - Uwang Ahadas", "Y - Yakan master musician", "K - Kwintangan kayu xylophone"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Eduardo Mutuc",
+    definition: "The Kapampangan metalsmith from Apalit, Pampanga awarded the GAMABA in 2004 for his mastery in creating ecclesiastical silver and brass altarpieces, retablos, and carosas.",
+    rationalization: "Practices the traditional pukpuk (repoussé and chasing) technique, hand-hammering intricate leaves, scrolls, and angels into sheets of brass and silver.",
+    mnemonic: { title: "Mutuc Metalcraft", phrase: "Apalit Master of Church Silvercraft", items: ["E - Eduardo Mutuc", "P - Pukpuk metal hammering", "R - Retablo church altars"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Identify GAMABA awardees (National Living Treasures) and indigenous crafts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Petroglyphs of Angono (c. 3000 BCE)",
+    definition: "The oldest known work of art in the Philippines consisting of 127 human and animal engravings carved into a rock shelter in Angono, Rizal.",
+    rationalization: "Accidentally discovered by National Artist Botong Francisco during a boy scout hike in 1965; declared a National Cultural Treasure.",
+    mnemonic: { title: "Angono Petroglyphs", phrase: "Oldest Philippine Rock Art 3000 BCE", items: ["A - Angono, Rizal", "127 - Engraved stick figures", "B - Botong Francisco discovery"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze prehistoric and indigenous Philippine art artifacts",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "The Golden Mean / Golden Section in Art",
+    definition: "The geometric proportion of approximately 1:1.618 utilized by classical Greek architects and Renaissance painters to achieve divine balance and visual harmony.",
+    rationalization: "Applied in Leonardo da Vinci's 'Vitruvian Man' and the architectural facade proportions of the Parthenon in Athens.",
+    mnemonic: { title: "Divine Proportion", phrase: "1 to 1.618 Ratio for Natural Beauty", items: ["G - Golden ratio", "P - Parthenon proportions", "V - Vitruvian Man harmony"] },
+    source: "PRC BLEPT GenEd Art Reviewer",
+    tosCompetency: "Analyze principles of design in visual compositions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  }
+];
+
+// Write Art Appreciation
+writeDataset(
+  'data/gened/art_appreciation/art_appreciation.json',
+  'General Education',
+  'Art Appreciation',
+  'Art Elements, Western Movements, National Artists, & GAMABA Heritage',
+  artItems
+);

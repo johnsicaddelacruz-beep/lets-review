@@ -1,0 +1,911 @@
+{
+  "category": "General Education",
+  "topic": "Purposive Communication in English",
+  "subtopic": "Communication Models, Registers, & Principles",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Shannon-Weaver Model of Communication",
+      "definition": "Known as the 'Mother of all communication models', this linear model includes information source, transmitter, channel, receiver, destination, and noise source.",
+      "rationalization": "Developed by Claude Shannon and Warren Weaver in 1949 for telephone communication, it introduced the concept of 'noise' as any interference that disrupts message transmission.",
+      "mnemonic": {
+        "title": "Shannon-Weaver Components",
+        "phrase": "Source Transmits Channel Receiver Destination (STCRD)",
+        "items": [
+          "S - Sender/Source",
+          "T - Transmitter",
+          "C - Channel + Noise",
+          "R - Receiver",
+          "D - Destination"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Analyze models and elements of communication processes",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Berlo's SMCR Model",
+      "definition": "A communication model identifying four key components: Source, Message, Channel, and Receiver, each influenced by specific behavioral factors like communication skills and culture.",
+      "rationalization": "David Berlo emphasized that the sender and receiver must operate on similar wavelengths (attitude, knowledge, social system) for effective communication without distortion.",
+      "mnemonic": {
+        "title": "Berlo's Four Pillars",
+        "phrase": "SMCR: Send Message Clearly, Receive",
+        "items": [
+          "S - Source",
+          "M - Message",
+          "C - Channel",
+          "R - Receiver"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Differentiate linear and interactive models of communication",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Schramm's Interactive Model",
+      "definition": "A cyclical communication model asserting that communication occurs only if there is an overlap in the 'Field of Experience' between encoder and decoder.",
+      "rationalization": "Wilbur Schramm highlighted that shared background, language, beliefs, and culture (Field of Experience) are prerequisites for mutual understanding.",
+      "mnemonic": {
+        "title": "Schramm's Key Concept",
+        "phrase": "Shared Field, Shared Meaning",
+        "items": [
+          "S - Schramm",
+          "F - Field of experience overlap",
+          "C - Circular feedback loop"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Evaluate factors affecting intercultural and interpersonal communication",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Semantic Noise",
+      "definition": "A barrier to communication caused by ambiguous words, jargon, idioms, or differing interpretations of linguistic symbols.",
+      "rationalization": "Unlike physical noise (loud engines) or physiological noise (deafness, headache), semantic noise stems from word meanings, specialized vocabulary, or grammatical ambiguity.",
+      "mnemonic": {
+        "title": "Semantic Noise Clue",
+        "phrase": "Semantics = Study of Meaning",
+        "items": [
+          "S - Semantic",
+          "M - Meaning misunderstanding",
+          "J - Jargon/ambiguity"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Identify communication barriers and noise factors",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Psychological Noise",
+      "definition": "Prejudices, emotional biases, closed-mindedness, or anger that prevent a listener from objectively receiving a message.",
+      "rationalization": "Internal psychological barriers such as anger, mistrust, stereotyping, or defensiveness distort message reception even in quiet physical environments.",
+      "mnemonic": {
+        "title": "Psychological Barrier",
+        "phrase": "Prejudice Clouds the Mind",
+        "items": [
+          "P - Preconceived notions",
+          "E - Emotional turmoil",
+          "B - Biased perception"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Identify communication barriers and noise factors",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Physiological Noise",
+      "definition": "Bodily conditions such as hearing impairment, hunger, extreme exhaustion, or headache that hinder communication processing.",
+      "rationalization": "Physiological noise arises from the physical state of the human body, reducing the cognitive ability to encode or decode messages effectively.",
+      "mnemonic": {
+        "title": "Physiological Clue",
+        "phrase": "Physical Body Sensation",
+        "items": [
+          "P - Pain",
+          "F - Fatigue",
+          "H - Hunger or Hearing loss"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Classify types of communication noise",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Proxemics",
+      "definition": "The study of personal space and physical distance between individuals as an indicator of relationship and communicative intent.",
+      "rationalization": "Edward T. Hall identified four spatial zones: Intimate (0-1.5 ft), Personal (1.5-4 ft), Social (4-12 ft), and Public (12+ ft).",
+      "mnemonic": {
+        "title": "Hall's Distance Zones",
+        "phrase": "Intimate, Personal, Social, Public (IPSP)",
+        "items": [
+          "I - Intimate (0-1.5 ft)",
+          "P - Personal (1.5-4 ft)",
+          "S - Social (4-12 ft)",
+          "P - Public (12+ ft)"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish non-verbal communication categories",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Kinesics",
+      "definition": "The study of body movement, facial expressions, eye contact, and gestures in non-verbal communication.",
+      "rationalization": "Coined by Ray Birdwhistell, kinesics analyzes gestures (emblems, illustrators, affect displays, regulators, adaptors) communicating emotions and unspoken intentions.",
+      "mnemonic": {
+        "title": "Kinesics Clue",
+        "phrase": "Kinetic Body Motion",
+        "items": [
+          "K - Kinesics",
+          "B - Body language",
+          "F - Facial expression"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish non-verbal communication categories",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Chronemics",
+      "definition": "The study of the role of time in human communication, including punctuality, willingness to wait, and pacing of speech.",
+      "rationalization": "Chronemics distinguishes between monochronic cultures (view time as linear, schedules strictly observed) and polychronic cultures (multitasking, fluid relationships take precedence).",
+      "mnemonic": {
+        "title": "Chronemics Meaning",
+        "phrase": "Chrono = Time Clock",
+        "items": [
+          "C - Chronemics",
+          "T - Time management",
+          "M - Monochronic vs Polychronic"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Differentiate cross-cultural temporal behaviors",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Haptics",
+      "definition": "The study of touch as a form of non-verbal communication, expressing affection, sympathy, dominance, or greeting.",
+      "rationalization": "Haptic behavior varies widely across cultures and social contexts (e.g., handshakes, pats on the back, hugging, or strict taboos against touching).",
+      "mnemonic": {
+        "title": "Haptics Touch",
+        "phrase": "Hands And Palms Touching",
+        "items": [
+          "H - Hands",
+          "A - Action of touching",
+          "P - Physical contact"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish non-verbal communication categories",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Paralanguage (Vocalics)",
+      "definition": "Vocal qualities that accompany spoken language, including pitch, tone, volume, speed, pauses, and vocal inflections.",
+      "rationalization": "Paralanguage conveys how something is said rather than what is said. Sarcasm, hesitation, or urgency are decoded through vocalic cues.",
+      "mnemonic": {
+        "title": "Paralanguage Rule",
+        "phrase": "Not What You Say, But How You Say It",
+        "items": [
+          "P - Pitch & Pause",
+          "T - Tone & Tempo",
+          "V - Volume"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Analyze paralanguage and vocal cues in speech",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Frozen Register (Static Register)",
+      "definition": "A style of language that never changes, used in solemn ceremonies, the National Anthem, the Lord's Prayer, and the Constitution.",
+      "rationalization": "Frozen register is historic, ceremonial, and immutable; listeners are not invited to alter the text or give casual conversational feedback.",
+      "mnemonic": {
+        "title": "Frozen Register Key",
+        "phrase": "Frozen in Time, Cannot Rhyme Or Change",
+        "items": [
+          "F - Fixed wording",
+          "R - Recited unchanged",
+          "C - Ceremonial texts"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Identify language registers according to communicative context",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Formal Register",
+      "definition": "Language used in professional, academic, or legal contexts where standard grammar, complete sentences, and respectful diction are required.",
+      "rationalization": "Seen in scholarly papers, state addresses, graduation speeches, and corporate announcements; avoids slang and contractions.",
+      "mnemonic": {
+        "title": "Formal Register Rule",
+        "phrase": "Polite, Professional, Prepared",
+        "items": [
+          "P - Professional setting",
+          "C - Correct grammar",
+          "N - No slang/colloquialisms"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Identify language registers according to communicative context",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Consultative Register",
+      "definition": "A two-way communication register used in professional exchanges like doctor-patient, teacher-student, or lawyer-client consultations.",
+      "rationalization": "The speaker supplies background information while the listener continuously responds with verbal and non-verbal cues ('I see', 'Go on').",
+      "mnemonic": {
+        "title": "Consultative Register",
+        "phrase": "Consultation Back and Forth",
+        "items": [
+          "D - Doctor-patient",
+          "T - Teacher-student",
+          "B - Bidirectional feedback"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Identify language registers according to communicative context",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Casual Register",
+      "definition": "Informal language shared among peers and friends, characterized by slang, colloquialisms, ellipses, and humor.",
+      "rationalization": "Social intimacy without formality; friends talk in casual register using vernacular terms, idioms, and relaxed grammar.",
+      "mnemonic": {
+        "title": "Casual Register Clue",
+        "phrase": "Chit-chat Between Pals",
+        "items": [
+          "C - Colloquial",
+          "S - Slang acceptable",
+          "F - Friends and peers"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Identify language registers according to communicative context",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Intimate Register",
+      "definition": "Private communication reserved for close family members, spouses, or best friends, featuring private codes, pet names, and non-verbal shorthand.",
+      "rationalization": "Does not require complete grammatical clarity because intimate partners share extensive mutual understanding and private signals.",
+      "mnemonic": {
+        "title": "Intimate Register",
+        "phrase": "Inside Jokes Between Lovers",
+        "items": [
+          "I - Inside codes",
+          "N - No need for formal words",
+          "P - Private bond"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Identify language registers according to communicative context",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Locutionary Act",
+      "definition": "The basic act of uttering meaningful words and producing sounds with determinate sense and reference (the literal utterance).",
+      "rationalization": "Proposed by J.L. Austin in Speech Act Theory. Stating 'It is raining outside' literally states the weather condition as a locutionary act.",
+      "mnemonic": {
+        "title": "Austin's Speech Acts",
+        "phrase": "Locution = Words Spoken",
+        "items": [
+          "L - Locution (literal words)",
+          "I - Illocution (intention)",
+          "P - Perlocution (psychological effect)"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Classify speech acts based on Austin and Searle",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Illocutionary Act",
+      "definition": "The social function, intention, or communicative force behind an utterance (promising, commanding, warning, apologizing).",
+      "rationalization": "When a speaker says 'There is a ferocious dog behind you', the illocutionary force is a warning rather than mere meteorology or biology.",
+      "mnemonic": {
+        "title": "Illocution Clue",
+        "phrase": "I = Intention of Speaker",
+        "items": [
+          "I - Illocution",
+          "I - Intended meaning",
+          "F - Force of utterance"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Classify speech acts based on Austin and Searle",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Perlocutionary Act",
+      "definition": "The resulting psychological effect, consequence, or behavioral response elicited in the listener by the speaker's utterance.",
+      "rationalization": "If the listener gets scared and climbs a tree after hearing the warning, that fright and reaction constitute the perlocutionary effect.",
+      "mnemonic": {
+        "title": "Perlocution Clue",
+        "phrase": "P = Produced Result in Listener",
+        "items": [
+          "P - Perlocution",
+          "P - Produced effect",
+          "R - Reaction triggered"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Classify speech acts based on Austin and Searle",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Ethnocentrism",
+      "definition": "The tendency to judge another culture's practices and beliefs solely by the standards and values of one's own culture, viewing one's own as superior.",
+      "rationalization": "Ethnocentrism creates acute intercultural friction; the remedy is cultural relativism—understanding practices from within their own cultural context.",
+      "mnemonic": {
+        "title": "Ethnocentrism Trap",
+        "phrase": "My Culture is the Center of the Universe",
+        "items": [
+          "E - Ego of culture",
+          "C - Center perception",
+          "B - Bias against foreign customs"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Examine intercultural communication challenges and cultural biases",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Cultural Relativism",
+      "definition": "The principle of evaluating and understanding a culture's practices, beliefs, and behaviors through the lens of that culture rather than imposing foreign standards.",
+      "rationalization": "Franz Boas promoted cultural relativism as essential for intercultural tolerance, ethical objectivity, and mutual respect in global communication.",
+      "mnemonic": {
+        "title": "Relativism Rule",
+        "phrase": "Respect Every Culture Relatively",
+        "items": [
+          "R - Respect context",
+          "O - Open-mindedness",
+          "S - Suspend judgment"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Examine intercultural communication challenges and cultural biases",
+      "bloomsTaxonomy": "Evaluating",
+      "highYield": true
+    },
+    {
+      "term": "High-Context Communication",
+      "definition": "A communication style where most information is implied through relationships, non-verbal cues, and shared context rather than explicit spoken words.",
+      "rationalization": "Prevalent in East Asian, Arab, and Filipino cultures (pakiramdaman, pahiwatig). Low-context cultures (USA, Germany) rely on explicit, direct words.",
+      "mnemonic": {
+        "title": "High vs Low Context",
+        "phrase": "High = Hidden between lines; Low = Loud and direct",
+        "items": [
+          "H - High context: subtle/non-verbal",
+          "L - Low context: explicit/clear words"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Compare high-context and low-context cultural communication",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Assertive Communication",
+      "definition": "A balanced communication style expressing one's thoughts, feelings, and boundaries honestly and directly while respecting the rights of others.",
+      "rationalization": "Distinct from aggressive communication (dominating/disrespectful) and passive communication (suppressing one's needs to avoid conflict).",
+      "mnemonic": {
+        "title": "Communication Spectrum",
+        "phrase": "Passive -> Assertive (Ideal) -> Aggressive",
+        "items": [
+          "A - Authentic voice",
+          "R - Respects boundaries",
+          "C - Clear 'I' statements"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Select effective interpersonal communication strategies",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Critical Listening",
+      "definition": "Listening to analyze, evaluate, and assess the logic, truthfulness, and credibility of a speaker's arguments before forming judgment.",
+      "rationalization": "Essential when listening to debates, political campaigns, or advertisements to identify fallacies, emotional manipulation, and factual accuracy.",
+      "mnemonic": {
+        "title": "Critical Listening Goal",
+        "phrase": "Critique Logic and Facts",
+        "items": [
+          "C - Check evidence",
+          "L - Logical reasoning",
+          "F - Fallacy detection"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply types of listening across varied situations",
+      "bloomsTaxonomy": "Evaluating",
+      "highYield": true
+    },
+    {
+      "term": "Empathic Listening",
+      "definition": "Listening to understand another person's feelings, emotions, and perspective from their frame of reference without offering unsolicited judgment.",
+      "rationalization": "Also called therapeutic listening; vital in counseling, conflict mediation, and building emotional trust between individuals.",
+      "mnemonic": {
+        "title": "Empathic Listening Clue",
+        "phrase": "Listening with Heart and Soul",
+        "items": [
+          "E - Emotion validation",
+          "A - Active presence",
+          "N - Non-judgmental stance"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply types of listening across varied situations",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Appreciative Listening",
+      "definition": "Listening for aesthetic pleasure, enjoyment, or inspiration, such as listening to music, poetry, theatre, or comedy.",
+      "rationalization": "The primary purpose is personal satisfaction, relaxation, or cultural enjoyment rather than information retention or analytical critique.",
+      "mnemonic": {
+        "title": "Appreciative Listening",
+        "phrase": "Appreciate Art and Pleasure",
+        "items": [
+          "A - Art & Music",
+          "P - Pleasure",
+          "R - Relaxation"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply types of listening across varied situations",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Extemporaneous Speech",
+      "definition": "A speech delivered with thorough prior preparation, structured outline notes, and conversational spontaneity rather than word-for-word memorization.",
+      "rationalization": "Preferred in professional and educational forums; strikes the balance between structured evidence and authentic audience engagement.",
+      "mnemonic": {
+        "title": "Speech Delivery Types",
+        "phrase": "Impromptu (None), Extemporaneous (Notes), Manuscript (Read), Memorized (Head)",
+        "items": [
+          "I - Impromptu = zero prep",
+          "E - Extemporaneous = outline/notes",
+          "M - Manuscript = verbatim script",
+          "M - Memorized = learned by heart"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Compare methods of speech delivery",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Impromptu Speech",
+      "definition": "A speech delivered on the spot with zero advance preparation, relying on immediate quick thinking, knowledge, and structure.",
+      "rationalization": "Often practiced in classroom exercises or ambush interviews; successful speakers use structures like PREP (Point, Reason, Example, Point).",
+      "mnemonic": {
+        "title": "Impromptu Formula",
+        "phrase": "PREP on the Spot",
+        "items": [
+          "P - Point",
+          "R - Reason",
+          "E - Example",
+          "P - Point summary"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Compare methods of speech delivery",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Manuscript Speech",
+      "definition": "A speech read word-for-word from a written text, used when exact wording and precision are critical (e.g., State of the Nation Address, legal declarations).",
+      "rationalization": "Prevents misquoting or diplomatic missteps, but risks reducing eye contact and spontaneous connection with the audience.",
+      "mnemonic": {
+        "title": "Manuscript Clue",
+        "phrase": "Read Word by Word",
+        "items": [
+          "M - Manuscript",
+          "E - Exact precision",
+          "L - Legal/presidential texts"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Compare methods of speech delivery",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Memorized Speech",
+      "definition": "A speech committed completely to memory and delivered without any script or notes.",
+      "rationalization": "Allows maximum physical mobility and gesture use, but risks total disruption if the speaker suffers a memory lapse or mental block.",
+      "mnemonic": {
+        "title": "Memorized Trap",
+        "phrase": "In the Head, Might Go Dead",
+        "items": [
+          "M - Memorized",
+          "F - Free hands",
+          "B - Blank out risk"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Compare methods of speech delivery",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Ethos",
+      "definition": "Aristotle's rhetorical appeal based on the speaker's credibility, character, expertise, trustworthiness, and ethical authority.",
+      "rationalization": "An audience accepts a message when they perceive the speaker as knowledgeable, virtuous, and of good will towards them.",
+      "mnemonic": {
+        "title": "Aristotle's Rhetorical Triangle",
+        "phrase": "Ethos (Credibility), Pathos (Emotion), Logos (Logic)",
+        "items": [
+          "E - Ethos: Ethics & Credibility",
+          "P - Pathos: Passion & Emotion",
+          "L - Logos: Logic & Facts"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply Aristotelian rhetorical appeals in persuasive discourse",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Pathos",
+      "definition": "Aristotle's rhetorical appeal to the audience's emotions, values, sympathy, desires, and passions.",
+      "rationalization": "Effective persuasive speeches evoke empathy, hope, righteous anger, or pride to inspire action in the listener.",
+      "mnemonic": {
+        "title": "Pathos Clue",
+        "phrase": "Passion and Sympathy",
+        "items": [
+          "P - Pathos",
+          "P - Passion",
+          "E - Emotional connection"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply Aristotelian rhetorical appeals in persuasive discourse",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Logos",
+      "definition": "Aristotle's rhetorical appeal to reason, logic, sound evidence, statistics, syllogisms, and rational argument.",
+      "rationalization": "Persuading through clarity of thought, undeniable facts, cause-and-effect reasoning, and deductive/inductive evidence.",
+      "mnemonic": {
+        "title": "Logos Clue",
+        "phrase": "Logic Over Sentiments",
+        "items": [
+          "L - Logos",
+          "L - Logical proof",
+          "D - Data and statistics"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply Aristotelian rhetorical appeals in persuasive discourse",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Ad Hominem Fallacy",
+      "definition": "A logical fallacy that attacks the opponent's personal character, appearance, or background rather than refuting their substantive argument.",
+      "rationalization": "Latin for 'to the person'. Saying 'Do not believe her tax proposal because she is divorced' is an ad hominem fallacy.",
+      "mnemonic": {
+        "title": "Ad Hominem Meaning",
+        "phrase": "Attack the Person, Not the Point",
+        "items": [
+          "A - Attack individual",
+          "D - Disregard premise",
+          "H - Human targeted"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Detect logical fallacies in reasoning and argumentation",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Straw Man Fallacy",
+      "definition": "A logical fallacy of misrepresenting, exaggerating, or oversimplifying an opponent's argument to make it easier to attack and defeat.",
+      "rationalization": "The arguer sets up a flimsy counterfeit argument (a straw dummy), destroys it, and claims victory over the real position.",
+      "mnemonic": {
+        "title": "Straw Man Clue",
+        "phrase": "Fake Puppet Argument",
+        "items": [
+          "S - Substitute argument",
+          "T - Trivial caricature",
+          "D - Destroy easily"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Detect logical fallacies in reasoning and argumentation",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Post Hoc Ergo Propter Hoc",
+      "definition": "The false cause fallacy claiming that because Event B occurred after Event A, Event A must be the cause of Event B.",
+      "rationalization": "Latin for 'after this, therefore because of this'. Correlation or sequence in time does not prove causation.",
+      "mnemonic": {
+        "title": "Post Hoc Trap",
+        "phrase": "After Does Not Equal Because Of",
+        "items": [
+          "P - Post = After",
+          "H - Hasty causation",
+          "C - Correlation ≠ Causation"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Detect logical fallacies in reasoning and argumentation",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Bandwagon Fallacy (Argumentum ad Populum)",
+      "definition": "An appeal arguing that a claim must be true or good simply because the majority of people believe or do it.",
+      "rationalization": "Truth and morality are not decided by popularity; widespread belief does not turn a falsehood into truth.",
+      "mnemonic": {
+        "title": "Bandwagon Clue",
+        "phrase": "Jump On Because Everyone Did",
+        "items": [
+          "B - Bandwagon",
+          "P - Popularity bias",
+          "N - Not verified truth"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Detect logical fallacies in reasoning and argumentation",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Red Herring Fallacy",
+      "definition": "Introducing an irrelevant or sensational topic into a discussion to distract the audience from the real issue at hand.",
+      "rationalization": "Named after dragging a strong-smelling smoked fish across a trail to confuse hunting hounds off the original scent.",
+      "mnemonic": {
+        "title": "Red Herring Trick",
+        "phrase": "Smelly Fish Distraction",
+        "items": [
+          "R - Redirection",
+          "D - Distraction of audience",
+          "S - Side-track discussion"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Detect logical fallacies in reasoning and argumentation",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Slippery Slope Fallacy",
+      "definition": "Asserting that a relatively small initial step will inevitably trigger a chain of extreme and disastrous negative consequences without providing evidence.",
+      "rationalization": "Assuming an extreme snowball effect without demonstrating the causal necessity between the stages.",
+      "mnemonic": {
+        "title": "Slippery Slope",
+        "phrase": "One Step Leads to Catastrophe",
+        "items": [
+          "S - Small start",
+          "S - Slipping fast",
+          "C - Catastrophic conclusion"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Detect logical fallacies in reasoning and argumentation",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Denotation",
+      "definition": "The literal, explicit, dictionary definition of a word, devoid of emotional or cultural associations.",
+      "rationalization": "The denotation of 'snake' is a limbless scaly reptile; contrast this with its negative connotation of betrayal or treachery.",
+      "mnemonic": {
+        "title": "Denotation vs Connotation",
+        "phrase": "D = Dictionary definition; C = Cultural/emotional connotation",
+        "items": [
+          "D - Denotation: Dictionary literal",
+          "C - Connotation: Cultural context"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish denotative and connotative meanings in text",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Connotation",
+      "definition": "The secondary, figurative, emotional, or cultural association attached to a word beyond its literal dictionary meaning.",
+      "rationalization": "Words like 'frugal' vs 'cheap' share the same core denotation (spending little money), but 'frugal' carries positive connotation while 'cheap' is negative.",
+      "mnemonic": {
+        "title": "Connotation Meaning",
+        "phrase": "Carried Over Feelings",
+        "items": [
+          "C - Connotation",
+          "E - Emotionally charged",
+          "N - Nuanced tone"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish denotative and connotative meanings in text",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Coherence in Writing",
+      "definition": "The logical arrangement of ideas, sentences, and paragraphs so that the overall thesis and flow make sense to the reader.",
+      "rationalization": "Coherence refers to the unity of thought and logical progression; cohesion refers to the grammatical and lexical ties linking sentences.",
+      "mnemonic": {
+        "title": "Coherence vs Cohesion",
+        "phrase": "Coherence = Big Picture Sense; Cohesion = Sentence Glue",
+        "items": [
+          "Coherence - Logical sense of essay",
+          "Cohesion - Transitional words & grammar"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply principles of effective paragraph writing",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Cohesion in Writing",
+      "definition": "The linguistic glue—using conjunctions, transitional words, and pronoun references—that physically links sentences together.",
+      "rationalization": "Using transition markers like 'furthermore', 'on the other hand', and 'consequently' establishes clear cohesive ties.",
+      "mnemonic": {
+        "title": "Cohesion Markers",
+        "phrase": "Connect Sentences Together",
+        "items": [
+          "C - Connectors",
+          "P - Pronouns",
+          "T - Transitions"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply principles of effective paragraph writing",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "APA Citation Style (7th Edition)",
+      "definition": "The author-date citation format predominantly used in psychology, education, and the social sciences (e.g., Smith, 2024).",
+      "rationalization": "The American Psychological Association (APA) format emphasizes publication dates to reflect current scientific and educational research.",
+      "mnemonic": {
+        "title": "APA Style Key",
+        "phrase": "Author and Year in Parentheses",
+        "items": [
+          "A - Author (Last name)",
+          "P - Publication Year",
+          "P - Page for direct quotes"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply modern documentation styles and academic referencing",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "MLA Citation Style (9th Edition)",
+      "definition": "The author-page citation format predominantly used in the humanities, literature, art, and cultural studies (e.g., Shakespeare 45).",
+      "rationalization": "Modern Language Association (MLA) emphasizes authorship and exact page location rather than publication year.",
+      "mnemonic": {
+        "title": "MLA Style Key",
+        "phrase": "Author and Page (No Comma)",
+        "items": [
+          "M - Modern Language",
+          "L - Literature focus",
+          "P - Page number emphasized"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply modern documentation styles and academic referencing",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Oculesics",
+      "definition": "The study of eye behavior, eye contact, blink rates, and pupil dilation as a channel of non-verbal communication.",
+      "rationalization": "Eye contact indicates attention, honesty, or dominance in Western cultures, while some Asian cultures consider direct eye contact disrespectful to elders.",
+      "mnemonic": {
+        "title": "Oculesics Clue",
+        "phrase": "Ocular = Eyes",
+        "items": [
+          "O - Oculesics",
+          "E - Eye contact",
+          "G - Gaze direction"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish non-verbal communication categories",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Gustorics",
+      "definition": "The non-verbal communication of taste, food sharing, and culinary gestures as symbols of hospitality, culture, and bonding.",
+      "rationalization": "In Filipino culture, offering food to any house visitor ('Kain tayo!') serves as an immediate, warm welcoming gesture.",
+      "mnemonic": {
+        "title": "Gustorics Clue",
+        "phrase": "Gusto = Taste & Food",
+        "items": [
+          "G - Gustatory sense",
+          "F - Food offering",
+          "H - Hospitality"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish non-verbal communication categories",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Olfactics",
+      "definition": "The study of smell, body odor, and scent as a non-verbal medium of identity, status, and attraction.",
+      "rationalization": "Aromas evoke strong emotional memories (Proustian memory) and influence first impressions and intercultural hygiene perceptions.",
+      "mnemonic": {
+        "title": "Olfactics Clue",
+        "phrase": "Olfactory Scent",
+        "items": [
+          "O - Olfactics",
+          "N - Nose sensation",
+          "P - Perfume and smell"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Distinguish non-verbal communication categories",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Oxford Comma (Serial Comma)",
+      "definition": "The comma placed immediately before the coordinating conjunction (and, or) in a series of three or more items.",
+      "rationalization": "Prevents confusing misreadings: 'I love my parents, Lady Gaga and Humpty Dumpty' without the serial comma suggests the parents are Lady Gaga and Humpty Dumpty.",
+      "mnemonic": {
+        "title": "Oxford Comma Rule",
+        "phrase": "Item 1, Item 2, and Item 3",
+        "items": [
+          "O - One last comma",
+          "B - Before conjunction",
+          "C - Clarifies list"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Apply punctuation conventions in formal written English",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Parallelism (Parallel Structure)",
+      "definition": "Using the same grammatical pattern for two or more elements that have the same level of importance in a sentence.",
+      "rationalization": "Example: 'She likes hiking, swimming, and biking' (correct) vs 'She likes hiking, to swim, and bikes' (faulty parallelism).",
+      "mnemonic": {
+        "title": "Parallelism Formula",
+        "phrase": "Match the Grammatical Form",
+        "items": [
+          "P - Parallel verbs",
+          "B - Balanced structure",
+          "C - Clear rhythm"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Reviewer",
+      "tosCompetency": "Construct grammatically parallel sentences",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    }
+  ]
+}

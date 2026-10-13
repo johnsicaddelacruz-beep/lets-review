@@ -1,0 +1,531 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+function writeDataset(filePath, category, topic, subtopic, items) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  const dataset = {
+    category,
+    topic,
+    subtopic,
+    difficulty: 'medium',
+    items
+  };
+  fs.writeFileSync(filePath, JSON.stringify(dataset, null, 2), 'utf8');
+  console.log(`Generated ${filePath} with ${items.length} items`);
+}
+
+// 7. Ethics (50 items)
+const ethicsItems = [
+  {
+    term: "Moral Standards vs Non-Moral Standards",
+    definition: "Moral standards are norms that govern actions with serious consequences for human well-being, take precedence over other considerations, and are independent of legal authority, whereas non-moral standards are social conventions like etiquette, fashion rules, and grammar.",
+    rationalization: "A moral standard (e.g., 'Do not murder' or 'Tell the truth') possesses universal validity and overrides etiquette or local legal statutes when they conflict.",
+    mnemonic: { title: "Moral vs Non-Moral", phrase: "Moral = Human Well-Being; Non-Moral = Social Etiquette", items: ["M - Moral: universal, overrides law", "N - Non-moral: table manners, dress codes"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Distinguish moral standards from non-moral standards and etiquette",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Moral Dilemma",
+    definition: "A situation where a decision-maker is faced with two or more conflicting moral obligations, has the ability to choose each one, but cannot fulfill both without violating the other.",
+    rationalization: "In a true moral dilemma, any choice the agent makes results in a moral wrong or tragedy (e.g., Heinz dilemma or the Trolley problem).",
+    mnemonic: { title: "Dilemma Conflict", phrase: "Two Duties, Impossible to Fulfill Both", items: ["D - Dilemma", "C - Conflicting obligations", "N - Neither overrides easily"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Identify and resolve moral dilemmas at individual, organizational, and systemic levels",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Structural (Systemic) Dilemma",
+    definition: "A moral dilemma that arises within institutional, economic, political, or social systems where policies, laws, and organizational structures pit ethical principles against each other.",
+    rationalization: "Contrast with individual dilemmas (personal choices) and organizational dilemmas (workplace management conflicts); systemic dilemmas involve societal policies (e.g., universal healthcare rationing vs corporate profit).",
+    mnemonic: { title: "Three Levels of Dilemma", phrase: "Individual, Organizational, Structural", items: ["I - Individual: personal conscience", "O - Organizational: company culture", "S - Structural: societal laws & institutions"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Identify and resolve moral dilemmas at individual, organizational, and systemic levels",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Cultural Relativism in Ethics",
+    definition: "The view that moral values, rights, and wrongs are entirely defined and validated by individual cultures, with no universal, objective moral standards applicable to all human beings.",
+    rationalization: "Philosopher James Rachels critiqued cultural relativism by pointing out that if relativism were true, societies could never criticize slavery, anti-Semitism, or infanticide as objectively evil.",
+    mnemonic: { title: "Cultural Relativism Trap", phrase: "Culture Decides, But Lacks Universal Justice", items: ["C - Culture specific", "R - Relativism denies universal rights", "R - Rachels critique"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Evaluate cultural relativism and universal ethical standards",
+    bloomsTaxonomy: "Evaluating",
+    highYield: true
+  },
+  {
+    term: "Kohlberg: Stage 1 - Punishment and Obedience Orientation",
+    definition: "The earliest stage of moral reasoning (Pre-conventional Level) where an individual decides what is right or wrong solely based on fear of physical punishment and obedience to power.",
+    rationalization: "A child thinks: 'If I steal the medicine, I will be whipped and put in jail; therefore, stealing is bad.' Conscience is entirely external.",
+    mnemonic: { title: "Kohlberg Stage 1", phrase: "Obey to Avoid the Rod", items: ["Stage 1 - Punishment focus", "Fear of pain", "Pre-conventional level"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Kohlberg: Stage 2 - Individualism and Instrumental Exchange",
+    definition: "The stage of moral reasoning (Pre-conventional Level) where actions are judged right if they satisfy one's own immediate self-interest, operating on a 'tit-for-tat' marketplace mentality.",
+    rationalization: "Governed by the rule: 'You scratch my back, and I'll scratch yours.' Right behavior is defined instrumentally by what serves one's advantage.",
+    mnemonic: { title: "Kohlberg Stage 2", phrase: "What's in It for Me?", items: ["Stage 2 - Marketplace deal", "Self-interest driven", "Tit-for-tat exchange"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Kohlberg: Stage 3 - Interpersonal Conformity ('Good Boy / Nice Girl')",
+    definition: "The moral reasoning stage (Conventional Level) where an individual acts to gain social approval, please peers, and conform to community expectations of being a 'good' person.",
+    rationalization: "Motivation shifts from external punishment to peer acceptance and family approval: 'I must do this because I want others to like and admire me.'",
+    mnemonic: { title: "Kohlberg Stage 3", phrase: "Good Boy, Nice Girl Approval", items: ["Stage 3 - Peer approval", "Conformity to group", "Conventional level start"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Kohlberg: Stage 4 - Law and Order Orientation",
+    definition: "The moral reasoning stage (Conventional Level) where right behavior consists of doing one's duty, showing respect for established authority, and maintaining social order for its own sake.",
+    rationalization: "Believes that laws must be rigidly obeyed by everyone without exception, because society would collapse into anarchy if individuals broke rules based on personal discretion.",
+    mnemonic: { title: "Kohlberg Stage 4", phrase: "Uphold the Law at All Costs", items: ["Stage 4 - Law and order", "Duty to society", "Preserve social structure"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Kohlberg: Stage 5 - Social Contract and Individual Rights",
+    definition: "The moral reasoning stage (Post-conventional Level) where laws are viewed as social contracts designed to protect fundamental human rights, and unjust laws can and should be democratically changed.",
+    rationalization: "Recognizes that while laws serve social utility, human life and liberty take priority over outdated statutes (e.g., civil rights marches defying segregation laws).",
+    mnemonic: { title: "Kohlberg Stage 5", phrase: "Human Rights Outweigh Unjust Laws", items: ["Stage 5 - Social contract", "Democratic change of laws", "Post-conventional level"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Kohlberg: Stage 6 - Universal Ethical Principles",
+    definition: "The highest stage of moral development where an individual follows self-chosen universal ethical principles of justice, equality, and human dignity, even when they violate civil laws.",
+    rationalization: "Guided by pure conscience (e.g., Mahatma Gandhi, Martin Luther King Jr., Nelson Mandela); the individual is prepared to suffer imprisonment or death for moral truth.",
+    mnemonic: { title: "Kohlberg Stage 6", phrase: "Universal Conscience and Human Dignity", items: ["Stage 6 - Universal principles", "Conscience guided", "Highest moral reasoning"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Classify Kohlberg's stages of moral development",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Aristotle: Telos",
+    definition: "The ancient Greek philosophical concept signifying the ultimate purpose, objective, or end-goal of a human action, living thing, or institution.",
+    rationalization: "In Aristotelian teleology, everything in nature has an intrinsic purpose (the telos of an acorn is to become an oak tree; the telos of human life is eudaimonia).",
+    mnemonic: { title: "Aristotle's Telos", phrase: "Telos = Ultimate Purpose or End", items: ["T - Telos", "E - End-goal", "P - Purpose in nature"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Aristotle's Virtue Ethics (Nicomachean Ethics)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Golden Mean (Mesotes)",
+    definition: "Aristotle's doctrine that moral virtue is the balanced intermediate state lying between two vices: a vice of excess and a vice of deficiency.",
+    rationalization: "For example, Courage is the Golden Mean between Cowardice (deficiency of confidence) and Rashness/Foolhardiness (excess of confidence). Generosity is the mean between Stinginess and Extravagance.",
+    mnemonic: { title: "Golden Mean Formula", phrase: "Deficiency < VIRTUE (Golden Mean) < Excess", items: ["Deficiency: Cowardice", "Mean: Courage", "Excess: Rashness"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Aristotle's Virtue Ethics (Nicomachean Ethics)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Phronesis (Practical Wisdom)",
+    definition: "The intellectual virtue of deliberating well and making sound moral judgments suited to specific, concrete circumstances in real life.",
+    rationalization: "Virtue ethics requires phronesis because moral rules cannot be rigidly memorized like formulas; one must know how, when, and to what degree to practice virtue in context.",
+    mnemonic: { title: "Phronesis Clue", phrase: "Practical Moral Judgment in Real Life", items: ["P - Phronesis", "P - Practical wisdom", "J - Judgment in context"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Aristotle's Virtue Ethics (Nicomachean Ethics)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Habituation (Hexis)",
+    definition: "Aristotle's doctrine that moral virtues are not innate by nature, but are acquired and developed through repeated practice and consistent habit until they become second nature.",
+    rationalization: "'We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.' Moral character is forged through continuous habit.",
+    mnemonic: { title: "Habit Makes Virtue", phrase: "We Are What We Repeatedly Do", items: ["H - Habituation", "P - Practice builds character", "S - Second nature virtue"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Aristotle's Virtue Ethics (Nicomachean Ethics)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Natural Law Ethics (St. Thomas Aquinas)",
+    definition: "The ethical framework asserting that moral truth is grounded in human nature and discovered by human reason reflecting on God's eternal design.",
+    rationalization: "Synderesis is the core natural law precept: 'Good is to be done and pursued, and evil is to be avoided.' All secondary moral obligations flow from this principle.",
+    mnemonic: { title: "Synderesis Precept", phrase: "Do Good, Avoid Evil", items: ["S - Synderesis", "G - Good to be pursued", "E - Evil to be avoided"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze St. Thomas Aquinas's Natural Law and Principle of Double Effect",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Principle of Double Effect",
+    definition: "An ethical rule in Natural Law that permits performing an action that produces both a good effect and a foreseen evil effect, provided four strict conditions are met.",
+    rationalization: "The 4 conditions: 1. The act itself must be morally good or indifferent; 2. The good effect must not be achieved by means of the bad effect; 3. The bad effect is foreseen but not intended; 4. Proportionate reason exists.",
+    mnemonic: { title: "Double Effect Conditions", phrase: "Good Act, Bad Not Intended, Good Means, Proportionate", items: ["1. Moral action", "2. Bad effect not the means", "3. Intention is solely good", "4. Grave proportionate reason"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze St. Thomas Aquinas's Natural Law and Principle of Double Effect",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Four Types of Law (Aquinas)",
+    definition: "St. Thomas Aquinas's hierarchy of laws: Eternal Law (God's divine reason), Divine Law (revealed scripture like the Ten Commandments), Natural Law (moral law discovered by human reason), and Human Law (civil laws made by governments).",
+    rationalization: "Human law is valid only if it accords with Natural Law; an unjust civil law that violates Natural Law is 'no law at all' (lex iniusta non est lex).",
+    mnemonic: { title: "Aquinas Four Laws", phrase: "EDNH: Eternal, Divine, Natural, Human", items: ["E - Eternal (God's plan)", "D - Divine (Scripture)", "N - Natural (Reason)", "H - Human (Civil statutes)"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze St. Thomas Aquinas's Natural Law and Principle of Double Effect",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Deontology (Duty-Based Ethics)",
+    definition: "The normative ethical theory pioneered by Immanuel Kant arguing that the morality of an action is based solely on adherence to duty and universal moral rules, regardless of consequences.",
+    rationalization: "Greek 'deon' means duty. For Kant, an action done merely to achieve a good consequence or out of emotional desire has zero genuine moral worth; it must be done for the sake of duty alone.",
+    mnemonic: { title: "Deontology Clue", phrase: "Duty Over Consequences", items: ["D - Deontology", "D - Duty as motive", "K - Kantian framework"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Immanuel Kant's Deontology and Categorical Imperative",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "The Good Will (Immanuel Kant)",
+    definition: "Kant's foundational doctrine that a Good Will is the only thing in the universe that can be conceived of as unconditionally good in itself, without qualification.",
+    rationalization: "Intelligence, wealth, courage, and health are good only if guided by a good will; in the hands of an evil person, high intelligence makes them a more dangerous villain.",
+    mnemonic: { title: "Good Will Doctrine", phrase: "Unconditionally Good in Itself", items: ["G - Good will", "U - Unconditional worth", "M - Motivates duty"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Immanuel Kant's Deontology and Categorical Imperative",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Categorical Imperative (Formula of Universal Law)",
+    definition: "Kant's supreme moral command: 'Act only according to that maxim whereby you can at the same time will that it should become a universal law.'",
+    rationalization: "If everyone making a false promise to borrow money would cause the institution of promising to collapse, then making a lying promise is a self-contradiction and unconditionally forbidden.",
+    mnemonic: { title: "Universalizability Test", phrase: "What If Everyone Did It?", items: ["C - Categorical Imperative", "U - Universal law test", "N - No self-contradiction"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Immanuel Kant's Deontology and Categorical Imperative",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Formula of Humanity (Principle of Ends)",
+    definition: "Kant's second formulation of the Categorical Imperative: 'Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end.'",
+    rationalization: "Forbids exploitation, slavery, deceit, and manipulation; respects the absolute dignity, autonomy, and rational agency of every individual.",
+    mnemonic: { title: "Humanity Formula", phrase: "People are Ends, Never Merely Means", items: ["E - Ends in themselves", "N - Never merely tools", "D - Dignity of human agency"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Immanuel Kant's Deontology and Categorical Imperative",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Autonomy vs Heteronomy (Kant)",
+    definition: "Autonomy is self-governance where a rational agent acts freely in accordance with self-legislated moral laws; Heteronomy is when action is driven by external desires, fears, peers, or laws.",
+    rationalization: "True moral freedom for Kant is autonomy: overcoming animal impulses and societal pressure to obey the universal moral law of reason.",
+    mnemonic: { title: "Autonomy Clue", phrase: "Autonomy = Self-Governed by Reason", items: ["A - Autonomy: reason-directed", "H - Heteronomy: desire/peer-driven"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Immanuel Kant's Deontology and Categorical Imperative",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Utilitarianism (Consequentialism)",
+    definition: "The normative ethical theory stating that the morally right action is the one that produces the greatest balance of pleasure or happiness over pain for the greatest number of people.",
+    rationalization: "Founded by Jeremy Bentham and refined by John Stuart Mill; consequences alone determine whether an action is morally good or bad.",
+    mnemonic: { title: "Utilitarian Creed", phrase: "Greatest Happiness for Greatest Number", items: ["G - Greatest happiness", "G - Greatest number", "C - Consequences matter"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze Utilitarianism (Bentham and Mill) and consequentialist ethics",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Act Utilitarianism (Jeremy Bentham)",
+    definition: "The branch of utilitarianism that assesses each specific, individual act directly by calculating its net pleasure and pain using the Hedonic Calculus.",
+    rationalization: "Bentham asserted that 'nature has placed mankind under the governance of two sovereign masters: pain and pleasure.' All pleasures are quantitatively equal ('push-pin is as good as poetry').",
+    mnemonic: { title: "Bentham Quantitative", phrase: "Hedonic Calculus for Every Act", items: ["B - Bentham", "A - Act utilitarianism", "Q - Quantitative pleasure"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze Utilitarianism (Bentham and Mill) and consequentialist ethics",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Hedonic Calculus (Felicific Calculus)",
+    definition: "Bentham's mathematical algorithm to calculate the quantity of pleasure and pain produced by an act, based on 7 variables: Intensity, Duration, Certainty, Propinquity, Fecundity, Purity, and Extent.",
+    rationalization: "Extent is the variable that makes utilitarianism social rather than selfish: it counts the number of other persons affected by the action.",
+    mnemonic: { title: "Hedonic 7 Variables", phrase: "I-D-C-P-F-P-E: Intensity, Duration, Certainty, Propinquity, Fecundity, Purity, Extent", items: ["I - Intensity", "D - Duration", "C - Certainty", "P - Propinquity", "F - Fecundity", "P - Purity", "E - Extent"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze Utilitarianism (Bentham and Mill) and consequentialist ethics",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Rule Utilitarianism (John Stuart Mill)",
+    definition: "The branch of utilitarianism stating that actions are morally right if they conform to general rules that, if universally followed, produce the greatest overall happiness.",
+    rationalization: "Prevents atrocities permitted by crude Act Utilitarianism (e.g., executing an innocent person to quell a riot violates the rule 'Do not frame innocents', which maximizes long-term trust).",
+    mnemonic: { title: "Rule Utilitarianism", phrase: "Follow Rules that Maximize Long-Term Utility", items: ["M - Mill", "R - Rule utilitarianism", "P - Prevents injustice"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze Utilitarianism (Bentham and Mill) and consequentialist ethics",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Higher vs Lower Pleasures (John Stuart Mill)",
+    definition: "Mill's qualitative distinction arguing that intellectual, artistic, and moral pleasures are inherently superior to mere bodily physical pleasures.",
+    rationalization: "Mill's famous maxim: 'It is better to be a human being dissatisfied than a pig satisfied; better to be Socrates dissatisfied than a fool satisfied.'",
+    mnemonic: { title: "Mill's Pleasures", phrase: "Better Socrates Dissatisfied Than a Pig Satisfied", items: ["H - Higher: Mind, art, philosophy", "L - Lower: Eating, sleeping, lust", "Q - Quality over quantity"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze Utilitarianism (Bentham and Mill) and consequentialist ethics",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Harm Principle (John Stuart Mill)",
+    definition: "The libertarian ethical principle from 'On Liberty' stating that the only purpose for which power can be rightfully exercised over any member of a civilized community against his will is to prevent harm to others.",
+    rationalization: "Self-regarding actions (even self-destructive ones like smoking or unhealthy diets) are protected; the state may only intervene when third parties are harmed.",
+    mnemonic: { title: "Harm Principle", phrase: "Stop Others from Harm, Not from Self-Choice", items: ["H - Harm to others", "L - Liberty of the individual", "S - Self-regarding freedom"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze Utilitarianism (Bentham and Mill) and consequentialist ethics",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Veil of Ignorance (John Rawls)",
+    definition: "A thought experiment in Rawls's Theory of Justice where individuals design principles for a just society without knowing their own social class, wealth, race, gender, or natural talents.",
+    rationalization: "The veil strips away self-serving bias, guaranteeing that rational parties will choose fair social safety nets and equal rights to protect themselves in case they are the poorest member.",
+    mnemonic: { title: "Veil of Ignorance", phrase: "Design Society Not Knowing Your Place", items: ["V - Veil of ignorance", "R - Rawlsian justice", "I - Impartial design"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply theories of justice and fairness (John Rawls)",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Difference Principle (John Rawls)",
+    definition: "Rawls's second principle of justice stating that socio-economic inequalities are permissible only if they work to the maximum benefit of the least-advantaged members of society.",
+    rationalization: "Contrasts with pure laissez-faire capitalism; higher pay for doctors or entrepreneurs is justified only if it improves public healthcare and life for the poorest citizens.",
+    mnemonic: { title: "Difference Principle", phrase: "Inequalities Must Benefit the Least Advantaged", items: ["D - Difference principle", "L - Least advantaged focus", "M - Maximin strategy"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply theories of justice and fairness (John Rawls)",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Ethics of Care (Carol Gilligan)",
+    definition: "A feminist normative ethical theory emphasizing relational interconnectedness, empathy, responsiveness, and nurturing vulnerable persons rather than abstract rules and detached justice.",
+    rationalization: "Published in 'In a Different Voice' (1982) as a critique of Kohlberg's male-centric stages, showing that women often resolve ethical dilemmas through care and preservation of relationships.",
+    mnemonic: { title: "Care Ethics", phrase: "Relationships and Empathy Over Cold Rules", items: ["C - Carol Gilligan", "C - Care and compassion", "R - Relational ethics"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze feminist ethics and the Ethics of Care",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Distributive Justice",
+    definition: "The principle of justice concerned with the fair, equitable, and moral allocation of goods, wealth, opportunities, and public burdens throughout a society.",
+    rationalization: "Addresses how taxes should be levied, healthcare distributed, and education funded; major models include Egalitarianism, Meritocracy, and Rawlsian Maximin.",
+    mnemonic: { title: "Distributive Justice", phrase: "Fair Share of Society's Pie", items: ["D - Distributive", "F - Fair allocation of resources", "E - Equity over mere equality"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply theories of justice and fairness (John Rawls)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Retributive Justice",
+    definition: "A theory of justice that considers proportionate punishment to be a morally acceptable response to crime, balanced against the severity of the offense ('an eye for an eye').",
+    rationalization: "Focuses on moral desert and retributive accountability; contrasted with Restorative Justice, which focuses on repairing harm and rehabilitating the offender.",
+    mnemonic: { title: "Retributive vs Restorative", phrase: "Retributive = Punish; Restorative = Heal", items: ["Retributive - Payback and punishment", "Restorative - Healing and reconciliation"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply theories of justice and fairness (John Rawls)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Egoism (Ethical Egoism)",
+    definition: "The normative ethical position that moral agents ought to act exclusively in their own long-term self-interest, viewing self-interest as the sole criterion of right action.",
+    rationalization: "Championed by Ayn Rand (Objectivism); contrasted with Psychological Egoism (the descriptive claim that humans naturally only ever act out of self-interest).",
+    mnemonic: { title: "Ethical Egoism", phrase: "Self-Interest is the Only Duty", items: ["E - Egoism", "S - Self-interest as virtue", "R - Rand's philosophy"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Evaluate egoism and altruism in normative ethics",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Altruism",
+    definition: "The disinterested and selfless concern for the well-being of others, acting to benefit someone else even at personal sacrifice or disadvantage to oneself.",
+    rationalization: "Regarded as the antithesis of egoism; forms the moral foundation of philanthropy, selfless rescue actions, and professional codes of ethics.",
+    mnemonic: { title: "Altruism Meaning", phrase: "Selfless Sacrifice for Others", items: ["A - Altruism", "S - Selfless concern", "P - Puts others first"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Evaluate egoism and altruism in normative ethics",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Whistleblowing Ethics",
+    definition: "The ethical act of an employee or insider reporting illicit, illegal, unsafe, or fraudulent practices within an organization to authorities or the public.",
+    rationalization: "Involves a profound moral dilemma between loyalty to the employer/organization versus duty to public safety and truth.",
+    mnemonic: { title: "Whistleblower Courage", phrase: "Blow the Whistle for Public Good", items: ["W - Whistleblowing", "P - Public interest prioritized", "L - Loyalty conflict resolved"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply professional and business ethics to workplace dilemmas",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Conflict of Interest",
+    definition: "A situation in which a professional or public official has competing personal, financial, or familial interests that could corrupt their objective judgment in official duties.",
+    rationalization: "RA 6713 (Code of Conduct and Ethical Standards for Public Officials) strictly requires public servants to disclose business interests and divest themselves to avoid conflicts.",
+    mnemonic: { title: "Conflict of Interest", phrase: "Personal Gain Clouds Official Duty", items: ["C - Conflict", "F - Financial bias", "D - Divestment required"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply professional and business ethics to workplace dilemmas",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Informed Consent",
+    definition: "The bioethical principle requiring that a patient or research subject voluntarily agrees to medical procedures after being fully informed of the risks, benefits, and alternatives.",
+    rationalization: "Grounded in Kantian autonomy and the Nuremberg Code; a patient cannot be coerced or kept in the dark about experimental therapies.",
+    mnemonic: { title: "Informed Consent", phrase: "Know the Risks, Freely Agree", items: ["I - Informed on risks", "C - Consent given voluntarily", "A - Autonomy honored"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply bioethical principles to medical dilemmas",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Paternalism in Medicine",
+    definition: "The practice where a doctor or healthcare authority overrides a patient's wishes or withholds information, believing it is in the patient's best interest.",
+    rationalization: "Paternalism prioritizes beneficence over autonomy; modern medical ethics strongly rejects paternalism in favor of patient autonomy.",
+    mnemonic: { title: "Medical Paternalism", phrase: "Doctor Decides Like a Father", items: ["P - Paternalism", "B - Beneficence misapplied", "A - Autonomy overridden"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply bioethical principles to medical dilemmas",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Euthanasia (Active vs Passive)",
+    definition: "Active euthanasia is the intentional administration of a lethal substance to end a suffering patient's life; Passive euthanasia is the withholding or withdrawal of life-sustaining treatment allowing natural death.",
+    rationalization: "Passive euthanasia (such as Do Not Resuscitate / DNR orders or removing a ventilator on brain-dead patients) is widely recognized legally, while active euthanasia remains heavily criminalized in the Philippines.",
+    mnemonic: { title: "Euthanasia Types", phrase: "Active = Lethal Injection; Passive = Withholding Machine", items: ["A - Active: Direct lethal action", "P - Passive: Allowing nature to take course"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply bioethical principles to medical dilemmas",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Environmental Ethics: Anthropocentrism",
+    definition: "The human-centered worldview that considers humans as the central and most significant entities in the universe, valuing nature only in terms of its utility to human survival.",
+    rationalization: "Blamed by environmental philosophers for ecological destruction; contrasted with Biocentrism (all living things have moral standing) and Ecocentrism (entire ecosystems have intrinsic worth).",
+    mnemonic: { title: "Anthropocentrism Clue", phrase: "Anthro = Human-Centered Exploitation", items: ["A - Anthropocentrism: Human-first", "B - Biocentrism: Life-first", "E - Ecocentrism: Ecosystem-first"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Examine environmental ethics frameworks",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Intrinsic Value vs Instrumental Value",
+    definition: "Intrinsic value is value that an entity possesses in itself as an end; Instrumental value is value an entity possesses only as a means to achieve something else.",
+    rationalization: "In Kantian ethics, human beings have intrinsic dignity, whereas tools, cars, and money have mere instrumental price.",
+    mnemonic: { title: "Value Types", phrase: "Intrinsic = In Itself; Instrumental = As a Tool", items: ["I - Intrinsic: Valuable in itself", "I - Instrumental: Useful as a tool"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Examine environmental ethics frameworks",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Moral Agency",
+    definition: "An individual's ability to make moral judgments based on some notion of right and wrong, and to be held morally accountable for their actions.",
+    rationalization: "Requires rationality, free will, and moral comprehension; normal adult humans are moral agents, whereas infants and wild animals are moral patients (deserve moral consideration but cannot be morally blamed).",
+    mnemonic: { title: "Moral Agent vs Patient", phrase: "Agent = Responsible Actor; Patient = Deserves Care", items: ["A - Moral agent: Accountable", "P - Moral patient: Protected but blameless"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Define moral agency, responsibility, and moral personhood",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Supererogatory Acts",
+    definition: "Actions that are morally praiseworthy to perform, but not strictly morally obligatory or blameworthy if omitted ('going above and beyond the call of duty').",
+    rationalization: "Examples include jumping on a grenade to save comrades or donating a kidney to a stranger. It is heroic to do, but not a punishable crime if not done.",
+    mnemonic: { title: "Supererogation", phrase: "Above and Beyond Duty", items: ["S - Supererogatory", "H - Heroic virtue", "N - Not strictly required"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Distinguish duties from supererogatory actions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Moral Relativism vs Moral Absolutism",
+    definition: "Moral relativism claims truth depends on culture, individuals, or historical eras; moral absolutism asserts that certain actions are intrinsically right or wrong in all times and places without exception.",
+    rationalization: "Kant was a moral absolutist (lying is always wrong, even to save a friend from a murderer); consequentialists reject moral absolutism in favor of contextual outcome evaluation.",
+    mnemonic: { title: "Absolutism Stance", phrase: "Absolutism = Zero Exceptions", items: ["A - Absolutism: Fixed rules always", "R - Relativism: Depends on context"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Evaluate moral relativism, absolutism, and objectivism",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Trolley Problem (Philippa Foot)",
+    definition: "A famous moral thought experiment where a runaway trolley is heading toward five tied-up people on a track, and a bystander can pull a lever to divert it onto a side track where it will kill one person.",
+    rationalization: "Utilitarians pull the lever (saving 5 lives at the cost of 1); Deontologists argue pulling the lever makes one an active agent of murder rather than a passive bystander.",
+    mnemonic: { title: "Trolley Dilemma", phrase: "Save 5 by Killing 1?", items: ["T - Trolley problem", "U - Utilitarian: Divert to 1", "D - Deontologist: Do not cause death"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze classic ethical thought experiments",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Aristotle: Voluntary vs Involuntary Action",
+    definition: "Voluntary actions are performed with full knowledge of the particulars and an internal locus of control; Involuntary actions are performed under physical compulsion or due to non-culpable ignorance.",
+    rationalization: "Only voluntary actions incur moral praise or blame. An act done at gunpoint (compulsion) or under unavoidable lack of facts (ignorance) mitigates or eliminates moral culpability.",
+    mnemonic: { title: "Voluntary Criteria", phrase: "Knowledge and Free Will Equal Accountability", items: ["V - Voluntary: Full blame/praise", "I - Involuntary: Coercion or ignorance"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Apply Aristotle's Virtue Ethics (Nicomachean Ethics)",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Hedonism",
+    definition: "The philosophical doctrine that pleasure (or the absence of pain) is the sole intrinsic good and highest objective of human life.",
+    rationalization: "Epicurus advocated enlightened hedonism (ataraxia / tranquility of mind and simple pleasures), while Cyrenaics advocated immediate sensory gratification.",
+    mnemonic: { title: "Hedonism Core", phrase: "Pleasure is the Ultimate Good", items: ["H - Hedonism", "P - Pleasure as sole end", "A - Absence of pain"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Compare historical ethical philosophies (Hedonism, Stoicism, Cynicism)",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Stoicism",
+    definition: "The ancient Hellenistic philosophy teaching that virtue is the only true good, and that happiness comes from accepting things beyond our control with emotional serenity (apatheia).",
+    rationalization: "Pioneered by Zeno of Citium and practiced by Epictetus, Seneca, and Marcus Aurelius; distinguishes between what is in our control (our thoughts and choices) and what is not (external events).",
+    mnemonic: { title: "Stoic Control Dichotomy", phrase: "Master Your Mind, Accept Fate", items: ["S - Stoicism", "D - Dichotomy of control", "A - Apatheia / calm mind"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Compare historical ethical philosophies (Hedonism, Stoicism, Cynicism)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Filipino Ethical Concepts: Utang na Loob",
+    definition: "The indigenous Filipino ethical concept of an internal debt of gratitude incurred when one receives an unsolicited, life-saving favor, creating an enduring moral bond of reciprocity.",
+    rationalization: "Described by Virgilio Enriquez as a sacred moral value; can become corrupted into patron-client political dependency when used to excuse corruption or nepotism.",
+    mnemonic: { title: "Utang na Loob", phrase: "Inner Debt of Gratitude", items: ["U - Utang na loob", "R - Reciprocal moral bond", "S - Sacred Filipino value"] },
+    source: "PRC BLEPT GenEd Ethics Reviewer",
+    tosCompetency: "Analyze indigenous Filipino values and ethics (Sikolohiyang Pilipino)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  }
+];
+
+// Write Ethics
+writeDataset(
+  'data/gened/ethics/ethics.json',
+  'General Education',
+  'Ethics',
+  'Moral Dilemmas, Kohlberg, Virtue Ethics, Deontology, & Utilitarianism',
+  ethicsItems
+);

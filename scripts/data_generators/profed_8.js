@@ -1,0 +1,531 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+function writeDataset(filePath, category, topic, subtopic, items) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  const dataset = {
+    category,
+    topic,
+    subtopic,
+    difficulty: 'medium',
+    items
+  };
+  fs.writeFileSync(filePath, JSON.stringify(dataset, null, 2), 'utf8');
+  console.log(`Generated ${filePath} with ${items.length} items`);
+}
+
+// 8. The Teacher and the School Curriculum (50 items)
+const profed8Items = [
+  {
+    term: "Curriculum (Currere)",
+    definition: "Derived from the Latin word 'currere' meaning 'to run a course' or racecourse; encompasses the total planned learning experiences, contents, and outcomes designed for learners under school guidance.",
+    rationalization: "In modern education, curriculum is not merely a syllabus or textbook list, but all guided learning experiences provided to students.",
+    mnemonic: { title: "Curriculum Root", phrase: "Currere Means Running the Academic Course", items: ["C - Currere", "R - Racecourse/Running", "P - Planned experiences"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Define curriculum concepts, nature, and scope",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Recommended Curriculum",
+    definition: "The curriculum proposed and endorsed by professional organizations, policy-making bodies, or government agencies like DepEd, CHED, TESDA, and UNESCO.",
+    rationalization: "CHED CMOs and DepEd Curriculum Guides are prime examples of recommended curricula that set national standards.",
+    mnemonic: { title: "Recommended Curriculum", phrase: "Agencies Recommend National Academic Standards", items: ["R - Recommended", "C - CHED / DepEd / TESDA", "S - Standards recommended"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Written Curriculum",
+    definition: "The formalized curriculum documents produced by curriculum writers and educators, including lesson plans, syllabi, course modules, textbooks, and curriculum guides.",
+    rationalization: "When a teacher prepares a Daily Lesson Log (DLL) or Detailed Lesson Plan (DLP), they are operationalizing the written curriculum.",
+    mnemonic: { title: "Written Curriculum", phrase: "Black on White Documents for Teaching", items: ["W - Written", "D - Detailed lesson plans / syllabi", "T - Textbooks & modules"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Taught Curriculum",
+    definition: "The actual instructional activities, methodologies, demonstrations, and learning experiences implemented by the teacher inside the classroom.",
+    rationalization: "What the teacher actually delivers and how students engage with content constitutes the taught curriculum; varies by teacher style.",
+    mnemonic: { title: "Taught Curriculum", phrase: "Taught is What Truly Transpires in Class", items: ["T - Taught", "D - Delivery of lessons", "M - Methodologies enacted"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Supported Curriculum",
+    definition: "The physical resources, instructional materials, laboratories, library books, multimedia devices, and learning facilities that assist in curriculum delivery.",
+    rationalization: "Without adequate science labs, computers, and reading materials, the supported curriculum is deficient, hindering taught curriculum effectiveness.",
+    mnemonic: { title: "Supported Curriculum", phrase: "Supplies and Space Supporting Study", items: ["S - Supported", "M - Materials & labs", "F - Facilities & books"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Assessed Curriculum",
+    definition: "The tested, evaluated, and measured curriculum through paper-and-pencil tests, performance tasks, portfolios, and national examinations like the NAT.",
+    rationalization: "Assessed curriculum measures the extent of student achievement against learning competencies through formative and summative instruments.",
+    mnemonic: { title: "Assessed Curriculum", phrase: "Appraising Acquisition of Academic Abilities", items: ["A - Assessed", "T - Tests and quizzes", "P - Performance tasks"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Learned Curriculum",
+    definition: "The actual learning outcomes, knowledge, skills, values, and attitudes that students retain, demonstrate, and apply in real life as a result of schooling.",
+    rationalization: "The bottom line of all educational efforts; if students do not change behavior or gain competence, the curriculum was not truly learned.",
+    mnemonic: { title: "Learned Curriculum", phrase: "Learned is the Lasting Legacy in Learners", items: ["L - Learned", "O - Outcomes retained", "V - Values and competencies gained"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Hidden / Implicit Curriculum",
+    definition: "The unintended, unwritten, informal curriculum consisting of school climate, teacher attitudes, peer peer dynamics, social norms, and unspoken rules absorbed by students.",
+    rationalization: "Students learn punctuality, obedience, gender roles, or competitiveness implicitly from classroom routines even if not stated in objectives.",
+    mnemonic: { title: "Hidden Curriculum", phrase: "Unspoken Lessons Learnt in the Shadows", items: ["H - Hidden", "U - Unintended / informal", "S - Social values & culture"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Null Curriculum",
+    definition: "The topics, perspectives, concepts, and issues that are consciously or unconsciously excluded and not taught in school (what schools do not teach).",
+    rationalization: "Formulated by Elliot Eisner; omitting sensitive topics like sex education, indigenous perspectives, or specific historical conflicts constitutes the null curriculum.",
+    mnemonic: { title: "Null Curriculum", phrase: "Null is Nothing Taught or Not Included", items: ["N - Null", "E - Elliot Eisner", "O - Omitted content"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish types of curricula operating in schools",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Ralph Tyler's Objective Model (Tyler's Rationale)",
+    definition: "The classical linear-deductive curriculum development model based on four fundamental questions: Purpose, Learning experiences, Organization, and Evaluation.",
+    rationalization: "Tyler posits that curriculum development begins with formulating clear behavioral objectives, selecting and organizing learning experiences, and evaluating outcomes.",
+    mnemonic: { title: "Tyler's Rationale", phrase: "Purpose, Experience, Organize, Evaluate", items: ["P - Purposes (Objectives)", "E - Educational experiences", "O - Organization of experiences", "E - Evaluation of objectives"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Analyze curriculum development models and theories",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Hilda Taba's Grassroots (Inductive) Model",
+    definition: "An inductive, teacher-led curriculum development model arguing that teachers who teach the curriculum should be the primary designers, starting from specifics to generalizations.",
+    rationalization: "Taba identified 7 steps: Diagnosis of needs, Formulation of objectives, Selection of content, Organization of content, Selection of learning experiences, Organization of learning experiences, and Determination of what to evaluate.",
+    mnemonic: { title: "Taba's Model", phrase: "Teachers at the Grassroots Create Curriculum", items: ["T - Taba", "G - Grassroots approach", "I - Inductive (bottom-up)"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Analyze curriculum development models and theories",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Subject-Centered Curriculum Design",
+    definition: "A curriculum design organized strictly around separate academic disciplines (e.g., Math, Science, History, English) focusing on content mastery and textbook sequence.",
+    rationalization: "The oldest and most common design; criticized for fragmenting knowledge and neglecting student interests, but praised for easy organization and logical structure.",
+    mnemonic: { title: "Subject-Centered", phrase: "Separate Subjects Strictly Structured", items: ["S - Subject-centered", "D - Discipline-based", "F - Fragmented knowledge"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Differentiate curriculum design models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Learner-Centered Curriculum Design",
+    definition: "A curriculum design built around the needs, interests, developmental abilities, and experiences of the individual learner, inspired by John Dewey's progressivism.",
+    rationalization: "Includes child-centered design, experience-centered design, and humanistic design where learners actively participate in choosing and pursuing projects.",
+    mnemonic: { title: "Learner-Centered", phrase: "Child at the Center of Classroom", items: ["L - Learner-centered", "D - Dewey / Progressivism", "N - Needs & interests first"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Differentiate curriculum design models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Problem-Centered Curriculum Design",
+    definition: "A curriculum design organized around real-world societal problems, persistent life situations, community issues, and human survival challenges.",
+    rationalization: "Draws from social reconstructionism; trains learners to analyze societal dilemmas like climate change, poverty, corruption, and design actionable solutions.",
+    mnemonic: { title: "Problem-Centered", phrase: "Real Problems Provoke Practical Solutions", items: ["P - Problem-centered", "S - Social reconstructionism", "L - Life situation dilemmas"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Differentiate curriculum design models",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Spiral Curriculum (Jerome Bruner)",
+    definition: "An instructional approach where key concepts are introduced early in simple forms and revisited repeatedly at increasing levels of depth and complexity across grade levels.",
+    rationalization: "The foundational organizing principle of the Philippine K to 12 basic education curriculum, enabling mastery without abrupt conceptual leaps.",
+    mnemonic: { title: "Spiral Progression", phrase: "Bruner Loops Back Deeper and Wider", items: ["B - Bruner", "S - Spiral progression", "D - Deeper complexity over time"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Explain spiral progression and curriculum organizing principles",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Scope",
+    definition: "The breadth and depth of content, topics, learning competencies, and experiences covered within a curriculum at any given grade level.",
+    rationalization: "Scope defines 'how much' and 'what' is covered, establishing the boundaries of the curriculum syllabus.",
+    mnemonic: { title: "Curriculum Scope", phrase: "Scope is the Sea of Subject Matter", items: ["S - Scope", "B - Breadth of topics", "D - Depth of treatment"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify curriculum organization criteria and dimensions",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Curriculum Sequence",
+    definition: "The order, progression, and chronological or logical arrangement of learning topics and competencies over time.",
+    rationalization: "Can be sequenced from simple to complex, prerequisite to dependent, concrete to abstract, or chronological (historical).",
+    mnemonic: { title: "Curriculum Sequence", phrase: "Step-by-step Sequencing of Skills", items: ["S - Sequence", "O - Order of presentation", "L - Logical progression"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify curriculum organization criteria and dimensions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Continuity",
+    definition: "The vertical recurrence and repeated exposure to pervasive curriculum concepts, skills, and values over time to build enduring competence.",
+    rationalization: "Continuity ensures that essential skills like reading comprehension or scientific inquiry are practiced consistently from elementary through senior high.",
+    mnemonic: { title: "Curriculum Continuity", phrase: "Continuous Repetition of Crucial Concepts", items: ["C - Continuity", "V - Vertical repetition", "E - Enduring skills"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify curriculum organization criteria and dimensions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Integration",
+    definition: "The horizontal linking and cross-disciplinary blending of concepts across different subject areas, demonstrating how knowledge is interconnected.",
+    rationalization: "For example, connecting a Science lesson on deforestation with an Economics lesson on resource allocation and an English essay assignment.",
+    mnemonic: { title: "Curriculum Integration", phrase: "Interconnecting Islands of Information", items: ["I - Integration", "H - Horizontal connections", "C - Cross-disciplinary links"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify curriculum organization criteria and dimensions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Articulation",
+    definition: "The smooth vertical and horizontal alignment of curriculum elements, ensuring that grade-to-grade transitions (vertical) and subject connections (horizontal) are seamless without gaps or redundancies.",
+    rationalization: "Vertical articulation prevents grade 7 teachers from assuming students learned skills that Grade 6 never taught; horizontal articulation aligns parallel subjects.",
+    mnemonic: { title: "Curriculum Articulation", phrase: "Articulated Joints Flow Without Gaps", items: ["A - Articulation", "V - Vertical flow", "H - Horizontal coordination"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify curriculum organization criteria and dimensions",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Curriculum Balance",
+    definition: "The equitable distribution of time, weight, emphasis, and resources among cognitive, affective, and psychomotor domains, as well as subject disciplines.",
+    rationalization: "Prevents over-emphasizing rote memorization at the expense of creative arts, physical health, or moral values development.",
+    mnemonic: { title: "Curriculum Balance", phrase: "Equal Weights on the Educational Scale", items: ["B - Balance", "E - Equitable weighting", "H - Holistic domains"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify curriculum organization criteria and dimensions",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Alignment",
+    definition: "The degree of congruence and consistency among curriculum standards, instructional activities, learning objectives, and assessment methods (Constructive Alignment).",
+    rationalization: "John Biggs' constructive alignment states that what is stated in the objective must match what is taught in activities and measured in tests.",
+    mnemonic: { title: "Curriculum Alignment", phrase: "Objectives, Activities, Assessments All Agree", items: ["C - Constructive alignment", "B - Biggs", "T - Three-way match"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Apply constructive alignment principles to lesson planning",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Curriculum Mapping",
+    definition: "The systematic process of indexing and diagramming curriculum content, competencies, standards, and assessments over an academic calendar to identify redundancies and misalignments.",
+    rationalization: "Creates curriculum maps that allow teachers and administrators to visually audit what is actually taught across grades.",
+    mnemonic: { title: "Curriculum Mapping", phrase: "Mapping the Matrix of Mastery", items: ["C - Curriculum mapping", "A - Audit of competencies", "V - Visual calendar matrix"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Examine curriculum mapping techniques and tools",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Implementation",
+    definition: "The phase of the curriculum development cycle where the written curriculum is put into actual operational practice in schools and classrooms by teachers and administrators.",
+    rationalization: "Ornstein and Hunkins define implementation as a process of educational change requiring teacher professional development, resource provision, and leadership support.",
+    mnemonic: { title: "Curriculum Implementation", phrase: "Putting Plans into Practical Classroom Practice", items: ["I - Implementation", "C - Change process", "A - Action in class"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Describe the curriculum implementation process",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Evaluation",
+    definition: "The formal determination of the quality, effectiveness, relevance, and value of a curriculum program to make decisions about its continuation, modification, or termination.",
+    rationalization: "Uses formative evaluation during implementation to improve materials and summative evaluation at the end to judge overall program impact.",
+    mnemonic: { title: "Curriculum Evaluation", phrase: "Evaluating Educational Efficacy", items: ["E - Evaluation", "V - Value judgment", "D - Decision making"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Analyze curriculum evaluation methods and purposes",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "CIPP Evaluation Model (Daniel Stufflebeam)",
+    definition: "A comprehensive decision-oriented curriculum evaluation framework analyzing four components: Context (needs/goals), Input (resources/strategies), Process (implementation), and Product (outcomes).",
+    rationalization: "CIPP helps educational administrators evaluate whether a reform met community needs, had adequate resources, was executed properly, and produced desired student gains.",
+    mnemonic: { title: "CIPP Model", phrase: "Context, Input, Process, Product", items: ["C - Context", "I - Input", "P - Process", "P - Product"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Apply curriculum evaluation models (CIPP, Tyler)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Teacher as Curricularist",
+    definition: "The multi-faceted professional role of a teacher as a Knower, Writer, Planner, Initiator, Innovator, Implementer, and Evaluator of curriculum.",
+    rationalization: "Teachers are not passive transmitters of curriculum guides; they interpret, adapt, enrich, and innovate curriculum materials for their specific classroom context.",
+    mnemonic: { title: "7 Roles of Curricularist", phrase: "Knows, Writes, Plans, Initiates, Innovates, Implements, Evaluates", items: ["K - Knower", "W - Writer", "P - Planner", "I - Initiator/Innovator", "I - Implementer", "E - Evaluator"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Characterize the teacher's roles as a curricularist",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Stakeholders",
+    definition: "Individuals and groups who have an active interest, influence, or investment in the curriculum, including learners, teachers, school managers, parents, community leaders, and industry partners.",
+    rationalization: "Learners are the core stakeholders; teachers are implementers; parents are partners and co-financiers; community provides authentic contexts.",
+    mnemonic: { title: "Curriculum Stakeholders", phrase: "Stakeholders Share Support in Schooling", items: ["L - Learners (core)", "T - Teachers", "P - Parents & Community"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify roles of stakeholders in curriculum development",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Republic Act No. 10533 (Enhanced Basic Education Act of 2013)",
+    definition: "The statutory law establishing the K to 12 Basic Education Program in the Philippines, adding Kindergarten and two years of Senior High School (Grades 11-12).",
+    rationalization: "Aimed to make Filipino graduates globally competitive, ready for employment, entrepreneurship, middle-level skills, or higher education.",
+    mnemonic: { title: "RA 10533 K-12", phrase: "10533 Adds Senior High and Kindergarten", items: ["10533 - RA 10533", "K - Kindergarten compulsory", "12 - 12 years of basic schooling"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Analyze legal bases of Philippine curriculum reforms",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Mother Tongue-Based Multilingual Education (MTB-MLE)",
+    definition: "The curriculum policy under RA 10533 prescribing the use of the learner's native mother tongue as the medium of instruction and subject from Kindergarten to Grade 3.",
+    rationalization: "Research proves children learn to read and comprehend faster when instructed first in their mother tongue before bridging to Filipino and English.",
+    mnemonic: { title: "MTB-MLE", phrase: "Mother Tongue Bridges Multilingual Education", items: ["M - Mother Tongue", "B - Bridging language", "K-3 - Kindergarten to Grade 3"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Explain language policies and MTB-MLE in Philippine curriculum",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Senior High School Tracks",
+    definition: "The specialized curriculum pathways under K to 12: Academic Track (STEM, ABM, HUMSS, GAS), TVL (Technical-Vocational-Livelihood), Sports Track, and Arts & Design Track.",
+    rationalization: "Provides contextualized career preparation aligned with students' aptitude, interest, and post-secondary aspirations.",
+    mnemonic: { title: "SHS Tracks", phrase: "Academic, TVL, Sports, Arts", items: ["A - Academic (STEM/ABM/HUMSS/GAS)", "T - TVL (NC certifications)", "S - Sports", "A - Arts & Design"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Identify SHS tracks and strands under RA 10533",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "MATATAG Curriculum (DepEd)",
+    definition: "The revised basic education curriculum launched by DepEd to decongest learning competencies by 70%, focusing on foundational literacy, numeracy, and socio-emotional skills.",
+    rationalization: "MATATAG stands for: MA-Making curriculum relevant; TA-Taking steps to accelerate services; TA-Taking good care of learners; G-Giving support to teachers.",
+    mnemonic: { title: "MATATAG Curriculum", phrase: "Decongested Curriculum Focused on Foundations", items: ["M - Make curriculum relevant", "T - Take steps for services", "T - Take care of learners", "G - Give support to teachers"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Analyze recent DepEd curriculum innovations (MATATAG)",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Content Standards",
+    definition: "Benchmark statements in the DepEd curriculum that describe what students should know, understand, and be able to grasp conceptually at each grade level.",
+    rationalization: "Answers the question: 'What do students need to know?' Formulates the baseline conceptual knowledge required of learners.",
+    mnemonic: { title: "Content Standards", phrase: "Content is What Students Conceptualize", items: ["C - Content standards", "K - Knowledge benchmark", "U - Understandings"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Differentiate Content Standards, Performance Standards, and MELCs",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Performance Standards",
+    definition: "Benchmark statements that specify what students should be able to do, perform, produce, or demonstrate with the knowledge and understanding they have acquired.",
+    rationalization: "Answers the question: 'What can students do with what they know?' Evaluated via authentic performance tasks and rubrics.",
+    mnemonic: { title: "Performance Standards", phrase: "Performance is Practical Production", items: ["P - Performance standards", "D - Doing and demonstrating", "P - Production of authentic tasks"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Differentiate Content Standards, Performance Standards, and MELCs",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Most Essential Learning Competencies (MELCs)",
+    definition: "The prioritized set of competencies identified by DepEd that learners must acquire to transition successfully to the next grade level or life stage, even during crises.",
+    rationalization: "Created during the COVID-19 pandemic to streamline the curriculum into enduring, indispensable skills rather than nice-to-know details.",
+    mnemonic: { title: "MELCs", phrase: "Must-Have Essential Learning Competencies", items: ["M - Most Essential", "L - Learning Competencies", "P - Prioritized for endurance"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Differentiate Content Standards, Performance Standards, and MELCs",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Understanding by Design (UbD / Backward Design)",
+    definition: "A curriculum design framework by Grant Wiggins and Jay McTighe that plans backwards in 3 stages: 1. Identify Desired Results; 2. Determine Acceptable Evidence; 3. Plan Learning Experiences.",
+    rationalization: "Reverses traditional planning (which starts with activities or textbooks); begins with the desired transfer of big ideas and essential questions.",
+    mnemonic: { title: "UbD Backward Design", phrase: "Results First, Evidence Second, Plan Third", items: ["1 - Desired results", "2 - Assessment evidence", "3 - Learning plan"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Apply Understanding by Design (UbD) framework",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Essential Questions in UbD",
+    definition: "Open-ended, thought-provoking questions that recur throughout inquiry, spark genuine wonder, and point to the core big ideas of a discipline.",
+    rationalization: "Not simple factual queries with single right answers; e.g., 'What is justice?' or 'How do organisms adapt to survive?'",
+    mnemonic: { title: "Essential Questions", phrase: "Deep Questions Driving Daily Discovery", items: ["E - Essential questions", "O - Open-ended inquiry", "B - Big ideas core"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Apply Understanding by Design (UbD) framework",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Curriculum Contextualization",
+    definition: "The educational process of relating the curriculum content and competencies to the local setting, culture, daily life, and environment of the learners.",
+    rationalization: "Mandated by RA 10533 to make learning relevant; includes localization and indigenization.",
+    mnemonic: { title: "Contextualization", phrase: "Connecting Curriculum to Community", items: ["C - Contextualization", "L - Local culture & life", "R - Relevance in real world"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish localization from indigenization in curriculum",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Localization",
+    definition: "Adapting curriculum delivery and instructional materials by using local information, materials, and examples from the learners' immediate community without altering standards.",
+    rationalization: "For example, using coconut shells or bamboo instead of commercial test tubes, or using local barangay crop data for Math statistics.",
+    mnemonic: { title: "Localization", phrase: "Local Materials and Examples", items: ["L - Localization", "M - Materials from community", "S - Standards kept intact"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish localization from indigenization in curriculum",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Indigenization",
+    definition: "A deeper level of contextualization that embeds the indigenous knowledge systems, practices, worldviews, values, and languages of an IP community into the curriculum design.",
+    rationalization: "Requires consulting indigenous elders and community members to ensure cultural integrity and respectful curricular integration (IPEd framework).",
+    mnemonic: { title: "Indigenization", phrase: "Indigenous Wisdom Infused into Lessons", items: ["I - Indigenization", "K - Knowledge systems (IKSP)", "E - Elders collaboration"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Distinguish localization from indigenization in curriculum",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Curriculum Differentiation",
+    definition: "Modifying curriculum content, instructional process, products, or learning environment based on student readiness levels, interests, and learning profiles.",
+    rationalization: "Associated with Carol Ann Tomlinson; provides varied pathways so all learners achieve mastery regardless of starting point.",
+    mnemonic: { title: "Differentiated Curriculum", phrase: "Varied Content, Process, and Product", items: ["C - Content adjustment", "P - Process variation", "P - Product choices", "E - Environment"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Design differentiated curricular tasks for diverse learners",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Curriculum Alignment Matrix (TOS)",
+    definition: "A Table of Specifications (TOS) that blueprints the distribution of test items across Bloom's cognitive taxonomy levels and curriculum learning competencies.",
+    rationalization: "Ensures test items have content validity and accurately reflect the time and cognitive depth spent during instruction.",
+    mnemonic: { title: "Table of Specifications", phrase: "Blueprint Balancing Bloom's and Competencies", items: ["T - TOS", "B - Blueprint for testing", "C - Content validity assurance"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Construct and evaluate a Table of Specifications (TOS)",
+    bloomsTaxonomy: "Applying",
+    highYield: true
+  },
+  {
+    term: "Curriculum Change: Substitution",
+    definition: "A minor curriculum alteration where one textbook, resource, or instructional unit is replaced by another without altering the fundamental curriculum structure.",
+    rationalization: "E.g., replacing an outdated Grade 8 Science textbook with a newly approved edition.",
+    mnemonic: { title: "Substitution Change", phrase: "Swapping Similar Resources", items: ["S - Substitution", "S - Simple swap", "N - No structural overhaul"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Categorize types of curriculum change",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Change: Alteration",
+    definition: "Modifying existing curriculum materials, content, or time allocations to introduce new items without overhauling basic goals.",
+    rationalization: "E.g., adding an internet safety module into an existing Computer subject or adjusting the class time from 60 to 45 minutes.",
+    mnemonic: { title: "Alteration Change", phrase: "Adjusting and Adding to Existing Content", items: ["A - Alteration", "M - Modifying time or topics", "K - Keeping main goals"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Categorize types of curriculum change",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Curriculum Change: Restructuring",
+    definition: "A major, systemic reform that reorganizes the entire structure, sequence, philosophy, and grade level composition of the educational system.",
+    rationalization: "The shift from the 10-year Basic Education Curriculum (RBEC) to the K to 12 Enhanced Basic Education Program (RA 10533) is a prime example of restructuring.",
+    mnemonic: { title: "Restructuring Change", phrase: "Radical Reorganization of the Whole System", items: ["R - Restructuring", "S - Systemic overhaul", "K-12 - K to 12 transition"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Categorize types of curriculum change",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Curriculum Change: Perturbation",
+    definition: "Disruptive changes that disturb existing schedules or routines, often initiated from external pressures, requiring temporary or permanent adjustments.",
+    rationalization: "E.g., sudden shift to blended learning during pandemic typhoons or extreme heat advisories adjusting class hours.",
+    mnemonic: { title: "Perturbation Change", phrase: "Panic and Prompt Schedule Adjustments", items: ["P - Perturbation", "D - Disruptive adjustment", "S - Sudden schedule shifts"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Categorize types of curriculum change",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Teacher Resistance to Curriculum Change",
+    definition: "The psychological and behavioral hesitation of teachers toward curricular reforms, typically caused by lack of training, insufficient materials, time constraints, or habit.",
+    rationalization: "Successful curriculum implementers overcome resistance through clear communication, collaborative leadership, supportive coaching, and resource provision.",
+    mnemonic: { title: "Curriculum Resistance", phrase: "Change Calls for Coaching and Comfort", items: ["R - Resistance to change", "T - Training needed", "S - Supportive leadership"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Analyze factors affecting curriculum implementation and resistance",
+    bloomsTaxonomy: "Analyzing",
+    highYield: true
+  },
+  {
+    term: "Outcomes-Based Education (OBE)",
+    definition: "A curriculum design approach (championed by William Spady) that starts with a clear specification of what students should be able to demonstrate upon graduation, organizing curriculum backwards to achieve those outcomes.",
+    rationalization: "Adopted in Philippine Higher Education via CHED CMO 46 s. 2012, emphasizing Program Educational Objectives (PEOs) and Student Outcomes (SOs).",
+    mnemonic: { title: "Outcomes-Based Education", phrase: "Spady's Student Outcomes Shape Study", items: ["O - Outcomes-based", "S - Spady", "B - Backward design from exit outcomes"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Explain Outcomes-Based Education (OBE) in tertiary curriculum",
+    bloomsTaxonomy: "Understanding",
+    highYield: true
+  },
+  {
+    term: "Philippine Qualifications Framework (PQF - RA 10968)",
+    definition: "The national reference system that describes educational qualification levels (Levels 1 to 8) based on learning outcomes, aligning Philippine credentials with ASEAN and international standards.",
+    rationalization: "Baccalaureate degrees (including BSEd/BEEd) are designated as PQF Level 6; Master's is Level 7; Doctoral is Level 8.",
+    mnemonic: { title: "PQF Levels", phrase: "Level 6 for Bachelors, 7 for Masters, 8 for Doctors", items: ["PQF - RA 10968", "L6 - Baccalaureate", "A - ASEAN qualification alignment"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Analyze PQF levels and qualification descriptors",
+    bloomsTaxonomy: "Remembering",
+    highYield: true
+  },
+  {
+    term: "Curriculum Fidelity vs Adaptation",
+    definition: "The dichotomy between strictly implementing curriculum materials exactly as written by curriculum designers (fidelity) versus tailoring and modifying them to suit classroom realities (adaptation/mutual adaptation).",
+    rationalization: "Effective curricularists practice mutual adaptation: preserving core competencies while modifying pedagogical methods and contexts to match student diversity.",
+    mnemonic: { title: "Fidelity vs Adaptation", phrase: "Faithful to Standards, Flexible in Strategy", items: ["F - Fidelity to competencies", "A - Adaptation to learners", "M - Mutual adaptation balance"] },
+    source: "PRC BLEPT ProfEd Curriculum Reviewer",
+    tosCompetency: "Evaluate curriculum implementation fidelity and adaptation",
+    bloomsTaxonomy: "Evaluating",
+    highYield: true
+  }
+];
+
+// Write The Teacher and the School Curriculum
+writeDataset(
+  'data/profed/teacher_and_curriculum/teacher_and_curriculum.json',
+  'Professional Education',
+  'The Teacher and the School Curriculum',
+  'Curriculum Foundations, Design Models, Implementation, & DepEd Matatag/K-12',
+  profed8Items
+);

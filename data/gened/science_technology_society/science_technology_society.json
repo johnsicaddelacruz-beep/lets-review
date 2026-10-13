@@ -1,0 +1,912 @@
+{
+  "category": "General Education",
+  "topic": "Science, Technology and Society",
+  "subtopic": "Scientific Revolutions, Human Flourishing, & Global Issues",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Heliocentric Theory",
+      "definition": "The astronomical model proposed by Nicolaus Copernicus stating that the Sun, rather than the Earth, is at the center of the solar system.",
+      "rationalization": "Copernicus displaced Ptolemy's ancient geocentric model, sparking the Scientific Revolution and transforming humanity's cosmic worldview.",
+      "mnemonic": {
+        "title": "Copernicus Heliocentrism",
+        "phrase": "Helios = Sun in Center",
+        "items": [
+          "H - Helios (Sun)",
+          "C - Copernicus",
+          "S - Shifted Earth away from center"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze scientific revolutions and paradigm shifts",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Theory of Natural Selection",
+      "definition": "Charles Darwin's mechanism for biological evolution stating that organisms with traits better suited to their environment survive and reproduce more successfully.",
+      "rationalization": "Published in 'On the Origin of Species' (1859); challenged creationist doctrines by explaining the diversity of life through descent with modification.",
+      "mnemonic": {
+        "title": "Natural Selection",
+        "phrase": "Survival of the Better Adapted",
+        "items": [
+          "D - Darwin",
+          "V - Variation and heredity",
+          "A - Adaptation and survival"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze scientific revolutions and paradigm shifts",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Psychoanalytic Theory (Sigmund Freud)",
+      "definition": "The revolutionary psychological paradigm asserting that human behavior and personality are largely governed by unconscious desires, repressed memories, and the conflict between Id, Ego, and Superego.",
+      "rationalization": "Freud revolutionized modern thought by proving that rational human consciousness is merely the tip of the mental iceberg, fundamentally reshaping society and medicine.",
+      "mnemonic": {
+        "title": "Freud's Tripartite Mind",
+        "phrase": "Id (Desire), Ego (Reality), Superego (Morality)",
+        "items": [
+          "I - Id: Pleasure principle",
+          "E - Ego: Reality principle",
+          "S - Superego: Moral compass"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze scientific revolutions and paradigm shifts",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Galileo Galilei",
+      "definition": "The Italian polymath regarded as the 'Father of Modern Observational Astronomy' and 'Father of Modern Physics' who used the telescope to discover Jupiter's moons and lunar craters.",
+      "rationalization": "Galileo provided empirical observational proof for Copernicus's heliocentrism, enduring trial and house arrest by the Roman Inquisition for his findings.",
+      "mnemonic": {
+        "title": "Galileo's Telescope",
+        "phrase": "Telescope Proof of Sun Center",
+        "items": [
+          "G - Galileo",
+          "T - Telescopic discoveries",
+          "J - Jupiter moons discovered"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze scientific revolutions and paradigm shifts",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Martin Heidegger: Enframing (Gestell)",
+      "definition": "Heidegger's philosophical concept in 'The Question Concerning Technology' describing how modern technology treats nature as a mere 'standing-reserve' (Bestand) to be exploited.",
+      "rationalization": "Heidegger warned that technology is not a neutral tool; its essence is a way of revealing (Enframing) that blinds humanity to poetic and authentic existence.",
+      "mnemonic": {
+        "title": "Heidegger's Gestell",
+        "phrase": "Gestell = Enframing Nature as Standing Reserve",
+        "items": [
+          "G - Gestell",
+          "E - Enframing",
+          "S - Standing-reserve exploitation"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine philosophical perspectives on human flourishing and technology",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Eudaimonia",
+      "definition": "The Greek concept articulated by Aristotle meaning 'human flourishing', 'living well', and true happiness attained through the practice of virtue (arete).",
+      "rationalization": "In STS, eudaimonia is the benchmark for whether scientific progress and technological innovations truly elevate human life or degrade human values.",
+      "mnemonic": {
+        "title": "Aristotle's Eudaimonia",
+        "phrase": "Flourishing Through Virtue",
+        "items": [
+          "E - Eudaimonia",
+          "H - Human flourishing",
+          "V - Virtuous living"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine philosophical perspectives on human flourishing and technology",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Dr. Fe Del Mundo",
+      "definition": "The renowned Filipino pediatrician and National Scientist who invented the bamboo incubator and founded the Children's Medical Center in the Philippines.",
+      "rationalization": "She was the first Asian and first woman admitted to Harvard Medical School; her bamboo incubator provided lifesaving care in rural Philippine clinics lacking electricity.",
+      "mnemonic": {
+        "title": "Del Mundo Achievement",
+        "phrase": "Fe Del Mundo = Bamboo Incubator",
+        "items": [
+          "F - Fe Del Mundo",
+          "B - Bamboo incubator",
+          "H - Harvard pioneer"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Filipino scientists and their national contributions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Dr. Ramon Barba",
+      "definition": "The Filipino National Scientist who invented a groundbreaking method to induce prolific flowering in mango trees year-round using potassium nitrate ($KNO_3$).",
+      "rationalization": "His invention revolutionized the Philippine fruit industry, turning mangoes into one of the country's leading agricultural exports.",
+      "mnemonic": {
+        "title": "Barba Mango Clue",
+        "phrase": "Barba = Blooms Mangoes with Potassium Nitrate",
+        "items": [
+          "R - Ramon Barba",
+          "M - Mango flower induction",
+          "P - Potassium nitrate ($KNO_3$)"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Filipino scientists and their national contributions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Dr. Angel Alcala",
+      "definition": "The Filipino marine biologist and National Scientist recognized for inventing artificial coral reefs and establishing community-managed marine protected areas in the Philippines.",
+      "rationalization": "His pioneering conservation work at Apo Island and across the Visayas rehabilitated devastated reef ecosystems and restored fish biomass.",
+      "mnemonic": {
+        "title": "Alcala Marine Hero",
+        "phrase": "Alcala = Artificial Reefs & Marine Reserves",
+        "items": [
+          "A - Angel Alcala",
+          "A - Artificial reefs",
+          "M - Marine conservation"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Filipino scientists and their national contributions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Roberto del Rosario",
+      "definition": "The Filipino inventor who held the official patent for the Sing-Along System (SAS), widely recognized as the Karaoke machine.",
+      "rationalization": "Del Rosario won landmark legal battles in the World Intellectual Property Organization (WIPO) and Philippine courts defending his 1970s patent against Japanese claimants.",
+      "mnemonic": {
+        "title": "Karaoke Inventor",
+        "phrase": "Del Rosario Rocks the Karaoke Sing-Along",
+        "items": [
+          "R - Roberto del Rosario",
+          "S - Sing-Along System",
+          "P - Patented inventor"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Filipino scientists and their national contributions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Gregorio Zara",
+      "definition": "The Filipino National Scientist and engineer who invented the two-way television-telephone (videophone) in 1955, as well as an aircraft engine fueled by pure alcohol.",
+      "rationalization": "His videophone was decades ahead of modern video calling technology (Zoom, FaceTime); he holds 30 patents for innovative physical devices.",
+      "mnemonic": {
+        "title": "Zara Videophone",
+        "phrase": "Zara Zoomed First with Videophone",
+        "items": [
+          "G - Gregorio Zara",
+          "V - Videophone in 1955",
+          "A - Alcohol airplane fuel"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Filipino scientists and their national contributions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Bt Corn (Bacillus thuringiensis)",
+      "definition": "A genetically modified crop engineered with a gene from the soil bacterium Bacillus thuringiensis producing an endotoxin that protects against the Asian corn borer pest.",
+      "rationalization": "Bt corn drastically reduces the need for synthetic chemical insecticides, demonstrating the direct agricultural application of recombinant DNA technology.",
+      "mnemonic": {
+        "title": "Bt Corn Defense",
+        "phrase": "Bacillus Toxin Terminates Borers",
+        "items": [
+          "B - Bacillus thuringiensis",
+          "C - Corn borer resistance",
+          "G - GMO food staple"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Evaluate applications and ethics of genetic engineering and biotechnology",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Golden Rice",
+      "definition": "A genetically modified variety of Oryza sativa biosynthesized to produce beta-carotene (provitamin A) in the edible endosperm of the rice grain.",
+      "rationalization": "Developed to alleviate Vitamin A deficiency (VAD) in developing countries, which causes childhood blindness, immune weakness, and infant mortality.",
+      "mnemonic": {
+        "title": "Golden Rice Benefit",
+        "phrase": "Gold for Eyes: Beta-Carotene Vitamin A",
+        "items": [
+          "G - Golden color",
+          "B - Beta-carotene",
+          "V - Vitamin A deficiency remedy"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Evaluate applications and ethics of genetic engineering and biotechnology",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "CRISPR-Cas9",
+      "definition": "A revolutionary gene-editing technology adapted from a bacterial immune system that acts as molecular scissors to cut and modify DNA sequences with extreme precision.",
+      "rationalization": "Developed by Jennifer Doudna and Emmanuelle Charpentier (Nobel Prize in Chemistry 2020); enables targeted gene therapies, crop improvements, and disease eradication.",
+      "mnemonic": {
+        "title": "CRISPR Clue",
+        "phrase": "Molecular Scissors for DNA",
+        "items": [
+          "C - Clustered repeats",
+          "C - Cas9 cutting enzyme",
+          "G - Gene editing precision"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Evaluate applications and ethics of genetic engineering and biotechnology",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Cartagena Protocol on Biosafety",
+      "definition": "An international agreement governing the movements of living modified organisms (LMOs) resulting from modern biotechnology from one country to another.",
+      "rationalization": "Ensures the safe transfer, handling, and use of LMOs to protect global biodiversity and human health under the Convention on Biological Diversity.",
+      "mnemonic": {
+        "title": "Cartagena Biosafety",
+        "phrase": "Safe Cross-Border GMO Transit",
+        "items": [
+          "C - Cartagena",
+          "B - Biosafety rules",
+          "L - Living modified organisms"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Evaluate applications and ethics of genetic engineering and biotechnology",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Greenhouse Effect",
+      "definition": "The natural process by which atmospheric gases trap infrared radiation from the Earth's surface, warming the planet to temperatures capable of sustaining life.",
+      "rationalization": "Without the greenhouse effect, Earth would be a frozen wasteland (~ -18°C). The crisis is the ENHANCED greenhouse effect driven by human fossil fuel emissions.",
+      "mnemonic": {
+        "title": "Greenhouse Gases",
+        "phrase": "Carbon, Methane, Water Vapor, Nitrous Oxide",
+        "items": [
+          "$CO_2$ - Carbon dioxide",
+          "$CH_4$ - Methane",
+          "$H_2O$ - Water vapor",
+          "$N_2O$ - Nitrous oxide"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze climate change, global warming, and environmental crises",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Paris Agreement on Climate Change (2015)",
+      "definition": "A landmark legally binding international treaty aimed at limiting global warming to well below 2°C, preferably to 1.5°C, compared to pre-industrial levels.",
+      "rationalization": "Adopted by 196 nations at COP21 in Paris; mandates nationally determined contributions (NDCs) to achieve net-zero greenhouse gas emissions.",
+      "mnemonic": {
+        "title": "Paris Target",
+        "phrase": "Keep Warming Under 1.5 Degrees",
+        "items": [
+          "P - Paris 2015",
+          "1.5°C - Ideal warming cap",
+          "2°C - Upper limit"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze climate change, global warming, and environmental crises",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Montreal Protocol (1987)",
+      "definition": "A highly successful international environmental treaty designed to phase out the production and consumption of ozone-depleting substances, primarily chlorofluorocarbons (CFCs).",
+      "rationalization": "Allowed the Antarctic stratospheric ozone layer to begin healing; recognized as one of the most effective international environmental accords in history.",
+      "mnemonic": {
+        "title": "Montreal Ozone",
+        "phrase": "Montreal Mend the Ozone Layer",
+        "items": [
+          "M - Montreal",
+          "O - Ozone layer protection",
+          "C - CFC ban"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze climate change, global warming, and environmental crises",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "RA 9003: Ecological Solid Waste Management Act of 2000",
+      "definition": "The Philippine law providing an ecological solid waste management program, mandating waste segregation at source, recycling, and the closure of open dumpsites.",
+      "rationalization": "Mandates local government units (LGUs) to establish Materials Recovery Facilities (MRFs) and enforce segregation into biodegradable, recyclable, residual, and special wastes.",
+      "mnemonic": {
+        "title": "RA 9003 Clue",
+        "phrase": "9003 = Garbage and Solid Waste",
+        "items": [
+          "9003 - Solid waste act",
+          "S - Segregation at source",
+          "M - Materials Recovery Facility"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine Philippine environmental laws and sustainable development policies",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "RA 8749: Philippine Clean Air Act of 1999",
+      "definition": "The comprehensive national air pollution management policy designed to achieve and maintain clean air for all Filipinos, banning medical waste incineration.",
+      "rationalization": "Imposes strict vehicle emission testing, regulates industrial factory emissions, and penalizes heavy polluters to safeguard public respiratory health.",
+      "mnemonic": {
+        "title": "RA 8749 Clue",
+        "phrase": "8749 = Breathe Clean Air",
+        "items": [
+          "8749 - Clean Air Act",
+          "A - Air quality standards",
+          "B - Ban on municipal waste incineration"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine Philippine environmental laws and sustainable development policies",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "RA 9275: Philippine Clean Water Act of 2004",
+      "definition": "The law aimed at protecting the country's water bodies from land-based pollution sources including domestic sewage, industrial wastewater, and agricultural runoff.",
+      "rationalization": "Establishes Water Quality Management Areas (WQMAs) and requires discharge permits for businesses disposing effluents into river systems.",
+      "mnemonic": {
+        "title": "RA 9275 Clue",
+        "phrase": "9275 = Clean Water for All",
+        "items": [
+          "9275 - Clean Water Act",
+          "W - Wastewater regulation",
+          "Q - Quality management"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine Philippine environmental laws and sustainable development policies",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Nanotechnology",
+      "definition": "The science, engineering, and technology conducted at the nanoscale, specifically measuring between 1 and 100 nanometers.",
+      "rationalization": "At this scale, quantum mechanical effects dominate, giving materials dramatically altered electrical, thermal, chemical, and optical properties.",
+      "mnemonic": {
+        "title": "Nanoscale Range",
+        "phrase": "Nano = 1 to 100 Nanometers ($10^{-9}$ m)",
+        "items": [
+          "N - Nanometer = $10^{-9}$ meter",
+          "1-100 nm - Standard definition",
+          "Q - Quantum effects"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine emerging technologies and nanoscale science",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Richard Feynman",
+      "definition": "The Nobel laureate physicist who introduced the foundational vision of nanotechnology in his 1959 lecture 'There's Plenty of Room at the Bottom'.",
+      "rationalization": "Feynman envisioned manipulating individual atoms and molecules directly, foreseeing micro-machines, synthesized molecular computers, and atomic-scale engineering.",
+      "mnemonic": {
+        "title": "Feynman Nanotech",
+        "phrase": "Plenty of Room at the Bottom",
+        "items": [
+          "R - Richard Feynman",
+          "1959 - Seminal lecture",
+          "A - Atomic manipulation"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine emerging technologies and nanoscale science",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Graphene",
+      "definition": "A single two-dimensional layer of carbon atoms arranged in a hexagonal honeycomb lattice, renowned as the thinnest, strongest, and most conductive material known.",
+      "rationalization": "Discovered by Andre Geim and Konstantin Novoselov (Nobel Prize in Physics 2010); 200 times stronger than steel, transparent, and an extraordinary conductor of electricity.",
+      "mnemonic": {
+        "title": "Graphene Power",
+        "phrase": "Single Sheet of Carbon Super-Material",
+        "items": [
+          "G - Graphene",
+          "2D - Single atomic layer",
+          "S - Stronger than steel"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine emerging technologies and nanoscale science",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Gutenberg Printing Press (c. 1440)",
+      "definition": "The invention by Johannes Gutenberg utilizing movable metal type and oil-based ink that triggered the information explosion in Renaissance Europe.",
+      "rationalization": "Democratized knowledge by drastically reducing book production costs, sparking the Protestant Reformation, the Scientific Revolution, and widespread public literacy.",
+      "mnemonic": {
+        "title": "Gutenberg Press",
+        "phrase": "Movable Type Liberates Knowledge",
+        "items": [
+          "G - Gutenberg",
+          "1440 - Movable type press",
+          "D - Democratization of books"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Trace the evolution of the Information Age and communication revolutions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Alan Turing",
+      "definition": "The English mathematician and cryptanalyst hailed as the 'Father of Theoretical Computer Science and Artificial Intelligence' who broke the Nazi Enigma code.",
+      "rationalization": "Conceptualized the 'Turing Machine' and proposed the 'Turing Test' to assess whether a machine possesses intelligent behavior indistinguishable from a human.",
+      "mnemonic": {
+        "title": "Turing AI Father",
+        "phrase": "Turing Machine and Turing Test",
+        "items": [
+          "A - Alan Turing",
+          "C - Computer science foundations",
+          "E - Enigma cipher cracked"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Trace the evolution of the Information Age and communication revolutions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Tim Berners-Lee",
+      "definition": "The British computer scientist who invented the World Wide Web (WWW) in 1989 at CERN, developing HTML, HTTP, and URLs.",
+      "rationalization": "Crucially, he made the underlying code royalty-free and open to the public, unleashing the global digital interconnectedness of the internet.",
+      "mnemonic": {
+        "title": "Berners-Lee WWW",
+        "phrase": "Web Father Made It Free",
+        "items": [
+          "T - Tim Berners-Lee",
+          "W - World Wide Web 1989",
+          "H - HTML and HTTP creator"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Trace the evolution of the Information Age and communication revolutions",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Moore's Law",
+      "definition": "The empirical observation by Gordon Moore stating that the number of transistors on a microchip doubles roughly every two years while the cost of computers is halved.",
+      "rationalization": "Drove the exponential explosion of computing power, miniaturization of consumer electronics, and rapid obsolescence of digital technology for over five decades.",
+      "mnemonic": {
+        "title": "Moore's Law Rule",
+        "phrase": "Double Transistors Every Two Years",
+        "items": [
+          "M - Moore",
+          "2 Years - Doubling cycle",
+          "C - Cheap computing speed"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Trace the evolution of the Information Age and communication revolutions",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "RA 10173: Data Privacy Act of 2012",
+      "definition": "The Philippine law that protects individual personal data in information and communications systems in both the government and private sectors.",
+      "rationalization": "Created the National Privacy Commission (NPC); mandates compliance with transparency, legitimate purpose, and proportionality when handling personal information.",
+      "mnemonic": {
+        "title": "RA 10173 Privacy",
+        "phrase": "10173 = Protect My Personal Data",
+        "items": [
+          "10173 - Data Privacy Act",
+          "N - National Privacy Commission",
+          "P - Privacy rights of data subjects"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze cyber-ethics, privacy laws, and social media impacts",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "RA 10175: Cybercrime Prevention Act of 2012",
+      "definition": "The Philippine law penalizing offenses committed against and by means of computer systems, such as illegal access, data interference, cybersex, child pornography, and online libel.",
+      "rationalization": "Provides legal remedies against hacking, identity theft, ATM fraud, and digital defamation in cyberspace.",
+      "mnemonic": {
+        "title": "RA 10175 Cybercrime",
+        "phrase": "10175 = Fight Cybercrimes Online",
+        "items": [
+          "10175 - Cybercrime act",
+          "H - Hacking and identity theft",
+          "L - Online libel penalization"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze cyber-ethics, privacy laws, and social media impacts",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Geothermal Energy in the Philippines",
+      "definition": "A renewable clean energy harnessed from the internal heat of the Earth, in which the Philippines is historically one of the world's top producers.",
+      "rationalization": "Located along the Pacific Ring of Fire, major plants in Leyte, MakBan (Laguna/Batangas), and Tiwi (Albay) provide substantial clean baseload electricity.",
+      "mnemonic": {
+        "title": "Geothermal Ring",
+        "phrase": "Earth Heat from Ring of Fire",
+        "items": [
+          "G - Geothermal",
+          "R - Ring of Fire location",
+          "T - Tiwi & MakBan plants"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Evaluate alternative and renewable energy systems in the Philippines",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Indigenous Knowledge Systems and Practices (IKSP)",
+      "definition": "The local, traditional, and experiential knowledge, skills, and philosophies developed by indigenous communities across generations.",
+      "rationalization": "Includes natural crop cycling, ethnobotanical herbal cures (lagundi, ampalaya), climate indicators from animal behavior, and sustainable water management.",
+      "mnemonic": {
+        "title": "IKSP Wisdom",
+        "phrase": "Ancestral Science and Ecological Balance",
+        "items": [
+          "I - Indigenous",
+          "K - Knowledge systems",
+          "E - Ethnobotanical cures"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Value indigenous knowledge systems and practices alongside modern science",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Thomas Kuhn: Paradigm Shift",
+      "definition": "The concept articulated in 'The Structure of Scientific Revolutions' (1962) where an established scientific framework collapses under anomalies and is replaced by a fundamentally new paradigm.",
+      "rationalization": "Scientific progress is not purely linear accumulation; it proceeds through normal science, crisis, and revolutionary paradigm shifts (e.g., Newtonian physics to Einstein's relativity).",
+      "mnemonic": {
+        "title": "Kuhn's Shift",
+        "phrase": "Anomalies Shatter the Old Paradigm",
+        "items": [
+          "T - Thomas Kuhn",
+          "P - Paradigm shift",
+          "R - Revolution over accumulation"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze scientific revolutions and paradigm shifts",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Bioethics Principles (Beauchamp and Childress)",
+      "definition": "The four core ethical principles governing biomedical research and healthcare: Autonomy, Non-maleficence, Beneficence, and Justice.",
+      "rationalization": "Autonomy respects patient self-determination; Non-maleficence means 'do no harm'; Beneficence promotes positive good; Justice demands fair allocation of medical resources.",
+      "mnemonic": {
+        "title": "Four Bioethics Pillars",
+        "phrase": "ANBJ: Autonomy, No harm, Beneficence, Justice",
+        "items": [
+          "A - Autonomy",
+          "N - Non-maleficence",
+          "B - Beneficence",
+          "J - Justice"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Apply bioethical principles to biomedical issues and clinical research",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Artificial Intelligence (AI)",
+      "definition": "The simulation of human intelligence processes by computer systems, encompassing machine learning, natural language processing, computer vision, and autonomous reasoning.",
+      "rationalization": "AI presents transformative benefits in healthcare diagnostics and climate modeling, alongside ethical dilemmas regarding algorithmic bias, job displacement, and autonomous weapons.",
+      "mnemonic": {
+        "title": "AI Spectrum",
+        "phrase": "Learn, Reason, Adapt Autonomously",
+        "items": [
+          "A - Artificial",
+          "I - Intelligence",
+          "M - Machine learning algorithms"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Assess ethical dilemmas in artificial intelligence and automation",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Algorithmic Bias",
+      "definition": "Systematic and repeatable errors in computer software systems that create unfair outcomes, such as privileging one demographic category over another.",
+      "rationalization": "Arises when training datasets reflect historic human prejudices or underrepresent marginalized groups (e.g., facial recognition errors on dark-skinned women).",
+      "mnemonic": {
+        "title": "Bias in Code",
+        "phrase": "Biased Data Produces Biased AI",
+        "items": [
+          "A - Algorithmic",
+          "B - Bias in training data",
+          "U - Unfair automated decisions"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Assess ethical dilemmas in artificial intelligence and automation",
+      "bloomsTaxonomy": "Evaluating",
+      "highYield": true
+    },
+    {
+      "term": "Ocean Acidification",
+      "definition": "The ongoing decrease in the pH of the Earth's oceans caused by the uptake of anthropogenic carbon dioxide ($CO_2$) from the atmosphere.",
+      "rationalization": "Absorbed $CO_2$ forms carbonic acid ($H_2CO_3$), depleting carbonate ions needed by corals, clams, and marine calcifiers to build skeletons and shells.",
+      "mnemonic": {
+        "title": "Acidifying Seas",
+        "phrase": "$CO_2$ Plus Ocean Water Equals Carbonic Acid",
+        "items": [
+          "$CO_2$ - Carbon dioxide absorbed",
+          "pH - Decreasing pH value",
+          "C - Corals and shells weaken"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze climate change, global warming, and environmental crises",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Ecological Footprint",
+      "definition": "A metric that measures the total biologically productive land and water area required to produce the resources an individual or population consumes and absorb their waste.",
+      "rationalization": "When humanity's ecological footprint exceeds the planet's biocapacity, Earth enters ecological overshoot, depleting natural capital for future generations.",
+      "mnemonic": {
+        "title": "Eco-Footprint Clue",
+        "phrase": "Human Demand vs Earth Biocapacity",
+        "items": [
+          "E - Ecological impact",
+          "D - Demand for nature",
+          "O - Overshoot day"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine sustainability metrics and ecological footprints",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Microplastics",
+      "definition": "Plastic fragments less than 5 millimeters in length resulting from commercial product breakdown and microbeads, contaminating marine ecosystems and food chains.",
+      "rationalization": "Microplastics bioaccumulate in seafood, adsorbing toxic persistent organic pollutants (POPs) that ultimately reach human digestive and circulatory systems.",
+      "mnemonic": {
+        "title": "Microplastics Rule",
+        "phrase": "Tiny Plastics Under 5 mm",
+        "items": [
+          "M - Microplastics",
+          "5mm - Maximum size",
+          "B - Bioaccumulation in fish"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Analyze environmental toxins and global pollution impacts",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Precautionary Principle",
+      "definition": "The principle asserting that when an activity threatens grave or irreversible environmental or human harm, lack of full scientific certainty shall not be used to postpone preventive measures.",
+      "rationalization": "Found in Principle 15 of the 1992 Rio Declaration on Environment and Development; shifts the burden of proof to proponents of potentially hazardous technologies.",
+      "mnemonic": {
+        "title": "Precautionary Rule",
+        "phrase": "Better Safe Than Irreversibly Damaged",
+        "items": [
+          "P - Precautionary",
+          "R - Risk prevention",
+          "B - Burden of safety proof"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Apply environmental ethics and international sustainability principles",
+      "bloomsTaxonomy": "Evaluating",
+      "highYield": true
+    },
+    {
+      "term": "Circular Economy",
+      "definition": "An economic model designed to minimize waste and maximize resource efficiency by keeping products and materials in use through sharing, leasing, reuse, repair, and recycling.",
+      "rationalization": "Replaces the traditional linear economy ('take-make-dispose') with closed loops, regenerating natural systems and decoupling growth from resource exhaustion.",
+      "mnemonic": {
+        "title": "Circular Flow",
+        "phrase": "Reduce, Reuse, Recycle, Regenerate",
+        "items": [
+          "C - Closed loop",
+          "R - Repair & Recycle",
+          "Z - Zero landfill waste"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine sustainability metrics and ecological footprints",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Doppler Radar in PAGASA",
+      "definition": "An advanced meteorological radar that uses the Doppler effect to measure precipitation intensity, cloud velocity, and storm rotation in real time.",
+      "rationalization": "Allowed PAGASA to issue localized rainfall warnings and track typhoon landfall paths with pinpoint accuracy, saving thousands of lives during disasters.",
+      "mnemonic": {
+        "title": "Doppler Advantage",
+        "phrase": "Tracks Storm Speed and Rain Intensity",
+        "items": [
+          "D - Doppler effect",
+          "P - PAGASA radar network",
+          "E - Early storm warning"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Filipino scientists and technological disaster mitigation systems",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Diwata-1",
+      "definition": "The first Philippine microsatellite launched into orbit in 2016, built by Filipino engineers from DOST and UP in collaboration with Japanese universities.",
+      "rationalization": "Provided high-resolution multispectral earth observation for agricultural monitoring, forestry protection, disaster risk assessment, and coastal mapping.",
+      "mnemonic": {
+        "title": "Diwata Space Pioneer",
+        "phrase": "Diwata-1 = First Philippine Microsatellite",
+        "items": [
+          "D - Diwata-1",
+          "2016 - Historic launch",
+          "E - Earth observation"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Philippine space agency breakthroughs and satellite programs",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Philippine Space Agency (PhilSA / RA 11363)",
+      "definition": "The government agency created by the Philippine Space Act of 2019 to manage the national space program, satellite data, and space infrastructure.",
+      "rationalization": "Established to bolster national security, hazard management, climate forecasting, and commercial aerospace development in the country.",
+      "mnemonic": {
+        "title": "PhilSA Clue",
+        "phrase": "RA 11363 = Philippine Space Agency",
+        "items": [
+          "11363 - Space Act of 2019",
+          "P - PhilSA",
+          "S - Space exploration & data"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Identify Philippine space agency breakthroughs and satellite programs",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Technological Somnambulism",
+      "definition": "Langdon Winner's concept describing how humans sleepwalk through life willingly accepting and adopting new technologies without reflecting on their profound social and moral transformations.",
+      "rationalization": "Critiques human complacency where society unquestioningly adopts smartphones or algorithms without considering privacy loss or cognitive degradation.",
+      "mnemonic": {
+        "title": "Somnambulism Meaning",
+        "phrase": "Sleepwalking Into Tech Traps",
+        "items": [
+          "S - Somnambulism = Sleepwalking",
+          "L - Langdon Winner concept",
+          "U - Uncritical adoption"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine philosophical perspectives on human flourishing and technology",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Gene Therapy",
+      "definition": "An experimental medical technique that treats or prevents genetic diseases by inserting, altering, or replacing faulty genes inside an individual's cells.",
+      "rationalization": "Distinguishes between Somatic gene therapy (modifies non-reproductive cells; changes are not inherited) and Germline gene therapy (modifies sperm/egg; inheritable and heavily regulated).",
+      "mnemonic": {
+        "title": "Gene Therapy Types",
+        "phrase": "Somatic Stays with Patient; Germline Passes to Children",
+        "items": [
+          "S - Somatic = non-inheritable",
+          "G - Germline = passed to progeny",
+          "C - Corrects mutations"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Evaluate applications and ethics of genetic engineering and biotechnology",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Stem Cell Therapy",
+      "definition": "The use of undifferentiated stem cells to generate healthy cells that replace diseased, damaged, or aging tissues in the body.",
+      "rationalization": "Embryonic stem cells are pluripotent (can form any tissue) but involve ethical controversies; induced pluripotent stem cells (iPSCs) offer adult somatic alternatives.",
+      "mnemonic": {
+        "title": "Stem Cell Potential",
+        "phrase": "Blank Cells that Become Any Tissue",
+        "items": [
+          "S - Stem cells",
+          "P - Pluripotent differentiation",
+          "R - Regenerative medicine"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Evaluate applications and ethics of genetic engineering and biotechnology",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Scientific Method",
+      "definition": "The systematic, empirical procedure of acquiring knowledge through observation, question formulation, hypothesis testing, controlled experimentation, and conclusion verification.",
+      "rationalization": "Pioneered by Francis Bacon (Inductive method) and Rene Descartes (Deductive reasoning); forms the bedrock of replicable empirical inquiry.",
+      "mnemonic": {
+        "title": "Steps of Scientific Method",
+        "phrase": "O-P-H-E-C: Observation, Problem, Hypothesis, Experiment, Conclusion",
+        "items": [
+          "O - Observation",
+          "P - Problem",
+          "H - Hypothesis",
+          "E - Experiment",
+          "C - Conclusion"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Apply the steps and logic of the scientific method",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Peer Review Process",
+      "definition": "The evaluation of scientific, academic, or research work by qualified experts in the same field before publication in scholarly journals.",
+      "rationalization": "Acts as the primary quality-control mechanism of modern science, weeding out flawed methodology, invalid data, fabrication, and unwarranted conclusions.",
+      "mnemonic": {
+        "title": "Peer Review Clue",
+        "phrase": "Judged by Fellow Experts",
+        "items": [
+          "P - Peer scrutiny",
+          "Q - Quality control",
+          "V - Validity check"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine scholarly verification and peer-review rigor in science",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Technology as Techne vs Poiesis",
+      "definition": "Aristotle and Heidegger's classical distinction where Techne is human skill, craft, and art, while Poiesis is poetic bringing-forth or uncovering truth.",
+      "rationalization": "Ancient craft was a harmonious bringing-forth (Poiesis) of nature's beauty, whereas modern technology is an aggressive extracting and stockpiling (Gestell).",
+      "mnemonic": {
+        "title": "Techne and Poiesis",
+        "phrase": "Techne = Craft; Poiesis = Bringing-Forth",
+        "items": [
+          "T - Techne: human craft",
+          "P - Poiesis: poetic revealing",
+          "A - Ancient harmony"
+        ]
+      },
+      "source": "PRC BLEPT GenEd STS Reviewer",
+      "tosCompetency": "Examine philosophical perspectives on human flourishing and technology",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    }
+  ]
+}

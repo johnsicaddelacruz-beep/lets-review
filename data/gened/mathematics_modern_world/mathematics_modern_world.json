@@ -1,0 +1,906 @@
+{
+  "category": "General Education",
+  "topic": "Mathematics in the Modern World",
+  "subtopic": "Patterns, Logic, Data Management, & Consumer Finance",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Fibonacci Sequence",
+      "definition": "The sequence of numbers where each term is the sum of the two preceding terms: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144...",
+      "rationalization": "Introduced to the West by Leonardo of Pisa (Fibonacci) in 'Liber Abaci' (1202) through a rabbit breeding problem; governs spiral arrangements in sunflowers, pinecones, and nautilus shells.",
+      "mnemonic": {
+        "title": "Fibonacci Formula",
+        "phrase": "$F_n = F_{n-1} + F_{n-2}$",
+        "items": [
+          "0, 1 Start",
+          "Sum of previous two numbers",
+          "Nature's growth code"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Identify mathematical patterns, Fibonacci numbers, and nature's symmetries",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Golden Ratio (Phi / $\\Phi$)",
+      "definition": "The irrational mathematical constant approximately equal to 1.6180339887..., representing the ratio of consecutive Fibonacci numbers as n approaches infinity.",
+      "rationalization": "Symbolized by Greek letter Phi ($\\Phi$); regarded as the most aesthetically pleasing proportion in architecture (Parthenon), Renaissance art (Da Vinci), and anatomical geometry.",
+      "mnemonic": {
+        "title": "Golden Ratio Value",
+        "phrase": "Phi is One Point Six One Eight",
+        "items": [
+          "$\\Phi \\approx 1.618$",
+          "Golden ratio",
+          "Divine proportion"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Identify mathematical patterns, Fibonacci numbers, and nature's symmetries",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Fractal",
+      "definition": "A complex geometric pattern that exhibits self-similarity across different scales, meaning any magnified part looks identical or similar to the whole.",
+      "rationalization": "Coined by Benoit Mandelbrot; seen in Romanesco broccoli, coastlines, lightning bolts, fern leaves, and snow crystals. Fractals possess non-integer dimensions.",
+      "mnemonic": {
+        "title": "Fractal Feature",
+        "phrase": "Self-Similar at Every Zoom Level",
+        "items": [
+          "F - Fractal",
+          "S - Self-similarity",
+          "M - Mandelbrot set"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Identify mathematical patterns, Fibonacci numbers, and nature's symmetries",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Tessellation (Tiling)",
+      "definition": "The covering of a flat two-dimensional plane using one or more geometric shapes with no overlaps and no gaps.",
+      "rationalization": "Only three regular polygons can create regular tessellations on a plane: equilateral triangles, squares, and regular hexagons (because their interior angles divide 360° evenly).",
+      "mnemonic": {
+        "title": "Regular Tessellations",
+        "phrase": "Three Shapes Only: Triangle, Square, Hexagon",
+        "items": [
+          "T - Triangle (60°)",
+          "S - Square (90°)",
+          "H - Hexagon (120°)"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Identify mathematical patterns, Fibonacci numbers, and nature's symmetries",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Inductive Reasoning",
+      "definition": "The process of forming a general conclusion or conjecture based on specific observations, recurring examples, or experimental patterns.",
+      "rationalization": "Moves from specific instances to general rules (bottom-up). Conclusions derived from inductive reasoning are probable but not logically guaranteed to be true.",
+      "mnemonic": {
+        "title": "Inductive vs Deductive",
+        "phrase": "Inductive: Specific to General; Deductive: General to Specific",
+        "items": [
+          "I - Inductive: Specific -> General",
+          "D - Deductive: General -> Specific"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply inductive and deductive reasoning to solve problems",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Deductive Reasoning",
+      "definition": "The process of proving a specific conclusion with logical certainty from general premises, established mathematical axioms, or accepted definitions.",
+      "rationalization": "Moves from general rules to specific conclusions (top-down). If the initial premises are true and the logical form is valid, the conclusion MUST be true.",
+      "mnemonic": {
+        "title": "Deductive Certainty",
+        "phrase": "Deductive = Definite Logic",
+        "items": [
+          "D - Deductive",
+          "G - General rule applied",
+          "C - Certain conclusion"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply inductive and deductive reasoning to solve problems",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Polya's Four Steps in Problem Solving",
+      "definition": "George Polya's classic heuristic framework for mathematical problem solving: 1. Understand the problem, 2. Devise a plan, 3. Carry out the plan, 4. Look back.",
+      "rationalization": "Published in 'How to Solve It' (1945); 'Look back' (reflection and checking the solution for reasonableness) is the most frequently neglected yet crucial step.",
+      "mnemonic": {
+        "title": "Polya's Steps",
+        "phrase": "U-D-C-L: Understand, Devise, Carry out, Look back",
+        "items": [
+          "U - Understand the problem",
+          "D - Devise a plan",
+          "C - Carry out plan",
+          "L - Look back & check"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply Polya's 4-step problem solving model to practical scenarios",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Contrapositive Statement",
+      "definition": "The logical statement formed by negating and swapping both the hypothesis and conclusion of a conditional: If not q, then not p ($\\neg q \\rightarrow \\neg p$).",
+      "rationalization": "A conditional statement ($p \\rightarrow q$) is logically equivalent ONLY to its contrapositive ($\\neg q \\rightarrow \\neg p$). The converse and inverse are NOT logically equivalent to the conditional.",
+      "mnemonic": {
+        "title": "Logic Equivalence Rule",
+        "phrase": "Conditional = Contrapositive",
+        "items": [
+          "Conditional: $p \\rightarrow q$",
+          "Converse: $q \\rightarrow p$",
+          "Inverse: $\\neg p \\rightarrow \\neg q$",
+          "Contrapositive: $\\neg q \\rightarrow \\neg p$"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Analyze truth values of conditional, converse, inverse, and contrapositive",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Tautology",
+      "definition": "A compound proposition that is always true for every possible combination of truth values of its constituent propositional variables.",
+      "rationalization": "An example is the law of excluded middle: '$p \\lor \\neg p$' (It is either raining or it is not raining), which is always true.",
+      "mnemonic": {
+        "title": "Tautology Clue",
+        "phrase": "Total True Always",
+        "items": [
+          "T - Tautology",
+          "T - True in all cases",
+          "C - Contrast with contradiction (all false)"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Evaluate propositions using truth tables and logic",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Universal Quantifier ($\\forall$)",
+      "definition": "The logical operator symbolized by $\\forall$ meaning 'for all', 'for every', or 'for each' member of a given universe of discourse.",
+      "rationalization": "A statement like '$\\forall x, P(x)$' is true only if the predicate holds for every single element; a single counterexample disproves it.",
+      "mnemonic": {
+        "title": "Quantifier Symbols",
+        "phrase": "$\\forall$ = Upside-down A for ALL; $\\exists$ = Backwards E for EXISTS",
+        "items": [
+          "$\\forall$ - For all / Universal",
+          "$\\exists$ - There exists / Existential"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Translate natural language to mathematical logic and quantifiers",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Mean (Arithmetic Average)",
+      "definition": "The measure of central tendency calculated by summing all numerical values in a dataset and dividing by the total count of values: $\\bar{x} = \\frac{\\sum x}{n}$.",
+      "rationalization": "The mean incorporates every value, making it highly sensitive to extreme outliers, which skew the mean toward the long tail.",
+      "mnemonic": {
+        "title": "Mean Formula",
+        "phrase": "Sum of All Divided by Count",
+        "items": [
+          "$\\sum x$ - Total sum",
+          "n - Sample size",
+          "O - Outlier sensitive"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate and interpret measures of central tendency",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Median",
+      "definition": "The middle value in an ordered data set arranged in ascending or descending sequence, dividing the distribution into two equal halves (50th percentile).",
+      "rationalization": "The median is robust against extreme outliers and skewed distributions, making it the preferred measure for household income or house prices.",
+      "mnemonic": {
+        "title": "Median Clue",
+        "phrase": "Middle Value of Sorted Data",
+        "items": [
+          "M - Median",
+          "O - Ordered list",
+          "R - Resistant to outliers"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate and interpret measures of central tendency",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Mode",
+      "definition": "The value or category that appears with the highest frequency in a data set.",
+      "rationalization": "The only measure of central tendency that can be used with nominal (categorical) qualitative data (e.g., most popular brand or hair color).",
+      "mnemonic": {
+        "title": "Mode Clue",
+        "phrase": "Most Frequent Value",
+        "items": [
+          "M - Mode",
+          "M - Most often",
+          "N - Nominal data applicable"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate and interpret measures of central tendency",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Standard Deviation (s / $\\sigma$)",
+      "definition": "The square root of the variance, measuring the typical amount of variation or dispersion of data points around the mean.",
+      "rationalization": "Expressed in the exact same measurement units as the original data points; a small standard deviation indicates data tightly clustered near the mean.",
+      "mnemonic": {
+        "title": "Standard Deviation",
+        "phrase": "Spread From the Center Mean",
+        "items": [
+          "s - Sample SD",
+          "$\\sigma$ - Population SD",
+          "Spread measurement"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate and interpret measures of dispersion and variability",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Empirical Rule (68-95-99.7 Rule)",
+      "definition": "For a normal bell-shaped distribution: approximately 68% of data falls within 1 standard deviation, 95% within 2 SD, and 99.7% within 3 SD of the mean.",
+      "rationalization": "A standard board exam benchmark: allows instant probability estimation for test scores and biometric measurements without calculus.",
+      "mnemonic": {
+        "title": "68-95-99.7 Rule",
+        "phrase": "1, 2, 3 Standard Deviations",
+        "items": [
+          "$pm 1\\sigma = 68\\%$",
+          "$pm 2\\sigma = 95\\%$",
+          "$pm 3\\sigma = 99.7\\%$"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply the empirical rule to normal distributions",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Z-Score (Standard Score)",
+      "definition": "The number of standard deviations a particular data point x lies above or below the mean: $z = \\frac{x - \\mu}{\\sigma}$.",
+      "rationalization": "Enables fair comparison between scores from different tests with different means and standard deviations (e.g., comparing an SAT score to an ACT score).",
+      "mnemonic": {
+        "title": "Z-Score Formula",
+        "phrase": "(Value Minus Mean) Over Standard Deviation",
+        "items": [
+          "$x - \\mu$ - Distance from mean",
+          "$\\sigma$ - Scaled by SD",
+          "$z = 0$ is average"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate z-scores and compare standardized performances",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Pearson Correlation Coefficient (r)",
+      "definition": "A statistical metric measuring the strength and direction of the linear relationship between two quantitative variables, ranging from -1 to +1.",
+      "rationalization": "$r = +1$ indicates a perfect positive linear relationship; $r = -1$ indicates a perfect negative linear relationship; $r = 0$ indicates zero linear correlation. Correlation does not imply causation.",
+      "mnemonic": {
+        "title": "Pearson Range",
+        "phrase": "Minus 1 to Plus 1",
+        "items": [
+          "+1: Perfect positive",
+          "0: No linear link",
+          "-1: Perfect negative"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Interpret Pearson r correlation coefficients",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Simple Interest Formula",
+      "definition": "The interest calculated strictly on the initial principal amount: $I = Prt$, where P is principal, r is annual interest rate (in decimal), and t is time in years.",
+      "rationalization": "The maturity/future value is $F = P + I = P(1 + rt)$. When time is given in months, $t = \\frac{\\text{months}}{12}$.",
+      "mnemonic": {
+        "title": "Simple Interest",
+        "phrase": "I = P * r * t",
+        "items": [
+          "P - Principal",
+          "r - Rate in decimals",
+          "t - Time in years"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Solve simple and compound interest problems in consumer finance",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Compound Interest Formula",
+      "definition": "Interest earned on both the original principal and accumulated interest from prior periods: $A = P\\left(1 + \\frac{r}{n}\\right)^{nt}$, where n is compounding frequency.",
+      "rationalization": "Compounding frequencies: annual ($n=1$), semi-annual ($n=2$), quarterly ($n=4$), monthly ($n=12$), daily ($n=365$). Compound growth is exponential.",
+      "mnemonic": {
+        "title": "Compound Interest",
+        "phrase": "Interest on Interest Compound Growth",
+        "items": [
+          "P - Principal",
+          "r/n - Periodic rate",
+          "nt - Total periods"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Solve simple and compound interest problems in consumer finance",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Euler Circuit",
+      "definition": "A closed circuit in a graph that visits every single edge exactly once and begins and ends at the exact same vertex.",
+      "rationalization": "Euler's Theorem: A connected graph has an Euler circuit if and only if EVERY vertex in the graph has an EVEN degree.",
+      "mnemonic": {
+        "title": "Euler Circuit Rule",
+        "phrase": "Every Vertex Even = Euler Circuit",
+        "items": [
+          "E - Euler circuit",
+          "E - Every edge once",
+          "E - Even degree on all vertices"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply graph theory principles (Euler and Hamiltonian paths)",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Euler Path",
+      "definition": "A path in a graph that travels along every edge exactly once, but starts and ends at two different vertices.",
+      "rationalization": "Euler's Theorem: A connected graph has an Euler path if and only if it has EXACTLY TWO vertices with an ODD degree (the path starts at one odd vertex and ends at the other).",
+      "mnemonic": {
+        "title": "Euler Path Rule",
+        "phrase": "Exactly Two Odd Vertices = Euler Path",
+        "items": [
+          "2 - Exactly two odd vertices",
+          "S - Starts at first odd vertex",
+          "E - Ends at second odd vertex"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply graph theory principles (Euler and Hamiltonian paths)",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Königsberg Bridge Problem",
+      "definition": "The historic 1736 mathematical puzzle asking whether one can walk through the city of Königsberg crossing all seven bridges over the Pregel River exactly once without backtracking.",
+      "rationalization": "Leonhard Euler proved it impossible by converting the landmasses and bridges into vertices and edges; all four vertices had odd degrees (3, 3, 3, 5), giving birth to Graph Theory and Topology.",
+      "mnemonic": {
+        "title": "Seven Bridges of Königsberg",
+        "phrase": "Euler Proved Seven Bridges Impossible",
+        "items": [
+          "7 Bridges",
+          "All 4 vertices odd degree",
+          "Birth of Graph Theory 1736"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply graph theory principles (Euler and Hamiltonian paths)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Hamiltonian Circuit",
+      "definition": "A closed loop in a graph that visits every single vertex exactly once (except the starting vertex, which is also the terminal vertex).",
+      "rationalization": "Unlike an Euler circuit (which focuses on every edge), a Hamiltonian circuit focuses on visiting every vertex. The Travelling Salesperson Problem searches for the Hamiltonian circuit with minimum edge weight.",
+      "mnemonic": {
+        "title": "Euler vs Hamilton",
+        "phrase": "Euler = Edges; Hamilton = Houses (Vertices)",
+        "items": [
+          "E - Euler: Edges once",
+          "H - Hamilton: Houses/Vertices once"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply graph theory principles (Euler and Hamiltonian paths)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Plurality Voting Method",
+      "definition": "A voting method where the candidate receiving the most first-place votes wins, regardless of whether they achieve an absolute majority (> 50%).",
+      "rationalization": "The simplest and most common system, but vulnerable to vote-splitting and can elect a polarizing candidate strongly opposed by the majority.",
+      "mnemonic": {
+        "title": "Plurality Rule",
+        "phrase": "Most First-Place Votes Wins",
+        "items": [
+          "P - Plurality",
+          "M - Most votes",
+          "N - No majority needed"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Evaluate voting methods and fairness criteria",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Borda Count Voting Method",
+      "definition": "A preferential voting method where voters rank all candidates, awarding points based on rank (e.g., n points for 1st place, n-1 for 2nd, down to 1 point for last).",
+      "rationalization": "Developed by Jean-Charles de Borda; favors consensus candidates with broad support over candidates who generate divisive love/hate splits.",
+      "mnemonic": {
+        "title": "Borda Points",
+        "phrase": "Points for Every Ranked Position",
+        "items": [
+          "B - Borda count",
+          "P - Point allocation",
+          "C - Consensus winner"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Evaluate voting methods and fairness criteria",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Condorcet Criterion",
+      "definition": "A voting fairness criterion stating that if a candidate defeats every other candidate in head-to-head pairwise matchups, that candidate should win the election.",
+      "rationalization": "A candidate who beats all opponents one-on-one is called a Condorcet Winner; plurality and Borda count systems can violate this criterion.",
+      "mnemonic": {
+        "title": "Condorcet Rule",
+        "phrase": "Beats Everyone Head-to-Head",
+        "items": [
+          "C - Condorcet winner",
+          "H - Head-to-head victor",
+          "F - Fairness standard"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Evaluate voting methods and fairness criteria",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Majority Criterion",
+      "definition": "A voting fairness criterion stating that if a candidate receives more than 50% of the first-place votes, that candidate must be the winner.",
+      "rationalization": "The Borda Count method can violate the Majority Criterion under certain voter distribution profiles.",
+      "mnemonic": {
+        "title": "Majority Criterion",
+        "phrase": "Over 50% First Place Must Win",
+        "items": [
+          "M - Majority > 50%",
+          "C - Criterion violated by Borda",
+          "F - Fundamental fairness"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Evaluate voting methods and fairness criteria",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Hamilton's Apportionment Method",
+      "definition": "An apportionment method that gives each state its lower quota, then distributes remaining surplus seats one by one to states with the largest fractional remainders.",
+      "rationalization": "Devised by Alexander Hamilton in 1792; simple and intuitive, but susceptible to the Alabama Paradox (increasing total seats causes a state to lose a seat).",
+      "mnemonic": {
+        "title": "Hamilton Apportionment",
+        "phrase": "Lower Quotas Plus Largest Remainders",
+        "items": [
+          "H - Hamilton method",
+          "L - Lower quota first",
+          "R - Remainder surplus distributed"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply apportionment methods and analyze paradoxes",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Alabama Paradox",
+      "definition": "An apportionment anomaly where an increase in the total number of seats to be apportioned results in a state losing one of its previously held seats.",
+      "rationalization": "First observed in the US Congress in 1880 when increasing the House from 299 to 300 seats caused Alabama's apportionment to drop from 8 to 7 seats under Hamilton's method.",
+      "mnemonic": {
+        "title": "Alabama Paradox",
+        "phrase": "More Total Seats, Less for Alabama",
+        "items": [
+          "A - Alabama paradox",
+          "M - More total seats",
+          "L - Loss of individual seat"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply apportionment methods and analyze paradoxes",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Modular Arithmetic (Clock Arithmetic)",
+      "definition": "A system of arithmetic for integers where numbers 'wrap around' upon reaching a fixed modulus value n: $a \\equiv b \\pmod n$.",
+      "rationalization": "If the time is 9:00, 5 hours later is 2:00 because $(9 + 5) \\equiv 14 \\equiv 2 \\pmod{12}$. Used in cryptography, hashing algorithms, and barcode checksums.",
+      "mnemonic": {
+        "title": "Modulo Remainder",
+        "phrase": "Clock Wraps at the Modulus",
+        "items": [
+          "mod n - Divisor",
+          "a $\\equiv$ b (mod n) - Same remainder",
+          "C - Clock arithmetic"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply modular arithmetic to codes, ciphers, and ISBN checksums",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Caesar Cipher (Shift Cipher)",
+      "definition": "A basic substitution cipher where each letter in the plaintext is shifted by a fixed number of positions down the alphabet: $C \\equiv (P + k) \\pmod{26}$.",
+      "rationalization": "Named after Julius Caesar who used a shift of $k=3$ (A becomes D, B becomes E); easily broken by brute force frequency analysis.",
+      "mnemonic": {
+        "title": "Caesar Shift",
+        "phrase": "Shift Each Letter By Fixed Key k",
+        "items": [
+          "C - Caesar",
+          "S - Shift by k positions",
+          "26 - Alphabet mod 26"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply modular arithmetic to codes, ciphers, and ISBN checksums",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Universal Product Code (UPC) Check Digit",
+      "definition": "The final 12th digit on a commercial barcode calculated using a modulo 10 weighted sum to instantly detect scanning and transcription errors.",
+      "rationalization": "Formula: $3(d_1 + d_3 + d_5 + d_7 + d_9 + d_{11}) + (d_2 + d_4 + d_6 + d_8 + d_{10}) + d_{12} \\equiv 0 \\pmod{10}$.",
+      "mnemonic": {
+        "title": "UPC Check Modulo",
+        "phrase": "Odd Digits Times 3 Plus Evens Mod 10",
+        "items": [
+          "O - Odd positions $\\times 3$",
+          "E - Even positions $\\times 1$",
+          "10 - Sum ends in 0"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply modular arithmetic to codes, ciphers, and ISBN checksums",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Set Union ($\\cup$)",
+      "definition": "The set of all elements that belong to set A, or set B, or both: $A \\cup B = \\{x \\mid x \\in A \\lor x \\in B\\}$.",
+      "rationalization": "Combines all elements of both sets without duplicating common items; corresponds to the logical disjunction OR.",
+      "mnemonic": {
+        "title": "Union Symbol",
+        "phrase": "U for United Together",
+        "items": [
+          "$\\cup$ - Union",
+          "OR - Either set",
+          "C - Combines elements"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Perform basic set operations and Venn diagram interpretations",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Set Intersection ($\\cap$)",
+      "definition": "The set containing only the elements that belong simultaneously to both set A and set B: $A \\cap B = \\{x \\mid x \\in A \\land x \\in B\\}$.",
+      "rationalization": "Corresponds to the logical conjunction AND; if $A \\cap B = \\emptyset$, the sets are disjoint or mutually exclusive.",
+      "mnemonic": {
+        "title": "Intersection Symbol",
+        "phrase": "$\\cap$ = Cap for Common Elements",
+        "items": [
+          "$\\cap$ - Intersection",
+          "AND - Both sets",
+          "O - Overlap region in Venn diagram"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Perform basic set operations and Venn diagram interpretations",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Power Set",
+      "definition": "The set of all subsets of a set A, including the empty set $\\emptyset$ and set A itself: cardinality is given by $2^n$ where n is the number of elements in A.",
+      "rationalization": "If a set has 3 elements, its power set has $2^3 = 8$ subsets. The empty set $\\emptyset$ is a subset of every set.",
+      "mnemonic": {
+        "title": "Power Set Cardinality",
+        "phrase": "Two Raised to the Power n",
+        "items": [
+          "$2^n$ - Total subsets",
+          "$\\emptyset$ included",
+          "Set itself included"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Perform basic set operations and Venn diagram interpretations",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Vertical Line Test",
+      "definition": "A visual geometric method to determine if a curve represents a mathematical function by verifying that no vertical line intersects the curve at more than one point.",
+      "rationalization": "If a vertical line touches the graph at two or more points, then a single input x corresponds to multiple outputs y, violating the definition of a function.",
+      "mnemonic": {
+        "title": "Vertical Test",
+        "phrase": "One Touch Only for a Function",
+        "items": [
+          "V - Vertical line",
+          "1 - Maximum one point",
+          "F - Function confirmed"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Distinguish relations and functions using graphical and algebraic tests",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "One-to-One Function (Injective Function)",
+      "definition": "A function where distinct elements in the domain map to distinct elements in the codomain ($f(a) = f(b)$ implies $a = b$).",
+      "rationalization": "Passes the Horizontal Line Test: every horizontal line intersects the graph at most once; only one-to-one functions possess an inverse function.",
+      "mnemonic": {
+        "title": "Injective Test",
+        "phrase": "Horizontal Line Hits Only Once",
+        "items": [
+          "I - Injective / One-to-one",
+          "H - Horizontal line test",
+          "I - Invertible function"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Distinguish relations and functions using graphical and algebraic tests",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Span of a Tree / Spanning Tree",
+      "definition": "A connected subgraph of an undirected connected graph that includes all vertices of the graph and has no cycles, containing exactly $V - 1$ edges.",
+      "rationalization": "Minimum Spanning Tree (MST) algorithms like Kruskal's or Prim's find the minimum cost to connect all nodes in a network (e.g., laying fiber-optic cables).",
+      "mnemonic": {
+        "title": "Tree Properties",
+        "phrase": "All Vertices Connected with No Loops",
+        "items": [
+          "V - 1 edges",
+          "No cycles",
+          "Minimum connection cost"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply graph theory principles (Euler and Hamiltonian paths)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Linear Programming: Feasible Region",
+      "definition": "The set of all possible points that satisfy all the given linear inequalities and non-negativity constraints simultaneously.",
+      "rationalization": "By the Fundamental Theorem of Linear Programming, the optimal maximum or minimum value of the objective function always occurs at a corner point (vertex) of the feasible region.",
+      "mnemonic": {
+        "title": "Corner Point Theorem",
+        "phrase": "Optimal Solution is at a Vertex",
+        "items": [
+          "F - Feasible polygon",
+          "C - Corner points test",
+          "O - Optimum max/min"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Solve optimization problems using linear programming and corner points",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Skewness in Distribution",
+      "definition": "A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean.",
+      "rationalization": "Positively skewed (skewed to the right): tail points right, Mode < Median < Mean. Negatively skewed (skewed to the left): tail points left, Mean < Median < Mode.",
+      "mnemonic": {
+        "title": "Skewness Rule",
+        "phrase": "Tail Tells the Direction of Skew",
+        "items": [
+          "Right-skew: Mean > Median > Mode",
+          "Left-skew: Mean < Median < Mode",
+          "Tail points to the skew"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Interpret skewness and symmetry of data distributions",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Interquartile Range (IQR)",
+      "definition": "The difference between the third quartile ($Q_3$) and the first quartile ($Q_1$): $IQR = Q_3 - Q_1$, representing the spread of the middle 50% of the data.",
+      "rationalization": "Used in box plots to detect statistical outliers: any data point less than $Q_1 - 1.5(IQR)$ or greater than $Q_3 + 1.5(IQR)$ is flagged as an outlier.",
+      "mnemonic": {
+        "title": "1.5 IQR Rule",
+        "phrase": "$Q_3 - Q_1$: Middle 50 Percent Spread",
+        "items": [
+          "$IQR = Q_3 - Q_1$",
+          "1.5 IQR - Outlier fence",
+          "Box plot boundary"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate and interpret measures of dispersion and variability",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Variance ($s^2$ / $\\sigma^2$)",
+      "definition": "The average of the squared deviations from the arithmetic mean: $s^2 = \\frac{\\sum (x - \\bar{x})^2}{n - 1}$ for sample variance.",
+      "rationalization": "Degrees of freedom $n - 1$ (Bessel's correction) is used for samples to provide an unbiased estimator of the true population variance.",
+      "mnemonic": {
+        "title": "Variance Formula",
+        "phrase": "Average Squared Distance from Mean",
+        "items": [
+          "$s^2$ - Variance",
+          "Squared deviations",
+          "Divide by n-1 for sample"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate and interpret measures of dispersion and variability",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Arrow's Impossibility Theorem",
+      "definition": "Kenneth Arrow's mathematical proof showing that no ranked-choice voting system can satisfy all four basic fairness criteria simultaneously when there are three or more candidates.",
+      "rationalization": "Fairness criteria: Non-dictatorship, Pareto efficiency, Independence of irrelevant alternatives, and Unrestricted domain cannot all coexist in any preferential voting system.",
+      "mnemonic": {
+        "title": "Arrow's Theorem",
+        "phrase": "No Voting System is Mathematically Perfect",
+        "items": [
+          "A - Kenneth Arrow",
+          "I - Impossible perfect system",
+          "3+ candidates trade-off"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Evaluate voting methods and fairness criteria",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Pairwise Comparison Method (Copeland's Method)",
+      "definition": "A voting method where each candidate is compared head-to-head against every other candidate; the winner of each pairwise matchup receives 1 point, and ties yield 0.5 points.",
+      "rationalization": "Guarantees that a Condorcet Winner will win the election if one exists, addressing a major weakness of the plurality method.",
+      "mnemonic": {
+        "title": "Pairwise Comparisons",
+        "phrase": "Every Candidate Faces Every Opponent One-on-One",
+        "items": [
+          "P - Pairwise battle",
+          "1 point for win",
+          "0.5 point for tie"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Evaluate voting methods and fairness criteria",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Jefferson's Apportionment Method",
+      "definition": "A divisor apportionment method devised by Thomas Jefferson that rounds each state's modified quota DOWN to the nearest integer, using a modified standard divisor to allocate all seats.",
+      "rationalization": "Avoids the Alabama Paradox because it is a divisor method, but systematically favors larger states at the expense of smaller states.",
+      "mnemonic": {
+        "title": "Jefferson Method",
+        "phrase": "Always Round Down with Modified Divisor",
+        "items": [
+          "J - Jefferson",
+          "D - Down rounding (floor)",
+          "F - Favors populous states"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply apportionment methods and analyze paradoxes",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Webster's Apportionment Method",
+      "definition": "A divisor apportionment method devised by Daniel Webster that rounds each state's modified quota to the nearest integer using standard arithmetic rounding rules ($\\geq 0.5$ rounds up).",
+      "rationalization": "Regarded mathematically as the fairest apportionment method; does not suffer from quota paradoxes and has no systematic bias toward large or small states.",
+      "mnemonic": {
+        "title": "Webster Method",
+        "phrase": "Round to Nearest Whole Number",
+        "items": [
+          "W - Webster",
+          "0.5 - Standard rounding threshold",
+          "U - Unbiased apportionment"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply apportionment methods and analyze paradoxes",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "RSA Cryptosystem",
+      "definition": "The groundbreaking public-key encryption algorithm created by Rivest, Shamir, and Adleman (1977) based on the computational difficulty of factoring the product of two large prime numbers.",
+      "rationalization": "Secures global internet e-commerce, banking, and digital signatures; uses modular exponentiation and Euler's totient function $\\phi(n)$.",
+      "mnemonic": {
+        "title": "RSA Security",
+        "phrase": "Large Prime Factorization Secret",
+        "items": [
+          "R - Rivest, Shamir, Adleman",
+          "P - Public-private key pair",
+          "P - Prime numbers product"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Apply modular arithmetic to codes, ciphers, and ISBN checksums",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Coefficient of Variation (CV)",
+      "definition": "A standardized measure of relative dispersion calculated as the ratio of standard deviation to the mean, expressed as a percentage: $CV = \\frac{s}{\\bar{x}} \\times 100\\%$.",
+      "rationalization": "Allows direct comparison of variability between datasets with vastly different units or means (e.g., comparing stock price volatility between $10 and $1,000 stocks).",
+      "mnemonic": {
+        "title": "CV Formula",
+        "phrase": "(Standard Deviation / Mean) * 100%",
+        "items": [
+          "$s / \\bar{x}$ - Ratio",
+          "Percentage output",
+          "Relative consistency test"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Calculate and interpret measures of dispersion and variability",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Null Hypothesis ($H_0$)",
+      "definition": "The default statistical hypothesis asserting that there is no significant difference, effect, or relationship between the tested variables.",
+      "rationalization": "Researchers aim to reject the null hypothesis in favor of the alternative hypothesis ($H_1$) when the calculated p-value is less than the significance level $\\alpha$ (typically 0.05).",
+      "mnemonic": {
+        "title": "Null Hypothesis",
+        "phrase": "No Effect, No Difference",
+        "items": [
+          "$H_0$ - Null hypothesis",
+          "P < 0.05 - Reject null",
+          "Status quo assumption"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Formulate and interpret statistical hypotheses in data management",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Type I Error (False Positive)",
+      "definition": "The error made in hypothesis testing when a researcher rejects a true null hypothesis: the probability of a Type I error is equal to the significance level $\\alpha$.",
+      "rationalization": "Finding an innocent person guilty in court is an analogy for a Type I error (convicting when innocent / claiming an effect when none exists). Type II error is failing to reject a false null.",
+      "mnemonic": {
+        "title": "Hypothesis Errors",
+        "phrase": "Type I: Innocent Convicted; Type II: Guilty Walks Free",
+        "items": [
+          "Type I ($\\alpha$): False Positive (reject true $H_0$)",
+          "Type II ($\\beta$): False Negative (fail to reject false $H_0$)"
+        ]
+      },
+      "source": "PRC BLEPT GenEd Math Reviewer",
+      "tosCompetency": "Formulate and interpret statistical hypotheses in data management",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    }
+  ]
+}

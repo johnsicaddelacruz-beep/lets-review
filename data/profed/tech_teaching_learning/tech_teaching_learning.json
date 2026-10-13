@@ -1,0 +1,918 @@
+{
+  "category": "Professional Education",
+  "topic": "Technology for Teaching and Learning",
+  "subtopic": "TPACK, SAMR, Dale Cone, ASSURE, & Multimedia Learning",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "TPACK Framework (Mishra and Koehler, 2006)",
+      "definition": "The conceptual framework identifying the intersection of three primary forms of knowledge required for effective technology integration: Technological Knowledge (TK), Pedagogical Knowledge (PK), and Content Knowledge (CK).",
+      "rationalization": "True TPACK is not merely using technology as an add-on; it is the seamless orchestration of technology to make complex subject matter pedagogically accessible and engaging.",
+      "mnemonic": {
+        "title": "TPACK Components",
+        "phrase": "TK + PK + CK = TPACK Harmony",
+        "items": [
+          "TK - Tech Knowledge",
+          "PK - Pedagogical Knowledge",
+          "CK - Content Knowledge",
+          "TPACK - True integration nexus"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply the TPACK framework in designing technology-integrated instruction",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Pedagogical Content Knowledge (PCK / Lee Shulman, 1986)",
+      "definition": "The specialized knowledge of how to teach specific subject matter using analogies, illustrations, and pedagogical strategies suited to students' learning difficulties.",
+      "rationalization": "Shulman proved that knowing subject content (CK) and knowing generic teaching methods (PK) is insufficient; PCK is knowing the best way to teach a specific science or math concept.",
+      "mnemonic": {
+        "title": "Shulman's PCK",
+        "phrase": "How to Teach Specific Subject Matter",
+        "items": [
+          "P - Pedagogy",
+          "C - Content",
+          "K - Knowledge intersection"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply the TPACK framework in designing technology-integrated instruction",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Technological Pedagogical Knowledge (TPK)",
+      "definition": "The understanding of how teaching and learning change when particular technologies are used, including the affordances and constraints of digital pedagogical tools.",
+      "rationalization": "Knowing how to use online breakout rooms for cooperative learning or interactive polling apps (Mentimeter) for formative feedback is an example of TPK.",
+      "mnemonic": {
+        "title": "TPK Focus",
+        "phrase": "Using Tech Tools to Support Teaching Methods",
+        "items": [
+          "T - Tech tool",
+          "P - Pedagogical method",
+          "K - Knowledge match"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply the TPACK framework in designing technology-integrated instruction",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Technological Content Knowledge (TCK)",
+      "definition": "The understanding of the reciprocal relationship between technology and content: how subject matter can be represented and transformed by the application of technology.",
+      "rationalization": "Using dynamic geometry software (GeoGebra) to manipulate parabolic curves or digital planetariums to visualize astrophysics exemplifies TCK.",
+      "mnemonic": {
+        "title": "TCK Focus",
+        "phrase": "Using Tech to Represent Content Visually",
+        "items": [
+          "T - Tech software",
+          "C - Content represented",
+          "K - Knowledge synergy"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply the TPACK framework in designing technology-integrated instruction",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "SAMR Model (Ruben Puentedura)",
+      "definition": "A four-tier framework classifying educational technology integration into two levels: Enhancement (Substitution, Augmentation) and Transformation (Modification, Redefinition).",
+      "rationalization": "Guides teachers to transition from using digital tools as simple automated typewriters toward creating revolutionary, previously inconceivable learning experiences.",
+      "mnemonic": {
+        "title": "SAMR Levels",
+        "phrase": "S-A-M-R: Substitution, Augmentation, Modification, Redefinition",
+        "items": [
+          "S - Substitution (No change)",
+          "A - Augmentation (Improvement)",
+          "M - Modification (Task redesign)",
+          "R - Redefinition (Previously impossible)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate technology integration levels using the SAMR model",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "SAMR: Substitution Level",
+      "definition": "The lowest SAMR tier where technology acts as a direct tool substitute with zero functional change to the learning task.",
+      "rationalization": "Example: Reading a digital PDF version of a textbook on a tablet instead of reading the physical printed book; the learning task remains identical.",
+      "mnemonic": {
+        "title": "Substitution Clue",
+        "phrase": "Direct Tool Replacement, No Functional Change",
+        "items": [
+          "S - Substitution",
+          "D - Direct replacement",
+          "Z - Zero functional enhancement"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate technology integration levels using the SAMR model",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "SAMR: Augmentation Level",
+      "definition": "The SAMR tier where technology acts as a direct tool substitute with functional improvements and added features that enhance efficiency.",
+      "rationalization": "Example: Typing an essay on Google Docs using built-in spellcheck, auto-saving, and word-count counters instead of handwriting on paper.",
+      "mnemonic": {
+        "title": "Augmentation Clue",
+        "phrase": "Direct Replacement with Functional Improvements",
+        "items": [
+          "A - Augmentation",
+          "F - Functional improvement",
+          "E - Efficiency boost (Spellcheck, search)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate technology integration levels using the SAMR model",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "SAMR: Modification Level",
+      "definition": "The SAMR transformative tier where technology allows for significant task redesign, altering the nature of the learning product.",
+      "rationalization": "Example: Students writing an essay collaboratively on Google Docs with real-time peer comments, embedding multimedia hyperlinks, and receiving instantaneous teacher feedback.",
+      "mnemonic": {
+        "title": "Modification Clue",
+        "phrase": "Significant Task Redesign Through Tech",
+        "items": [
+          "M - Modification",
+          "R - Redesigned task",
+          "C - Collaborative real-time creation"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate technology integration levels using the SAMR model",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "SAMR: Redefinition Level",
+      "definition": "The pinnacle SAMR transformative tier where technology allows for the creation of new, innovative learning tasks that were previously inconceivable without digital tools.",
+      "rationalization": "Example: Students producing an interactive digital documentary with interviews conducted via video call with international scientists, published globally for public community feedback.",
+      "mnemonic": {
+        "title": "Redefinition Clue",
+        "phrase": "Previously Inconceivable Learning Task",
+        "items": [
+          "R - Redefinition",
+          "N - New tasks created",
+          "I - Inconceivable without technology"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate technology integration levels using the SAMR model",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Dale's Cone of Experience (Edgar Dale)",
+      "definition": "A visual model illustrating a continuum of learning experiences ranging from concrete, multi-sensory physical experiences at the base to increasingly abstract symbols at the apex.",
+      "rationalization": "Direct purposeful experiences form the bedrock; Dale cautioned that the cone reflects degrees of abstraction, not student age or difficulty level.",
+      "mnemonic": {
+        "title": "Dale's Cone Continuum",
+        "phrase": "Concrete Base Up to Abstract Apex",
+        "items": [
+          "Base: Direct purposeful experiences",
+          "Middle: Field trips, exhibits, video",
+          "Apex: Verbal and visual symbols"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Sequence instructional media using Dale's Cone of Experience",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Direct Purposeful Experiences (Base of Dale's Cone)",
+      "definition": "Firsthand, concrete, sensory-rich learning experiences that have immediate meaning for the learner, involving doing, touching, tasting, smelling, and seeing in real life.",
+      "rationalization": "Examples: Dissecting a real frog in a biology laboratory, cooking an actual recipe, planting crops in a garden; produces the deepest, most permanent retention.",
+      "mnemonic": {
+        "title": "Direct Purposeful",
+        "phrase": "Hands-On Real-Life Physical Reality",
+        "items": [
+          "D - Direct",
+          "P - Purposeful",
+          "H - Hands-on all senses"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Sequence instructional media using Dale's Cone of Experience",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Contrived Experiences (Dale's Cone)",
+      "definition": "Edited copies, representations, or simulated models of reality used when the real object is too large, too small, too dangerous, or too distant to bring into the classroom.",
+      "rationalization": "Examples: Anatomical models of the human heart, globes, cutaways, flight simulators, and planetarium dioramas.",
+      "mnemonic": {
+        "title": "Contrived Experiences",
+        "phrase": "Models, Mock-ups, and Replicas of Reality",
+        "items": [
+          "C - Contrived",
+          "M - Models & mock-ups",
+          "S - Simulates reality safely"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Sequence instructional media using Dale's Cone of Experience",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Verbal Symbols (Apex of Dale's Cone)",
+      "definition": "The most abstract band of Dale's Cone, consisting of written text, spoken words, and mathematical numbers that bear zero physical resemblance to the objects they represent.",
+      "rationalization": "The word 'HORSE' looks nothing like a horse; highly efficient for communication, but requires extensive prior concrete experience to be meaningful.",
+      "mnemonic": {
+        "title": "Verbal Symbols Apex",
+        "phrase": "Most Abstract: Pure Words and Numbers",
+        "items": [
+          "V - Verbal symbols",
+          "A - Apex of the cone",
+          "A - Abstract without physical resemblance"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Sequence instructional media using Dale's Cone of Experience",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "The ASSURE Model (Heinich, Molenda, Russell, Smaldino)",
+      "definition": "A procedural instructional design guide for planning classroom lessons that integrate technology and media effectively: Analyze, State, Select, Utilize, Require, Evaluate.",
+      "rationalization": "A teacher-centered instructional design model ensuring that technology media selection directly serves measurable learning objectives.",
+      "mnemonic": {
+        "title": "ASSURE Acronym",
+        "phrase": "A-S-S-U-R-E: Analyze, State, Select, Utilize, Require, Evaluate",
+        "items": [
+          "A - Analyze learners",
+          "S - State standards & objectives",
+          "S - Select strategies & media",
+          "U - Utilize media (5 Ps)",
+          "R - Require learner participation",
+          "E - Evaluate & revise"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply the ASSURE instructional design model",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "The 5 Ps of Utilizing Media (ASSURE Model)",
+      "definition": "The five procedural steps teachers execute when utilizing instructional technology: Preview the materials; Prepare the materials; Prepare the environment; Prepare the learners; and Provide the learning experience.",
+      "rationalization": "Prevents technical disasters (e.g., checking that the projector cable works and lighting is dim before class begins).",
+      "mnemonic": {
+        "title": "The 5 Ps of Media Use",
+        "phrase": "Preview, Prepare materials, Prepare room, Prepare learners, Provide lesson",
+        "items": [
+          "1. Preview materials",
+          "2. Prepare materials",
+          "3. Prepare environment",
+          "4. Prepare learners",
+          "5. Provide experience"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply the ASSURE instructional design model",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Flipped Classroom Model (Jonathan Bergmann and Aaron Sams)",
+      "definition": "A blended pedagogical strategy where direct instruction and lectures are moved outside the classroom (via recorded videos and readings), and in-class time is dedicated to collaborative problem-solving, debates, and hands-on practice.",
+      "rationalization": "Inverts Bloom's Taxonomy: lower-order remembering and understanding occur at home at the student's own pace; higher-order applying, analyzing, and creating occur in class with the teacher's coaching.",
+      "mnemonic": {
+        "title": "Flipped Classroom",
+        "phrase": "Lecture at Home, Homework in Class",
+        "items": [
+          "F - Flipped",
+          "L - Lecture videos at home",
+          "A - Active problem solving in class"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Design blended learning, flipped classrooms, and online modalities",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Blended Learning: Station Rotation Model",
+      "definition": "A blended learning model where students rotate on a fixed schedule among classroom learning stations, including at least one station featuring online digital learning.",
+      "rationalization": "Typically features three stations: 1. Teacher-led small group instruction; 2. Collaborative peer project; 3. Independent adaptive online learning on tablets/computers.",
+      "mnemonic": {
+        "title": "Station Rotation",
+        "phrase": "Rotate Through Teacher, Peer, and Tech Stations",
+        "items": [
+          "S - Station rotation",
+          "F - Fixed schedule",
+          "T - Teacher-led, peer, and online pods"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Design blended learning, flipped classrooms, and online modalities",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Synchronous vs Asynchronous Learning",
+      "definition": "Synchronous learning is real-time, simultaneous online instruction where teacher and students interact concurrently (Zoom, Google Meet); Asynchronous learning occurs self-paced without simultaneous real-time interaction (pre-recorded lectures, discussion boards).",
+      "rationalization": "Asynchronous learning provides temporal flexibility for students with internet connectivity challenges; synchronous learning fosters immediate social presence.",
+      "mnemonic": {
+        "title": "Online Modalities",
+        "phrase": "Synchronous = Same Time; Asynchronous = Anytime",
+        "items": [
+          "Synchronous: Live real-time call",
+          "Asynchronous: Self-paced modules & forums"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Design blended learning, flipped classrooms, and online modalities",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Learning Management System (LMS)",
+      "definition": "A software application or cloud platform that automates the administration, tracking, reporting, documentation, and delivery of educational courses (e.g., Moodle, Google Classroom, Canvas, Schoology).",
+      "rationalization": "Centralizes syllabus distribution, assignment submissions, automated quiz grading, discussion forums, and gradebook management in digital classrooms.",
+      "mnemonic": {
+        "title": "LMS Function",
+        "phrase": "Central Digital Hub for Classroom Management",
+        "items": [
+          "L - Learning",
+          "M - Management",
+          "S - System (Canvas, Google Classroom, Moodle)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Utilize Learning Management Systems (LMS) and digital collaboration platforms",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Open Educational Resources (OER)",
+      "definition": "Teaching, learning, and research materials in any medium (digital or physical) that reside in the public domain or have been released under an open license permitting no-cost access, use, adaptation, and redistribution.",
+      "rationalization": "Empowers teachers under the 5R permissions: Retain, Reuse, Revise, Remix, and Redistribute educational materials without paying copyright licensing fees.",
+      "mnemonic": {
+        "title": "OER 5Rs",
+        "phrase": "Retain, Reuse, Revise, Remix, Redistribute",
+        "items": [
+          "1. Retain (Keep copies)",
+          "2. Reuse (Use in class)",
+          "3. Revise (Modify/translate)",
+          "4. Remix (Combine)",
+          "5. Redistribute (Share)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Select and evaluate Open Educational Resources (OER)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Gamification in Education",
+      "definition": "The educational practice of integrating game design elements (points, badges, leaderboards, levels, challenges) into non-game academic learning environments to boost student engagement and motivation.",
+      "rationalization": "Leverages motivational psychology through educational tools like Kahoot!, Quizizz, and Classcraft, turning formative quizzes into thrilling challenges.",
+      "mnemonic": {
+        "title": "Gamification Elements",
+        "phrase": "Points, Badges, Leaderboards Drive Engagement",
+        "items": [
+          "P - Points",
+          "B - Badges",
+          "L - Leaderboards & quests"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Implement gamification and interactive learning technologies",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Assistive Technology in Education",
+      "definition": "Any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of persons with disabilities.",
+      "rationalization": "Examples: Screen readers (JAWS) for blind students, speech-to-text dictation software for students with dysgraphia, alternative keyboards, and hearing aid FM systems.",
+      "mnemonic": {
+        "title": "Assistive Tech",
+        "phrase": "Level the Playing Field for Learners with Disabilities",
+        "items": [
+          "A - Assistive",
+          "T - Technology for access",
+          "S - Screen readers, speech-to-text"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Select and deploy assistive technologies for inclusive learning",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Artificial Intelligence (AI) in Education (AIEd)",
+      "definition": "The application of machine learning, natural language processing, and generative algorithms to automate administrative grading, personalize adaptive tutoring, and support instructional lesson design.",
+      "rationalization": "Enables differentiated pacing tailored to student diagnostic data, while requiring robust academic integrity guidelines regarding AI-generated assignments.",
+      "mnemonic": {
+        "title": "AI in Education",
+        "phrase": "Adaptive Learning and Personalized Tutoring",
+        "items": [
+          "A - Adaptive diagnostics",
+          "P - Personalized learning pace",
+          "I - Integrity and ethical use rules"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate artificial intelligence tools, prompt design, and ethical challenges in education",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Prompt Engineering for Educators",
+      "definition": "The skill of designing, refining, and structuring natural language inputs (prompts) to guide Generative AI language models to produce high-quality, pedagogically sound educational outputs.",
+      "rationalization": "Includes specifying role (e.g., 'Act as a 9th grade science teacher'), task, audience, curriculum constraints, and output format for differentiated worksheets or rubrics.",
+      "mnemonic": {
+        "title": "Prompt Design",
+        "phrase": "Role, Task, Context, Constraints",
+        "items": [
+          "R - Role definition",
+          "T - Task instructions",
+          "C - Context & grade level",
+          "C - Constraints & format"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate artificial intelligence tools, prompt design, and ethical challenges in education",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "DepEd Computerization Program (DCP)",
+      "definition": "The strategic program of the Department of Education providing digital hardware packages (laptops, computer tablets, smart TVs, and local servers) to public schools nationwide.",
+      "rationalization": "Aims to bridge the digital divide between urban and remote island schools, equipping public school classrooms with 21st-century ICT infrastructure.",
+      "mnemonic": {
+        "title": "DCP Program",
+        "phrase": "DepEd Computers and Tablets for Public Schools",
+        "items": [
+          "D - DepEd",
+          "C - Computerization",
+          "P - Program hardware packages"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Analyze national educational technology programs and policies",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Mayer's Multimedia Learning Principles (Richard Mayer)",
+      "definition": "Cognitive principles grounded in dual-coding theory stating that people learn better from words and matching pictures than from words alone, provided extraneous cognitive load is minimized.",
+      "rationalization": "Core principles: Multimedia Principle, Coherence Principle (remove interesting but extraneous words/music), Signaling Principle (highlight key steps), Redundancy Principle (narrate with graphics, don't read onscreen text word-for-word).",
+      "mnemonic": {
+        "title": "Mayer's Principles",
+        "phrase": "Words Plus Images, Cut Extraneous Fluff",
+        "items": [
+          "M - Multimedia (Words + pictures)",
+          "C - Coherence (Delete distractions)",
+          "R - Redundancy (Don't read text aloud)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply Richard Mayer's Cognitive Theory of Multimedia Learning",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Mayer's Coherence Principle",
+      "definition": "The multimedia learning rule stating that people learn significantly better when extraneous, seductive words, pictures, background music, and sounds are excluded from presentations.",
+      "rationalization": "Playing background jazz music or adding funny cartoon GIFs during a slide presentation overloads working memory and distracts from core concepts.",
+      "mnemonic": {
+        "title": "Coherence Principle",
+        "phrase": "Delete Background Music and Clutter",
+        "items": [
+          "C - Coherence",
+          "D - Delete decorative fluff",
+          "F - Focus on core content"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply Richard Mayer's Cognitive Theory of Multimedia Learning",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Mayer's Redundancy Principle",
+      "definition": "The multimedia learning principle stating that students learn better from graphics and narration than from graphics, narration, and onscreen text all presented simultaneously.",
+      "rationalization": "Displaying text on screen while reading the identical text aloud creates visual split-attention; the eyes and ears are overwhelmed by redundant input.",
+      "mnemonic": {
+        "title": "Redundancy Rule",
+        "phrase": "Narrate the Graphic, Don't Read the Screen",
+        "items": [
+          "R - Redundancy",
+          "N - Narrate images",
+          "N - No identical text on screen"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply Richard Mayer's Cognitive Theory of Multimedia Learning",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Virtual Reality (VR) and Augmented Reality (AR) in Education",
+      "definition": "Virtual Reality immerses the user completely inside a computer-simulated 3D environment using a headset; Augmented Reality overlays interactive digital holographic images onto the real physical world.",
+      "rationalization": "Enables simulated virtual field trips to ancient Rome, internal human organ walkthroughs, and safe chemical explosion experiments in schools without laboratory equipment.",
+      "mnemonic": {
+        "title": "VR vs AR",
+        "phrase": "VR Immerses in Simulation; AR Overlays on Reality",
+        "items": [
+          "VR: Total virtual simulation",
+          "AR: Digital overlay on physical room"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Integrate immersive technologies (VR, AR, simulations) in instruction",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Podcast and Educational Audio Literacy",
+      "definition": "Digital audio episodes produced for on-demand streaming and mobile listening, used in education to foster auditory comprehension, storytelling, and asynchronous debate.",
+      "rationalization": "Allows auditory learners and commuting students to learn during transit, promoting accessible, ubiquitous educational listening.",
+      "mnemonic": {
+        "title": "Educational Podcasts",
+        "phrase": "On-Demand Audio Learning on the Go",
+        "items": [
+          "P - Podcasts",
+          "A - Audio learning",
+          "U - Ubiquitous accessibility"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Utilize audio-visual and multimedia tools for diverse learning styles",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Digital Storytelling",
+      "definition": "The educational practice of combining traditional narrative writing with multimedia digital tools (images, voiceover narration, sound effects, music, and video clips) to communicate a personal or academic story.",
+      "rationalization": "Cultivates multi-literacy: students synthesize written scripts, visual aesthetics, audio pacing, and technical editing in an authentic project-based learning output.",
+      "mnemonic": {
+        "title": "Digital Storytelling",
+        "phrase": "Script + Voiceover + Images + Music",
+        "items": [
+          "D - Digital storytelling",
+          "M - Multimodal synthesis",
+          "A - Authentic student voice"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Utilize audio-visual and multimedia tools for diverse learning styles",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Interactive Whiteboards (IWB / Smartboards)",
+      "definition": "Large interactive display boards connected to computers and projectors allowing teachers and students to write, manipulate digital objects, project simulations, and save annotated lessons in real time.",
+      "rationalization": "Transforms passive lecture slides into active collaborative touch demonstrations, engaging kinesthetic and visual learners.",
+      "mnemonic": {
+        "title": "Smartboards",
+        "phrase": "Touch-Screen Display for Active Collaboration",
+        "items": [
+          "I - Interactive whiteboard",
+          "T - Touch manipulation",
+          "A - Annotated lessons saved"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Operate classroom instructional hardware and display systems",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Cloud Computing and Collaborative Docs in Education",
+      "definition": "Cloud-based collaborative platforms (Google Workspace for Education, Microsoft 365) where documents, presentations, and spreadsheets are stored on remote servers, enabling simultaneous real-time multi-user editing.",
+      "rationalization": "Revolutionizes cooperative learning: group members co-author essays simultaneously from separate homes with version history tracking each student's individual contribution.",
+      "mnemonic": {
+        "title": "Cloud Collaboration",
+        "phrase": "Edit Simultaneously from Anywhere",
+        "items": [
+          "C - Cloud storage",
+          "R - Real-time multi-user editing",
+          "V - Version history accountability"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Utilize Learning Management Systems (LMS) and digital collaboration platforms",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "WebQuest (Bernie Dodge and Tom March)",
+      "definition": "An inquiry-oriented lesson format in which most or all of the information that learners interact with comes from resources on the World Wide Web, structured into 6 components: Introduction, Task, Process, Resources, Evaluation, and Conclusion.",
+      "rationalization": "Prevents random internet browsing; guides students toward authentic problem-solving and critical analysis using pre-vetted web resources.",
+      "mnemonic": {
+        "title": "WebQuest 6 Parts",
+        "phrase": "Intro, Task, Process, Resources, Evaluation, Conclusion",
+        "items": [
+          "1. Introduction",
+          "2. Task",
+          "3. Process",
+          "4. Resources",
+          "5. Evaluation (Rubric)",
+          "6. Conclusion"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply WebQuest inquiry-based learning structures",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "EdTech 1 vs EdTech 2",
+      "definition": "EdTech 1 refers to physical hardware and audiovisual equipment (projectors, television monitors, computers, tablets); EdTech 2 refers to software, psychological learning theories, and systematic instructional design processes.",
+      "rationalization": "A teacher who buys expensive laptops without pedagogical training is practicing mere EdTech 1; applying cognitive principles to redesign learning experiences is EdTech 2.",
+      "mnemonic": {
+        "title": "EdTech 1 vs 2",
+        "phrase": "EdTech 1 = The Machine; EdTech 2 = The Mind and Method",
+        "items": [
+          "EdTech 1: Hardware & gadgets",
+          "EdTech 2: Software, pedagogy, systems design"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Analyze foundational definitions and paradigms of educational technology",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Computer-Assisted Instruction (CAI)",
+      "definition": "An automated instructional program presented by a computer to achieve learning objectives, featuring drill-and-practice, interactive tutorials, simulations, or educational games.",
+      "rationalization": "Provides immediate corrective feedback, branching pathways based on learner responses, and self-paced mastery for individualized remediation.",
+      "mnemonic": {
+        "title": "CAI Features",
+        "phrase": "Automated Self-Paced Tutorials with Immediate Feedback",
+        "items": [
+          "C - Computer-Assisted Instruction",
+          "I - Immediate feedback",
+          "B - Branching adaptive tutorials"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply computer-assisted instruction (CAI) and adaptive learning tools",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Formative Assessment Tech Tools (Kahoot, Quizizz, Padlet)",
+      "definition": "Web-based interactive digital response tools that allow teachers to gather real-time formative assessment data and gauge class comprehension instantaneously.",
+      "rationalization": "Pinpoints learning misconceptions instantly, allowing teachers to reteach confusing concepts in real time during the lesson rather than discovering gaps on final exams.",
+      "mnemonic": {
+        "title": "Live Polling Tools",
+        "phrase": "Instant Real-Time Formative Check",
+        "items": [
+          "K - Kahoot (Game quiz)",
+          "Q - Quizizz (Student-paced)",
+          "P - Padlet (Digital sticky board)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Implement digital formative assessment and live response systems",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Digital Rubrics and Electronic Gradebooks",
+      "definition": "Automated scoring guides integrated into learning management systems that allow criterion-referenced grading, point computation, and targeted qualitative feedback.",
+      "rationalization": "Enhances grading transparency, eliminates arithmetic calculation errors, and enables parents and students to monitor competency mastery in real time.",
+      "mnemonic": {
+        "title": "Electronic Rubrics",
+        "phrase": "Objective Scoring at the Click of a Button",
+        "items": [
+          "E - Electronic gradebook",
+          "R - Rubric alignment",
+          "T - Transparent feedback"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Utilize Learning Management Systems (LMS) and digital collaboration platforms",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Simulation Software in Science Education (PhET Interactive)",
+      "definition": "Free interactive, research-based science and mathematics simulations developed by the University of Colorado Boulder providing game-like exploratory environments for physics, chemistry, and biology concepts.",
+      "rationalization": "Enables students to visualize invisible microscopic phenomena (electrons moving, wave interference, molecular bonding) through interactive visual manipulation.",
+      "mnemonic": {
+        "title": "PhET Simulations",
+        "phrase": "Virtual Labs for Invisible Science Phenomena",
+        "items": [
+          "P - PhET interactive",
+          "S - Simulated lab experiments",
+          "V - Visualizes invisible physics/chemistry"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Select and deploy educational software and STEM simulators",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Microlearning and Byte-Sized Content",
+      "definition": "An educational approach that delivers content in small, highly focused, bite-sized learning bursts (typically 3 to 7 minutes long) designed to meet a single learning objective.",
+      "rationalization": "Matches the shorter attention spans of digital-native learners and prevents cognitive overload in mobile and remote education.",
+      "mnemonic": {
+        "title": "Microlearning",
+        "phrase": "Bite-Sized 5-Minute Targeted Modules",
+        "items": [
+          "M - Microlearning",
+          "B - Byte-sized videos",
+          "O - One objective per module"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Design blended learning, flipped classrooms, and online modalities",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Adaptive Learning Systems",
+      "definition": "Educational technologies that use artificial intelligence algorithms to dynamically orchestrate the allocation of human and digital resources to address the unique learning needs of each individual learner.",
+      "rationalization": "If a student struggles with a fraction problem, the adaptive platform automatically generates simpler remedial exercises; once mastered, it advances to algebra without teacher intervention.",
+      "mnemonic": {
+        "title": "Adaptive Learning",
+        "phrase": "AI Adjusts Difficulty to Match the Student",
+        "items": [
+          "A - Adaptive algorithms",
+          "D - Dynamic difficulty adjustment",
+          "P - Personalized learning path"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Evaluate artificial intelligence tools, prompt design, and ethical challenges in education",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Digital Storytelling Rubric: Voice, Imagery, Economy",
+      "definition": "Evaluation criteria for multimodal projects measuring voiceover inflection, matching visual imagery, economy of content (not overloading slides), and emotional resonance.",
+      "rationalization": "Ensures students are assessed on communication efficacy, aesthetic craftsmanship, and research depth rather than mere flashiness.",
+      "mnemonic": {
+        "title": "Digital Story Criteria",
+        "phrase": "Voice, Visuals, Pacing, Content Economy",
+        "items": [
+          "V - Vocal clarity",
+          "V - Visual relevance",
+          "E - Economy of script"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Utilize audio-visual and multimedia tools for diverse learning styles",
+      "bloomsTaxonomy": "Evaluating",
+      "highYield": true
+    },
+    {
+      "term": "Digital Divide: Three Levels of Inequality",
+      "definition": "The structural technology divide spanning three successive barriers: First-level divide (physical hardware/connectivity access); Second-level divide (digital literacy skills); and Third-level divide (ability to turn tech use into tangible socio-economic opportunities).",
+      "rationalization": "Providing laptops solves only the first-level divide; effective education must tackle the second and third levels through critical digital literacy.",
+      "mnemonic": {
+        "title": "3 Digital Divides",
+        "phrase": "Level 1 (Access), Level 2 (Skills), Level 3 (Outcome)",
+        "items": [
+          "1. Hardware/internet access",
+          "2. Digital skills & usage",
+          "3. Tangible life outcomes"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Analyze national educational technology programs and policies",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Social Presence in Online Learning (Community of Inquiry / CoI)",
+      "definition": "The ability of participants in an online learning community to project their personal characteristics and emotional presence, presenting themselves as 'real people' in virtual spaces.",
+      "rationalization": "One of three core presences in the Garrison, Anderson, and Archer CoI model alongside Cognitive Presence and Teaching Presence; prevents feelings of online isolation.",
+      "mnemonic": {
+        "title": "CoI Three Presences",
+        "phrase": "Teaching, Social, Cognitive Presence",
+        "items": [
+          "T - Teaching presence (Instructional design)",
+          "S - Social presence (Real human connection)",
+          "C - Cognitive presence (Deep inquiry)"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Design blended learning, flipped classrooms, and online modalities",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Netiquette and Cyberbullying Protocols in Virtual Meetings",
+      "definition": "Guidelines for conducting virtual video conference classes: muting microphones when not speaking, using the 'raise hand' feature, appropriate attire, respectful chat discussions, and strict bans on unauthorized recording or screenshot sharing.",
+      "rationalization": "Protects student privacy rights under the Data Privacy Act (RA 10173) and ensures an orderly, distraction-free online learning environment.",
+      "mnemonic": {
+        "title": "Video Class Netiquette",
+        "phrase": "Mute Mic, Camera Etiquette, Respect Privacy",
+        "items": [
+          "M - Mute microphone",
+          "R - Raise hand to speak",
+          "N - No unauthorized screen recordings"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Operate classroom instructional hardware and display systems",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Cognitive Load: Split-Attention Effect",
+      "definition": "The learning impairment that occurs when learners must mentally integrate disparate sources of information (e.g., text located far away from the diagram it describes).",
+      "rationalization": "Solved by physically integrating the explanatory labels directly next to the relevant parts of the diagram on the slide or worksheet, reducing visual scanning effort.",
+      "mnemonic": {
+        "title": "Split-Attention Fix",
+        "phrase": "Place Labels Directly on the Diagram",
+        "items": [
+          "S - Split attention",
+          "L - Label next to diagram",
+          "R - Reduces eye scanning fatigue"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply Richard Mayer's Cognitive Theory of Multimedia Learning",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Mayer's Modality Principle",
+      "definition": "The multimedia learning principle stating that people learn significantly better from animation and spoken narration than from animation and onscreen printed text.",
+      "rationalization": "Using voice narration uses the auditory processing channel, freeing up the visual channel to focus on watching the complex animation without visual bottleneck.",
+      "mnemonic": {
+        "title": "Modality Principle",
+        "phrase": "Narrate Animations with Voice Instead of Text",
+        "items": [
+          "M - Modality principle",
+          "A - Auditory narration",
+          "V - Visual channel freed"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Apply Richard Mayer's Cognitive Theory of Multimedia Learning",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Screencasting in Video Instruction",
+      "definition": "A digital recording of computer screen output, often accompanied by audio voiceover narration and webcam picture-in-picture, used to demonstrate software tutorials and math steps.",
+      "rationalization": "Tools like OBS Studio, Loom, and Screencastify allow teachers to create rapid, high-impact instructional modules for flipped learning and absent students.",
+      "mnemonic": {
+        "title": "Screencasting",
+        "phrase": "Record Screen and Voice for Step-by-Step Lessons",
+        "items": [
+          "S - Screen recording",
+          "V - Voiceover guidance",
+          "F - Flipped lesson asset"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Utilize audio-visual and multimedia tools for diverse learning styles",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Ubiquitous Learning (u-Learning)",
+      "definition": "An educational paradigm where learning occurs anytime and anywhere using wireless mobile devices, sensor technologies, and cloud networks, seamlessly blending classroom and everyday life.",
+      "rationalization": "Eliminates geographic and temporal boundaries; learners access learning modules, collaborate on shared documents, and consult mentors on smartphones 24/7.",
+      "mnemonic": {
+        "title": "Ubiquitous Learning",
+        "phrase": "Anytime, Anywhere Learning via Mobile Cloud",
+        "items": [
+          "U - Ubiquitous",
+          "A - Anytime, anywhere",
+          "M - Mobile cloud connectivity"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Design blended learning, flipped classrooms, and online modalities",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Digital Citizenship: Digital Law and Copyright Infringement",
+      "definition": "The element of digital citizenship dealing with legal rights and restrictions governing technology, criminalizing unauthorized software cracking, digital media piracy, and copyright infringement.",
+      "rationalization": "Educates students on the Intellectual Property Code of the Philippines (RA 8293) and promotes the ethical use of Open Educational Resources and licensed media.",
+      "mnemonic": {
+        "title": "Digital Law",
+        "phrase": "Obey Copyright, Reject Digital Piracy",
+        "items": [
+          "D - Digital Law",
+          "C - Copyright protection",
+          "O - Open licenses respected"
+        ]
+      },
+      "source": "PRC BLEPT ProfEd EdTech Reviewer",
+      "tosCompetency": "Operate classroom instructional hardware and display systems",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    }
+  ]
+}
