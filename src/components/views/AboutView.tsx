@@ -48,6 +48,24 @@ export const AboutView: React.FC<AboutViewProps> = ({ onBack }) => {
       </div>
 
       <div className="space-y-6 sm:space-y-8">
+        {/* Support Banner (Pro Features for only ₱99) */}
+        <div className="rounded-3xl bg-gradient-to-r from-amber-500/15 via-amber-400/10 to-transparent border border-amber-400/40 p-5 sm:p-6 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5 text-left">
+            <div className="w-11 h-11 rounded-2xl bg-amber-400/20 border border-amber-400/50 flex items-center justify-center text-amber-400 shrink-0 shadow-md shadow-amber-400/10">
+              <Sparkles className="w-6 h-6 stroke-[2.2]" />
+            </div>
+            <div>
+              <h3 className="text-sm sm:text-base font-bold text-white">Support T-LETs! Development</h3>
+              <p className="text-xs sm:text-sm text-amber-300 font-medium">
+                You can show your support by subscribing to the Pro Features for only 99
+              </p>
+            </div>
+          </div>
+          <div className="px-4 py-2 rounded-xl bg-amber-400 text-zinc-950 font-black text-xs shadow-md shadow-amber-400/20 shrink-0">
+            ₱99 Lifetime
+          </div>
+        </div>
+
         {/* Author Tribute Banner */}
         <div className="rounded-3xl bg-zinc-900 border border-zinc-800 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
           <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -56,7 +74,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onBack }) => {
             </div>
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <h2 className="text-xl sm:text-2xl font-black text-white">LET Reviewer</h2>
+                <h2 className="text-xl sm:text-2xl font-black text-white">T-LETs!</h2>
                 <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30 font-bold">
                   BOARD EXAM PREP
                 </span>

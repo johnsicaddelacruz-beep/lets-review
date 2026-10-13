@@ -86,9 +86,19 @@ export const UpgradeModal: React.FC<UpgradeModalProps> = ({
             <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-zinc-950/70 border border-zinc-800">
               <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
               <div>
-                <span className="font-bold text-white block">Full Majorship English Question Bank</span>
+                <span className="font-bold text-white block">Full Majorship English Topics</span>
                 <span className="text-zinc-400 text-[11px] leading-relaxed">
                   Structure of English, Syntax, Morphology, Linguistics, Literary Terms & PRC Board items
+                </span>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-zinc-950/70 border border-zinc-800">
+              <Sparkles className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+              <div>
+                <span className="font-bold text-white block">150-Question Full Mock Board Test</span>
+                <span className="text-zinc-400 text-[11px] leading-relaxed">
+                  Complete 150-item simulated PRC board examination for GenEd, ProfEd, Majorship, or Mixed-Random
                 </span>
               </div>
             </div>

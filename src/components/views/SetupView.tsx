@@ -5,7 +5,7 @@ import { sound } from '../../core/sound';
 import { LockBadge } from '../ui/LockBadge';
 import { 
   ArrowLeft, 
-  Play, 
+  ArrowRight,
   BookOpen, 
   HelpCircle, 
   Table, 
@@ -39,54 +39,49 @@ interface SetupViewProps {
 
 export const SetupView: React.FC<SetupViewProps> = ({
   initialCategory,
-  initialMode = 'practiceTest',
+  initialMode,
   onBack,
   onStartSession,
   isPro,
   onOpenUpgrade,
 }) => {
-  // 1-4 Sequential Selection States
-  // Step 1: Mode selected (defaults to practiceTest)
-  const [selectedMode, setSelectedMode] = useState<StudyModeId | null>(initialMode || 'practiceTest');
-  
-  // Step 2: Subject, topic, subtopic (defaults to initialCategory or 'all')
-  const [selectedCategory, setSelectedCategory] = useState<Category | 'all' | null>(initialCategory || 'all');
-  const [selectedTopic, setSelectedTopic] = useState<string | 'all'>('all');
-  const [selectedSubtopic, setSelectedSubtopic] = useState<string | 'all'>('all');
+  // Progressive Step States
+  // 1: Mode -> 2: Subject & Topic -> 3: Question Count -> 4: Difficulty Level -> Ready Card
+  const [selectedMode, setSelectedMode] = useState<StudyModeId | null>(initialMode || null);
+  const [selectedCategory, setSelectedCategory] = useState<Category | 'all' | null>(initialCategory || null);
+  const [selectedTopic, setSelectedTopic] = useState<string | 'all' | null>(null);
+  const [selectedItemCount, setSelectedItemCount] = useState<number | null>(null);
+  const [selectedDifficulty, setSelectedDifficulty] = useState<Difficulty | 'all' | null>(null);
 
-  // Step 3: Question count (defaults to 20)
-  const [selectedItemCount, setSelectedItemCount] = useState<number | null>(20);
-
-  // Step 4: Difficulty level
-  const [selectedDifficulty, setSelectedDifficulty] = useState<Difficulty | 'all' | null>('all');
-
-  // Active step that is expanded for user selection
-  // 1 = Mode, 2 = Subject, 3 = Count, 4 = Difficulty
-  const [activeStep, setActiveStep] = useState<number>(4);
-
-  // Sequential revelation rules:
-  // User select on 1 > reveal select 2 > user select on 2 > reveal 3 > user select on 3 > reveal 4 > user select 4 > reveal Ready to Practice
-  const isStep1Selected = selectedMode !== null;
-  const isStep2Selected = isStep1Selected && selectedCategory !== null;
-  const isStep3Selected = isStep2Selected && selectedItemCount !== null && selectedItemCount > 0;
-  const isStep4Selected = isStep3Selected && selectedDifficulty !== null;
-
-  const categories = DataLoader.getCategories();
-  const availableTopics = DataLoader.getTopics(selectedCategory && selectedCategory !== 'all' ? selectedCategory : undefined);
-  const availableSubtopics = DataLoader.getSubtopics(selectedTopic !== 'all' ? selectedTopic : undefined);
-
-  // Check if locked: Majorship English is locked if not Pro
-  const isSelectionLocked = !isPro && DataLoader.isSelectionLocked({
-    category: selectedCategory,
-    topic: selectedTopic,
-    subtopic: selectedSubtopic,
+  // activeStep: 1 = Mode, 2 = Subject/Topic, 3 = Count, 4 = Difficulty, 0 = Collapsed (Ready Card view)
+  const [activeStep, setActiveStep] = useState<number>(() => {
+    if (!initialMode) return 1;
+    if (!initialCategory) return 2;
+    return 2;
   });
 
-  // Pool calculation
+  // Progressive revelation rules
+  const isStep1Done = selectedMode !== null;
+  const isStep2Done = isStep1Done && selectedCategory !== null && selectedTopic !== null;
+  const isStep3Done = isStep2Done && selectedItemCount !== null && selectedItemCount > 0;
+  const isStep4Done = isStep3Done && selectedDifficulty !== null;
+
+  const categories = DataLoader.getCategories();
+  const availableTopics = DataLoader.getTopics(
+    selectedCategory && selectedCategory !== 'all' ? selectedCategory : undefined
+  );
+
+  // Check if selection is locked (Majorship English locked if not Pro)
+  const isSelectionLocked = !isPro && DataLoader.isSelectionLocked({
+    category: selectedCategory,
+    topic: selectedTopic || 'all',
+  });
+
+  // Calculate pool count
   const matchingItems = DataLoader.filterItems({
     category: selectedCategory || 'all',
-    topic: selectedTopic,
-    subtopic: selectedSubtopic,
+    topic: selectedTopic || 'all',
+    subtopic: 'all',
     difficulty: selectedDifficulty || 'all',
   }).filter((item) => {
     if (!isPro && (!selectedCategory || selectedCategory === 'all')) {
@@ -98,68 +93,60 @@ export const SetupView: React.FC<SetupViewProps> = ({
   const poolCount = matchingItems.length;
   const readyCount = Math.min(selectedItemCount || 20, poolCount);
 
+  // 8 Study Modes with Mode | Explanation format
   const modesList: Array<{
     id: StudyModeId;
     title: string;
-    categoryGroup: 'Relax' | 'Challenge';
     desc: string;
     icon: React.ReactNode;
   }> = [
     {
       id: 'practiceTest',
       title: 'Practice Test',
-      categoryGroup: 'Relax',
-      desc: 'PRC multiple choice with rationalizations',
+      desc: 'Authentic 4-choice PRC board exam simulation with rationalizations',
       icon: <HelpCircle className="w-4 h-4 text-emerald-400" />,
     },
     {
       id: 'factOrBluff',
       title: 'Fact or Bluff',
-      categoryGroup: 'Challenge',
-      desc: 'Detect misleading distractors and board traps',
+      desc: 'Rapid true/false diagnostic drills to identify misconceptions',
       icon: <CheckCheck className="w-4 h-4 text-rose-400" />,
     },
     {
       id: 'rapidFire',
       title: 'Rapid-Fire Sprint',
-      categoryGroup: 'Challenge',
-      desc: 'Speed-based sprint with countdown HUD timer',
+      desc: 'High-intensity timed challenge testing recall under pressure',
       icon: <Zap className="w-4 h-4 text-amber-400" />,
     },
     {
       id: 'mixMatch',
       title: 'Mix & Match',
-      categoryGroup: 'Challenge',
-      desc: 'Connect Column A keywords with Column B concepts',
+      desc: 'Interactive concept-to-definition board matching exercise',
       icon: <Shuffle className="w-4 h-4 text-indigo-400" />,
     },
     {
-      id: 'completeWord',
-      title: 'Complete Word',
-      categoryGroup: 'Challenge',
-      desc: 'Solve masked keywords from definition clues',
-      icon: <KeyRound className="w-4 h-4 text-teal-400" />,
-    },
-    {
       id: 'flashcards',
-      title: 'Flashcards',
-      categoryGroup: 'Relax',
-      desc: 'Active recall cards with flip rationalizations',
+      title: 'Active Flashcards',
+      desc: 'Leitner spaced-repetition memory cards with 3D flip inspection',
       icon: <BookOpen className="w-4 h-4 text-amber-400" />,
     },
     {
       id: 'cheatSheet',
-      title: 'Cheat Sheet',
-      categoryGroup: 'Relax',
-      desc: 'Searchable 2-column reference table with TTS',
+      title: 'High-Yield Sheet',
+      desc: 'Structured bullet summaries, key laws, and PRC formulas',
       icon: <Table className="w-4 h-4 text-sky-400" />,
     },
     {
       id: 'mnemonics',
-      title: 'Mnemonics',
-      categoryGroup: 'Relax',
-      desc: 'Acronym formulas and active recall review cards',
+      title: 'Memory Mnemonics',
+      desc: 'Catchy acronyms and retention anchors for complex taxonomies',
       icon: <Brain className="w-4 h-4 text-purple-400" />,
+    },
+    {
+      id: 'completeWord',
+      title: 'Complete Word',
+      desc: 'Active term recall challenge reinforcing board terminology',
+      icon: <KeyRound className="w-4 h-4 text-teal-400" />,
     },
   ];
 
@@ -174,7 +161,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
       onOpenUpgrade();
       return;
     }
-    if (!selectedMode || !selectedCategory || !selectedItemCount || !selectedDifficulty) {
+    if (!selectedMode || !selectedCategory || !selectedTopic || !selectedItemCount || !selectedDifficulty) {
       return;
     }
 
@@ -182,7 +169,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
       mode: selectedMode,
       category: selectedCategory,
       topic: selectedTopic,
-      subtopic: selectedSubtopic,
+      subtopic: 'all',
       difficulty: selectedDifficulty,
       itemCount: selectedItemCount,
     });
@@ -220,7 +207,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
 
       <div className="space-y-3.5">
         {/* ========================================================
-            STEP 1: SELECT CUSTOM MODE
+            STEP 1: SELECT STUDY MODE (Mode | Explanation)
             ======================================================== */}
         <div className="rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-sm transition-all">
           <button
@@ -232,12 +219,12 @@ export const SetupView: React.FC<SetupViewProps> = ({
           >
             <div className="flex items-center gap-3">
               <span className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 ${
-                isStep1Selected ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
+                isStep1Done ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
               }`}>
                 1
               </span>
               <div>
-                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                <h3 className="text-sm font-bold text-white flex items-center gap-2 flex-wrap">
                   <span>Select Study Mode</span>
                   {selectedMode && (
                     <span className="text-xs font-mono font-semibold text-amber-400 bg-amber-400/15 px-2 py-0.5 rounded-md border border-amber-400/30">
@@ -246,7 +233,9 @@ export const SetupView: React.FC<SetupViewProps> = ({
                   )}
                 </h3>
                 <p className="text-[11px] text-zinc-400">
-                  {selectedMode ? modesList.find(m => m.id === selectedMode)?.desc : 'Choose among 8 review modes'}
+                  {selectedMode 
+                    ? modesList.find((m) => m.id === selectedMode)?.desc 
+                    : 'Choose your desired study mode'}
                 </p>
               </div>
             </div>
@@ -255,7 +244,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
 
           {activeStep === 1 && (
             <div className="px-4 pb-4 pt-1 border-t border-zinc-800">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
+              <div className="space-y-2 pt-2">
                 {modesList.map((m) => {
                   const isSelected = selectedMode === m.id;
                   return (
@@ -264,22 +253,30 @@ export const SetupView: React.FC<SetupViewProps> = ({
                       onClick={() => {
                         sound.playClick();
                         setSelectedMode(m.id);
-                        // User select on 1 > reveal select 2
+                        // Progress to Step 2
                         setActiveStep(2);
                       }}
-                      className={`p-3 rounded-xl border text-left transition cursor-pointer flex items-center justify-between ${
+                      className={`w-full p-3 sm:p-3.5 rounded-xl border text-left transition cursor-pointer flex items-center justify-between gap-3 ${
                         isSelected
-                          ? 'bg-amber-400/20 border-amber-400 text-white'
-                          : 'bg-zinc-950 border-zinc-800 hover:border-zinc-700 text-zinc-300'
+                          ? 'bg-amber-400/15 border-amber-400 text-white shadow-sm shadow-amber-400/10'
+                          : 'bg-zinc-950/80 border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:bg-zinc-800/40'
                       }`}
                     >
-                      <div className="flex items-center gap-2.5">
-                        {m.icon}
-                        <div>
-                          <div className={`text-xs font-bold ${isSelected ? 'text-amber-400' : 'text-zinc-200'}`}>
-                            {m.title}
+                      <div className="flex items-start sm:items-center gap-3 min-w-0">
+                        <div className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 shrink-0 mt-0.5 sm:mt-0">
+                          {m.icon}
+                        </div>
+                        <div className="min-w-0">
+                          {/* Mode | Explanation format */}
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                            <span className={`text-xs sm:text-sm font-bold ${isSelected ? 'text-amber-400' : 'text-zinc-100'}`}>
+                              {m.title}
+                            </span>
+                            <span className="text-zinc-600 hidden sm:inline">|</span>
+                            <span className="text-[11px] sm:text-xs text-zinc-400 leading-tight">
+                              {m.desc}
+                            </span>
                           </div>
-                          <div className="text-[10px] text-zinc-400 truncate max-w-[200px]">{m.desc}</div>
                         </div>
                       </div>
                       {isSelected && <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />}
@@ -292,10 +289,10 @@ export const SetupView: React.FC<SetupViewProps> = ({
         </div>
 
         {/* ========================================================
-            STEP 2: SELECT SUBJECT, TOPIC & SUBTOPIC
-            Revealed once user selects Step 1
+            STEP 2: SELECT SUBJECT, TOPIC
+            Revealed once user selects Step 1 (Mode)
             ======================================================== */}
-        {isStep1Selected && (
+        {isStep1Done && (
           <div className="rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-sm transition-all animate-fadeIn">
             <button
               onClick={() => {
@@ -306,21 +303,21 @@ export const SetupView: React.FC<SetupViewProps> = ({
             >
               <div className="flex items-center gap-3">
                 <span className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 ${
-                  isStep2Selected ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
+                  isStep2Done ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
                 }`}>
                   2
                 </span>
                 <div>
-                  <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                    <span>Select Subject, Topic & Subtopic</span>
-                    {selectedCategory && (
+                  <h3 className="text-sm font-bold text-white flex items-center gap-2 flex-wrap">
+                    <span>Select Subject, Topic</span>
+                    {selectedCategory && selectedTopic && (
                       <span className="text-xs font-mono font-semibold text-amber-400 bg-amber-400/15 px-2 py-0.5 rounded-md border border-amber-400/30">
-                        {selectedCategory === 'all' ? 'All Free Subjects' : selectedCategory}
+                        {selectedCategory === 'all' ? 'All Free Subjects' : selectedCategory} &bull; {selectedTopic === 'all' ? 'All Topics' : selectedTopic}
                       </span>
                     )}
                   </h3>
                   <p className="text-[11px] text-zinc-400">
-                    GenEd and ProfEd are 100% Free • Majorship English is ₱99 Pro
+                    GenEd and ProfEd are 100% Free &bull; Majorship English is ₱99 Pro
                   </p>
                 </div>
               </div>
@@ -328,10 +325,10 @@ export const SetupView: React.FC<SetupViewProps> = ({
             </button>
 
             {activeStep === 2 && (
-              <div className="px-4 pb-4 pt-1 border-t border-zinc-800 space-y-3">
-                {/* Subject Selector */}
-                <div className="pt-2">
-                  <div className="text-[10px] font-mono uppercase text-zinc-400 font-bold mb-1.5">
+              <div className="px-4 pb-4 pt-1 border-t border-zinc-800 space-y-3.5">
+                {/* 2A: Subject Selector */}
+                <div className="pt-2 space-y-1.5">
+                  <div className="text-[10px] font-mono uppercase text-zinc-400 font-bold">
                     Choose Subject:
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -339,10 +336,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
                       onClick={() => {
                         sound.playClick();
                         setSelectedCategory('all');
-                        setSelectedTopic('all');
-                        setSelectedSubtopic('all');
-                        // User select on 2 > reveal select 3
-                        setActiveStep(3);
+                        setSelectedTopic(null); // prompt user to pick topic or all topics below
                       }}
                       className={`p-2.5 rounded-xl border text-xs font-bold transition cursor-pointer text-center ${
                         selectedCategory === 'all'
@@ -367,10 +361,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
                               return;
                             }
                             setSelectedCategory(cat);
-                            setSelectedTopic('all');
-                            setSelectedSubtopic('all');
-                            // User select on 2 > reveal select 3
-                            setActiveStep(3);
+                            setSelectedTopic(null); // prompt user to pick topic or all topics below
                           }}
                           className={`p-2.5 rounded-xl border text-xs font-bold transition cursor-pointer text-center relative ${
                             selectedCategory === cat
@@ -394,29 +385,41 @@ export const SetupView: React.FC<SetupViewProps> = ({
                   </div>
                 </div>
 
-                {/* Optional Topics Filter */}
-                {availableTopics.length > 0 && (
-                  <div className="p-3 rounded-xl bg-zinc-950 border border-zinc-800 space-y-1.5">
-                    <div className="text-[10px] font-mono uppercase text-zinc-400 font-bold">
-                      Topic (Optional):
+                {/* 2B: Topic Selector (revealed once Subject is selected) */}
+                {selectedCategory && (
+                  <div className="p-3.5 rounded-xl bg-zinc-950 border border-zinc-800 space-y-2 animate-fadeIn">
+                    <div className="flex items-center justify-between">
+                      <div className="text-[10px] font-mono uppercase text-zinc-400 font-bold">
+                        Choose Topic:
+                      </div>
+                      <span className="text-[10px] text-amber-400/80 font-medium">
+                        Select a topic to proceed
+                      </span>
                     </div>
+
                     <div className="flex flex-wrap gap-1.5">
+                      {/* All Topics Option */}
                       <button
                         onClick={() => {
                           sound.playClick();
                           setSelectedTopic('all');
-                          setSelectedSubtopic('all');
+                          // Both Subject and Topic selected > advance to Step 3
+                          setActiveStep(3);
                         }}
-                        className={`px-2.5 py-1 rounded-lg border text-xs font-semibold transition cursor-pointer ${
+                        className={`px-3 py-1.5 rounded-lg border text-xs font-semibold transition cursor-pointer ${
                           selectedTopic === 'all'
-                            ? 'bg-amber-400/20 border-amber-400 text-amber-400'
-                            : 'bg-zinc-900 border-zinc-800 text-zinc-400 hover:text-zinc-200'
+                            ? 'bg-amber-400 text-zinc-950 border-amber-400 font-bold'
+                            : 'bg-zinc-900 border-zinc-800 text-zinc-300 hover:border-zinc-700'
                         }`}
                       >
                         All Topics
                       </button>
+
+                      {/* Individual Topics */}
                       {availableTopics.map((topic) => {
                         const isTopLocked = !isPro && DataLoader.isTopicPro(topic, selectedCategory);
+                        const isChosen = selectedTopic === topic;
+
                         return (
                           <button
                             key={topic}
@@ -427,64 +430,17 @@ export const SetupView: React.FC<SetupViewProps> = ({
                                 return;
                               }
                               setSelectedTopic(topic);
-                              setSelectedSubtopic('all');
+                              // Both Subject and Topic selected > advance to Step 3
+                              setActiveStep(3);
                             }}
-                            className={`px-2.5 py-1 rounded-lg border text-xs font-semibold transition cursor-pointer flex items-center gap-1 ${
-                              selectedTopic === topic
-                                ? 'bg-amber-400/20 border-amber-400 text-amber-400'
-                                : 'bg-zinc-900 border-zinc-800 text-zinc-400 hover:text-zinc-200'
+                            className={`px-3 py-1.5 rounded-lg border text-xs font-semibold transition cursor-pointer flex items-center gap-1.5 ${
+                              isChosen
+                                ? 'bg-amber-400 text-zinc-950 border-amber-400 font-bold'
+                                : 'bg-zinc-900 border-zinc-800 text-zinc-300 hover:border-zinc-700 hover:text-white'
                             }`}
                           >
                             <span>{topic}</span>
                             {isTopLocked && <LockBadge isPro={isPro} label="PRO" size="sm" />}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-                )}
-
-                {/* Optional Subtopics Filter */}
-                {availableSubtopics.length > 0 && selectedTopic !== 'all' && (
-                  <div className="p-3 rounded-xl bg-zinc-950 border border-zinc-800 space-y-1.5">
-                    <div className="text-[10px] font-mono uppercase text-zinc-400 font-bold">
-                      Subtopic (Optional):
-                    </div>
-                    <div className="flex flex-wrap gap-1.5">
-                      <button
-                        onClick={() => {
-                          sound.playClick();
-                          setSelectedSubtopic('all');
-                        }}
-                        className={`px-2.5 py-1 rounded-lg border text-xs font-semibold transition cursor-pointer ${
-                          selectedSubtopic === 'all'
-                            ? 'bg-amber-400/20 border-amber-400 text-amber-400'
-                            : 'bg-zinc-900 border-zinc-800 text-zinc-400 hover:text-zinc-200'
-                        }`}
-                      >
-                        All Subtopics
-                      </button>
-                      {availableSubtopics.map((sub) => {
-                        const isSubLocked = !isPro && DataLoader.isSubtopicPro(sub, selectedTopic);
-                        return (
-                          <button
-                            key={sub}
-                            onClick={() => {
-                              sound.playClick();
-                              if (isSubLocked) {
-                                onOpenUpgrade();
-                                return;
-                              }
-                              setSelectedSubtopic(sub);
-                            }}
-                            className={`px-2.5 py-1 rounded-lg border text-xs font-semibold transition cursor-pointer flex items-center gap-1 ${
-                              selectedSubtopic === sub
-                                ? 'bg-amber-400/20 border-amber-400 text-amber-400'
-                                : 'bg-zinc-900 border-zinc-800 text-zinc-400 hover:text-zinc-200'
-                            }`}
-                          >
-                            <span>{sub}</span>
-                            {isSubLocked && <LockBadge isPro={isPro} label="PRO" size="sm" />}
                           </button>
                         );
                       })}
@@ -498,9 +454,9 @@ export const SetupView: React.FC<SetupViewProps> = ({
 
         {/* ========================================================
             STEP 3: QUESTION COUNT
-            Revealed once user selects Step 2
+            Revealed once user selects Step 2 (Subject & Topic)
             ======================================================== */}
-        {isStep2Selected && (
+        {isStep2Done && (
           <div className="rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-sm transition-all animate-fadeIn">
             <button
               onClick={() => {
@@ -511,7 +467,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
             >
               <div className="flex items-center gap-3">
                 <span className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 ${
-                  isStep3Selected ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
+                  isStep3Done ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
                 }`}>
                   3
                 </span>
@@ -534,23 +490,33 @@ export const SetupView: React.FC<SetupViewProps> = ({
 
             {activeStep === 3 && (
               <div className="px-4 pb-4 pt-1 border-t border-zinc-800">
-                <div className="grid grid-cols-4 gap-2 pt-2">
-                  {[10, 20, 30, 50].map((num) => (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
+                  {[
+                    { num: 10, label: '10 Qs', desc: 'Quick drill' },
+                    { num: 20, label: '20 Qs', desc: 'Recommended' },
+                    { num: 30, label: '30 Qs', desc: 'Deep dive' },
+                    { num: 50, label: '50 Qs', desc: 'Comprehensive' },
+                  ].map(({ num, label, desc }) => (
                     <button
                       key={num}
                       onClick={() => {
                         sound.playClick();
                         setSelectedItemCount(num);
-                        // User select on 3 > reveal select 4
+                        // Progress to Step 4: Difficulty Level
                         setActiveStep(4);
                       }}
-                      className={`py-2.5 rounded-xl text-xs font-bold border transition cursor-pointer ${
+                      className={`p-3 rounded-xl border transition cursor-pointer text-center ${
                         selectedItemCount === num
-                          ? 'bg-amber-400 text-zinc-950 border-amber-400'
-                          : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-700'
+                          ? 'bg-amber-400 text-zinc-950 border-amber-400 shadow-sm shadow-amber-400/20'
+                          : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900'
                       }`}
                     >
-                      {num} Qs
+                      <div className="text-xs font-black">{label}</div>
+                      <div className={`text-[10px] mt-0.5 ${
+                        selectedItemCount === num ? 'text-zinc-900 font-semibold' : 'text-zinc-500'
+                      }`}>
+                        {desc}
+                      </div>
                     </button>
                   ))}
                 </div>
@@ -561,9 +527,9 @@ export const SetupView: React.FC<SetupViewProps> = ({
 
         {/* ========================================================
             STEP 4: DIFFICULTY LEVEL
-            Revealed once user selects Step 3
+            Revealed once user selects Step 3 (Question Count)
             ======================================================== */}
-        {isStep3Selected && (
+        {isStep3Done && (
           <div className="rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-sm transition-all animate-fadeIn">
             <button
               onClick={() => {
@@ -574,7 +540,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
             >
               <div className="flex items-center gap-3">
                 <span className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 ${
-                  isStep4Selected ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
+                  isStep4Done ? 'bg-amber-400 text-zinc-950' : 'bg-zinc-800 text-zinc-400'
                 }`}>
                   4
                 </span>
@@ -583,7 +549,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
                     <span>Difficulty Level</span>
                     {selectedDifficulty && (
                       <span className="text-xs font-mono font-semibold text-amber-400 bg-amber-400/15 px-2 py-0.5 rounded-md border border-amber-400/30 capitalize">
-                        {selectedDifficulty}
+                        {selectedDifficulty === 'all' ? 'All Levels' : selectedDifficulty}
                       </span>
                     )}
                   </h3>
@@ -597,28 +563,33 @@ export const SetupView: React.FC<SetupViewProps> = ({
 
             {activeStep === 4 && (
               <div className="px-4 pb-4 pt-1 border-t border-zinc-800">
-                <div className="grid grid-cols-4 gap-2 pt-2">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
                   {[
-                    { id: 'all', label: 'All Levels' },
-                    { id: 'easy', label: 'Easy' },
-                    { id: 'medium', label: 'Medium' },
-                    { id: 'advanced', label: 'Advanced' },
+                    { id: 'all', label: 'All Levels', desc: 'Mixed items' },
+                    { id: 'easy', label: 'Easy', desc: 'Foundational' },
+                    { id: 'medium', label: 'Medium', desc: 'PRC standard' },
+                    { id: 'advanced', label: 'Advanced', desc: 'Challenging' },
                   ].map((d) => (
                     <button
                       key={d.id}
                       onClick={() => {
                         sound.playClick();
                         setSelectedDifficulty(d.id as Difficulty | 'all');
-                        // Step 4 selected! Ready to Practice will be revealed
-                        setActiveStep(0); // collapse to focus on ready card
+                        // Collapse to highlight the Ready Card
+                        setActiveStep(0);
                       }}
-                      className={`py-2.5 px-1 rounded-xl text-xs font-bold border transition cursor-pointer text-center ${
+                      className={`p-3 rounded-xl border transition cursor-pointer text-center ${
                         selectedDifficulty === d.id
-                          ? 'bg-amber-400 text-zinc-950 border-amber-400'
-                          : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-700'
+                          ? 'bg-amber-400 text-zinc-950 border-amber-400 shadow-sm shadow-amber-400/20'
+                          : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900'
                       }`}
                     >
-                      {d.label}
+                      <div className="text-xs font-black">{d.label}</div>
+                      <div className={`text-[10px] mt-0.5 ${
+                        selectedDifficulty === d.id ? 'text-zinc-900 font-semibold' : 'text-zinc-500'
+                      }`}>
+                        {d.desc}
+                      </div>
                     </button>
                   ))}
                 </div>
@@ -628,54 +599,66 @@ export const SetupView: React.FC<SetupViewProps> = ({
         )}
 
         {/* ========================================================
-            REVEAL READY TO PRACTICE ONCE USER SELECTS 4
-            Exact user requested card:
-            Ready to Practice
-            20 questions ready from 69 available pool
-            Mode: Practice Test • All Free Subjects
-
-            Start Review Session
+            REVEAL READY CARD ONCE USER SELECTS DIFFICULTY LEVEL
+            Card Format:
+            20 questions ready from 547 available pool
+            Start Review Session ->
+            Mode | Subject - Topic | # of Questions | Difficulty Level
             ======================================================== */}
-        {isStep4Selected && (
-          <div className="p-5 sm:p-6 rounded-2xl bg-zinc-900 border border-amber-400/40 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl animate-fadeIn">
-            <div className="text-center sm:text-left space-y-1">
-              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-amber-400 font-bold">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Ready to Practice</span>
+        {isStep4Done && (
+          <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-zinc-900 to-zinc-950 border border-amber-400/40 shadow-xl shadow-amber-400/5 space-y-4 animate-fadeIn">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="space-y-1 text-center sm:text-left">
+                <div className="inline-flex items-center gap-1.5 text-xs font-mono text-amber-400 font-bold">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>Ready to Practice</span>
+                </div>
+                <div className="text-base sm:text-lg font-bold text-white">
+                  {isSelectionLocked ? (
+                    'Majorship English Requires Pro (₱99 one-time)'
+                  ) : (
+                    <span>
+                      <strong className="text-amber-400">{readyCount} questions ready</strong> from{' '}
+                      <strong className="text-amber-400">{poolCount} available pool</strong>
+                    </span>
+                  )}
+                </div>
               </div>
-              <div className="text-base sm:text-lg font-bold text-white">
-                {isSelectionLocked ? (
-                  'Majorship English Requires Pro (₱99 one-time)'
-                ) : (
-                  <span>
-                    <strong className="text-amber-400">{readyCount}</strong> questions ready from{' '}
-                    <strong className="text-amber-400">{poolCount}</strong> available pool
-                  </span>
-                )}
-              </div>
-              <p className="text-xs text-zinc-400">
-                Mode: {getModeTitle(selectedMode)} &bull; {selectedCategory === 'all' ? 'All Free Subjects' : selectedCategory}
-              </p>
+
+              {isSelectionLocked ? (
+                <button
+                  onClick={onOpenUpgrade}
+                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-zinc-950 text-sm font-black shadow-lg shadow-amber-400/20 transition active:scale-95 cursor-pointer shrink-0"
+                >
+                  <Lock className="w-4 h-4 text-zinc-950" />
+                  <span>Unlock Pro (₱99)</span>
+                </button>
+              ) : (
+                <button
+                  onClick={handleStart}
+                  disabled={poolCount === 0}
+                  className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-zinc-950 text-sm font-black shadow-lg shadow-amber-400/20 transition active:scale-95 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
+                >
+                  <span>Start Review Session</span>
+                  <ArrowRight className="w-4 h-4 text-zinc-950" />
+                </button>
+              )}
             </div>
 
-            {isSelectionLocked ? (
-              <button
-                onClick={onOpenUpgrade}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-zinc-950 text-sm font-black shadow-lg shadow-amber-400/20 transition active:scale-95 cursor-pointer shrink-0"
-              >
-                <Lock className="w-4 h-4 text-zinc-950" />
-                <span>Unlock Pro (₱99)</span>
-              </button>
-            ) : (
-              <button
-                onClick={handleStart}
-                disabled={poolCount === 0}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-zinc-950 text-sm font-black shadow-lg shadow-amber-400/20 transition active:scale-95 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
-              >
-                <Play className="w-4 h-4 fill-zinc-950" />
-                <span>Start Review Session</span>
-              </button>
-            )}
+            {/* Exact requested summary format: Mode | Subject - Topic | # of Questions | Difficulty Level */}
+            <div className="pt-3 border-t border-zinc-800/80 flex items-center justify-center sm:justify-start gap-2 text-xs font-medium text-zinc-300 flex-wrap">
+              <span className="text-amber-400 font-bold">{getModeTitle(selectedMode)}</span>
+              <span className="text-zinc-600">|</span>
+              <span className="text-zinc-200">
+                {selectedCategory === 'all' ? 'All Free Subjects' : selectedCategory} - {selectedTopic === 'all' ? 'All Topics' : selectedTopic}
+              </span>
+              <span className="text-zinc-600">|</span>
+              <span className="text-zinc-200">{selectedItemCount} Questions</span>
+              <span className="text-zinc-600">|</span>
+              <span className="capitalize text-zinc-200">
+                {selectedDifficulty === 'all' ? 'All Levels' : selectedDifficulty}
+              </span>
+            </div>
           </div>
         )}
       </div>

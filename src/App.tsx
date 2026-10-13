@@ -408,6 +408,46 @@ export default function App() {
     toast.success('⚡ Quick Sprint Started: 20 Randomized Questions!');
   };
 
+  const handleStartMockBoard = (category: Category | 'all') => {
+    sound.playClick();
+    if (!isPro) {
+      setIsUpgradeModalOpen(true);
+      return;
+    }
+
+    let pool: Item[] = [];
+    if (category === 'all') {
+      pool = allItems.filter((i) => checkProAccess(i.category, i.topic, i.subtopic, isPro));
+    } else {
+      pool = allItems.filter((i) => i.category === category);
+    }
+
+    if (pool.length === 0) {
+      toast.error('No questions available in this category pool yet.');
+      return;
+    }
+
+    const shuffled = shuffle(pool);
+    let mockItems: Item[] = [];
+    if (shuffled.length >= 150) {
+      mockItems = shuffled.slice(0, 150);
+    } else {
+      // If pool has fewer than 150 (e.g. Majorship), cycle items to provide a full 150-question board exam simulation
+      mockItems = [];
+      while (mockItems.length < 150) {
+        mockItems.push(...shuffle(pool));
+      }
+      mockItems = mockItems.slice(0, 150);
+    }
+
+    setActiveMode('practiceTest');
+    setActiveItems(mockItems);
+    setCurrentView('mode');
+    resetHUD();
+    const label = category === 'all' ? 'Comprehensive Mixed' : category;
+    toast.success(`🏛️ Mock Board Exam Started: 150 Questions (${label})!`);
+  };
+
   const resetHUD = () => {
     setHudIndex(0);
     setHudScore(0);
@@ -547,14 +587,9 @@ export default function App() {
                 <GraduationCap className="w-5 h-5 stroke-[2.3]" />
               </div>
               <div>
-                <div className="flex items-center gap-2">
-                  <span className="text-base sm:text-lg font-black text-white tracking-tight group-hover:text-amber-400 transition">
-                    LET Reviewer
-                  </span>
-                  <span className="px-1.5 py-0.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-400 text-[10px] font-mono font-bold">
-                    TOS
-                  </span>
-                </div>
+                <span className="text-lg sm:text-xl font-black text-white tracking-tight group-hover:text-amber-400 transition">
+                  T-LETs!
+                </span>
               </div>
             </button>
 
@@ -614,7 +649,7 @@ export default function App() {
                 }`}
               >
                 <Info className="w-3.5 h-3.5" />
-                <span>Guide</span>
+                <span>About</span>
               </button>
             </nav>
 
@@ -665,14 +700,7 @@ export default function App() {
                 )}
               </button>
 
-              {/* Theme Toggle */}
-              <button
-                onClick={handleToggleTheme}
-                className="p-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-white transition active:scale-95 cursor-pointer"
-                title={isDarkMode ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
-              >
-                {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-indigo-400" />}
-              </button>
+
 
               {/* Mobile Hamburger Toggle */}
               <button
@@ -736,7 +764,7 @@ export default function App() {
                 }`}
               >
                 <Info className="w-4 h-4" />
-                <span>Exam Guide & Specifications</span>
+                <span>About</span>
               </button>
 
               {!isPro && (
@@ -763,6 +791,7 @@ export default function App() {
             allItems={allItems}
             onOpenSetup={handleOpenSetup}
             onStartRandomSprint={handleStartRandomSprint}
+            onStartMockBoard={handleStartMockBoard}
             onStartWithItems={handleStartWithCustomItems}
             onOpenBookmarks={() => setCurrentView('bookmarks')}
             onOpenAbout={() => setCurrentView('about')}
@@ -998,7 +1027,7 @@ export default function App() {
                     }}
                     className="hover:text-amber-400 transition cursor-pointer"
                   >
-                    Privacy & Guide
+                    About
                   </button>
                 </div>
                 <div className="pt-2">
@@ -1018,7 +1047,7 @@ export default function App() {
             {/* Bottom Copyright & Version */}
             <div className="pt-6 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-500 font-mono">
               <div>
-                &copy; {new Date().getFullYear()} LET Reviewer &bull; Philippine Licensure Examination
+                &copy; {new Date().getFullYear()} T-LETs! &bull; Philippine Licensure Examination
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-amber-400/80">TOS 2026 Calibrated</span>
