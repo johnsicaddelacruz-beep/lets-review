@@ -1,0 +1,807 @@
+{
+  "category": "General Education",
+  "topic": "Purposive Communication in English",
+  "subtopic": "Subject-Verb Agreement",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Neither...nor (Proximity Rule)",
+      "definition": "In a 'neither...nor' construction, the verb agrees with the subject that is closer to it.",
+      "rationalization": "In 'Neither the teacher nor the students ___ the book,' the subject closer to the verb is 'students' (plural), so a plural verb is required. The same proximity rule applies in 'Either the musicians or the conductor ___ responsible for the error,' where the closer subject 'conductor' (singular) takes a singular verb.",
+      "mnemonic": {
+        "title": "Proximity Rule for Neither/Nor",
+        "phrase": "The verb agrees with the closer subject",
+        "items": [
+          "Neither A nor B → verb agrees with B",
+          "Either A or B → verb agrees with B",
+          "B determines singular or plural"
+        ]
+      },
+      "tosCompetency": "Apply rules of subject-verb agreement in complex sentence structures",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Collective Nouns as Singular Subjects",
+      "definition": "Collective nouns such as team, committee, family, group, herd, staff, and board are treated as singular subjects when acting as one unit.",
+      "rationalization": "In 'The team, along with their coach, ___ heading to the championship,' the subject is 'team' (singular), and intervening phrases like 'along with' do not change the verb. Similarly, 'The committee, including its youngest members, ___ reached a consensus' takes a singular verb because the committee acts as one body.",
+      "mnemonic": {
+        "title": "Collective Noun Rule",
+        "phrase": "One group = one verb",
+        "items": [
+          "Team, committee, family = singular",
+          "Intervening phrases don't change the verb",
+          "Only when members act individually = plural"
+        ]
+      },
+      "tosCompetency": "Use collective nouns correctly as subjects in sentences",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Indefinite Pronouns (Each, One, Every, Neither)",
+      "definition": "Indefinite pronouns like each, one, every, everyone, neither, and either are always singular and take singular verbs.",
+      "rationalization": "In 'Each of the students ___ a unique perspective,' the subject is 'Each' (singular), not 'students.' Similarly, 'One of the students ___ already submitted the assignment' and 'Every one of the players ___ giving their best' require singular verbs. These pronouns are grammatically singular regardless of the prepositional phrase that follows.",
+      "mnemonic": {
+        "title": "Indefinite Pronoun Singularity",
+        "phrase": "Each, one, every = always one",
+        "items": [
+          "Each = singular",
+          "One = singular",
+          "Every = singular"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with indefinite pronouns",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Uncountable Nouns as Singular Subjects",
+      "definition": "Uncountable (mass) nouns such as information, news, furniture, and mathematics take singular verbs.",
+      "rationalization": "In 'None of the information ___ relevant to the case,' the subject 'information' is uncountable and takes a singular verb. Similarly, 'The news about the accident ___ shocking' and 'Furniture in the house ___ stylish' require singular verbs because these nouns have no plural form.",
+      "mnemonic": {
+        "title": "Mass Noun Rule",
+        "phrase": "No plural, no plural verb",
+        "items": [
+          "Information = singular",
+          "News = singular",
+          "Furniture = singular"
+        ]
+      },
+      "tosCompetency": "Use uncountable nouns correctly in subject-verb agreement",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Nouns with Plural Form but Singular Meaning",
+      "definition": "Some nouns end in -s but are singular in meaning and take singular verbs, such as news, mathematics, physics, politics, and economics.",
+      "rationalization": "In 'Politics ___ a complex subject to study,' the word 'Politics' ends in -s but is singular, so it takes 'is.' Similarly, 'Mathematics ___ a subject many students find challenging' requires a singular verb. These are exceptions to the typical plural -s rule.",
+      "mnemonic": {
+        "title": "Singular -s Nouns",
+        "phrase": "Looks plural, acts singular",
+        "items": [
+          "Politics = singular",
+          "Mathematics = singular",
+          "News = singular"
+        ]
+      },
+      "tosCompetency": "Identify nouns with plural form but singular meaning",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subjects with Intervening Phrases",
+      "definition": "Phrases such as 'along with,' 'together with,' 'as well as,' and 'including' do not change the number of the subject.",
+      "rationalization": "In 'The team, as well as their supporters, ___ ready for the final match,' the subject is 'team' (singular) because 'as well as' is not a conjunction but an intervening phrase. Similarly, 'The books, together with the notes, ___ missing from the shelf' takes a plural verb because 'books' is the true subject.",
+      "mnemonic": {
+        "title": "Intervening Phrase Rule",
+        "phrase": "Ignore the extra, focus on the subject",
+        "items": [
+          "Along with = ignore",
+          "Together with = ignore",
+          "As well as = ignore"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with intervening phrases",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Quantifiers (Some, Half, Majority, None)",
+      "definition": "Quantifiers can be singular or plural depending on the noun they refer to; 'the number' is singular while 'a number' is plural.",
+      "rationalization": "In 'Some of the furniture ___ damaged in the flood,' 'furniture' is uncountable, so the verb is singular. In 'Several of the pieces ___ damaged in the move,' 'pieces' is plural, so the verb is plural. 'The number of students ___ increasing' is singular, while 'A number of students ___ absent' is plural.",
+      "mnemonic": {
+        "title": "Quantifier Agreement",
+        "phrase": "Look at the noun after 'of'",
+        "items": [
+          "The number = singular",
+          "A number = plural",
+          "Half of + singular noun = singular"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with quantifiers and fractions",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Subjects Joined by 'And'",
+      "definition": "Two subjects joined by 'and' generally take a plural verb, unless they refer to the same person or thing.",
+      "rationalization": "In 'Both of the twins ___ invited to the party,' 'Both' indicates two people, so the verb is plural. In 'A variety of topics ___ covered in the lecture,' 'topics' is plural, so the verb is plural. However, 'The president and CEO ___ attending' would be singular if referring to one person.",
+      "mnemonic": {
+        "title": "And = Plural Rule",
+        "phrase": "Two subjects, plural verb",
+        "items": [
+          "A and B = plural",
+          "Both = plural",
+          "Exception: same person = singular"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with compound subjects",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "The Number vs. A Number",
+      "definition": "'The number' is always singular and takes a singular verb; 'a number' is always plural and takes a plural verb.",
+      "rationalization": "In 'The number of students in the class ___ steadily increasing,' 'The number' is the subject and is singular, so 'is' is correct. In 'A number of students ___ absent today,' 'A number' means 'several' and is plural, so 'are' is correct.",
+      "mnemonic": {
+        "title": "Number Rule",
+        "phrase": "The = singular, A = plural",
+        "items": [
+          "The number = is/was",
+          "A number = are/were",
+          "The number of = singular"
+        ]
+      },
+      "tosCompetency": "Distinguish between 'the number' and 'a number' in subject-verb agreement",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Fractions and Percentages as Subjects",
+      "definition": "Fractions and percentages take singular verbs when referring to a singular or uncountable noun, and plural verbs when referring to a plural noun.",
+      "rationalization": "In 'Half of the cake ___ already eaten,' 'cake' is singular, so 'was' is correct. In 'Half of the students ___ absent,' 'students' is plural, so 'were' is correct. The noun after 'of' determines the verb.",
+      "mnemonic": {
+        "title": "Fraction Agreement",
+        "phrase": "Look at the noun after 'of'",
+        "items": [
+          "Half of + singular = singular verb",
+          "Half of + plural = plural verb",
+          "The noun controls the verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with fractions and percentages",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Either...or (Proximity Rule)",
+      "definition": "In an 'either...or' construction, the verb agrees with the subject closer to it.",
+      "rationalization": "In 'Either the books or the pen ___ missing,' the closer subject is 'pen' (singular), so 'is' is correct. In 'Either the pen or the books ___ missing,' the closer subject is 'books' (plural), so 'are' is correct. The proximity rule applies to both 'either...or' and 'neither...nor.'",
+      "mnemonic": {
+        "title": "Either/Or Proximity",
+        "phrase": "Closer subject wins",
+        "items": [
+          "Either A or B → verb agrees with B",
+          "Neither A nor B → verb agrees with B",
+          "B is the deciding subject"
+        ]
+      },
+      "tosCompetency": "Apply the proximity rule in either/or constructions",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Plural Nouns with Singular Verbs (Special Cases)",
+      "definition": "Some nouns like 'pair,' 'series,' and 'herd' are singular in form and take singular verbs even when they refer to multiple items.",
+      "rationalization": "In 'A pair of shoes ___ left in the hallway,' 'pair' is singular, so 'was' is correct. In 'A series of events ___ led to this conclusion,' 'series' is singular, so 'has' is correct. These nouns are treated as single units.",
+      "mnemonic": {
+        "title": "Singular Unit Nouns",
+        "phrase": "One unit = one verb",
+        "items": [
+          "Pair = singular",
+          "Series = singular",
+          "Herd = singular"
+        ]
+      },
+      "tosCompetency": "Identify nouns that are singular despite plural-like forms",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'None'",
+      "definition": "'None' can be singular or plural depending on the noun it refers to; it is often plural when referring to countable nouns and singular when referring to uncountable nouns.",
+      "rationalization": "In 'None of the students ___ late for the exam,' 'students' is countable and plural, so 'were' is acceptable. In 'None of the information ___ relevant,' 'information' is uncountable, so 'is' is correct. The noun after 'of' determines the verb.",
+      "mnemonic": {
+        "title": "None Rule",
+        "phrase": "None = not one (singular) or not any (plural)",
+        "items": [
+          "None of + plural = plural verb",
+          "None of + uncountable = singular verb",
+          "Context determines the verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'none'",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Majority'",
+      "definition": "'The majority' is singular when referring to a group as a whole, but plural when referring to individual members.",
+      "rationalization": "In 'The majority of the class ___ happy with the new schedule,' 'class' is singular, so 'was' is correct. In 'The majority of the students ___ happy,' 'students' is plural, so 'were' is correct. The noun after 'of' determines the verb.",
+      "mnemonic": {
+        "title": "Majority Rule",
+        "phrase": "The majority = singular or plural based on the noun",
+        "items": [
+          "Majority of + singular = singular",
+          "Majority of + plural = plural",
+          "Look at the noun after 'of'"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'majority'",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Both'",
+      "definition": "'Both' is always plural and takes a plural verb.",
+      "rationalization": "In 'Both of the twins ___ invited to the party,' 'Both' refers to two people, so 'were' is correct. 'Both' is inherently plural and cannot take a singular verb.",
+      "mnemonic": {
+        "title": "Both Rule",
+        "phrase": "Both = two = plural",
+        "items": [
+          "Both = plural",
+          "Both of + plural noun = plural verb",
+          "Always use plural verb with 'both'"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'both'",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Each' and 'Every'",
+      "definition": "'Each' and 'every' are always singular and take singular verbs, even when followed by plural nouns.",
+      "rationalization": "In 'Each of the paintings ___ unique in its own way,' 'Each' is singular, so 'is' is correct. In 'Every one of the books ___ returned to the library,' 'Every one' is singular, so 'has' is correct. These words emphasize individuality.",
+      "mnemonic": {
+        "title": "Each/Every Rule",
+        "phrase": "Each and every = one",
+        "items": [
+          "Each = singular",
+          "Every = singular",
+          "Each of + plural = singular verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'each' and 'every'",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'One of'",
+      "definition": "'One of' is always singular and takes a singular verb, even when followed by a plural noun.",
+      "rationalization": "In 'One of the students ___ already submitted the assignment,' 'One' is the subject, not 'students,' so 'has' is correct. The prepositional phrase 'of the students' does not change the verb.",
+      "mnemonic": {
+        "title": "One Of Rule",
+        "phrase": "One = singular",
+        "items": [
+          "One of + plural noun = singular verb",
+          "Ignore the prepositional phrase",
+          "The subject is 'one'"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'one of'",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'A Variety of'",
+      "definition": "'A variety of' is plural and takes a plural verb because it refers to multiple items.",
+      "rationalization": "In 'A variety of topics ___ covered in the lecture,' 'topics' is plural, so 'were' is correct. 'A variety of' means 'several' and is treated as plural.",
+      "mnemonic": {
+        "title": "Variety Rule",
+        "phrase": "A variety = many = plural",
+        "items": [
+          "A variety of + plural noun = plural verb",
+          "Variety means multiple items",
+          "Use plural verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'a variety of'",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'A Series of'",
+      "definition": "'A series of' is singular and takes a singular verb because 'series' is the subject.",
+      "rationalization": "In 'A series of events ___ led to this conclusion,' 'series' is singular, so 'has' is correct. The prepositional phrase 'of events' does not change the verb.",
+      "mnemonic": {
+        "title": "Series Rule",
+        "phrase": "A series = one = singular",
+        "items": [
+          "A series of + plural noun = singular verb",
+          "Series is the subject",
+          "Ignore the prepositional phrase"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'a series of'",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Board of Directors'",
+      "definition": "'The board of directors' is a collective noun phrase treated as singular and takes a singular verb.",
+      "rationalization": "In 'The board of directors ___ meeting tomorrow,' 'board' is the subject and is singular, so 'is' is correct. The phrase 'of directors' does not change the verb.",
+      "mnemonic": {
+        "title": "Board Rule",
+        "phrase": "Board = one body = singular",
+        "items": [
+          "Board of directors = singular",
+          "The board = singular",
+          "Use singular verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective noun phrases",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Herd of Cattle'",
+      "definition": "'The herd of cattle' is a collective noun phrase treated as singular and takes a singular verb.",
+      "rationalization": "In 'The herd of cattle ___ grazing in the field,' 'herd' is the subject and is singular, so 'is' is correct. The phrase 'of cattle' does not change the verb.",
+      "mnemonic": {
+        "title": "Herd Rule",
+        "phrase": "Herd = one group = singular",
+        "items": [
+          "Herd of cattle = singular",
+          "Herd of sheep = singular",
+          "Use singular verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective noun phrases",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Staff'",
+      "definition": "'The staff' is a collective noun treated as singular when acting as one unit and plural when members act individually.",
+      "rationalization": "In 'The staff ___ in agreement about the changes,' 'staff' is treated as singular, so 'is' is correct. In 'The staff ___ arguing among themselves,' 'staff' is treated as plural, so 'are' is correct. Context determines the verb.",
+      "mnemonic": {
+        "title": "Staff Rule",
+        "phrase": "Staff = one unit or many individuals",
+        "items": [
+          "Staff as one = singular",
+          "Staff as individuals = plural",
+          "Context determines the verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective nouns based on context",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Jury'",
+      "definition": "'The jury' is singular when acting as one body and plural when members act individually.",
+      "rationalization": "In 'The jury ___ divided in their opinions,' 'jury' is treated as plural because members are acting individually, so 'are' is correct. In 'The jury ___ reached a verdict,' 'jury' is singular because it acts as one body, so 'has' is correct.",
+      "mnemonic": {
+        "title": "Jury Rule",
+        "phrase": "Jury = one body or many minds",
+        "items": [
+          "Jury as one = singular",
+          "Jury as individuals = plural",
+          "Context determines the verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective nouns based on context",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Family'",
+      "definition": "'The family' is a collective noun treated as singular in American English when acting as one unit.",
+      "rationalization": "In 'The family ___ at odds over where to go for vacation,' 'family' is treated as singular, so 'is' is correct. In American English, collective nouns are generally singular.",
+      "mnemonic": {
+        "title": "Family Rule",
+        "phrase": "Family = one unit = singular",
+        "items": [
+          "Family = singular in American English",
+          "Family = plural in British English",
+          "Use singular verb in PRC exams"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective nouns",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Group of Tourists'",
+      "definition": "'The group of tourists' is a collective noun phrase treated as singular and takes a singular verb.",
+      "rationalization": "In 'The group of tourists ___ lost in the city,' 'group' is the subject and is singular, so 'is' is correct. The phrase 'of tourists' does not change the verb.",
+      "mnemonic": {
+        "title": "Group Rule",
+        "phrase": "Group = one = singular",
+        "items": [
+          "Group of tourists = singular",
+          "Group of students = singular",
+          "Use singular verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective noun phrases",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Audience'",
+      "definition": "'The audience' is a collective noun treated as singular when acting as one unit.",
+      "rationalization": "In 'The audience ___ applauding the performance,' 'audience' is treated as singular, so 'was' is correct. In 'The audience ___ clapping and cheering,' 'audience' could be plural if members act individually, so 'were' is also acceptable depending on context.",
+      "mnemonic": {
+        "title": "Audience Rule",
+        "phrase": "Audience = one group = singular",
+        "items": [
+          "Audience = singular when acting as one",
+          "Audience = plural when acting individually",
+          "Context determines the verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective nouns based on context",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The Committee'",
+      "definition": "'The committee' is a collective noun treated as singular when acting as one body and plural when members act individually.",
+      "rationalization": "In 'The committee ___ discussing the issue for hours,' 'committee' is treated as singular, so 'is' is correct. In 'The committee ___ divided in their opinions,' 'committee' is treated as plural, so 'are' is correct.",
+      "mnemonic": {
+        "title": "Committee Rule",
+        "phrase": "Committee = one body or many voices",
+        "items": [
+          "Committee as one = singular",
+          "Committee as individuals = plural",
+          "Context determines the verb"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with collective nouns based on context",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'The News'",
+      "definition": "'The news' is a singular noun despite ending in -s and takes a singular verb.",
+      "rationalization": "In 'The news about the accident ___ shocking,' 'news' is singular, so 'is' is correct. 'News' is an uncountable noun that always takes a singular verb.",
+      "mnemonic": {
+        "title": "News Rule",
+        "phrase": "News = singular",
+        "items": [
+          "News = singular",
+          "The news = is/was",
+          "Never use 'are' with news"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'news'",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Mathematics'",
+      "definition": "'Mathematics' is a singular noun despite ending in -s and takes a singular verb.",
+      "rationalization": "In 'Mathematics ___ a subject many students find challenging,' 'Mathematics' is singular, so 'is' is correct. Names of fields of study ending in -s are singular.",
+      "mnemonic": {
+        "title": "Mathematics Rule",
+        "phrase": "Fields of study = singular",
+        "items": [
+          "Mathematics = singular",
+          "Physics = singular",
+          "Economics = singular"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with names of fields of study",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Politics'",
+      "definition": "'Politics' is a singular noun despite ending in -s and takes a singular verb.",
+      "rationalization": "In 'Politics ___ a complex subject to study,' 'Politics' is singular, so 'is' is correct. Like other fields of study, 'politics' is singular.",
+      "mnemonic": {
+        "title": "Politics Rule",
+        "phrase": "Politics = singular",
+        "items": [
+          "Politics = singular",
+          "Politics = is/was",
+          "Field of study = singular"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with 'politics'",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Furniture'",
+      "definition": "'Furniture' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The furniture in the house ___ stylish and modern,' 'furniture' is uncountable, so 'is' is correct. 'Furniture' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Furniture Rule",
+        "phrase": "Furniture = singular",
+        "items": [
+          "Furniture = singular",
+          "Furniture = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Information'",
+      "definition": "'Information' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'None of the information ___ relevant to the case,' 'information' is uncountable, so 'is' is correct. 'Information' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Information Rule",
+        "phrase": "Information = singular",
+        "items": [
+          "Information = singular",
+          "Information = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Luggage'",
+      "definition": "'Luggage' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The luggage ___ too heavy to carry,' 'luggage' is uncountable, so 'is' is correct. 'Luggage' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Luggage Rule",
+        "phrase": "Luggage = singular",
+        "items": [
+          "Luggage = singular",
+          "Luggage = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Advice'",
+      "definition": "'Advice' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The advice she gave ___ helpful,' 'advice' is uncountable, so 'was' is correct. 'Advice' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Advice Rule",
+        "phrase": "Advice = singular",
+        "items": [
+          "Advice = singular",
+          "Advice = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Equipment'",
+      "definition": "'Equipment' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The equipment in the laboratory ___ expensive,' 'equipment' is uncountable, so 'is' is correct. 'Equipment' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Equipment Rule",
+        "phrase": "Equipment = singular",
+        "items": [
+          "Equipment = singular",
+          "Equipment = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Traffic'",
+      "definition": "'Traffic' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The traffic in the city ___ heavy during rush hour,' 'traffic' is uncountable, so 'is' is correct. 'Traffic' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Traffic Rule",
+        "phrase": "Traffic = singular",
+        "items": [
+          "Traffic = singular",
+          "Traffic = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Weather'",
+      "definition": "'Weather' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The weather in Baguio ___ cold in December,' 'weather' is uncountable, so 'is' is correct. 'Weather' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Weather Rule",
+        "phrase": "Weather = singular",
+        "items": [
+          "Weather = singular",
+          "Weather = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Money'",
+      "definition": "'Money' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The money ___ in the drawer,' 'money' is uncountable, so 'is' is correct. 'Money' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Money Rule",
+        "phrase": "Money = singular",
+        "items": [
+          "Money = singular",
+          "Money = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Time'",
+      "definition": "'Time' is an uncountable noun and takes a singular verb when referring to the concept of time.",
+      "rationalization": "In 'Time ___ precious,' 'time' is uncountable, so 'is' is correct. However, 'times' can be plural when referring to specific instances.",
+      "mnemonic": {
+        "title": "Time Rule",
+        "phrase": "Time = singular",
+        "items": [
+          "Time = singular",
+          "Time = is/was",
+          "Times = plural when specific"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Work'",
+      "definition": "'Work' is an uncountable noun and takes a singular verb when referring to employment or tasks.",
+      "rationalization": "In 'The work ___ challenging,' 'work' is uncountable, so 'is' is correct. However, 'works' can be plural when referring to literary or artistic creations.",
+      "mnemonic": {
+        "title": "Work Rule",
+        "phrase": "Work = singular",
+        "items": [
+          "Work = singular",
+          "Work = is/was",
+          "Works = plural when literary"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Research'",
+      "definition": "'Research' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The research ___ extensive,' 'research' is uncountable, so 'is' is correct. 'Research' has no plural form in standard English and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Research Rule",
+        "phrase": "Research = singular",
+        "items": [
+          "Research = singular",
+          "Research = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Knowledge'",
+      "definition": "'Knowledge' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The knowledge she gained ___ invaluable,' 'knowledge' is uncountable, so 'was' is correct. 'Knowledge' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Knowledge Rule",
+        "phrase": "Knowledge = singular",
+        "items": [
+          "Knowledge = singular",
+          "Knowledge = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Progress'",
+      "definition": "'Progress' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The progress made ___ impressive,' 'progress' is uncountable, so 'was' is correct. 'Progress' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Progress Rule",
+        "phrase": "Progress = singular",
+        "items": [
+          "Progress = singular",
+          "Progress = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Baggage'",
+      "definition": "'Baggage' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The baggage ___ too heavy,' 'baggage' is uncountable, so 'is' is correct. 'Baggage' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Baggage Rule",
+        "phrase": "Baggage = singular",
+        "items": [
+          "Baggage = singular",
+          "Baggage = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Scenery'",
+      "definition": "'Scenery' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The scenery in Banaue ___ breathtaking,' 'scenery' is uncountable, so 'is' is correct. 'Scenery' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Scenery Rule",
+        "phrase": "Scenery = singular",
+        "items": [
+          "Scenery = singular",
+          "Scenery = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Poetry'",
+      "definition": "'Poetry' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The poetry of Rizal ___ inspiring,' 'poetry' is uncountable, so 'is' is correct. 'Poetry' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Poetry Rule",
+        "phrase": "Poetry = singular",
+        "items": [
+          "Poetry = singular",
+          "Poetry = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Subject-Verb Agreement with 'Machinery'",
+      "definition": "'Machinery' is an uncountable noun and takes a singular verb.",
+      "rationalization": "In 'The machinery in the factory ___ outdated,' 'machinery' is uncountable, so 'is' is correct. 'Machinery' has no plural form and always takes a singular verb.",
+      "mnemonic": {
+        "title": "Machinery Rule",
+        "phrase": "Machinery = singular",
+        "items": [
+          "Machinery = singular",
+          "Machinery = is/was",
+          "No plural form"
+        ]
+      },
+      "tosCompetency": "Apply subject-verb agreement with uncountable nouns",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    }
+  ]
+}
