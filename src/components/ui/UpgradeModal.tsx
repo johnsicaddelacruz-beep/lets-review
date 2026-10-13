@@ -17,7 +17,7 @@ interface UpgradeModalProps {
   userEmail?: string;
 }
 
-const XENDIT_PAYMENT_URL = 'https://checkout-staging.xendit.co/od/tara-lets-pro';
+const XENDIT_PAYMENT_URL = 'https://checkout.xendit.co/od/tara-lets-pro';
 
 export const UpgradeModal: React.FC<UpgradeModalProps> = ({
   isOpen,
