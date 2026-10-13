@@ -24,6 +24,7 @@
     "data/profed/action_research/action_research.json",
     "data/profed/field_study/field_study.json",
     "data/profed/teaching_internship/teaching_internship.json",
-    "data/english_majorship/structure_of_english/basic_sentence_pattern/basic_sentence_pattern.json"
+    "data/english_majorship/structure_of_english/basic_sentence_pattern/basic_sentence_pattern.json",
+    "data/english_majorship/campus_journalism/campus_journalism.json"
   ]
 }
