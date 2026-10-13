@@ -37,7 +37,7 @@ function normalizeDataset(dataset: RawDataset): Item[] {
     mnemonic: item.mnemonic || null,
     category: dataset.category as Category,
     topic: dataset.topic,
-    subtopic: dataset.subtopic,
+    subtopic: dataset.subtopic || dataset.topic,
     difficulty: (dataset.difficulty || 'medium') as Difficulty,
     isPro: isMajorship,
     source: item.source || undefined,

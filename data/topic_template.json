@@ -1,0 +1,34 @@
+{
+  "category": "General Education",
+  "topic": "Your Topic Name Here",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Question or Key Term Here",
+      "definition": "The exact correct answer or concise concept definition.",
+      "rationalization": "Comprehensive explanation of why this answer is correct according to the PRC BLEPT Table of Specifications, and why other choices are distractors.",
+      "mnemonic": {
+        "title": "Memory Formula Title (Optional)",
+        "phrase": "Short memorable phrase or acronym",
+        "items": [
+          "A - First letter clue",
+          "B - Second letter clue"
+        ]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Analyze and apply key principles (Optional)",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Second Question or Concept",
+      "definition": "Correct answer / definition.",
+      "rationalization": "Rationalization explaining the concept in detail.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Evaluate teaching methods",
+      "bloomsTaxonomy": "Applying",
+      "highYield": false
+    }
+  ]
+}

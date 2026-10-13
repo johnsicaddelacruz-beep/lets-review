@@ -77,7 +77,24 @@ export const SetupView: React.FC<SetupViewProps> = ({
     topic: selectedTopic || 'all',
   });
 
-  // Calculate pool count
+  // Calculate total questions uploaded in the chosen Subject & Topic (independent of difficulty)
+  const topicMatchingItems = DataLoader.filterItems({
+    category: selectedCategory || 'all',
+    topic: selectedTopic || 'all',
+    subtopic: 'all',
+    difficulty: 'all',
+  }).filter((item) => {
+    if (!isPro && (!selectedCategory || selectedCategory === 'all')) {
+      return item.category !== 'Majorship English';
+    }
+    return true;
+  });
+
+  // Maximum allowed is min(450, total items uploaded in this topic/subject pool)
+  const maxAvailable = Math.max(20, Math.min(450, topicMatchingItems.length));
+  const minAvailable = 20;
+
+  // Calculate active pool count with difficulty filter
   const matchingItems = DataLoader.filterItems({
     category: selectedCategory || 'all',
     topic: selectedTopic || 'all',
@@ -91,7 +108,7 @@ export const SetupView: React.FC<SetupViewProps> = ({
   });
 
   const poolCount = matchingItems.length;
-  const readyCount = Math.min(selectedItemCount || 20, poolCount);
+  const readyCount = Math.min(selectedItemCount || Math.min(20, maxAvailable), poolCount);
 
   // 8 Study Modes with Mode | Explanation format
   const modesList: Array<{
@@ -489,36 +506,82 @@ export const SetupView: React.FC<SetupViewProps> = ({
             </button>
 
             {activeStep === 3 && (
-              <div className="px-4 pb-4 pt-1 border-t border-zinc-800">
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
+              <div className="px-4 pb-4 pt-1 border-t border-zinc-800 space-y-3.5">
+                <div className="pt-2 flex items-center justify-between text-xs text-zinc-400">
+                  <span>Available in pool: <strong className="text-amber-400 font-mono">{topicMatchingItems.length}</strong> items</span>
+                  <span className="font-mono text-[11px] text-zinc-500">Min: 20 · Max: 450 Qs</span>
+                </div>
+
+                {/* Preset Fast Choices */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {[
-                    { num: 10, label: '10 Qs', desc: 'Quick drill' },
-                    { num: 20, label: '20 Qs', desc: 'Recommended' },
-                    { num: 30, label: '30 Qs', desc: 'Deep dive' },
-                    { num: 50, label: '50 Qs', desc: 'Comprehensive' },
-                  ].map(({ num, label, desc }) => (
+                    { num: 20, label: '20 Qs', desc: 'Standard drill' },
+                    { num: 50, label: '50 Qs', desc: 'PRC exam chunk' },
+                    { num: 100, label: '100 Qs', desc: 'Board simulation' },
+                    { num: maxAvailable, label: `${maxAvailable} Qs (Max)`, desc: `All uploaded items` },
+                  ].map(({ num, label, desc }, idx) => {
+                    const isDisabled = topicMatchingItems.length < 20 && num > topicMatchingItems.length;
+                    return (
+                      <button
+                        key={`${num}-${idx}`}
+                        disabled={isDisabled}
+                        onClick={() => {
+                          sound.playClick();
+                          setSelectedItemCount(num);
+                          // Progress to Step 4: Difficulty Level
+                          setActiveStep(4);
+                        }}
+                        className={`p-3 rounded-xl border transition cursor-pointer text-center disabled:opacity-40 disabled:cursor-not-allowed ${
+                          selectedItemCount === num
+                            ? 'bg-amber-400 text-zinc-950 border-amber-400 shadow-sm shadow-amber-400/20'
+                            : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900'
+                        }`}
+                      >
+                        <div className="text-xs font-black">{label}</div>
+                        <div className={`text-[10px] mt-0.5 ${
+                          selectedItemCount === num ? 'text-zinc-900 font-semibold' : 'text-zinc-500'
+                        }`}>
+                          {desc}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Range Slider for Custom Count: 20 to maxAvailable (up to 450) */}
+                <div className="p-3.5 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-2">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-semibold text-zinc-300">Custom Question Count</span>
+                    <span className="font-mono font-bold text-amber-400 text-sm">
+                      {selectedItemCount || Math.min(20, maxAvailable)} Qs
+                    </span>
+                  </div>
+                  <input
+                    type="range"
+                    min={Math.min(20, maxAvailable)}
+                    max={maxAvailable}
+                    step={Math.max(1, Math.min(5, Math.floor((maxAvailable - 20) / 20) || 1))}
+                    value={selectedItemCount || Math.min(20, maxAvailable)}
+                    onChange={(e) => {
+                      const val = parseInt(e.target.value, 10);
+                      setSelectedItemCount(val);
+                    }}
+                    className="w-full accent-amber-400 cursor-pointer"
+                  />
+                  <div className="flex items-center justify-between text-[10px] font-mono text-zinc-500">
+                    <span>Min {Math.min(20, maxAvailable)}</span>
                     <button
-                      key={num}
                       onClick={() => {
                         sound.playClick();
-                        setSelectedItemCount(num);
-                        // Progress to Step 4: Difficulty Level
+                        setSelectedItemCount(selectedItemCount || Math.min(20, maxAvailable));
                         setActiveStep(4);
                       }}
-                      className={`p-3 rounded-xl border transition cursor-pointer text-center ${
-                        selectedItemCount === num
-                          ? 'bg-amber-400 text-zinc-950 border-amber-400 shadow-sm shadow-amber-400/20'
-                          : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900'
-                      }`}
+                      className="text-amber-400 hover:text-amber-300 font-bold underline cursor-pointer"
                     >
-                      <div className="text-xs font-black">{label}</div>
-                      <div className={`text-[10px] mt-0.5 ${
-                        selectedItemCount === num ? 'text-zinc-900 font-semibold' : 'text-zinc-500'
-                      }`}>
-                        {desc}
-                      </div>
+                      Confirm {selectedItemCount || Math.min(20, maxAvailable)} Qs &rarr;
                     </button>
-                  ))}
+                    <span>Max {maxAvailable}</span>
+                  </div>
                 </div>
               </div>
             )}

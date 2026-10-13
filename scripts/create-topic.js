@@ -2,14 +2,19 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 /**
- * LET Reviewer — Topic & Subtopic JSON Maker Tool
- * 
+ * LET Reviewer — Topic JSON Maker Tool
+ *
  * Usage:
+ *   node scripts/create-topic.js "General Education" "Science and Technology" "medium"
+ *   node scripts/create-topic.js "Professional Education" "Curriculum Development" "medium"
+ *   node scripts/create-topic.js "Majorship English" "Linguistics" "hard"
+ *
+ * Or with an optional distinct subtopic:
  *   node scripts/create-topic.js "General Education" "Science" "Cell Biology" "easy"
- *   node scripts/create-topic.js "Professional Education" "Child Development" "Piaget Stages" "medium"
- *   node scripts/create-topic.js "Majorship English" "Linguistics" "Phonetics" "hard"
- * 
- * If run without arguments, it generates a sample template ready to edit!
+ *
+ * If run with no arguments:
+ *   node scripts/create-topic.js
+ *   Creates a sample topic file and registers it in topics.json.
  */
 
 function sanitizeSlug(str) {
@@ -26,19 +31,34 @@ function getCategoryFolder(category) {
 
 function main() {
   const args = process.argv.slice(2);
-  
+
   const category = args[0] || 'General Education';
   const topic = args[1] || 'Sample Topic';
-  const subtopic = args[2] || 'Sample Subtopic';
-  const difficulty = args[3] || 'medium';
+  
+  // If 4 arguments are provided, 3rd is subtopic and 4th is difficulty
+  // If 3 arguments or fewer, 3rd is difficulty (or defaults to medium)
+  let subtopic = topic;
+  let difficulty = 'medium';
+
+  if (args.length >= 4) {
+    subtopic = args[2] || topic;
+    difficulty = args[3] || 'medium';
+  } else if (args.length === 3) {
+    const diffArg = args[2].toLowerCase();
+    if (['easy', 'medium', 'hard', 'advanced'].includes(diffArg)) {
+      difficulty = diffArg === 'hard' ? 'advanced' : diffArg;
+    } else {
+      subtopic = args[2];
+    }
+  }
 
   const catFolder = getCategoryFolder(category);
   const topicFolder = sanitizeSlug(topic);
-  const subtopicFolder = sanitizeSlug(subtopic);
-  const fileName = `${subtopicFolder}.json`;
+  const fileName = `${topicFolder}.json`;
 
-  const relativeDataDir = path.join('data', catFolder, topicFolder, subtopicFolder);
-  const relativePublicDir = path.join('public', 'data', catFolder, topicFolder, subtopicFolder);
+  // Standard path: data/<subject>/<topic>/<topic>.json
+  const relativeDataDir = path.join('data', catFolder, topicFolder);
+  const relativePublicDir = path.join('public', 'data', catFolder, topicFolder);
 
   const targetPath = path.resolve(relativeDataDir, fileName);
   const publicPath = path.resolve(relativePublicDir, fileName);
@@ -48,31 +68,34 @@ function main() {
     category: category,
     topic: topic,
     subtopic: subtopic,
-    difficulty: difficulty,
+    difficulty: difficulty === 'hard' ? 'advanced' : difficulty,
     items: [
       {
-        term: "Sample Question / Key Term Here",
+        term: "Sample LET Board Exam Question / Concept 1",
         definition: "The exact correct answer or concise concept definition.",
-        rationalization: "Detailed explanation of why this answer is correct according to the PRC Board Exam curriculum.",
+        rationalization: "Comprehensive rationalization explaining why this is the correct answer according to the PRC BLEPT Table of Specifications, and why other distractors are incorrect.",
         mnemonic: {
-          title: "Memory Formula Title",
-          phrase: "Short memorable phrase or acronym",
+          title: "Memory Formula Title (Optional)",
+          phrase: "Short memorable phrase or acronym (e.g. SMART, PEMDAS)",
           items: [
-            "A - First letter clue",
-            "B - Second letter clue"
+            "S - Specific",
+            "M - Measurable",
+            "A - Attainable"
           ]
         },
-        tosCompetency: "PRC Table of Specifications Competency (Optional)",
-        bloomsTaxonomy: "Remembering",
+        source: "PRC BLEPT Board Exam Reviewer",
+        tosCompetency: "PRC Competency Indicator (Optional)",
+        bloomsTaxonomy: "Understanding",
         highYield: true
       },
       {
-        term: "Second Concept or Board Exam Question",
-        definition: "Clear definition or answer for the PRC LET exam.",
-        rationalization: "Rationalization and key points of comparison with distractors.",
+        term: "Sample LET Board Exam Question / Concept 2",
+        definition: "The exact correct answer or concise concept definition.",
+        rationalization: "Comprehensive rationalization and analysis of key principles for this item.",
         mnemonic: null,
-        tosCompetency: "Analyze and evaluate teaching principles",
-        bloomsTaxonomy: "Understanding",
+        source: "PRC BLEPT Board Exam Reviewer",
+        tosCompetency: "Analyze and evaluate classroom teaching principles",
+        bloomsTaxonomy: "Applying",
         highYield: false
       }
     ]
@@ -87,13 +110,13 @@ function main() {
   fs.writeFileSync(targetPath, jsonContent, 'utf-8');
   fs.writeFileSync(publicPath, jsonContent, 'utf-8');
 
-  console.log('✅ Topic JSON successfully created at:');
+  console.log('✅ Topic JSON successfully created:');
   console.log(`   - ${relativeDataDir}/${fileName}`);
   console.log(`   - ${relativePublicDir}/${fileName}`);
 
   // Register in topics.json and public/topics.json
-  const registryRelativePath = path.join('data', catFolder, topicFolder, subtopicFolder, fileName).replace(/\\/g, '/');
-  
+  const registryRelativePath = path.join('data', catFolder, topicFolder, fileName).replace(/\\/g, '/');
+
   ['topics.json', 'public/topics.json'].forEach((regPath) => {
     const fullReg = path.resolve(regPath);
     if (fs.existsSync(fullReg)) {
@@ -110,7 +133,7 @@ function main() {
     }
   });
 
-  console.log('\n🎉 Ready! Run "npm run build" to compile and include in the reviewer app.');
+  console.log('\n🎉 Done! The new topic is now loaded into the LET Reviewer.');
 }
 
 main();

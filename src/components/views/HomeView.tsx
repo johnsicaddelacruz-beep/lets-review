@@ -371,11 +371,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
               title={isPro ? "Simulate the 150-item PRC Board Examination" : "Upgrade to Pro to unlock 150-item Mock Board Exam"}
             >
               <Lock className="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform" />
-              <span className="text-zinc-100 group-hover:text-amber-300 transition-colors flex items-center gap-1.5 flex-wrap justify-center">
-                <span>Answer Mock Board Exam</span>
-                <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/30 font-mono">
-                  PRO
-                </span>
+              <span className="text-zinc-100 group-hover:text-amber-300 transition-colors">
+                Answer Mock Board Exam
               </span>
             </button>
           </div>
