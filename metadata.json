@@ -1,0 +1,6 @@
+{
+  "name": "LET Reviewer — Licensure Examination Prep",
+  "description": "Free, offline-first interactive study app for the Licensure Examination for Professional Teachers (LET) by Sir JC Dela Cruz with 8 study modes, rationalizations, and offline support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

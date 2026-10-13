@@ -1,0 +1,308 @@
+{
+  "category": "General Education",
+  "topic": "Rizal",
+  "subtopic": "Rizal Law",
+  "difficulty": "easy",
+  "items": [
+    {
+      "term": "Republic Act No. 1425",
+      "definition": "The law that mandates all public and private schools, colleges, and universities in the Philippines to include courses on the life, works, and writings of Jose Rizal in their curricula.",
+      "rationalization": "RA 1425 was enacted to instill patriotism, nationalism, and civic virtues in the Filipino youth by studying Rizal's heroism and ideals.",
+      "mnemonic": {
+        "title": "Rizal Law RA Number",
+        "phrase": "Rizal Always 1425",
+        "items": ["R - Republic Act", "A - Act 1425", "1425 - June 12, 1956"]
+      }
+    },
+    {
+      "term": "Senator Claro M. Recto",
+      "definition": "The main author and passionate champion of the original Senate Bill No. 438 (Rizal Bill) who defended it against strong religious opposition.",
+      "rationalization": "Claro M. Recto authored the bill in 1956, facing heavy resistance from the Catholic Church who claimed the novels attacked Catholic dogmas.",
+      "mnemonic": {
+        "title": "Author vs Sponsor",
+        "phrase": "Recto Wrote It, Laurel Sponsored It",
+        "items": ["Recto = Author / Writer", "Laurel = Committee Sponsor / Chairman"]
+      }
+    },
+    {
+      "term": "Senator Jose P. Laurel Sr.",
+      "definition": "The Chairman of the Committee on Education who sponsored and co-authored Senate Bill No. 438, and drafted the compromise amendment that reconciled conflicting parties.",
+      "rationalization": "As Committee on Education chair, Laurel successfully defended the bill on the floor and introduced the compromise allowing students to apply for exemption from reading unexpurgated editions for reasons of religious belief.",
+      "mnemonic": {
+        "title": "Laurel the Peacemaker",
+        "phrase": "Laurel Leaves of Peace (Compromise Sponsor)",
+        "items": ["L - Laurel", "P - Peacemaker", "C - Compromise Sponsor"]
+      }
+    },
+    {
+      "term": "President Ramon Magsaysay",
+      "definition": "The Philippine President who signed Republic Act No. 1425 into law on June 12, 1956 (Independence Day).",
+      "rationalization": "President Ramon Magsaysay, known as the 'Champion of the Masses', approved the bill into law on the 58th anniversary of Philippine Independence.",
+      "mnemonic": {
+        "title": "Signer of the Law",
+        "phrase": "Magsaysay Made It Law on Independence Day",
+        "items": ["M - Magsaysay", "I - Independence Day", "56 - Year 1956"]
+      }
+    },
+    {
+      "term": "June 12, 1956",
+      "definition": "The exact date when Republic Act No. 1425 was officially signed into law by President Ramon Magsaysay.",
+      "rationalization": "Signed intentionally on June 12 (Philippine Independence Day) to honor national freedom and Rizal's contributions to the awakening of Filipino national consciousness.",
+      "mnemonic": {
+        "title": "Date of RA 1425",
+        "phrase": "6-12-56: Freedom Month, Freedom Law",
+        "items": ["June 12 = Independence Day", "1956 = Signed into law"]
+      }
+    },
+    {
+      "term": "Senate Bill No. 438",
+      "definition": "The original legislative bill filed in the Philippine Senate by Claro M. Recto proposing compulsory reading of Rizal's unexpurgated novels.",
+      "rationalization": "SB 438 triggered intense debates in the 3rd Congress between nationalist lawmakers and conservative religious sectors.",
+      "mnemonic": {
+        "title": "Senate Bill Number",
+        "phrase": "Senate 438 (4 + 3 + 8 = 15, Near 1425)",
+        "items": ["SB = Senate Bill", "438 = Senate version", "HB 5561 = House counterpart"]
+      }
+    },
+    {
+      "term": "House Bill No. 5561",
+      "definition": "The counterpart bill of the Rizal Bill in the House of Representatives, principally authored by Congressman Jacobo Z. Gonzales.",
+      "rationalization": "HB 5561 was sponsored by Congressman Jacobo Gonzales of Laguna and filed simultaneously with SB 438.",
+      "mnemonic": {
+        "title": "House Bill Number",
+        "phrase": "House 5561 by Jacobo",
+        "items": ["HB = House Bill", "5561 = House number", "Jacobo Gonzales = Laguna rep"]
+      }
+    },
+    {
+      "term": "Unexpurgated Edition",
+      "definition": "The complete, uncensored, and original version of Rizal's novels Noli Me Tangere and El Filibusterismo mandated by Section 1 of RA 1425 for collegiate level.",
+      "rationalization": "'Unexpurgated' means untouched, unabridged, and not stripped of passages critical of Spanish friars and ecclesiastical abuses.",
+      "mnemonic": {
+        "title": "Unexpurgated Meaning",
+        "phrase": "UN-Cut, UN-Censored, Original",
+        "items": ["UN - Unexpurgated", "C - Complete text", "O - Original words"]
+      }
+    },
+    {
+      "term": "Section 1 of RA 1425",
+      "definition": "Mandates courses on Rizal's life, works, and writings, particularly the unexpurgated editions of Noli Me Tangere and El Filibusterismo, as compulsory in all colleges and universities.",
+      "rationalization": "Section 1 forms the core mandate of the Rizal Law for higher education curricula across all degree programs.",
+      "mnemonic": {
+        "title": "Section 1 Focus",
+        "phrase": "Section 1 = Curricula & Courses",
+        "items": ["Section 1", "Curriculum mandate", "Unexpurgated novels in college"]
+      }
+    },
+    {
+      "term": "Section 2 of RA 1425",
+      "definition": "Obliges all collegiate libraries in the Philippines to keep adequate copies of the original, unexpurgated editions of Noli and Fili, as well as Rizal's other works and biographies.",
+      "rationalization": "Section 2 ensures student access by mandating sufficient library copies in proportion to the student population.",
+      "mnemonic": {
+        "title": "Section 2 Focus",
+        "phrase": "Section 2 = Books on Shelves (Libraries)",
+        "items": ["2 - Two copies / Library shelves", "Access for all students"]
+      }
+    },
+    {
+      "term": "Section 3 of RA 1425",
+      "definition": "Directs the Board of National Education to translate Rizal's writings into English, Tagalog, and major Philippine dialects, and distribute them free of charge through purok organizations.",
+      "rationalization": "Section 3 promotes nationwide democratization of Rizal's literature to non-English or Spanish speakers across barangays and communities.",
+      "mnemonic": {
+        "title": "Section 3 Focus",
+        "phrase": "Section 3 = Translation & Free Distribution",
+        "items": ["3 - Dialects & Languages", "Translations for the people"]
+      }
+    },
+    {
+      "term": "Section 4 of RA 1425",
+      "definition": "Strictly prohibits any discussion or interpretation of religious doctrines by teachers or school officials under the guise of teaching Rizal courses.",
+      "rationalization": "Section 4 prevents proselytization and religious discrimination in the classroom while discussing Rizal's historical critiques of the clergy.",
+      "mnemonic": {
+        "title": "Section 4 Focus",
+        "phrase": "Section 4 = Forbid Religious Preaching",
+        "items": ["4 - Forbid doctrinal preaching", "Neutral civic classroom"]
+      }
+    },
+    {
+      "term": "Section 5 of RA 1425",
+      "definition": "Authorizes the annual appropriation of the sum of three hundred thousand pesos (P300,000) to implement the provisions of the Rizal Act.",
+      "rationalization": "P300,000 was allocated in 1956 to fund the translation, printing, and distribution of Rizal's works to public libraries.",
+      "mnemonic": {
+        "title": "Budget Appropriation",
+        "phrase": "300K for 1425",
+        "items": ["Php 300,000", "Government printing fund"]
+      }
+    },
+    {
+      "term": "Section 6 of RA 1425",
+      "definition": "The effectivity clause stating that the Act shall take effect upon its approval on June 12, 1956.",
+      "rationalization": "Section 6 made the law immediately binding across all Philippine educational institutions.",
+      "mnemonic": {
+        "title": "Section 6 Effectivity",
+        "phrase": "Six = Starts Immediately",
+        "items": ["6 - Immediate effectivity upon signing"]
+      }
+    },
+    {
+      "term": "Religious Exemption Clause",
+      "definition": "The compromise amendment allowing students to be exempted from reading the unexpurgated novels on grounds of religious belief through a written sworn statement.",
+      "rationalization": "Note: Exemption applies ONLY to reading the unexpurgated editions of Noli and Fili, but NOT to taking the Rizal course itself, which remains strictly mandatory for all.",
+      "mnemonic": {
+        "title": "Exemption Rule",
+        "phrase": "Exempted from Books, NOT from Class",
+        "items": ["Course = ALWAYS mandatory", "Unexpurgated book = Can apply exemption with sworn statement"]
+      }
+    },
+    {
+      "term": "Fr. Jesus Cavanna",
+      "definition": "The Catholic priest who spearheaded religious opposition to the bill, claiming Noli Me Tangere contained 120 anti-Catholic passages and only 25 patriotic ones.",
+      "rationalization": "Fr. Cavanna argued that Rizal's novels were aimed at attacking Catholic dogmas rather than purely celebrating nationalism.",
+      "mnemonic": {
+        "title": "Opponent Cavanna",
+        "phrase": "Cavanna Counted Critiques (120 vs 25)",
+        "items": ["Cavanna = Priest critic", "120 attacks claimed"]
+      }
+    },
+    {
+      "term": "Rufino Santos",
+      "definition": "Archbishop of Manila who issued the pastoral letter condemning the compulsory reading of Rizal's novels as a violation of canonical law.",
+      "rationalization": "The Pastoral Letter of the Catholic Hierarchy warned that reading the novels would endanger Catholic faith and violate Canon Law 1399.",
+      "mnemonic": {
+        "title": "Archbishop Opposition",
+        "phrase": "Santos Sent Pastoral Letter",
+        "items": ["Santos = Archbishop of Manila", "Pastoral Letter vs SB 438"]
+      }
+    },
+    {
+      "term": "Canon Law 1399",
+      "definition": "The Catholic Church canon cited by opponents prohibiting Catholics from reading books that attack religion, faith, or good morals without ecclesiastical permission.",
+      "rationalization": "Catholic bishops invoked Canon Law 1399 to threaten Catholic school closures and boycotts if SB 438 passed without amendments.",
+      "mnemonic": {
+        "title": "Canon 1399",
+        "phrase": "1399: Banned Books Canon",
+        "items": ["Canon 1399 = Prohibited books list", "Church defense against SB 438"]
+      }
+    },
+    {
+      "term": "Board of National Education (BNE)",
+      "definition": "The government body designated by RA 1425 to promulgate the rules and regulations implementing the law, now succeeded by CHED and DepEd.",
+      "rationalization": "The Board of National Education was tasked with ensuring school compliance, syllabus design, and publication in major languages.",
+      "mnemonic": {
+        "title": "Implementing Agency",
+        "phrase": "BNE = Board of National Education",
+        "items": ["BNE drafted IRR", "CHED & DepEd continue implementation"]
+      }
+    },
+    {
+      "term": "Noli Me Tangere",
+      "definition": "Rizal's first socio-historical novel published in Berlin (1887), Latin for 'Touch Me Not' (from John 20:17), diagnosing the social cancer of the Philippines.",
+      "rationalization": "Noli Me Tangere exposed the corruption of the Spanish friars and civil guards, comparing the country's condition to an incurable cancer.",
+      "mnemonic": {
+        "title": "Noli Basics",
+        "phrase": "Noli = Touch Me Not, Berlin 1887, Cancer",
+        "items": ["Noli = Romantic/Social exposé", "Berlin 1887", "Dedicated to Motherland"]
+      }
+    },
+    {
+      "term": "El Filibusterismo",
+      "definition": "Rizal's political sequel published in Ghent, Belgium (1891), translated as 'The Reign of Greed' or 'The Subversive', dedicated to the martyred priests GOMBURZA.",
+      "rationalization": "Fili is darker, more revolutionary, exploring whether violent uprising or moral education is the answer to tyranny.",
+      "mnemonic": {
+        "title": "Fili Basics",
+        "phrase": "Fili = The Subversive, Ghent 1891, GOMBURZA",
+        "items": ["Fili = Political revolution", "Ghent 1891", "Dedicated to GOMBURZA"]
+      }
+    },
+    {
+      "term": "Maximo Viola",
+      "definition": "The wealthy Filipino doctor and friend of Rizal who financed the publication of Noli Me Tangere in Berlin when Rizal was impoverished.",
+      "rationalization": "Known as the 'Savior of Noli Me Tangere', Viola loaned Rizal 300 pesos to print 2,000 copies in 1887.",
+      "mnemonic": {
+        "title": "Savior of Noli",
+        "phrase": "Viola Saved Noli with Violins of Cash",
+        "items": ["Viola = Noli savior", "Ventura = Fili savior"]
+      }
+    },
+    {
+      "term": "Valentin Ventura",
+      "definition": "The wealthy compatriot in Paris who loaned Rizal funds to finish the printing of El Filibusterismo in Ghent, Belgium in 1891.",
+      "rationalization": "Known as the 'Savior of El Filibusterismo', Ventura sent funds just as printing had been suspended for lack of money.",
+      "mnemonic": {
+        "title": "Savior of Fili",
+        "phrase": "Ventura Saved Fili Adventure",
+        "items": ["Ventura = Fili funder", "Original Fili manuscript gifted to him"]
+      }
+    },
+    {
+      "term": "GOMBURZA (Gomez, Burgos, Zamora)",
+      "definition": "The three secular Filipino priests executed by garrote on February 17, 1872 in Bagumbayan following the Cavite Mutiny, to whom Rizal dedicated El Filibusterismo.",
+      "rationalization": "Rizal was 11 years old when GOMBURZA were executed. The tragedy deeply awakened his nationalist mission.",
+      "mnemonic": {
+        "title": "GOMBURZA Execution",
+        "phrase": "1872: Three Priests in Bagumbayan",
+        "items": ["Mariano Gomez", "Jose Burgos", "Jacinto Zamora"]
+      }
+    },
+    {
+      "term": "Senator Roseller Lim",
+      "definition": "A senator who initially opposed the compulsory reading of the novels but voted in favor after Laurel's compromise amendment was accepted.",
+      "rationalization": "Lim of Zamboanga represented Catholic lawmakers who insisted on protecting freedom of conscience before voting yes.",
+      "mnemonic": {
+        "title": "Compromise Voter",
+        "phrase": "Lim Reached the Compromise Limit",
+        "items": ["Roseller Lim", "Voted yes after compromise"]
+      }
+    },
+    {
+      "term": "CHED Memorandum Order No. 03, s. 1994",
+      "definition": "Commission on Higher Education order reinforcing the strict implementation of RA 1425 in all tertiary colleges and universities across the country.",
+      "rationalization": "Issued in 1994 to correct universities that had merged or diluted the 3-unit Rizal course with other humanities subjects.",
+      "mnemonic": {
+        "title": "CHED Order on Rizal",
+        "phrase": "CMO 3, 1994: Re-enforcing RA 1425",
+        "items": ["CHED Memo 03", "3-unit standalone subject requirement"]
+      }
+    },
+    {
+      "term": "Civic Virtues and Patriotism",
+      "definition": "The two primary constitutional educational objectives articulated in the preamble and text of RA 1425.",
+      "rationalization": "RA 1425 explicitly states that schools must develop moral character, personal discipline, civic conscience, and teach the duties of citizenship.",
+      "mnemonic": {
+        "title": "Primary Objectives",
+        "phrase": "C-P-M-D: Conscience, Patriotism, Morals, Discipline",
+        "items": ["Civic conscience", "Patriotism", "Moral character", "Discipline"]
+      }
+    },
+    {
+      "term": "Expurgated Edition",
+      "definition": "A censored version of Rizal's novels where controversial passages regarding the Catholic Church and Spanish friars were removed or altered.",
+      "rationalization": "Under RA 1425, expurgated editions are permitted only for elementary and secondary schools, or students with approved religious exemptions in college.",
+      "mnemonic": {
+        "title": "Expurgated Meaning",
+        "phrase": "Expurgated = Purged / Cut",
+        "items": ["E - Edited", "P - Purged", "C - Censored"]
+      }
+    },
+    {
+      "term": "Senator Francisco 'Soc' Rodrigo",
+      "definition": "A prominent Catholic senator and president of Catholic Action who vehemently argued against SB 438 on religious grounds.",
+      "rationalization": "Soc Rodrigo stated on the Senate floor that forcing Catholic students to read books attacking their faith was a violation of freedom of religion.",
+      "mnemonic": {
+        "title": "Senate Opponent",
+        "phrase": "Soc Rodrigo = Catholic Action Voice",
+        "items": ["Soc Rodrigo", "Staunch defender of Church stance in Senate"]
+      }
+    },
+    {
+      "term": "Penalties for Non-Compliance",
+      "definition": "Sanctions specified under RA 1425 including disciplinary action against school officials and potential revocation of educational permits or recognition.",
+      "rationalization": "Section 4 empowers the Department of Education / CHED to impose disciplinary sanctions on institutions refusing to teach Rizal.",
+      "mnemonic": {
+        "title": "Enforcement Sanction",
+        "phrase": "Sanctions: Permit Revocation & Discipline",
+        "items": ["Permit loss", "Administrative fines", "Official reprimand"]
+      }
+    }
+  ]
+}

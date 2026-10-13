@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile information and subscription status",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "tier": { "type": "string", "enum": ["free", "pro"] },
+        "isPro": { "type": "boolean" },
+        "paymentReference": { "type": "string" },
+        "purchasedAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "tier", "isPro"]
+    },
+    "UserProgress": {
+      "title": "UserProgress",
+      "description": "User study statistics, bookmarks, and mastered terms",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "totalAnswered": { "type": "number" },
+        "totalCorrect": { "type": "number" },
+        "streakRecord": { "type": "number" },
+        "masteredTerms": { "type": "array" },
+        "bookmarkedTerms": { "type": "array" },
+        "modeSessionsCount": { "type": "object" },
+        "lastSyncedAt": { "type": "string" }
+      },
+      "required": ["userId", "totalAnswered", "totalCorrect"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User account document"
+    },
+    "/users/{userId}/progress/stats": {
+      "schema": "UserProgress",
+      "description": "User study progress and synced exam metrics"
+    }
+  }
+}

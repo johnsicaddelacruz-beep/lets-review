@@ -1,0 +1,410 @@
+{
+  "category": "Professional Education",
+  "topic": "Teaching Profession",
+  "subtopic": "Philosophical Heritage",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Essentialism",
+      "definition": "Educational philosophy advocating traditional basic skills (3Rs: Reading, 'Riting, 'Rithmetic) and core academic subjects taught through direct, teacher-centered instruction and rigorous discipline.",
+      "rationalization": "Founded by William Bagley, Essentialism holds that schools should instill common cultural heritage, core knowledge, and hard work to prepare students to be contributing citizens.",
+      "source": "PRC-BPT TOS Domain 1 (Foundations of Education); Bilbao, P. et al., The Teaching Profession (4th ed.), Ch. 1",
+      "tosCompetency": "Analyze educational philosophies and their institutional applications",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true,
+      "mnemonic": {
+        "title": "Essentialism Core",
+        "phrase": "Essential = Back to Basics & 3Rs",
+        "items": ["William Bagley", "Core curriculum (3Rs)", "Teacher-directed mastery"]
+      }
+    },
+    {
+      "term": "Perennialism",
+      "definition": "Educational philosophy asserting that human nature is unchanging and education should focus on eternal, universal truths through the study of the Great Books and classic humanities.",
+      "rationalization": "Championed by Robert Maynard Hutchins and Mortimer Adler, Perennialism cultivates rational intellect by engaging with timeless ideas that have stood the test of centuries.",
+      "source": "PRC-BPT TOS Domain 1; Corpuz & Salandanan, Principles of Teaching 1, Ch. 2",
+      "tosCompetency": "Distinguish classical educational philosophies in contemporary schooling",
+      "bloomsTaxonomy": "Analyzing",
+      "highYield": true,
+      "mnemonic": {
+        "title": "Perennialism Key",
+        "phrase": "Perennial = Plants That Last Forever (Great Books)",
+        "items": ["Everlasting / Timeless truths", "Great Books of Western World", "Rational thought cultivation"]
+      }
+    },
+    {
+      "term": "Progressivism",
+      "definition": "Philosophy promoting experiential 'learning by doing', democratic classrooms, problem-solving, and child-centered curricula based on students' real-life needs and interests.",
+      "rationalization": "Founded by John Dewey, Progressivism rejects rote memorization in favor of hands-on projects, group cooperation, and scientific inquiry reflecting society.",
+      "source": "PRC-BPT TOS Domain 1; John Dewey, Democracy and Education (1916)",
+      "tosCompetency": "Apply student-centered educational theories to classroom instructional design",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true,
+      "mnemonic": {
+        "title": "Progressivism Motto",
+        "phrase": "Dewey = Do It! (Learning by Doing)",
+        "items": ["John Dewey", "Hands-on projects", "Child-centered & democratic"]
+      }
+    },
+    {
+      "term": "Existentialism",
+      "definition": "Philosophy stressing individual freedom, personal choice, authentic self-definition, and accepting the moral responsibility of one's decisions without predefined societal scripts.",
+      "rationalization": "Influenced by Jean-Paul Sartre and Soren Kierkegaard ('existence precedes essence'). In education, it allows students to choose their own learning paths and self-paced projects.",
+      "mnemonic": {
+        "title": "Existentialism Rule",
+        "phrase": "I Exist, Therefore I Choose",
+        "items": ["Existence precedes essence", "Free will & choice", "Individual uniqueness"]
+      }
+    },
+    {
+      "term": "Social Reconstructionism",
+      "definition": "Philosophy that views schools as catalysts and agents for social change, equipping students to critically address societal crises like poverty, injustice, and environmental damage.",
+      "rationalization": "Led by George Counts and Theodore Brameld, it urges teachers and schools to lead community reconstruction rather than merely transmitting the existing social status quo.",
+      "mnemonic": {
+        "title": "Reconstructionism Aim",
+        "phrase": "Rebuild Society via the Classroom",
+        "items": ["Social reform / transformation", "George Counts", "Solve real-world crises"]
+      }
+    },
+    {
+      "term": "Critical Pedagogy",
+      "definition": "Educational approach developed by Paulo Freire that awakens critical consciousness ('conscientização') in students to challenge oppression and transform social structures.",
+      "rationalization": "Freire condemned the 'banking concept of education' where teachers deposit knowledge into passive learners, advocating instead 'problem-posing' dialogical education.",
+      "mnemonic": {
+        "title": "Freire Critical Pedagogy",
+        "phrase": "Freire Fights Banking Education",
+        "items": ["Paulo Freire", "Pedagogy of the Oppressed", "Dialogical & liberating"]
+      }
+    },
+    {
+      "term": "Behaviorism",
+      "definition": "Psychological philosophy asserting that learning is a measurable change in observable behavior shaped by environmental stimuli, conditioning, and reinforcement schedules.",
+      "rationalization": "Associated with B.F. Skinner, John B. Watson, and Ivan Pavlov. Uses positive reinforcement, negative reinforcement, and drills to mold student habits.",
+      "mnemonic": {
+        "title": "Behaviorism S-R",
+        "phrase": "Stimulus + Response + Reinforcement",
+        "items": ["Observable behaviors only", "Skinner & Pavlov", "Reinforcement molds habits"]
+      }
+    },
+    {
+      "term": "Constructivism",
+      "definition": "Learning theory positing that learners actively construct new knowledge and personal meaning from their experiences rather than passively receiving information.",
+      "rationalization": "Pioneered by Jean Piaget (cognitive constructivism) and Lev Vygotsky (social constructivism). Emphasizes prior knowledge, scaffolding, discovery, and reflection.",
+      "mnemonic": {
+        "title": "Constructivism Action",
+        "phrase": "Construct Your Own Knowledge",
+        "items": ["Active meaning-maker", "Piaget & Vygotsky", "Prior knowledge foundation"]
+      }
+    },
+    {
+      "term": "Idealism",
+      "definition": "Philosophy originating with Plato holding that reality consists of spiritual ideas and unchanging mental constructs rather than physical matter.",
+      "rationalization": "Idealist education emphasizes character development, intellectual contemplation, moral ideals, and the Socratic method to draw out innate truths from the soul.",
+      "mnemonic": {
+        "title": "Idealism Origin",
+        "phrase": "Plato's Ideas in the Mind",
+        "items": ["Mind over matter", "Plato & Socrates", "Enduring moral virtues"]
+      }
+    },
+    {
+      "term": "Realism",
+      "definition": "Philosophy founded by Aristotle asserting that reality exists independently of human minds and can be discovered objectively through sensory perception and the scientific method.",
+      "rationalization": "Realist classrooms emphasize natural sciences, objective facts, lab experiments, categorization, and observable natural laws.",
+      "mnemonic": {
+        "title": "Realism Fact",
+        "phrase": "Realism = Real World Outside the Mind",
+        "items": ["Aristotle", "Sensory observation", "Scientific method & facts"]
+      }
+    },
+    {
+      "term": "Pragmatism (Experimentalism)",
+      "definition": "Philosophy founded by Charles Sanders Peirce and William James asserting that the meaning and truth of an idea lies in its practical consequences and working utility.",
+      "rationalization": "'If it works in practice, it is true.' Pragmatism provided the foundational epistemology for Dewey's progressive education.",
+      "mnemonic": {
+        "title": "Pragmatism Test",
+        "phrase": "Practical Proof = Pragmatism",
+        "items": ["Practical consequences", "Utility and action", "Truth is provisional"]
+      }
+    },
+    {
+      "term": "Utilitarianism",
+      "definition": "Ethical philosophy formulated by Jeremy Bentham and John Stuart Mill stating that the moral worth of an action is determined by producing the greatest happiness for the greatest number.",
+      "rationalization": "In education and school policy, utilitarian decisions prioritize programs and resource allocations that benefit the maximum majority of learners.",
+      "mnemonic": {
+        "title": "Utilitarian Formula",
+        "phrase": "Greatest Good for Greatest Number",
+        "items": ["Bentham & Mill", "Consequentialist ethics", "Majority welfare"]
+      }
+    },
+    {
+      "term": "Scholasticism",
+      "definition": "Medieval philosophical approach synthesized by St. Thomas Aquinas that harmonizes Christian religious revelation with Aristotelian rational philosophy.",
+      "rationalization": "Employs dialectical reasoning and disputation to prove that faith and human reason are complementary gifts of God (Thomism).",
+      "mnemonic": {
+        "title": "Scholasticism Synthesis",
+        "phrase": "Thomas Aquinas: Faith Meets Reason",
+        "items": ["St. Thomas Aquinas", "Faith + Aristotelian logic", "Thomistic Catholic schools"]
+      }
+    },
+    {
+      "term": "Hedonism",
+      "definition": "Philosophical doctrine holding that pleasure is the ultimate good and pain is the principal evil, warning in its refined Epicurean form against excess.",
+      "rationalization": "In education, teachers must avoid purely hedonistic short-term gratification, channeling natural interests toward long-term intellectual joy.",
+      "mnemonic": {
+        "title": "Hedonism Drive",
+        "phrase": "Hedonism Seeks Pleasure",
+        "items": ["Pleasure pursuit", "Avoidance of distress", "Epicurean moderation"]
+      }
+    },
+    {
+      "term": "Stoicism",
+      "definition": "Ancient Hellenistic philosophy teaching emotional self-control, acceptance of universal fate, endurance of hardship, and strict adherence to moral duty.",
+      "rationalization": "Championed by Epictetus, Seneca, and Marcus Aurelius. Trains teachers and students to cultivate inner tranquility and focus only on what is within their control.",
+      "mnemonic": {
+        "title": "Stoic Composure",
+        "phrase": "Stoic = Unshakeable Self-Control",
+        "items": ["Control what you can", "Endure adversity with dignity", "Moral duty"]
+      }
+    },
+    {
+      "term": "Humanism",
+      "definition": "Educational orientation rooted in Maslow and Carl Rogers emphasizing the whole child, affective emotional growth, self-actualization, and empathetic teacher-student rapport.",
+      "rationalization": "Humanistic educators maintain that basic emotional and safety needs must be met before optimal cognitive learning and self-fulfillment can take place.",
+      "mnemonic": {
+        "title": "Humanism Whole Person",
+        "phrase": "Heart First, Mind Follows (Rogers & Maslow)",
+        "items": ["Carl Rogers & Maslow", "Self-actualization", "Affective domain & empathy"]
+      }
+    },
+    {
+      "term": "Rationalism",
+      "definition": "Epistemological view stating that reason, deduction, and innate intellect are the primary sources of knowledge, rather than sensory experience.",
+      "rationalization": "Founded by Rene Descartes ('Cogito, ergo sum'). Promotes mathematical deductive proofs, logic syllogisms, and rigorous mental deduction.",
+      "mnemonic": {
+        "title": "Rationalism Mind",
+        "phrase": "Descartes Deduces Through Reason",
+        "items": ["Deductive logic", "Innate rational ideas", "Cogito ergo sum"]
+      }
+    },
+    {
+      "term": "Empiricism",
+      "definition": "Epistemological doctrine asserting that all knowledge originates solely through sensory experience and inductive observation of the external world.",
+      "rationalization": "John Locke formulated the human mind as a 'tabula rasa' (blank tablet) waiting to be inscribed by sensations and reflection.",
+      "mnemonic": {
+        "title": "Empiricism Senses",
+        "phrase": "Empiricism = Experience via the Senses",
+        "items": ["John Locke", "Tabula Rasa (blank slate)", "Inductive observation"]
+      }
+    },
+    {
+      "term": "Positivism",
+      "definition": "Philosophical system created by Auguste Comte stating that authentic knowledge is strictly limited to verifiable scientific facts and empirical data.",
+      "rationalization": "Positivism rejects religious dogma and metaphysical speculation, insisting that curriculum be rooted in objective, measurable scientific evidence.",
+      "mnemonic": {
+        "title": "Positivism Science",
+        "phrase": "Positive Facts, No Metaphysics",
+        "items": ["Auguste Comte", "Scientific verification only", "Quantitative data"]
+      }
+    },
+    {
+      "term": "Naturalism",
+      "definition": "Educational philosophy of Jean-Jacques Rousseau asserting that human nature is inherently good and children should unfold according to natural developmental stages without artificial societal corruption.",
+      "rationalization": "Detailed in Rousseau's masterpiece 'Emile', advocating education in harmony with nature and sensory exploration before formal book learning.",
+      "mnemonic": {
+        "title": "Naturalism Rousseau",
+        "phrase": "Rousseau's Emile: Let Nature Teach",
+        "items": ["Jean-Jacques Rousseau", "Emile", "Inherent goodness of child"]
+      }
+    },
+    {
+      "term": "Eclecticism",
+      "definition": "The professional pedagogical approach of selecting, combining, and synthesizing best elements from different philosophies to fit the diverse needs of learners.",
+      "rationalization": "Modern professional teachers in the Philippines are expected to be eclectic—employing direct instruction for basic phonics (essentialist) and group inquiry for science projects (progressivist).",
+      "mnemonic": {
+        "title": "Eclectic Balance",
+        "phrase": "Eclectic = Best of All Worlds",
+        "items": ["Blend multiple schools of thought", "Adapt to learner context", "Flexibility"]
+      }
+    },
+    {
+      "term": "Epistemology",
+      "definition": "The major branch of philosophy that investigates the nature, sources, validity, and limitations of human knowledge ('How do we know what is true?').",
+      "rationalization": "Epistemology shapes curriculum design and teaching methods by defining whether truth is discovered through reason, revelation, or sensory experiments.",
+      "mnemonic": {
+        "title": "Epistemology Question",
+        "phrase": "Epistemology = Exploration of Knowledge",
+        "items": ["Nature of knowledge", "Sources of truth", "How we know"]
+      }
+    },
+    {
+      "term": "Metaphysics (Ontology)",
+      "definition": "The branch of philosophy concerned with the fundamental nature of ultimate reality, being, and the universe ('What is real?').",
+      "rationalization": "A teacher's metaphysical outlook determines whether their classroom prioritizes spiritual values (idealism) or physical physical facts (realism).",
+      "mnemonic": {
+        "title": "Metaphysics Question",
+        "phrase": "Metaphysics = Meaning of Reality",
+        "items": ["Ultimate reality", "Nature of existence", "Mind vs Matter"]
+      }
+    },
+    {
+      "term": "Axiology",
+      "definition": "The branch of philosophy that studies values and valuation, divided into Ethics (moral values) and Aesthetics (beauty and artistic taste).",
+      "rationalization": "Axiology guides teachers in instilling moral character, civic values, and aesthetic appreciation in Philippine basic education.",
+      "mnemonic": {
+        "title": "Axiology Value",
+        "phrase": "Axiology = Appraisal of Values",
+        "items": ["Values study", "Ethics (right vs wrong)", "Aesthetics (beauty)"]
+      }
+    },
+    {
+      "term": "Ethics",
+      "definition": "The subdivision of axiology that examines moral principles, right versus wrong conduct, and duties governing professional human behavior.",
+      "rationalization": "Codified for Filipino teachers under the Code of Ethics for Professional Teachers (Resolution No. 435, s. 1997).",
+      "mnemonic": {
+        "title": "Ethics Definition",
+        "phrase": "Ethics = Evaluates Conduct",
+        "items": ["Moral standards", "Right vs wrong", "Professional code"]
+      }
+    },
+    {
+      "term": "Aesthetics",
+      "definition": "The subdivision of axiology investigating criteria for beauty, artistic taste, expression, and the emotional impact of fine arts.",
+      "rationalization": "Aesthetic education enriches MAPEH (Music, Arts, PE, Health) in Philippine curricula to foster cultural identity and creative imagination.",
+      "mnemonic": {
+        "title": "Aesthetics Beauty",
+        "phrase": "Aesthetics = Appreciation of Art",
+        "items": ["Beauty & harmony", "Artistic creation", "Cultural appreciation"]
+      }
+    },
+    {
+      "term": "Logic",
+      "definition": "The branch of philosophy that investigates the principles of correct reasoning, formal arguments, and valid inference.",
+      "rationalization": "Divided into deductive logic (from general premise to specific conclusion) and inductive logic (from specific observations to general principle).",
+      "mnemonic": {
+        "title": "Logic Reasoning",
+        "phrase": "Logic = Laws of Valid Reasoning",
+        "items": ["Deductive (general to specific)", "Inductive (specific to general)", "Sound arguments"]
+      }
+    },
+    {
+      "term": "Socratic Method (Maieutics)",
+      "definition": "A pedagogical technique of disciplined questioning (elenchus) that stimulates critical thinking and illuminates underlying presuppositions to deliver truth.",
+      "rationalization": "Socrates compared himself to a midwife assisting the birth of innate ideas already slumbering inside the learner's mind.",
+      "mnemonic": {
+        "title": "Socratic Technique",
+        "phrase": "Socrates Asks, Students Awaken",
+        "items": ["Disciplined probing questions", "Midwife of ideas (Maieutics)", "Platonic dialogue"]
+      }
+    },
+    {
+      "term": "Banking Concept of Education",
+      "definition": "Paulo Freire's critical metaphor describing traditional classrooms where teachers deposit knowledge into passive student receptacles who merely receive and memorize.",
+      "rationalization": "Freire advocated replacing banking education with problem-posing dialogue where teachers and students become co-investigators of reality.",
+      "mnemonic": {
+        "title": "Banking Concept",
+        "phrase": "Deposit Knowledge = Oppression",
+        "items": ["Passive reception", "Teacher deposits, students store", "Critiqued by Paulo Freire"]
+      }
+    },
+    {
+      "term": "Tabula Rasa",
+      "definition": "John Locke's Latin philosophical metaphor meaning 'blank slate', proposing that humans are born without innate ideas and acquire all knowledge through experience.",
+      "rationalization": "Underpins the behaviorist and empiricist belief that a student's environment and education exert decisive influence over their development.",
+      "mnemonic": {
+        "title": "Tabula Rasa Slate",
+        "phrase": "Tabula = Tablet, Rasa = Erased/Blank",
+        "items": ["John Locke", "Blank slate at birth", "Nurture shapes mind"]
+      }
+    },
+    {
+      "term": "Great Books Program",
+      "definition": "Curricular model formulated by Robert Hutchins and Mortimer Adler basing higher education on reading foundational classical works across literature, philosophy, and science.",
+      "rationalization": "A signature perennialist curriculum designed to discipline the intellect by dialoguing with humanity's greatest minds.",
+      "mnemonic": {
+        "title": "Great Books Canon",
+        "phrase": "Great Books = Perennial Classics",
+        "items": ["Hutchins & Adler", "Enduring Western canon", "Perennialist staple"]
+      }
+    },
+    {
+      "term": "Scaffolding",
+      "definition": "Instructional support structure provided by a teacher or more capable peer that is gradually dismantled as the learner attains independent competence.",
+      "rationalization": "Formulated by Jerome Bruner in conjunction with Lev Vygotsky's socio-cultural theory of cognitive development.",
+      "mnemonic": {
+        "title": "Scaffolding Bridge",
+        "phrase": "Support Built Up, Then Taken Down",
+        "items": ["Jerome Bruner", "Temporary assistance", "Fosters autonomy"]
+      }
+    },
+    {
+      "term": "Zone of Proximal Development (ZPD)",
+      "definition": "The dynamic cognitive distance between what a learner can achieve independently and what they can achieve with guidance from a More Knowledgeable Other (MKO).",
+      "rationalization": "Formulated by Lev Vygotsky; effective instruction targets tasks precisely within the learner's ZPD rather than tasks that are too easy or frustratingly difficult.",
+      "mnemonic": {
+        "title": "ZPD Zone",
+        "phrase": "ZPD = Zone of Potential Development",
+        "items": ["Lev Vygotsky", "Independent vs Guided capability", "MKO collaboration"]
+      }
+    },
+    {
+      "term": "Operant Conditioning",
+      "definition": "Behavioral learning process developed by B.F. Skinner in which voluntary behaviors are strengthened or weakened through consequences such as reinforcement or punishment.",
+      "rationalization": "Positive reinforcement increases behavior frequency by presenting pleasant stimuli; negative reinforcement increases behavior frequency by removing aversive stimuli.",
+      "mnemonic": {
+        "title": "Operant Conditioning",
+        "phrase": "Operant = Operates on Environment",
+        "items": ["B.F. Skinner", "Reinforcement increases response", "Punishment decreases response"]
+      }
+    },
+    {
+      "term": "Cognitive Equilibrium (Piaget)",
+      "definition": "The mental state of balance achieved through assimilation (fitting new information into existing schemas) and accommodation (modifying existing schemas to fit new experiences).",
+      "rationalization": "Jean Piaget highlighted that cognitive growth occurs when new experiences cause disequilibrium, spurring learners to adapt their mental schemas.",
+      "mnemonic": {
+        "title": "Piaget Balance",
+        "phrase": "Assimilation (Add) vs Accommodation (Alter)",
+        "items": ["Jean Piaget", "Schema adaptation", "Drive for equilibrium"]
+      }
+    },
+    {
+      "term": "Code of Ethics for Professional Teachers (Article III)",
+      "definition": "Mandates that teachers are facilitators of learning and official trustees of the cultural and educational heritage of the nation within community life.",
+      "rationalization": "Article III obligates teachers to actively participate in community betterment, study local customs, and maintain honorable social standing.",
+      "mnemonic": {
+        "title": "Article III Focus",
+        "phrase": "Article 3 = Teacher and the Community",
+        "items": ["Community facilitator", "Cultural trustee", "Public trust"]
+      }
+    },
+    {
+      "term": "Guide on the Side (Facilitator)",
+      "definition": "The modern progressive and constructivist metaphor contrasting with 'Sage on the Stage', portraying the teacher as coach, resource provider, and mentor.",
+      "rationalization": "Promotes active student ownership of learning outcomes rather than unilateral teacher lecture monopolies.",
+      "mnemonic": {
+        "title": "Teacher Role Contrast",
+        "phrase": "Guide on Side vs Sage on Stage",
+        "items": ["Facilitative teaching", "Active learner role", "Constructivist stance"]
+      }
+    },
+    {
+      "term": "Child-Centered Curriculum",
+      "definition": "Curricular organization rooted in developmental psychology and progressivism that places the child's readiness, interests, and developmental milestones at the focal point.",
+      "rationalization": "Replaces rigid subject-matter silos with integrated thematic units and practical problem-solving tailored to the student's developmental stage.",
+      "mnemonic": {
+        "title": "Child-Centered Priority",
+        "phrase": "Teach the Child, Not Just the Book",
+        "items": ["Developmentally appropriate", "Learner readiness", "Integrated themes"]
+      }
+    },
+    {
+      "term": "Four Pillars of Education (UNESCO)",
+      "definition": "Delors Report framework for 21st-century holistic education: Learning to Know, Learning to Do, Learning to Live Together, and Learning to Be.",
+      "rationalization": "Learning to Live Together emphasizes empathy, peace, and mutual understanding; Learning to Be emphasizes full self-actualization of mind, body, and spirit.",
+      "mnemonic": {
+        "title": "UNESCO Pillars",
+        "phrase": "K-D-LT-B: Know, Do, Live Together, Be",
+        "items": ["Learning to Know", "Learning to Do", "Learning to Live Together", "Learning to Be"]
+      }
+    }
+  ]
+}
