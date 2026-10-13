@@ -93,11 +93,26 @@ export default function App() {
     try {
       const urlParams = new URLSearchParams(window.location.search);
       const rawStatus = urlParams.get('status') || urlParams.get('xendit_status') || urlParams.get('payment_status');
-      const rawInvoiceId = urlParams.get('invoice_id') || urlParams.get('id') || urlParams.get('external_id') || urlParams.get('ref');
+      const rawInvoiceId = urlParams.get('invoice_id') || urlParams.get('id') || urlParams.get('external_id') || urlParams.get('ref') || urlParams.get('reference');
+      const isExplicitPro = urlParams.get('pro') === 'true' || urlParams.get('paid') === 'true';
 
-      if (!rawStatus) return;
+      if (!rawStatus && !rawInvoiceId && !isExplicitPro) return;
 
-      const isSuccess = ['PAID', 'SETTLED', 'COMPLETED', 'SUCCESS', 'success', 'paid'].includes(rawStatus.trim().toUpperCase());
+      const normalizedStatus = (rawStatus || '').trim().toUpperCase();
+
+      // Check for failed status
+      if (['FAILED', 'CANCELLED', 'EXPIRED', 'REJECTED'].includes(normalizedStatus)) {
+        toast.error('Payment was cancelled or expired. Please try again.');
+        const cleanUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+        return;
+      }
+
+      // Check for success status or invoice return
+      const isSuccess = 
+        isExplicitPro ||
+        ['PAID', 'SETTLED', 'COMPLETED', 'SUCCESS', 'TRUE', '1'].includes(normalizedStatus) ||
+        (Boolean(rawInvoiceId) && !normalizedStatus);
 
       if (isSuccess) {
         // Sanitize reference to prevent XSS / control characters
