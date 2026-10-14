@@ -575,7 +575,7 @@ export default function App() {
       {currentView !== 'mode' && (
         <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-zinc-950/85 border-b border-zinc-800/80 transition-colors">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-4">
-            {/* Brand Logo & Name */}
+            {/* Brand Logo Only (Text removed) */}
             <button
               onClick={() => {
                 sound.playClick();
@@ -583,13 +583,8 @@ export default function App() {
               }}
               className="flex items-center gap-3 text-left cursor-pointer group focus:outline-none"
             >
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-400/20 border border-amber-400/50 flex items-center justify-center text-amber-400 shadow-md shadow-amber-400/10 group-hover:scale-105 transition-transform shrink-0">
-                <GraduationCap className="w-5 h-5 stroke-[2.3]" />
-              </div>
-              <div>
-                <span className="text-lg sm:text-xl font-black text-white tracking-tight group-hover:text-amber-400 transition">
-                  T-LETs!
-                </span>
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-amber-400/20 border border-amber-400/50 flex items-center justify-center text-amber-400 shadow-md shadow-amber-400/10 group-hover:scale-105 transition-transform shrink-0">
+                <GraduationCap className="w-6 h-6 stroke-[2.3]" />
               </div>
             </button>
 
@@ -699,8 +694,6 @@ export default function App() {
                   </span>
                 )}
               </button>
-
-
 
               {/* Mobile Hamburger Toggle */}
               <button
