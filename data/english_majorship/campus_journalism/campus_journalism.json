@@ -1,0 +1,2461 @@
+{
+  "category": "Major ship - English",
+  "topic": "Campus Journalism",
+  "difficulty": "medium",
+  "items": [
+    {
+      "term": "Who penned the first issue of The Students Gazette, the first student publication in the English-speaking world?",
+      "definition": "Samuel Fickle Fox",
+      "rationalization": "Samuel Fickle Fox wrote the first issue of The Students Gazette on July 11, 1777, on a 4' x 6' sheet of paper at the William Penn Charter School in Philadelphia, USA. It was published continuously until August 1778 when British soldiers closed the school. This is recognized as the first student publication in the English-speaking world.",
+      "mnemonic": {
+        "title": "Fox's Gazette",
+        "phrase": "FOX wrote the first GAZETTE",
+        "items": ["F - Fickle", "O - Originator of student press", "X - eXactly 1777"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What was the first student publication in the English-speaking world?",
+      "definition": "The Students Gazette",
+      "rationalization": "The Students Gazette, penned by Samuel Fickle Fox on July 11, 1777 at William Penn Charter School in Philadelphia, is recognized as the first student publication in the English-speaking world. It was published until August 1778 when the British closed the school.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What was the first magazine published by the University of the Philippines in October 1910?",
+      "definition": "College Folio",
+      "rationalization": "The University of the Philippines started publishing its magazine College Folio in October 1910, which printed the works of the first promising writers in English. This marks the beginning of campus journalism in the Philippines.",
+      "mnemonic": {
+        "title": "UP's First",
+        "phrase": "COLLEGE FOLIO — 1910",
+        "items": ["C - College", "F - Folio", "1 - 1910"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What publication did Manila High School graduates publish in 1912 containing their English writings?",
+      "definition": "The Coconut",
+      "rationalization": "In 1912, the graduates of Manila High School published their English writings in The Coconut. This followed UP's College Folio (1910) and preceded Philippine Normal School's The TORCH (1913).",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What publication was introduced by the Philippine Normal School in 1913?",
+      "definition": "The TORCH",
+      "rationalization": "The Philippine Normal School introduced its publication, The TORCH, in 1913. It followed UP's College Folio (1910) and Manila High School's The Coconut (1912) in the history of Philippine campus journalism.",
+      "mnemonic": {
+        "title": "PNS Torch",
+        "phrase": "TORCH — 1913",
+        "items": ["T - The", "O - Original PNS publication", "R - 1913", "C - Campus paper", "H - Herald of PNS"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What literary organ of the UP Writers Club (organized 1927) became the most prestigious college literary publication in the country?",
+      "definition": "The Literary Apprentice",
+      "rationalization": "The UP Writers Club, organized in 1927, had its literary organ, The Literary Apprentice, which became the most prestigious college literary publication in the country. Around this time, UST's Varsitarian also began publication.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "From what Latin word does 'journal' come from, meaning 'daily'?",
+      "definition": "Diurna",
+      "rationalization": "The word journal comes from the Latin word diurna which means 'daily.' In ancient Rome, short bulletins of battles, fires, and elections compiled by government officials were posted in public places. These were called acta diurna which meant 'daily events.'",
+      "mnemonic": {
+        "title": "Daily Diurna",
+        "phrase": "DIURNA = DAILY",
+        "items": ["D - Daily", "I - In ancient Rome", "U - Unofficial bulletins", "R - Recorded events", "N - News", "A - Acta diurna"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What were the short bulletins of battles, fires, and elections posted in ancient Rome called?",
+      "definition": "Acta diurna",
+      "rationalization": "Acta diurna means 'daily events.' These were short bulletins compiled by government officials and posted in public places in ancient Rome. They are considered the precursor of modern newspapers.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "Who defined journalism as 'the occupation of writing for publication in newspapers and other periodicals'?",
+      "definition": "Noah Webster",
+      "rationalization": "Noah Webster defined journalism as 'the occupation of writing for publication in newspapers and other periodicals.' Other definitions include Fraser F. Bond's emphasis on all forms through which news reaches the public, and the School Paper Advisers of Manila's definition focusing on the co-curricular activity of the school paper staff.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "Who defined journalism as 'something that embraces all forms in which or through which the news and comments on the news reach the public'?",
+      "definition": "Fraser F. Bond",
+      "rationalization": "Fraser F. Bond defined journalism as something that embraces all forms in which or through which news and comments reach the public. He emphasized that all happenings that hold public interest, and all thoughts, actions, and ideas these stimulate, become basic materials for the journalist.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What are the three areas into which journalism may be divided?",
+      "definition": "Written, oral, and visual journalism",
+      "rationalization": "Journalism may be divided into three areas: written, oral, and visual. Periodicals such as newspapers and magazines fall under written journalism. Radio falls under oral journalism, while television, movies, and documentaries are under visual journalism.",
+      "mnemonic": {
+        "title": "WOV",
+        "phrase": "WOV — Written, Oral, Visual",
+        "items": ["W - Written (newspapers/magazines)", "O - Oral (radio)", "V - Visual (TV/movies/documentaries)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a publication that comes out at regular intervals — daily, weekly, fortnightly, monthly, bi-monthly, quarterly, annually?",
+      "definition": "Periodical",
+      "rationalization": "A periodical, defined broadly, is a publication that comes out at regular intervals — daily, weekly, fortnightly, monthly, bi-monthly, quarterly, annually, etc. Periodicals such as newspapers and magazines fall under written journalism.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What distinguishes a newspaper from a magazine in terms of physical characteristics?",
+      "definition": "A newspaper prints more news, has no special cover, and is printed on newsprint; a magazine prints more features and human interest stories, has a special cover, and is printed on bookpaper.",
+      "rationalization": "A newspaper compared to a magazine prints more news, has no special cover, and is printed on a special paper called newsprint. A magazine prints more features and human interest stories, has a special cover usually with a big cut on it, and is often printed on bookpaper. If news is printed in a magazine, it is brief, featurized, and found in inside pages.",
+      "mnemonic": {
+        "title": "News vs. Features",
+        "phrase": "NEWSPAPER = NEWS + NEWSPRINT; MAGAZINE = FEATURES + BOOKPAPER",
+        "items": ["N - Newsprint for newspaper", "B - Bookpaper for magazine", "F - Features in magazine", "N - News in newspaper"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of media includes periodicals, brochures, journals, books, and graphic arts?",
+      "definition": "Print media",
+      "rationalization": "Periodicals, brochures, journals, books, and graphic arts are classified under print media. Radio falls under oral journalism (broadcast media), while television, movies, and documentaries are under visual journalism.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What are examples of broadcast media?",
+      "definition": "Radio and television",
+      "rationalization": "Radio and television are examples of broadcast media. Movies and documentaries are examples of film media. Radio falls under oral journalism, while television, movies, and documentaries are under visual journalism.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What are the three functions of modern campus papers that relate to informing, shaping opinion, and educating?",
+      "definition": "Information function, opinion function, and education function",
+      "rationalization": "Modern campus papers have eight functions: information, opinion, education, watchdog, laboratory, documentation, entertainment, and developmental. The information function keeps readers informed; the opinion function provides a forum for views; the education function promotes learning and awareness.",
+      "mnemonic": {
+        "title": "IOWL-DED",
+        "phrase": "I OWL-DED: Information, Opinion, Watchdog, Laboratory, Documentation, Education, Developmental",
+        "items": ["I - Information", "O - Opinion", "W - Watchdog", "L - Laboratory", "D - Documentation", "E - Education", "D - Developmental"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What function of a campus paper serves as a training ground for future journalists?",
+      "definition": "Laboratory function",
+      "rationalization": "The laboratory function of a campus paper serves as a training ground for student staffers in the communication process, preparing them to become future responsible journalists and leaders of society.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What function of a campus paper monitors and checks on institutions and authorities?",
+      "definition": "Watchdog function",
+      "rationalization": "The watchdog function of a campus paper monitors and checks on institutions and authorities, ensuring accountability and serving as a check on power. It is one of the eight functions of modern campus papers.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What function of a campus paper records and preserves significant events and information?",
+      "definition": "Documentation function",
+      "rationalization": "The documentation function of a campus paper records and preserves significant events and information for future reference. It is one of the eight functions of modern campus papers.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What function of a campus paper promotes national development and social progress?",
+      "definition": "Developmental function",
+      "rationalization": "The developmental function of a campus paper promotes national development and social progress. As a catalyst for national development, school publications are expected to foster a strong sense of national discipline, identity, and love of country.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What function of a campus paper provides amusement and enjoyment to readers?",
+      "definition": "Entertainment function",
+      "rationalization": "The entertainment function of a campus paper provides amusement and enjoyment to readers. It is one of the eight functions of modern campus papers, which also include information, opinion, education, watchdog, laboratory, documentation, and developmental functions.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What is the term for news that takes place within the country?",
+      "definition": "Local news",
+      "rationalization": "Local news refers to news that takes place within the country. It is found on the front page along with foreign news, dateline news, weather news, and the index. Local news is distinguished from foreign news, which takes place outside the country.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the term for news that takes place outside the country?",
+      "definition": "Foreign news",
+      "rationalization": "Foreign news refers to news that takes place outside the country. It is found on the front page, distinguished from local news (within the country) and dateline news (an out-of-town news story introduced by a dateline).",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is an out-of-town news story introduced by a dateline stating the place, date, and source of the material?",
+      "definition": "Dateline news",
+      "rationalization": "Dateline news is an out-of-town news story introduced by a dateline which states the place from which the story was reported, the date, and the source of the material if not written by the local staff. Example: 'Tokyo, Japan, Jan. 25 (AP).'",
+      "mnemonic": {
+        "title": "Dateline Formula",
+        "phrase": "PLACE + DATE + (SOURCE)",
+        "items": ["P - Place of reporting", "D - Date", "S - Source (if not local staff)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is usually a boxed forecast of the area, sometimes including temperature, wind directions, and velocities?",
+      "definition": "Weather news",
+      "rationalization": "Weather news is usually a boxed forecast of the area, sometimes including the temperature, wind directions, and velocities. It is one of the standard items found on the front page of a newspaper.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is the slug line indicating an important inside page story and the page where it is found?",
+      "definition": "Index",
+      "rationalization": "The index is a slug line indicating an important inside page story and the page where it is found. It is one of the standard items found on the front page of a newspaper, helping readers locate important stories inside.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is the engraved or printed name of the newspaper found on the front page?",
+      "definition": "Nameplate",
+      "rationalization": "The nameplate is the engraved or printed name of the newspaper, such as the Manila Times or PNC Torch. It is one of the important elements found on the front page of a newspaper.",
+      "mnemonic": {
+        "title": "Name on Plate",
+        "phrase": "NAMEPLATE = NAME of the PAPER",
+        "items": ["N - Name", "P - Paper", "P - Printed/engraved"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What are the little boxes on either side of the nameplate called?",
+      "definition": "Ears",
+      "rationalization": "Ears are the little boxes on either side of the nameplate on the front page of a newspaper. They may contain advertisements, weather information, or other brief items.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is the principal headline bearing the boldest and biggest type, serving as the title of the most important news of the day?",
+      "definition": "Banner",
+      "rationalization": "The banner is the principal headline bearing the boldest and biggest type. It is the title of the most important news of the day, called banner news. It may or may not run across the page; if it does, it may also be called a streamer.",
+      "mnemonic": {
+        "title": "Banner = Biggest",
+        "phrase": "BANNER = BIGGEST headline",
+        "items": ["B - Boldest", "A - And biggest type", "N - News of the day", "N - Number one story", "E - Extends across page (streamer)", "R - Runs on front page"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a banner headline that runs across the page also called?",
+      "definition": "Streamer",
+      "rationalization": "A banner headline that runs across the page may also be called a streamer. The banner is the principal headline bearing the boldest and biggest type, serving as the title of the most important news of the day.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a head made up of two or more lines?",
+      "definition": "Running head",
+      "rationalization": "A running head is a head made up of two or more lines. It is one of the elements found on the front page of a newspaper, distinct from the banner (principal headline) and the deck (subordinate headline).",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is the title of any news story, a term used only for titles of news stories?",
+      "definition": "Headline",
+      "rationalization": "The headline is the title of any news story. The word headline is used only for titles of news stories. It is distinct from other heads like the banner (principal headline), deck (subordinate headline), and running head (two or more lines).",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a subordinate headline placed immediately below its mother headline, also known as bank or readout?",
+      "definition": "Deck",
+      "rationalization": "A deck is a subordinate headline placed immediately below its mother headline, also known as bank or readout. It provides additional information and is smaller than the main headline.",
+      "mnemonic": {
+        "title": "Deck Below",
+        "phrase": "DECK = subordinate headline BELOW mother headline",
+        "items": ["D - Deck", "B - Bank", "R - Readout"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the beginning of a news story that may be a word, a group of words, a sentence, or even a paragraph?",
+      "definition": "Lead",
+      "rationalization": "The lead is the beginning of a news story. It may be a word, a group of words, a sentence, or even a paragraph. It is the most important part of the story as it invites the reader and signals the news.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the whole story of an event composed of the lead and the text which is the elaboration of the lead?",
+      "definition": "News story",
+      "rationalization": "A news story is the whole story of an event composed of the lead and the text, which is the elaboration of the lead. The lead introduces the story while the text provides details and elaboration.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "How many columns does a typical school paper have, and how wide is each column?",
+      "definition": "Five columns of 12 ems each",
+      "rationalization": "A typical school paper is divided into five columns of 12 ems each, while many national papers are divided into eight columns. Columns are the horizontal division into parts of a newspaper.",
+      "mnemonic": {
+        "title": "School = 5 x 12",
+        "phrase": "SCHOOL PAPER: 5 columns, 12 ems each",
+        "items": ["5 - Five columns", "12 - Twelve ems", "S - School paper standard"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the vertical line that divides the page into columns?",
+      "definition": "Column rule",
+      "rationalization": "The column rule is the vertical line that divides the page into columns. Most pages of newspapers are divided into columns by a space usually one em wide, called the sunken rule.",
+      "mnemonic": {
+        "title": "Rule Divides",
+        "phrase": "COLUMN RULE = vertical line; SUNKEN RULE = space between columns",
+        "items": ["C - Column rule (line)", "S - Sunken rule (space)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the space usually one em wide that divides columns on a newspaper page?",
+      "definition": "Sunken rule",
+      "rationalization": "The sunken rule is the space usually one em wide that divides columns on a newspaper page. It is distinguished from the column rule, which is the vertical line itself.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is the imaginary horizontal line that divides the newspaper equally into two parts?",
+      "definition": "Fold",
+      "rationalization": "The fold is the imaginary horizontal line that divides the newspaper equally into two parts. It is an important consideration in layout and makeup because stories above the fold are more visible.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is the signature of a reporter preceding a news-feature, as 'By Warren Cruz'?",
+      "definition": "Byline",
+      "rationalization": "The byline is the signature of a reporter preceding a news-feature, as 'By Warren Cruz.' It identifies the author of the story and is usually placed at the beginning of the article.",
+      "mnemonic": {
+        "title": "By Line",
+        "phrase": "BYLINE = 'BY [name]' line",
+        "items": ["B - By", "Y - Your name", "L - Line", "I - Identifies reporter", "N - News-feature signature", "E - Explicit credit"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What are news materials enclosed by line rules called?",
+      "definition": "Box",
+      "rationalization": "A box refers to news materials enclosed by line rules. It is a visual element used in newspaper layout to set apart certain information, such as weather news or important announcements.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is a metal plate bearing a newspaper's illustration, also known as cliché?",
+      "definition": "Cut",
+      "rationalization": "A cut is a metal plate bearing a newspaper's illustration, also known as cliché. In letterpress terminology, it refers to photoengraving of any kind, including photos, illustrations, and boxes.",
+      "mnemonic": {
+        "title": "Cut = Cliché",
+        "phrase": "CUT = CLICHÉ = illustration plate",
+        "items": ["C - Cut", "L - Letterpress plate", "I - Illustration", "C - Cliché", "H - Holds photo/art", "É - Engraving"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the text accompanying photos and other artwork, better known as caption?",
+      "definition": "Cutline",
+      "rationalization": "The cutline is the text accompanying photos and other artwork, better known as caption. If written above the photo like a slugline, it is called an overline.",
+      "mnemonic": {
+        "title": "Cutline = Caption",
+        "phrase": "CUTLINE = CAPTION (below); OVERLINE (above)",
+        "items": ["C - Cutline (caption)", "O - Overline (above photo)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a tagline placed above but smaller than a headline, also known as teaser?",
+      "definition": "Kicker",
+      "rationalization": "A kicker is a tagline placed above but smaller than a headline, also known as teaser. If it is bigger than the headline, it is called a hammer.",
+      "mnemonic": {
+        "title": "Kicker vs Hammer",
+        "phrase": "KICKER (smaller) vs HAMMER (bigger)",
+        "items": ["K - Kicker (smaller, above)", "H - Hammer (bigger, above)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a tagline placed above the headline but bigger than the headline called?",
+      "definition": "Hammer",
+      "rationalization": "A hammer is a tagline placed above the headline but bigger than the headline. If it is smaller than the headline, it is called a kicker or teaser.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is a line giving the source of a story or illustration, as 'Reprinted from the Manila Times' or 'Photo by MPI'?",
+      "definition": "Credit line",
+      "rationalization": "A credit line is a line giving the source of a story or illustration, as 'Reprinted from the Manila Times' or 'Photo by MPI.' It acknowledges the origin of the material and is an important element on the front page.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What consists of the page number, date of publication, and name of the newspaper, usually written on top of the page?",
+      "definition": "Folio",
+      "rationalization": "The folio consists of the page number, date of publication, and name of the newspaper, usually written on top of the page. It is found on the editorial page and other pages of the newspaper.",
+      "mnemonic": {
+        "title": "Folio = Page Info",
+        "phrase": "FOLIO = page number + date + paper name",
+        "items": ["F - Folio", "P - Page number", "D - Date", "N - Name of paper"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the editorial box containing the logo, names of staff members and their positions, subscription rate, publisher, and other pertinent data about the newspaper?",
+      "definition": "Masthead",
+      "rationalization": "The masthead is the editorial box containing the logo, names of the staff members and their positions in the staff, subscription rate, the publisher, and other pertinent data about the newspaper. A logo (logotype) is a cut containing an identifying word or words.",
+      "mnemonic": {
+        "title": "Masthead = Staff Box",
+        "phrase": "MASTHEAD = MASTer list of staff + data",
+        "items": ["M - Masthead", "S - Staff names", "P - Positions", "S - Subscription rate", "P - Publisher", "L - Logo"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a commentary written by any of the editors that gives the opinion of the staff or the whole paper on various subjects, serving as the stand of the paper?",
+      "definition": "Editorial proper",
+      "rationalization": "The editorial proper is a commentary written by any of the editors who comments or gives the opinion of the staff or of the whole paper on various subjects. It is the stand of the paper, not of an individual editor.",
+      "mnemonic": {
+        "title": "Proper = Paper's Stand",
+        "phrase": "EDITORIAL PROPER = PAPER's stand (not individual)",
+        "items": ["P - Proper", "P - Paper's opinion", "S - Staff stand"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a personal opinion written by the columnist himself or herself, which may attack, teach, entertain, or appeal?",
+      "definition": "Editorial column",
+      "rationalization": "The editorial column is a personal opinion written by the columnist himself or herself. Like the editorial proper, it may attack, teach, entertain, or appeal depending upon its purpose. Unlike the editorial proper, it carries the personal stamp of the writer.",
+      "mnemonic": {
+        "title": "Column = Personal",
+        "phrase": "EDITORIAL COLUMN = PERSONAL opinion of columnist",
+        "items": ["C - Column", "P - Personal", "W - Writer's own ideas"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is usually a caricature emphasizing a simple point, usually humorous, that stands by itself and is not a complement of the editorial proper?",
+      "definition": "Editorial cartoon",
+      "rationalization": "The editorial cartoon is usually a caricature emphasizing a simple point. It is usually humorous and has the function of the editorial. It stands by itself and is not a complement of the editorial proper. The word cartoon is derived from caricature and lampoon.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a short statement or quoted saying placed at the end of an editorial column or editorial to drive home a message?",
+      "definition": "Editorial liner",
+      "rationalization": "The editorial liner is a short statement or quoted saying placed at the end of an editorial column or editorial to drive home a message. It serves as a memorable closing thought.",
+      "mnemonic": {
+        "title": "Liner = Last Line",
+        "phrase": "EDITORIAL LINER = LAST line to drive message home",
+        "items": ["L - Liner", "L - Last", "M - Message"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is a letter sent in by a reader giving his personal views on certain aspects?",
+      "definition": "Letter to the editor",
+      "rationalization": "A letter to the editor is a letter sent in by a reader giving his personal views on certain aspects. It is found on the editorial page and provides a forum for reader opinion.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What are sports stories classified as, since what may be found in the news page may also be found in the sports section?",
+      "definition": "News stories",
+      "rationalization": "Sports stories are classified as news stories; therefore, what may be found in the news page may also be found in the sports section. Other things that may be found in the sports section are sports commentaries and sports features.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What are the four conditions essential for a free student press according to the Charter of Student Press Rights?",
+      "definition": "Freedom from government/university regulation; freedom from other student organizations (except official organ); freedom from financial and external pressures; free access to information and same rights as accredited journalists",
+      "rationalization": "The Charter of Student Press Rights states four conditions: (1) freedom from regulations by any organ of government or university authorities; (2) freedom from regulations by other student organizations except where it is an official organ; (3) freedom from all pressures, financial and other external groups; (4) free access to information and the same rights and privileges as afforded to regularly accredited journalists.",
+      "mnemonic": {
+        "title": "4 Freedoms",
+        "phrase": "G-O-F-A: Government, Organizations, Financial, Access",
+        "items": ["G - Government/university", "O - Other student organizations", "F - Financial/external pressures", "A - Access to information"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "According to the Code of Student Press Ethics, what should a student journalist do before obtaining any interview for publication?",
+      "definition": "Reveal his/her identity as a representative of the student press",
+      "rationalization": "The Code of Student Press Ethics states that the student journalist should reveal his/her identity as a representative of the student press before obtaining any interview for publication. This ensures transparency and ethical conduct.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to the Code of Student Press Ethics, what should an editor do at the first available opportunity for all mistakes?",
+      "definition": "Apologize in print",
+      "rationalization": "The Code of Student Press Ethics states that the editor should apologize in print at the first available opportunity for all mistakes. This reflects accountability and integrity in student journalism.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to the Code of Student Press Ethics, what should a student journalist respect regarding sources of information and private documents?",
+      "definition": "All confidence regarding sources of information and private documents",
+      "rationalization": "The Code of Student Press Ethics states that a student journalist should respect all confidence regarding sources of information and private documents. He/She should not falsify information or documents or distort or misrepresent the facts.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to the Declaration of Principles, what must student journalism be a means of propagating in all its forms?",
+      "definition": "Culture",
+      "rationalization": "The Declaration of Principles states that student journalism must be a means of propagating culture in all its forms. This is the first of five fundamental principles to be implemented by student journalists.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "According to the Declaration of Principles, what systems should student journalists pursue and condemn in all their forms?",
+      "definition": "Totalitarianism, colonialism, and imperialism",
+      "rationalization": "The Declaration of Principles states that student journalists should pursue and condemn totalitarianism, colonialism, and imperialism in all their forms as these are systems opposed to the highest aspirations of students around the world.",
+      "mnemonic": {
+        "title": "TCI",
+        "phrase": "TCI = Totalitarianism, Colonialism, Imperialism",
+        "items": ["T - Totalitarianism", "C - Colonialism", "I - Imperialism"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the first rule of writing good journalistic style?",
+      "definition": "Cut unnecessary fat — preserve meaning, but prune ruthlessly",
+      "rationalization": "The first rule of writing good journalistic style is to cut unnecessary fat. Preserve meaning, but prune ruthlessly. This is followed by using simple, clear language, saying what you mean, choosing active over passive voice, and other rules.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What is the most commonly used type of transition in journalistic writing?",
+      "definition": "Chronological transitions (now, since, then, a few days later, etc.)",
+      "rationalization": "The most commonly used transitions in journalistic writing are chronological (now, since, then, a few days later, etc.). Crafting transitions carefully is one of the eight rules of writing good journalistic style.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to Roy Peter Clark, what trait describes good writers who see the world as their journalism laboratory, a storehouse of story ideas?",
+      "definition": "Trait 1 — Good writers see the world as their journalism laboratory",
+      "rationalization": "Roy Peter Clark's Trait 1 states that good writers see the world as their journalism laboratory, a storehouse of story ideas. If they can get out of the room, they can find a story.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to Roy Peter Clark, what trait describes good writers who prefer to discover and develop their own story ideas and have an eye for the offbeat?",
+      "definition": "Trait 2 — Good writers prefer to discover and develop their own story ideas",
+      "rationalization": "Roy Peter Clark's Trait 2 states that good writers prefer to discover and develop their own story ideas. They have an eye for the offbeat and may find conventional assignments tedious.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to Roy Peter Clark, what trait describes good writers who spend too much time and creative energy working on their leads?",
+      "definition": "Trait 4 — Good writers spend too much time and creative energy working on their leads",
+      "rationalization": "Roy Peter Clark's Trait 4 states that good writers spend too much time and creative energy working on their leads. They know that the lead is the most important part of their work, the passage that invites the reader into the story and signals the news.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "According to Roy Peter Clark, what trait describes good writers who are 'bleeders rather than speeders' and 'open a vein' when they write?",
+      "definition": "Trait 6 — Most good writers are bleeders rather than speeders",
+      "rationalization": "Roy Peter Clark's Trait 6 states that most good writers are bleeders rather than speeders. When they write, in the words of sportswriter Red Smith, they 'open a vein.' This means they pour their emotions and deepest effort into their writing.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to Roy Peter Clark, what trait describes good writers who understand that an important part of writing is the mechanical drudgery of organizing material, what Saul Pett calls 'donkey work'?",
+      "definition": "Trait 7 — Good writers understand the mechanical drudgery of organizing material ('donkey work')",
+      "rationalization": "Roy Peter Clark's Trait 7 states that good writers understand that an important part of writing is the mechanical drudgery of organizing the material, what Saul Pett describes as 'donkey work.'",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to Roy Peter Clark, what trait describes good writers who rewrite and love computer terminals that permit maximum playfulness during revision?",
+      "definition": "Trait 8 — Good writers rewrite",
+      "rationalization": "Roy Peter Clark's Trait 8 states that good writers rewrite. They love computer terminals, which permit maximum playfulness during revision.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "According to Roy Peter Clark, what trait describes good writers who trust their ears and feelings more than their eyes when judging their work?",
+      "definition": "Trait 9 — Good writers tend to trust their ears and feelings more than their eyes",
+      "rationalization": "Roy Peter Clark's Trait 9 states that in judging their work, good writers tend to trust their ears and their feelings more than their eyes. Editors 'look for holes in the story,' while writers want 'to make it sing.'",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What is an oral or written report of a past, present, or future event that should be factual, truthful, accurate, unbiased, and interesting?",
+      "definition": "News",
+      "rationalization": "News is an oral or written report of a past, present, or future event. It should be factual, truthful, accurate, unbiased, and interesting. But what is interesting to one is not always interesting to another.",
+      "mnemonic": {
+        "title": "News Qualities",
+        "phrase": "F-T-A-U-I: Factual, Truthful, Accurate, Unbiased, Interesting",
+        "items": ["F - Factual", "T - Truthful", "A - Accurate", "U - Unbiased", "I - Interesting"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What element of news involves physical or mental conflict — man versus man, man versus animals, man versus nature, or man versus himself?",
+      "definition": "Conflict",
+      "rationalization": "Conflict is an element of news that may involve physical or mental conflict — man versus man, man versus animals, man versus nature, or man versus himself. It is one of the 14 elements of news.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What element of news emphasizes the newest angle of the story, where the more recent the event, the more interesting it is to the reader?",
+      "definition": "Immediacy or timeliness",
+      "rationalization": "Immediacy or timeliness is an element of news that emphasizes the newest angle of the story. The more recent the event, the more interesting it is to the reader. It is one of the 14 elements of news.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What element of news refers to geographical nearness as well as nearness of kinship or interest?",
+      "definition": "Proximity or nearness",
+      "rationalization": "Proximity or nearness is an element of news that may refer to geographical nearness as well as to nearness of kinship or interest. It is one of the 14 elements of news.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What element of news refers to people who are more prominent than others by reasons of wealth, social position, or achievements?",
+      "definition": "Prominence",
+      "rationalization": "Prominence is an element of news that refers to people who are more prominent than others by reasons of wealth, social position, or achievements. It is one of the 14 elements of news.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What element of news refers to strange or unnatural events, objects, persons, and places?",
+      "definition": "Oddity or unusualness",
+      "rationalization": "Oddity or unusualness is an element of news that refers to strange or unnatural events, objects, persons, and places. An odd story is interesting not because of its news value but because of the human-interest side of it.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What element of news includes the innate desire for food, clothing, shelter; universal interest in children, animals, and nature; and natural feelings of love, sympathy, fear, hatred, and jealousy?",
+      "definition": "Emotion",
+      "rationalization": "Emotion is an element of news that includes the various human responses such as the innate desire for food, clothing, shelter; the universal interest in children, animals, and nature; and the natural feeling of love, sympathy and generosity, of fear, hatred, and jealousy. All other elements of news appeal to emotion.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of news is published before its occurrence, sometimes called dope or prognostication?",
+      "definition": "Advance or anticipated news",
+      "rationalization": "Advance or anticipated news is published before its occurrence, sometimes called dope or prognostication. The reporter foretells events expected to occur at a definite time in the future.",
+      "mnemonic": {
+        "title": "Advance = Before",
+        "phrase": "ADVANCE news = BEFORE it happens (dope, prognostication)",
+        "items": ["A - Advance", "B - Before", "D - Dope", "P - Prognostication"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of news is gathered and reported on the spot, dealing with unscheduled information demanding immediate publication, where the reporter is an eyewitness?",
+      "definition": "Spot news",
+      "rationalization": "Spot news is gathered and reported on the spot. It deals with unscheduled information demanding immediate publication. The reporter himself is an eyewitness to the event that took place. Both spot news and coverage news are good examples of first-hand reporting.",
+      "mnemonic": {
+        "title": "Spot = On the Spot",
+        "phrase": "SPOT news = reporter ON THE SPOT, eyewitness",
+        "items": ["S - Spot", "O - On the spot", "E - Eyewitness", "I - Immediate publication"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of news is written from a given beat?",
+      "definition": "Coverage news",
+      "rationalization": "Coverage news is news written from a given beat. Both spot news and coverage news are good examples of first-hand reporting. The reporter covers a specific area or topic regularly.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of news is a sequel to a previous story, having a new lead of its own, and is a second, third, or subsequent chapter of a serial?",
+      "definition": "Follow-up news",
+      "rationalization": "Follow-up news is a sequel to a previous story. Having a new lead of its own, it is a second, third or subsequent chapter of a serial. It updates readers on developments after the initial story.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of news consists of facts given straight without embellishment, using the summary lead and the inverted pyramid structure, with the main aim to inform?",
+      "definition": "Straight news",
+      "rationalization": "Straight news consists of facts given straight without embellishment. Its main aim is to inform. It uses the summary lead and is written using the inverted pyramid structure. It is distinguished from news-feature, which entertains more than it informs and uses suspended interest.",
+      "mnemonic": {
+        "title": "Straight = Inverted",
+        "phrase": "STRAIGHT news = SUMMARY lead + INVERTED pyramid + INFORM",
+        "items": ["S - Straight", "S - Summary lead", "I - Inverted pyramid", "I - Inform"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of news is based on facts but entertains more than it informs, uses the suspended interest structure like the narrative, and cannot meet the cut-off test?",
+      "definition": "News-feature",
+      "rationalization": "News-feature (featurized news distinguished from a feature article) is based on facts but entertains more than it informs. It uses the suspended interest structure like the narrative; thus, it cannot meet the cut-off test. The writer may give his impression, describe and narrate, but without resorting to biased opinion.",
+      "mnemonic": {
+        "title": "News-Feature = Suspended",
+        "phrase": "NEWS-FEATURE = SUSPENDED interest + ENTERTAIN + no cut-off test",
+        "items": ["N - News-feature", "S - Suspended interest", "E - Entertains", "C - Cannot cut off"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of news-feature deals with an isolated event, where a single fact is featured in the lead and explained further in succeeding paragraphs, breaking logically at every paragraph?",
+      "definition": "Single-feature or one-incident story",
+      "rationalization": "A single-feature or one-incident story deals with an isolated event. A single fact is featured in the lead and is explained further in the succeeding paragraphs. The story breaks logically at every paragraph, enabling the reporter to cut or lengthen it as space dictates.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of news-feature includes several facts in the lead in their order of importance, elaborated one after the other in the body, drawing together two or more divergent aspects of related news items?",
+      "definition": "Several-feature, multiple-angled, or composite story",
+      "rationalization": "A several-feature, multiple-angled, or composite story includes several facts in the lead in their order of importance. These facts are elaborated one after the other in the body. It aims to draw together two or more divergent aspects of related news items separately, writing them in one big story.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of story is a plain exposition setting forth a single situation or a series of closely related facts that inform, written in the inverted pyramid design?",
+      "definition": "Fact story",
+      "rationalization": "A fact story is a plain exposition setting forth a single situation or a series of closely related facts that inform. It is written in the inverted pyramid design. It conforms to the inverted pyramid design more closely than any other kind of news.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of story is a narrative of actions involving not mere simple facts but also dramatic events, description of persons and events, testimony of witnesses, and explanatory data?",
+      "definition": "Action story",
+      "rationalization": "An action story is a narrative of actions involving not mere simple facts but also dramatic events, description of persons and events, perhaps testimony of witnesses, as well as explanatory data. Sports games, competitions, accidents, and war reports are examples of action stories.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of story is usually written from a public address, talks, and speeches?",
+      "definition": "Speech report",
+      "rationalization": "A speech report is a news story usually written from a public address, talks, and speeches. The arrangement of a speech report, a quote story, and an interview are to a great extent similar.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of story includes speeches, statements, letters, and to some extent interviews when reported, all based on recorded information transcribed by the reporter?",
+      "definition": "Quote story",
+      "rationalization": "A quote story includes speeches, statements, and letters, and to some extent, interviews when reported. All are based on recorded information, either written or spoken, and transcribed by the reporter in the form of news. The quote story may be charted as alternating summary and quote.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of news includes events such as killings, city council meetings, and speeches by leading government officials that are timely and reported almost automatically by the media?",
+      "definition": "Hard news",
+      "rationalization": "Hard news includes events such as killings, city council meetings, and speeches by leading government officials. These are timely and are reported almost automatically by the media. It is distinguished from soft news, which is not usually considered immediately important or timely to a wide audience.",
+      "mnemonic": {
+        "title": "Hard = Timely",
+        "phrase": "HARD news = TIMELY + IMPORTANT + automatic coverage",
+        "items": ["H - Hard", "T - Timely", "I - Important", "A - Automatic"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of news includes events such as a lunch to honor a retiring school custodian or a boy scouting jamboree that are not usually considered immediately important or timely to a wide audience?",
+      "definition": "Soft news",
+      "rationalization": "Soft news includes events such as a lunch to honor a retiring school custodian or a boy scouting jamboree. These are not usually considered immediately important or timely to a wide audience. It is distinguished from hard news, which is timely and important.",
+      "mnemonic": {
+        "title": "Soft = Not Urgent",
+        "phrase": "SOFT news = NOT immediately important/timely",
+        "items": ["S - Soft", "N - Not urgent", "I - Interesting", "T - Timely? No"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a short item of news interest, written like a brief telegraphic message, giving mainly the result with details?",
+      "definition": "News brief",
+      "rationalization": "A news brief is a short item of news interest, written like a brief telegraphic message, giving mainly the result with details. It is one of the minor forms of news stories, along with news bulletin, news-featurette, and flash.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is similar to the lead of a straight news story, aiming just to give the gist of the news?",
+      "definition": "News bulletin",
+      "rationalization": "A news bulletin is similar to the lead of a straight news story. Its aim is just to give the gist of the news. It is one of the minor forms of news stories.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is a short news feature usually used as filler, e.g., 'Quirks in the news'?",
+      "definition": "News-featurette",
+      "rationalization": "A news-featurette is a short news feature usually used as filler, e.g., 'Quirks in the news.' It is one of the minor forms of news stories.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is a bulletin that conveys the first word of an event?",
+      "definition": "Flash",
+      "rationalization": "A flash is a bulletin that conveys the first word of an event. It is one of the minor forms of news stories, along with news brief, news bulletin, and news-featurette.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What type of conventional lead is used when the person involved is more prominent than what he does or what happens to him?",
+      "definition": "WHO lead",
+      "rationalization": "The WHO lead is used when the person involved is more prominent than what he does or what happens to him. It is one of the conventional or summary leads that answers right away all or any of the 5 W's and/or the H.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of conventional lead is used when the event or what took place is more important than the person involved in the story?",
+      "definition": "WHAT lead",
+      "rationalization": "The WHAT lead is used when the event or what took place is more important than the person involved in the story. It is one of the conventional or summary leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of conventional lead is used when the place is unique and no prominent person is involved?",
+      "definition": "WHERE lead",
+      "rationalization": "The WHERE lead is used when the place is unique and no prominent person is involved. It is one of the conventional or summary leads that answers right away all or any of the 5 W's and/or the H.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of conventional lead is rarely used as the reader presumes the story to be timely, but is useful when speaking of deadlines, holidays, and important dates?",
+      "definition": "WHEN lead",
+      "rationalization": "The WHEN lead is rarely used as the reader presumes the story to be timely. However, this lead is useful when speaking of deadlines, holidays, and important dates. It is one of the conventional or summary leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of conventional lead is used when the reason is more prominent or unique than what happens?",
+      "definition": "WHY lead",
+      "rationalization": "The WHY lead is used when the reason is more prominent or unique than what happens. It is one of the conventional or summary leads that answers right away all or any of the 5 W's and/or the H.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of conventional lead is used when the manner, mode, means, or method of achieving the story is the unnatural way?",
+      "definition": "HOW lead",
+      "rationalization": "The HOW lead is used when the manner, mode, means, or method of achieving the story is the unnatural way. It is one of the conventional or summary leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of grammatical beginning lead is introduced by a preposition?",
+      "definition": "Prepositional phrase lead",
+      "rationalization": "A prepositional phrase lead is a grammatical beginning lead where the phrase is introduced by a preposition. Other grammatical beginning leads include infinitive phrase, participial phrase, gerundial phrase, and clause leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of grammatical beginning lead begins with the sign of the infinitive 'to' plus the main verb?",
+      "definition": "Infinitive phrase lead",
+      "rationalization": "An infinitive phrase lead is a grammatical beginning lead that begins with the sign of the infinitive 'to' plus the main verb. It is one of the grammatical beginning leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of grammatical beginning lead is introduced by the present or past participle form of the verb?",
+      "definition": "Participial phrase lead",
+      "rationalization": "A participial phrase lead is a grammatical beginning lead introduced by the present or past participle form of the verb. It is one of the grammatical beginning leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of grammatical beginning lead is introduced by a gerund (a verbal noun ending in -ing)?",
+      "definition": "Gerundial phrase lead",
+      "rationalization": "A gerundial phrase lead is a grammatical beginning lead introduced by a gerund (a verbal noun ending in -ing). It is one of the grammatical beginning leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of grammatical beginning lead begins with a clause which may be independent or subordinate, noun, adjectival, or adverbial?",
+      "definition": "Clause lead",
+      "rationalization": "A clause lead is a grammatical beginning lead that begins with a clause which may either be independent or subordinate; or may either be a noun, adjectival, or adverbial clause. It is one of the grammatical beginning leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of novelty lead uses an interjection or an exclamatory sentence?",
+      "definition": "Astonisher lead",
+      "rationalization": "An astonisher lead is a novelty lead that uses an interjection or an exclamatory sentence. It is one of the novelty leads, which also include contrast, epigram, picture, background, descriptive, parody, punch, one-word, quotation, and question leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of novelty lead describes two extremes or opposites for emphasis, where the sharper the contrast, the more effective the lead?",
+      "definition": "Contrast lead",
+      "rationalization": "A contrast lead describes two extremes or opposites for emphasis. The sharper the contrast, the more effective the lead will be. It is one of the novelty leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of novelty lead opens by quoting a common expression, verse, or epigram, at least familiar in the locality?",
+      "definition": "Epigram lead",
+      "rationalization": "An epigram lead opens by quoting a common expression, verse, or epigram, at least familiar in the locality. It is one of the novelty leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of novelty lead describes a person, a place, or an event, at the same time creating a mental picture of the subject matter in the mind of the reader?",
+      "definition": "Picture lead",
+      "rationalization": "A picture lead describes a person, a place, or an event, at the same time creating a mental picture of the subject matter in the mind of the reader. It is one of the novelty leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of novelty lead describes the setting which may be more prominent than the characters and the events?",
+      "definition": "Background lead",
+      "rationalization": "A background lead is similar to the picture lead except that it describes the setting which may be more prominent than the characters and the events. It is one of the novelty leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of novelty lead is used when comparatively few descriptive words can vividly formulate an imagery?",
+      "definition": "Descriptive lead",
+      "rationalization": "A descriptive lead is used when comparatively few descriptive words can vividly formulate an imagery. It is one of the novelty leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of novelty lead consists of a parody of a well-known song, poem, lines, etc.?",
+      "definition": "Parody lead",
+      "rationalization": "A parody lead consists of a parody of a well-known song, poem, lines, etc. It is one of the novelty leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of novelty lead is a short, forceful word or expression?",
+      "definition": "Punch lead",
+      "rationalization": "A punch lead is a short, forceful word or expression. It is one of the novelty leads, along with the one-word lead and other types.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of novelty lead consists of the speaker's direct words which are very striking and usually quoted from a speech, a public address, or an interview?",
+      "definition": "Quotation lead",
+      "rationalization": "A quotation lead consists of the speaker's direct words which are very striking and which are usually quoted from a speech, a public address, or an interview. It is one of the novelty leads.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of novelty lead is an answer to a question which is the basis of the news story?",
+      "definition": "Question lead",
+      "rationalization": "A question lead is an answer to a question which is the basis of the news story. It is one of the novelty leads, engaging the reader by posing a question that the story answers.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the traditional news writing form in which the key points of a story are put in the opening paragraph and the news is stacked in following paragraphs in order of descending importance?",
+      "definition": "Inverted pyramid style",
+      "rationalization": "The inverted pyramid style is the traditional news writing form in which the key points of a story are put in the opening paragraph and the news is stacked in the following paragraphs in order of descending importance. It is the standard formula for spot news stories.",
+      "mnemonic": {
+        "title": "Inverted Pyramid",
+        "phrase": "INVERTED PYRAMID = MOST important FIRST, least important LAST",
+        "items": ["I - Inverted", "P - Pyramid", "M - Most important first", "L - Least important last"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What style of writing reports the major news of a story in the first few paragraphs and then a transitional paragraph introduces a chronology of the events of the story?",
+      "definition": "Hourglass style",
+      "rationalization": "The hourglass style is a style of writing in which the major news of a story is reported in the first few paragraphs and then a transitional paragraph introduces a chronology of the events of the story. It combines the inverted pyramid with a narrative chronology.",
+      "mnemonic": {
+        "title": "Hourglass",
+        "phrase": "HOURGLASS = TOP (major news) + TRANSITION + CHRONOLOGY",
+        "items": ["H - Hourglass", "T - Top: major news", "T - Transition", "C - Chronology"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a story that explores an idea that, while interesting, fails to fit into the main story because it remains tangential to the focus?",
+      "definition": "Sidebar",
+      "rationalization": "A sidebar to a story explores an idea that, while interesting, fails to fit into the main story because it remains tangential to the focus. Sidebars engage readers by giving more information if they want it, helping to draw them into the issues of the main story.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the brief statement about the news event at issue upon which the editorial is based?",
+      "definition": "Newspeg",
+      "rationalization": "A newspeg is a brief statement about the news event at issue upon which the editorial is based. It is found in the introduction of an editorial, usually one short paragraph.",
+      "mnemonic": {
+        "title": "Newspeg",
+        "phrase": "NEWSPEG = brief statement of NEWS EVENT + editorial basis",
+        "items": ["N - News", "P - Peg", "E - Event", "B - Basis"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a kind of news-feature that contains, aside from essential facts, background, interpretation, and analyses, with emphasis on the WHY?",
+      "definition": "Depth news",
+      "rationalization": "Depth news is a kind of news-feature that contains, aside from the essential facts attendant to a news story, background, interpretation, and analyses. It is not a news story in the traditional sense since it is not based on a timely event that answers the 5 W's and the H. However, the emphasis is on the elaboration of one W, the why.",
+      "mnemonic": {
+        "title": "Depth = WHY",
+        "phrase": "DEPTH news = BACKGROUND + INTERPRETATION + ANALYSIS (WHY)",
+        "items": ["D - Depth", "B - Background", "I - Interpretation", "A - Analysis", "W - Why"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the difference between a depth report and depth treatment?",
+      "definition": "A depth report is the result of investigative reporting (presenting information beyond surface facts); depth treatment is reporting the meaning or possible meaning of those facts (interpretative reporting)",
+      "rationalization": "A depth report should be distinguished from depth treatment. The former is the result of investigative reporting, which is reporting in depth to present information on a topic beyond surface facts. Depth treatment is interpretative reporting — reporting the meaning or the possible meaning of those facts.",
+      "mnemonic": {
+        "title": "Report vs Treatment",
+        "phrase": "DEPTH REPORT = investigative; DEPTH TREATMENT = interpretative",
+        "items": ["R - Report = investigate (beyond surface)", "T - Treatment = interpret (meaning)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the art and science of human communication applied to the speedy transformation of a country and the masses from poverty to a dynamic state of economic growth?",
+      "definition": "Development communication",
+      "rationalization": "Development communication is the art and science of human communication applied to the speedy transformation of a country and the masses from poverty to a dynamic state of economic growth that makes possible greater equality and the greater fulfillment of human potentials. Its purpose is to advance development and progress.",
+      "mnemonic": {
+        "title": "DevCom",
+        "phrase": "DEVCOM = human communication for DEVELOPMENT",
+        "items": ["D - Development", "C - Communication", "H - Human", "P - Progress"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the latest form of Philippine journalism that requires the writer to popularize and translate scientific reports into stories the layman understands?",
+      "definition": "Science writing",
+      "rationalization": "Science writing is the latest form of Philippine journalism. In this era of fast-moving discoveries, inventions, and technical development, science reporting has become a must. The science writer should be able to communicate clearly and effectively so that he can popularize and translate scientific reports into stories which Mr. Average Reader, or the layman, understands.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the headline of the Number One story on Page 1 called?",
+      "definition": "Banner",
+      "rationalization": "The headline of the Number One story on Page 1 is called a banner. If it runs across the page it may also be called a streamer. The banner is the principal headline bearing the boldest and biggest type.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What are the three important functions of the headline?",
+      "definition": "To tell in capsule form what the story is all about; to grade the news as to importance; and to make the page look attractive",
+      "rationalization": "The three important functions of the headline are: (1) to tell in capsule form what the story is all about; (2) to grade the news as to importance; and (3) to make the page look attractive. While the lead summarizes the story, the headline summarizes the lead.",
+      "mnemonic": {
+        "title": "3 Functions",
+        "phrase": "CAPSULE + GRADE + ATTRACT",
+        "items": ["C - Capsule form of story", "G - Grade importance", "A - Attractive page"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of headline structure has both lines flushed to the left margin, with no exact count for units in each line?",
+      "definition": "Flush left",
+      "rationalization": "Flush left is a headline structure where both lines are flushed to the left margin. This is also true with a one-line headline. This has no exact count for the units in each line.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What type of headline structure has the first line flushed left while the second is indented, sometimes with two or three lines of the same length?",
+      "definition": "Dropline or step form",
+      "rationalization": "Dropline or step form is a headline structure where the first line is flushed left while the second is indented. It may consist of two or three, and sometimes four lines of types of the same length, somewhat less than a column in width, so that the first line is flushed to the left, the second centered, and the third flushed to the right.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What type of headline structure has each of the three or four lines successively shorter than the line above it?",
+      "definition": "Inverted pyramid headline",
+      "rationalization": "The inverted pyramid headline has each of the three or four lines successively shorter than the line above it. It is self-explanatory and is one of the common headline structures.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What type of headline structure has the first line flushed left, followed by two indented parallel lines?",
+      "definition": "Hanging indention",
+      "rationalization": "Hanging indention is a headline structure where the first line is flushed left, followed by two indented parallel lines. It is one of the common headline structures.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is a one-line headline that runs across the column, the simplest form of headline?",
+      "definition": "Crossline or barline",
+      "rationalization": "A crossline or barline is a one-line headline that runs across the column. The simplest form, it is a single line across the allotted space. If it runs across the page, it is called a streamer.",
+      "mnemonic": {
+        "title": "Crossline = Streamer",
+        "phrase": "CROSSLINE (across column) = STREAMER (across page)",
+        "items": ["C - Crossline", "B - Barline", "S - Streamer (across page)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What type of headline is boxed for emphasis or art's sake, and may be a full box, half box, or quarter box?",
+      "definition": "Boxed headline",
+      "rationalization": "A boxed headline is boxed for emphasis or art's sake. It may be a full box, half box, or quarter box. It is one of the common headline structures.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What is the headline of a story continued on another page, which may be the same as the original headline or just a word or phrase followed by a series of dots?",
+      "definition": "Jump story headline",
+      "rationalization": "A jump story headline is the headline of a jump story (a story continued on another page). It may be the same as the original headline or it may just be a word, a phrase or a group of words followed by a series of dots.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "In headline writing, what kind of headline has letters or words so crowded that there are no more spaces between them?",
+      "definition": "Fat head",
+      "rationalization": "A fat head is a headline in which the letters or the words are so crowded that there are no more spaces between them or that the spaces are so small that several words read as one. It is one of the kinds of headlines to avoid.",
+      "mnemonic": {
+        "title": "Fat = Crowded",
+        "phrase": "FAT head = CROWDED letters/words",
+        "items": ["F - Fat", "C - Crowded", "N - No spaces"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In headline writing, what kind of headline has spaces between letters or words so wide that the effect is ugly?",
+      "definition": "Thin head",
+      "rationalization": "A thin head is a headline where the spaces between the letters of words, or the space after the words in a line, are so wide that the effect is ugly. It is one of the kinds of headlines to avoid, opposite of the fat head.",
+      "mnemonic": {
+        "title": "Thin = Wide Spaces",
+        "phrase": "THIN head = WIDE spaces (ugly)",
+        "items": ["T - Thin", "W - Wide spaces", "U - Ugly effect"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In headline writing, what kind of headline is an incomplete headline, like the label of a product?",
+      "definition": "Label head",
+      "rationalization": "A label head is an incomplete headline, like the label of a product. It is one of the kinds of headlines to avoid because it does not convey a complete thought or summarize the story.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In headline writing, what kind of headline is very weak, devoid of meaning, sometimes due to the absence of a subject or the lack of a verb?",
+      "definition": "Wooden head",
+      "rationalization": "A wooden head is a very weak headline that is devoid of meaning, sometimes due to the absence of a subject or the lack of a verb. It is one of the kinds of headlines to avoid.",
+      "mnemonic": {
+        "title": "Wooden = Weak",
+        "phrase": "WOODEN head = WEAK, no subject/verb",
+        "items": ["W - Wooden", "W - Weak", "N - No subject/verb"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In headline writing, what kind of headline gives a command because it begins with a verb?",
+      "definition": "Mandatory head",
+      "rationalization": "A mandatory head gives a command because it begins with a verb. It is one of the kinds of headlines to avoid. Unless the subject is implied or has been mentioned in the first deck, a headline should not begin with a verb.",
+      "mnemonic": {
+        "title": "Mandatory = Command",
+        "phrase": "MANDATORY head = COMMAND (begins with verb)",
+        "items": ["M - Mandatory", "C - Command", "V - Verb first"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In headline writing, what kind of headline is big and bold for a short and unimportant story, or is sensational?",
+      "definition": "Screaming head",
+      "rationalization": "A screaming head is a big and bold headline of a short and unimportant story. A sensational head is another kind of screaming headline. It is one of the kinds of headlines to avoid.",
+      "mnemonic": {
+        "title": "Screaming = Sensational",
+        "phrase": "SCREAMING head = BIG type for SMALL story",
+        "items": ["S - Screaming", "B - Big type", "S - Small story", "S - Sensational"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In headline punctuation, what punctuation mark is used in place of the conjunction 'and'?",
+      "definition": "Comma",
+      "rationalization": "In headline punctuation, a comma is used in place of the conjunction 'and.' Example: 'Self-reliance, discipline us at Baguio confab.' Headlines generally do not end with a period.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "In headline punctuation, what punctuation mark separates two related thoughts and should be at the end of the line if the headline is a two-line headline?",
+      "definition": "Semicolon",
+      "rationalization": "In headline punctuation, two related thoughts should be separated with a semicolon. As much as possible this should be at the end of the line if the headline is a two-line headline or a running head.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "In headline punctuation, what type of quotation marks are used in headlines?",
+      "definition": "Single quotation marks",
+      "rationalization": "In headline punctuation, the single quotation marks, not the double quotation marks, are used in headlines. Example: 'Cultural development: 'Linggo ng Wika' theme.'",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "In unit counting for headlines, how many units are assigned to the letters j, i, l, t, f and all punctuations except the em dash and question mark?",
+      "definition": "1/2 unit",
+      "rationalization": "In unit counting for headlines, 1/2 unit is assigned to j, i, l, t, f and all punctuations except the em dash (–) and the question mark (?). This system ensures the headline fits the allotted space and avoids thin heads, fat heads, or bleeding headlines.",
+      "mnemonic": {
+        "title": "1/2 Unit",
+        "phrase": "JILTF + punctuations (except – and ?) = 1/2 unit",
+        "items": ["J - j", "I - i", "L - l", "T - t", "F - f"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "In unit counting for headlines, how many units are assigned to the question mark, space, all figures, capital JILTF, and lowercase letters except jiltf?",
+      "definition": "1 unit",
+      "rationalization": "In unit counting for headlines, 1 unit is assigned to the question mark, space, all figures, capital JILTF, and lowercase letters except jiltf. This system helps determine if a headline fits the allotted space.",
+      "mnemonic": {
+        "title": "1 Unit",
+        "phrase": "? space figures CAPS JILTF + lowercase (not jiltf) = 1 unit",
+        "items": ["? - Question mark", "SP - Space", "F - Figures", "C - Capital JILTF", "L - Lowercase (not jiltf)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "In unit counting for headlines, how many units are assigned to the em dash, lowercase m and w, and all capital letters except M, W, and JILTF?",
+      "definition": "1 1/2 units",
+      "rationalization": "In unit counting for headlines, 1 1/2 units are assigned to the em dash, lowercase m and w, and all capital letters except capital M and W and JILTF. This system ensures proper headline fitting.",
+      "mnemonic": {
+        "title": "1.5 Units",
+        "phrase": "em dash + m + w + CAPS (except M, W, JILTF) = 1.5 units",
+        "items": ["— - Em dash", "m - Lowercase m", "w - Lowercase w", "C - Capitals (except M, W, JILTF)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "In unit counting for headlines, how many units are assigned to capital M and W?",
+      "definition": "2 units",
+      "rationalization": "In unit counting for headlines, 2 units are assigned to capital M and W. These are the widest letters and require the most space in headline typesetting.",
+      "mnemonic": {
+        "title": "2 Units",
+        "phrase": "Capital M and W = 2 units (widest letters)",
+        "items": ["M - Capital M", "W - Capital W", "2 - 2 units each"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a complete collection of headline types that a particular newspaper uses, specifying unit counts for all heads?",
+      "definition": "Headline schedule",
+      "rationalization": "A headline schedule is a complete collection of headline types that a particular newspaper uses. This collection should specify the unit counts for all the heads. Every student editor should be acquainted with the types used by the printing press where his school paper is being printed.",
+      "mnemonic": {
+        "title": "Schedule",
+        "phrase": "HEADLINE SCHEDULE = complete collection of headline types + unit counts",
+        "items": ["H - Headline types", "S - Schedule", "U - Unit counts"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the official stand of the paper on a relevant development or issue, a critical interpretation of significant, usually contemporary events?",
+      "definition": "Editorial",
+      "rationalization": "An editorial is the official stand of the paper on a relevant development or issue. It is a personal commentary written by the editor who comments or gives the newspaper's or the staff's opinion about various aspects on an issue which is of interest and importance to the public. It is the stand of the paper, not of an individual editor.",
+      "mnemonic": {
+        "title": "Editorial = Stand",
+        "phrase": "EDITORIAL = OFFICIAL STAND of the PAPER (not individual)",
+        "items": ["E - Editorial", "O - Official stand", "P - Paper's opinion"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "Who defined an editorial as 'an article in a newspaper giving the editor's view or those of the person or persons in control of the paper'?",
+      "definition": "A. Gayle Waldrop",
+      "rationalization": "A. Gayle Waldrop defined an editorial as an article in a newspaper giving the editor's view or those of the person or persons in control of the paper. This is one of several definitions of editorial from various authors.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "Who defined an editorial as 'the expression of the people's conscience, cause, and convictions'?",
+      "definition": "Joseph Pulitzer",
+      "rationalization": "Joseph Pulitzer defined an editorial as the expression of the people's conscience, cause, and convictions. This is one of several definitions of editorial from various authors.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "Who said that 'bitterness, bias, and fear have no place in an editorial'?",
+      "definition": "William Allan White",
+      "rationalization": "William Allan White said that bitterness, bias, and fear have no place in an editorial. They make for weakness no matter how much they bluster. This is one of several definitions/quotes about editorials.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "According to Reddick, what are the three qualities of a good editorial?",
+      "definition": "Interest, brevity, and force",
+      "rationalization": "Reddick gives three qualities of a good editorial: interest, brevity, and force. Spears and Lawshe, on the other hand, characterize an editorial as one that must have clearness of style, moral purpose, sound reasoning, and power to influence public opinion.",
+      "mnemonic": {
+        "title": "Reddick's 3",
+        "phrase": "I-B-F: Interest, Brevity, Force",
+        "items": ["I - Interest", "B - Brevity", "F - Force"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "According to Spears and Lawshe, what are the four characteristics of a good editorial?",
+      "definition": "Clearness of style, moral purpose, sound reasoning, and power to influence public opinion",
+      "rationalization": "Spears and Lawshe characterize an editorial as one that must have clearness of style, moral purpose, sound reasoning, and power to influence public opinion. This complements Reddick's three qualities of interest, brevity, and force.",
+      "mnemonic": {
+        "title": "Spears & Lawshe",
+        "phrase": "C-M-S-P: Clearness, Moral purpose, Sound reasoning, Power to influence",
+        "items": ["C - Clearness of style", "M - Moral purpose", "S - Sound reasoning", "P - Power to influence"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial seeks to give information on facts unknown to the reader, restating facts of news stories or adding other facts with minimum explanation?",
+      "definition": "Editorial of information",
+      "rationalization": "An editorial of information seeks to give information on facts unknown to the reader. It restates the facts of news stories or adds other facts with minimum explanation. It may define terms, identify persons or factors, or provide a background. Example: 'Freedom of the Press.'",
+      "mnemonic": {
+        "title": "Info = Facts",
+        "phrase": "EDITORIAL OF INFORMATION = FACTS + minimum explanation",
+        "items": ["I - Information", "F - Facts", "M - Minimum explanation"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial explains the significance or meaning of a news event, current idea, condition, situation, theory, or hypothesis, presenting both sides and leaving judgment to the reader?",
+      "definition": "Editorial of interpretation",
+      "rationalization": "An editorial of interpretation explains the significance or meaning of a news event, current idea, condition, or situation, theory, or hypothesis. The writer doesn't argue nor criticize, but merely presents both sides of an issue and leaves the judgment to the reader. Example: 'Freedom of the Press: Two Schools of Thought.'",
+      "mnemonic": {
+        "title": "Interpret = Explain",
+        "phrase": "EDITORIAL OF INTERPRETATION = EXPLAINS significance + BOTH sides",
+        "items": ["I - Interpretation", "E - Explains", "B - Both sides", "J - Judgment to reader"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial points out the good or bad features of a problem or situation mentioned in the news, aiming to influence the reader and suggesting a solution at the end?",
+      "definition": "Editorial of criticism",
+      "rationalization": "An editorial of criticism points out the good or the bad features of a problem or situation mentioned in the news. Its purpose is to influence the reader. It suggests a solution at the end. Example: 'School Administration Not Sincere in Press Freedom Promise.'",
+      "mnemonic": {
+        "title": "Criticism = Judge",
+        "phrase": "EDITORIAL OF CRITICISM = GOOD/BAD features + SOLUTION at end",
+        "items": ["C - Criticism", "G - Good/bad features", "S - Solution at end"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial praises, commends, or pays tribute to a person or organization that has performed some worthwhile projects or deeds?",
+      "definition": "Editorial of commendation, appreciation, or tribute",
+      "rationalization": "An editorial of commendation, appreciation, or tribute praises, commends, or pays tribute to a person or organization that has performed some worthwhile projects or deeds, or accomplishments. Example: 'Laurels to Barangay Dance Troupe.'",
+      "mnemonic": {
+        "title": "Commend = Praise",
+        "phrase": "EDITORIAL OF COMMENDATION = PRAISE + TRIBUTE",
+        "items": ["C - Commendation", "P - Praise", "T - Tribute"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial is oftentimes called editorial of persuasion, where the editor argues to convince or persuade the reader to accept his stand on the issue?",
+      "definition": "Editorial of argumentation",
+      "rationalization": "An editorial of argumentation is oftentimes called editorial of persuasion. The editor argues in order to convince or persuade the reader to accept his stand on the issue. Example: 'Freedom of the Press Not Violated.'",
+      "mnemonic": {
+        "title": "Argue = Persuade",
+        "phrase": "EDITORIAL OF ARGUMENTATION = PERSUASION + convince reader",
+        "items": ["A - Argumentation", "P - Persuasion", "C - Convince reader"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial evokes a smile, a chuckle, or laughter while suggesting truth, with its main aim to entertain?",
+      "definition": "Editorial of entertainment",
+      "rationalization": "An editorial of entertainment evokes a smile, a chuckle, laughter, while suggesting truth. Its main aim is to entertain. It is usually short. Example: 'Miniskirt, Anyone?'",
+      "mnemonic": {
+        "title": "Entertain = Smile",
+        "phrase": "EDITORIAL OF ENTERTAINMENT = SMILE + TRUTH + SHORT",
+        "items": ["E - Entertainment", "S - Smile", "T - Truth", "S - Short"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial presents a philosophy rather than an argument or explanation, often with nature or emotion as subject matter?",
+      "definition": "Mood editorial",
+      "rationalization": "A mood editorial presents a philosophy rather than an argument or an explanation. Oftentimes, the subject matter is nature or emotion. Example: 'Those Wonderful People Called Parents.'",
+      "mnemonic": {
+        "title": "Mood = Philosophy",
+        "phrase": "MOOD EDITORIAL = PHILOSOPHY + nature/emotion",
+        "items": ["M - Mood", "P - Philosophy", "N - Nature/emotion"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial explains the significance of a special day or occasion?",
+      "definition": "Special occasion editorial",
+      "rationalization": "A special occasion editorial explains the significance of a special day or occasion. Examples: 'The Significance of Christmas,' 'Au Revoir.'",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What is an editorial written by two or more editors belonging to different newspapers which they publish in their respective papers at the same time?",
+      "definition": "Pooled editorial",
+      "rationalization": "A pooled editorial is written by two or more editors belonging to different newspapers which they publish in their respective papers at the same time. Example: 'Stop Tuition Fee Increase.'",
+      "mnemonic": {
+        "title": "Pooled = Shared",
+        "phrase": "POOLED EDITORIAL = TWO+ editors + DIFFERENT papers + SAME time",
+        "items": ["P - Pooled", "T - Two+ editors", "D - Different papers", "S - Same time"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What are the three parts of an editorial?",
+      "definition": "Introduction (newspeg + reaction), body, and ending (clincher)",
+      "rationalization": "An editorial is organized in three parts: (1) the introduction, which contains the newspeg with the reaction and is usually one short paragraph; (2) the body, which may take two or three short paragraphs that support or justify the reaction; and (3) the ending, sometimes called the clincher, which summarizes the editorial's stand.",
+      "mnemonic": {
+        "title": "3 Parts",
+        "phrase": "I-B-E: Introduction, Body, Ending (clincher)",
+        "items": ["I - Introduction (newspeg + reaction)", "B - Body (support/justify)", "E - Ending (clincher)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the ending of an editorial, which summarizes the editorial's stand, sometimes called?",
+      "definition": "Clincher",
+      "rationalization": "The ending of an editorial, sometimes called the clincher, summarizes the editorial's stand. The body may take two or three short paragraphs that support or justify the reaction.",
+      "mnemonic": {
+        "title": "Clincher",
+        "phrase": "CLINCHER = editorial ENDING that summarizes STAND",
+        "items": ["C - Clincher", "E - Ending", "S - Summarizes stand"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial column resembles an editorial in form but carries the personal stamp of the writer's own ideas, also called the signed editorial column?",
+      "definition": "Opinion column",
+      "rationalization": "The opinion column (also called the signed editorial column) resembles an editorial in form but, in contrast with the editorial's impersonal and anonymous approach, carries the personal stamp of the writer's own ideas. Example: Walter Lippman's 'Today and Tomorrow.'",
+      "mnemonic": {
+        "title": "Opinion = Personal",
+        "phrase": "OPINION column = SIGNED + PERSONAL ideas",
+        "items": ["O - Opinion", "S - Signed", "P - Personal"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial column lumps together odds and ends of information, a poem here, an announcement there, a joke, or an interesting quotation?",
+      "definition": "Hodge-podge column",
+      "rationalization": "The hodge-podge column is where the author lumps together odds and ends of information, a poem here, an announcement there, a point paragraph, a modernized proverb, a joke, or an interesting quotation. It is one of the types of editorial columns according to content.",
+      "mnemonic": {
+        "title": "Hodge-podge = Mix",
+        "phrase": "HODGE-PODGE = MIX of odds and ends",
+        "items": ["H - Hodge-podge", "M - Mix", "O - Odds and ends"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial column is a legacy from a more leisurely age, exemplified by Addison and Steele of the Spectator papers, Charles Lamb, Oliver Goldsmith, G.K. Chesterton, and Christopher Morley?",
+      "definition": "Essay column",
+      "rationalization": "The essay column (increasingly rare) is a legacy from a more leisurely age when writers could sit and scribble and muse in light or purple prose. Its exponents were Addison and Steele of the famed Spectator papers, Charles Lamb, Oliver Goldsmith, G.K. Chesterton, and Christopher Morley. The Filipino columnist who best approximated this type was Godofredo Rivera of the Graphic.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of editorial column caters to the inherent interest of human beings in human beings, chronicling the facts and foibles of the great and near-great, exemplified by Walter Winchell?",
+      "definition": "Gossip column",
+      "rationalization": "The gossip column caters to the inherent interest of human beings in human beings. Unfortunately, the reader's eyes light up more frequently when they spy the vices rather than the virtues of others. The society columnists chronicle the facts and foibles of the great and near-great, the social climbers, and the true celebrities. Example: Walter Winchell and his 'keyhole' journalism.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of editorial column is written by a columnist who has his eye to the keyhole but with a more serious purpose, poking into the activities of the 'men who make the decisions'?",
+      "definition": "Dopester's column",
+      "rationalization": "The dopester's column is written by the columnist who also has his eye to the keyhole but with a more serious purpose. He uses much the same technique as the gossip columnist but rises above the chatterbox variety of news to poke into the activities of the 'men who make the decisions.' The 'victims' are usually government leader-politicians, congressmen, senators, Cabinet officials, titans of industry and commerce, and institutions which have to do with national and international affairs.",
+      "mnemonic": {
+        "title": "Dopester = Serious",
+        "phrase": "DOPESTER = GOSSIP technique + SERIOUS purpose (decision-makers)",
+        "items": ["D - Dopester", "S - Serious", "D - Decision-makers"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is an editorial page illustration expressing opinion and interpretation, derived from the words caricature and lampoon?",
+      "definition": "Editorial cartoon",
+      "rationalization": "An editorial cartoon is an editorial page illustration expressing opinion and interpretation. The word cartoon is derived from two words: caricature and lampoon. It performs any of the three functions of the newspress – to inform, influence, or entertain.",
+      "mnemonic": {
+        "title": "Cartoon = Caricature + Lampoon",
+        "phrase": "CARTOON = CARICATURE + LAMPOON",
+        "items": ["C - Caricature", "L - Lampoon", "O - Opinion/interpretation"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is an exaggerated description, generally by sketching, a pictorial representation of a person or thing in which a defect or peculiarity is exaggerated so as to produce a ludicrous effect?",
+      "definition": "Caricature",
+      "rationalization": "A caricature is an exaggerated description, generally by sketching. It is a pictorial representation of a person or thing in which a defect or peculiarity is exaggerated so as to produce a ludicrous effect. Together with lampoon, it is one of the two words from which 'cartoon' is derived.",
+      "mnemonic": {
+        "title": "Caricature = Exaggerate",
+        "phrase": "CARICATURE = EXAGGERATED sketch + LUDICROUS effect",
+        "items": ["C - Caricature", "E - Exaggerated", "L - Ludicrous"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a piece of malicious writing, a personal written satire that attacks and ridicules?",
+      "definition": "Lampoon",
+      "rationalization": "A lampoon is a piece of malicious writing, a personal written satire that attacks and ridicules. Together with caricature, it is one of the two words from which 'cartoon' is derived.",
+      "mnemonic": {
+        "title": "Lampoon = Attack",
+        "phrase": "LAMPOON = MALICIOUS writing + ATTACK/RIDICULE",
+        "items": ["L - Lampoon", "M - Malicious", "A - Attack"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What are the three functions of the newspress that an editorial cartoon also performs?",
+      "definition": "To inform, influence, or entertain",
+      "rationalization": "An editorial cartoon performs any of the three functions of the newspress – to inform, influence, or entertain. A good cartoon appeals to the reader's sense of humor in order to persuade him to accept an opinion; it is an effective social force.",
+      "mnemonic": {
+        "title": "3 Functions",
+        "phrase": "I-I-E: Inform, Influence, Entertain",
+        "items": ["I - Inform", "I - Influence", "E - Entertain"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of cartoon idea shows the school represented as a mother taking care of her children?",
+      "definition": "Inspirational cartoon",
+      "rationalization": "An inspirational cartoon idea shows the school represented as a mother taking care of her children. Cartoon ideas cover a wide range of subjects: inspirational, satirical, and correctional.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of cartoon idea shows the embarrassment of having girls wear miniskirts in the classroom?",
+      "definition": "Satirical cartoon",
+      "rationalization": "A satirical cartoon idea shows the embarrassment of having girls wear miniskirts in the classroom. Cartoon ideas cover a wide range of subjects: inspirational, satirical, and correctional.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of cartoon idea shows problems involving people taking prohibited drugs?",
+      "definition": "Correctional cartoon",
+      "rationalization": "A correctional cartoon idea shows problems involving people taking prohibited drugs. Cartoon ideas cover a wide range of subjects: inspirational, satirical, and correctional.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What is a story based upon a news event that has already been covered by the newspaper, often called the story behind the story?",
+      "definition": "News feature",
+      "rationalization": "A news feature is a story based upon a news event that has already been covered by the newspaper. It's the story behind the story. It is one of the types of feature articles.",
+      "mnemonic": {
+        "title": "News Feature",
+        "phrase": "NEWS FEATURE = STORY BEHIND the story",
+        "items": ["N - News feature", "B - Behind the story", "A - Already covered"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of feature analyzes the facts of a news story to explain the causes and motivations leading to the event, then discusses the possible consequences?",
+      "definition": "Interpretative feature",
+      "rationalization": "An interpretative feature analyzes the facts of a news story to explain the causes and motivations leading to the event, then discusses the possible consequences. It is one of the types of feature articles.",
+      "mnemonic": {
+        "title": "Interpretative",
+        "phrase": "INTERPRETATIVE feature = CAUSES + MOTIVATIONS + CONSEQUENCES",
+        "items": ["I - Interpretative", "C - Causes", "M - Motivations", "C - Consequences"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of feature is a general category referring to any interesting story about a person, place, or event that has no news peg or timeliness associated with it?",
+      "definition": "Straight feature",
+      "rationalization": "A straight feature is a general category referring to any interesting story about a person, place, or event that has no 'news peg' or timeliness associated with it. It is one of the types of feature articles.",
+      "mnemonic": {
+        "title": "Straight Feature",
+        "phrase": "STRAIGHT feature = NO news peg + NO timeliness",
+        "items": ["S - Straight feature", "N - No news peg", "T - No timeliness"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of feature makes the readers aware of the subject's personality by detailing the person's experiences, thoughts, mannerisms, and actions?",
+      "definition": "Personality feature",
+      "rationalization": "A personality feature makes the readers aware of the subject's personality by detailing the person's experiences, thoughts, mannerisms, and actions. It is one of the types of feature articles.",
+      "mnemonic": {
+        "title": "Personality",
+        "phrase": "PERSONALITY feature = EXPERIENCES + THOUGHTS + MANNERISMS + ACTIONS",
+        "items": ["P - Personality", "E - Experiences", "T - Thoughts", "M - Mannerisms", "A - Actions"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of feature is usually about a prominent individual or an authority on a particular subject or event, the information of which is obtained in an interview?",
+      "definition": "Interview feature",
+      "rationalization": "An interview feature is usually about a prominent individual or an authority on a particular subject or event, the information of which is obtained in an interview. It is one of the types of feature articles.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What type of feature establishes a mood and provokes an emotional reaction in a reader, and can be humorous or sad, suspenseful or fast-paced?",
+      "definition": "Human-interest feature",
+      "rationalization": "A human-interest feature establishes a mood and provokes an emotional reaction in a reader. It can be humorous or sad, suspenseful or fast-paced. It is one of the types of feature articles.",
+      "mnemonic": {
+        "title": "Human Interest",
+        "phrase": "HUMAN-INTEREST = MOOD + EMOTIONAL reaction",
+        "items": ["H - Human-interest", "M - Mood", "E - Emotional reaction"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is also called an analysis piece, which adds meaning to current issues in the news by explaining them further?",
+      "definition": "Backgrounder",
+      "rationalization": "A backgrounder — also called an analysis piece — adds meaning to current issues in the news by explaining them further. It is one of the types of feature articles.",
+      "mnemonic": {
+        "title": "Backgrounder",
+        "phrase": "BACKGROUNDER = ANALYSIS piece + adds MEANING",
+        "items": ["B - Backgrounder", "A - Analysis", "M - Meaning"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is a newspaper term for brief feature items, usually humorous, less than 100 words, beginning with a clever lead and building to a surprise ending?",
+      "definition": "Brites",
+      "rationalization": "Brites is a newspaper term for brief feature items – usually humorous. Less than 100 words, they begin with a clever lead that grabs the reader's attention and go on to a brief, chronological description of an event that builds swiftly to a climax – usually a surprise ending – or to a catchy, summary thought. Example: Reader's Digest.",
+      "mnemonic": {
+        "title": "Brites",
+        "phrase": "BRITES = BRIEF + HUMOROUS + <100 words + SURPRISE ending",
+        "items": ["B - Brief", "H - Humorous", "S - Surprise ending", "100 - Less than 100 words"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is an art of asking questions to obtain information, or technically, asking questions to obtain opinions, ideas, or special information on topics of interest to the general public from a prominent person or recognized authority?",
+      "definition": "Interview",
+      "rationalization": "An interview is an art of asking questions to obtain information. Technically speaking, it is asking questions to obtain opinions, ideas, or special information on topics of interest to the general public from a prominent person or from a recognized authority.",
+      "mnemonic": {
+        "title": "Interview",
+        "phrase": "INTERVIEW = ASK questions + OBTAIN info/opinion",
+        "items": ["I - Interview", "A - Ask", "O - Obtain"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What kind of interview is conducted to obtain some information from a person responsible for a new idea?",
+      "definition": "Informative interview",
+      "rationalization": "An informative interview is conducted to obtain some information from a person responsible for a new idea. It is one of the kinds of interviews, along with opinion interview and feature interview.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What kind of interview is conducted to obtain opinion?",
+      "definition": "Opinion interview",
+      "rationalization": "An opinion interview is conducted to obtain opinion. It is one of the kinds of interviews, along with informative interview and feature interview.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What kind of interview is a group interview of which there are two types: the 'inquiring reporter type' and the symposium type?",
+      "definition": "Feature interview",
+      "rationalization": "A feature interview is the group interview of which there are two types: the 'inquiring reporter type' and the symposium type. It is one of the kinds of interviews.",
+      "mnemonic": {
+        "title": "Feature Interview",
+        "phrase": "FEATURE interview = GROUP + inquiring reporter/symposium types",
+        "items": ["F - Feature", "G - Group", "I - Inquiring reporter", "S - Symposium"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In conducting an interview, what should you do regarding 'off the record' comments?",
+      "definition": "Respect them",
+      "rationalization": "In conducting an interview, you should respect 'off the record' comments. This is one of the dos in conducting an interview, along with knowing your subject thoroughly, making an appointment, being courteous, and offering to show your write-up before publication.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "In writing the interview, what should you do with grammatical errors and awkward sentences made by the interviewee?",
+      "definition": "Correct them unless they are necessary to reveal his personality, without changing the interviewee's meaning",
+      "rationalization": "In writing the interview, you should correct all grammatical errors and awkward sentences made by the interviewee unless they are necessary to reveal his personality. In doing this, don't change the interviewee's meaning.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Applying",
+      "highYield": true
+    },
+    {
+      "term": "What are the five W's that appear in the sports lead?",
+      "definition": "Who won? Against whom? By what score? Where? When?",
+      "rationalization": "The classic 'Five W's' appear in the sports lead as: Who won? Against whom? By what score? Where? When? The sports lead is the attention-getter, the news in a nutshell.",
+      "mnemonic": {
+        "title": "Sports 5 W's",
+        "phrase": "WHO won + AGAINST whom + SCORE + WHERE + WHEN",
+        "items": ["W - Who won", "A - Against whom", "S - Score", "W - Where", "W - When"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What are the elements that a sports lead can dramatize aside from the five W's?",
+      "definition": "The key play, the outstanding player, and analytical approach",
+      "rationalization": "The sports lead can also dramatize other elements like the key play, the outstanding player, and analytical approach. The sports lead is the attention-getter, the news in a nutshell.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": false
+    },
+    {
+      "term": "What should a reporter use to identify the story on the first page, including the name of the paper, story identifier, reporter, and date?",
+      "definition": "Slugline",
+      "rationalization": "In preparing the copy, the reporter should identify on the first page the story with a slugline – the name of the paper, words identifying the story like 'Fire' or 'Student election,' the reporter, and the date.",
+      "mnemonic": {
+        "title": "Slugline",
+        "phrase": "SLUGLINE = PAPER + STORY + REPORTER + DATE",
+        "items": ["P - Paper name", "S - Story identifier", "R - Reporter", "D - Date"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What symbol or word is typed at the bottom of each page except the last to indicate the story continues?",
+      "definition": "'More'",
+      "rationalization": "In preparing the copy, the reporter should type the word 'More' at the bottom of each page except the last, where he has to indicate the end of the story with a '30' or # mark.",
+      "mnemonic": {
+        "title": "More & 30",
+        "phrase": "MORE at bottom (except last); 30 or # at END",
+        "items": ["M - More (continues)", "30 - End mark", "# - End mark"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the term for the assembling of type, cuts, and/or ads on a page?",
+      "definition": "Makeup",
+      "rationalization": "Makeup refers to the assembling of type, cuts, and/or ads on a page. Type refers to the texts or fonts used, while cuts in letterpress terminology refer to photoengraving of any kind, including photos, illustrations, and boxes.",
+      "mnemonic": {
+        "title": "Makeup",
+        "phrase": "MAKEUP = assembling TYPE + CUTS + ADS on a page",
+        "items": ["M - Makeup", "T - Type", "C - Cuts", "A - Ads"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is a column of type extending down a page, not squared off under a multicolumn headline, that should be avoided in makeup?",
+      "definition": "Dogleg",
+      "rationalization": "A dogleg refers to a column of type extending down a page, not squared off under a multicolumn headline. Avoiding clutter by avoiding doglegs is one of the dos and don'ts in makeup.",
+      "mnemonic": {
+        "title": "Dogleg",
+        "phrase": "DOGLEG = column NOT squared off + AVOID",
+        "items": ["D - Dogleg", "N - Not squared off", "A - Avoid"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the placement of a headline directly under a multicolumn head, which should be avoided in makeup?",
+      "definition": "Armpit placement",
+      "rationalization": "Armpit placement is a headline directly under a multicolumn head. It should be avoided in makeup to prevent clutter and poor visual arrangement.",
+      "mnemonic": {
+        "title": "Armpit",
+        "phrase": "ARMPIT placement = headline UNDER multicolumn head + AVOID",
+        "items": ["A - Armpit", "U - Under multicolumn", "A - Avoid"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What are the six principles to achieve effective makeup according to Scholastic Journalism by English and Hach?",
+      "definition": "Unity, balance, emphasis, movement, proportion, and contrast",
+      "rationalization": "Scholastic Journalism by English and Hach gives six principles to achieve effective makeup: unity, balance, emphasis, movement, proportion, and contrast. These principles guide the arrangement of elements on a newspaper page.",
+      "mnemonic": {
+        "title": "UBEMPC",
+        "phrase": "U-B-E-M-P-C: Unity, Balance, Emphasis, Movement, Proportion, Contrast",
+        "items": ["U - Unity", "B - Balance", "E - Emphasis", "M - Movement", "P - Proportion", "C - Contrast"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the term for placing two headlines of the same size side by side, which should be avoided in makeup?",
+      "definition": "Tombstoning",
+      "rationalization": "Tombstoning refers to placing two headlines of the same size side by side. It should be avoided in page makeup because it creates visual confusion and monotony.",
+      "mnemonic": {
+        "title": "Tombstoning",
+        "phrase": "TOMBSTONING = TWO same-size headlines SIDE BY SIDE + AVOID",
+        "items": ["T - Tombstoning", "T - Two headlines", "S - Same size", "A - Avoid"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What type of front page makeup is also called balance or symmetrical makeup?",
+      "definition": "Perfect balance makeup",
+      "rationalization": "Perfect balance makeup is also called balance or symmetrical makeup. It is one of the types of front page makeup by way of headline and text arrangement identified by English and Hach in Scholastic Journalism.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What type of front page makeup is also called brace or focus makeup?",
+      "definition": "Brace or focus makeup",
+      "rationalization": "Brace or focus makeup is one of the types of front page makeup by way of headline and text arrangement. It is identified by English and Hach in Scholastic Journalism, along with perfect balance, broken column, occult, streamlined, and circus makeup.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": false
+    },
+    {
+      "term": "What type of front page makeup includes the X format, curve format, L format, J format, and umbrella format?",
+      "definition": "Makeup by way of text and photo combination",
+      "rationalization": "Makeup by way of text and photo combination includes the X format, curve format, L format, J format, and umbrella format. This is another way of laying out a page, distinct from makeup by way of headline and text arrangement.",
+      "mnemonic": {
+        "title": "XCLJU",
+        "phrase": "X-C-L-J-U: X, Curve, L, J, Umbrella formats",
+        "items": ["X - X format", "C - Curve format", "L - L format", "J - J format", "U - Umbrella format"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What are the two things a newspaperman must bear in mind when selecting pictures for publication?",
+      "definition": "The picture's technical value and editorial value",
+      "rationalization": "The newspaperman has two things to bear in mind when selecting pictures for publication: the picture's technical value and editorial value. A picture has technical value when it is technically perfect with proper light and shadow, free from smudges, and clean and clear. A picture has editorial value when it tells a story at a glance and shows life's happenings and moments of truth and significance.",
+      "mnemonic": {
+        "title": "T-E Value",
+        "phrase": "TECHNICAL value + EDITORIAL value",
+        "items": ["T - Technical (quality)", "E - Editorial (story)"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Understanding",
+      "highYield": true
+    },
+    {
+      "term": "What is the text or body type accompanying photos or artwork, sometimes called cutline or underline?",
+      "definition": "Caption",
+      "rationalization": "A caption is the text or body type accompanying photos or artwork or any pictorial illustration. It is sometimes called cutline or underline. The title or explanatory matter above an illustration is called an overline. Captions should be closely related to the picture so that the reader may be able to take in picture and caption at a glance.",
+      "mnemonic": {
+        "title": "Caption",
+        "phrase": "CAPTION = CUTLINE = UNDERLINE (text below photo)",
+        "items": ["C - Caption", "C - Cutline", "U - Underline"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What is the title or explanatory matter above an illustration called?",
+      "definition": "Overline",
+      "rationalization": "The title or explanatory matter above an illustration is called an overline. It is distinguished from the caption/cutline/underline, which is the text below the photo. Captions should be underneath the picture when there are other materials on the page, but can be on the side when picture and caption are isolated.",
+      "mnemonic": {
+        "title": "Overline",
+        "phrase": "OVERLINE = text ABOVE photo",
+        "items": ["O - Overline", "A - Above", "P - Photo"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "What presents rules that, when followed, lead to consistency in punctuation, abbreviation, capitalization, and spelling?",
+      "definition": "Stylebook",
+      "rationalization": "A stylebook does not deal with matters of literary expression. It presents rules that, when followed, lead to consistency in punctuation, abbreviation, capitalization, and spelling. It is an essential reference for journalists.",
+      "mnemonic": {
+        "title": "Stylebook",
+        "phrase": "STYLEBOOK = CONSISTENCY in punctuation, abbreviation, capitalization, spelling",
+        "items": ["S - Stylebook", "C - Consistency", "P - Punctuation", "A - Abbreviation", "C - Capitalization", "S - Spelling"]
+      },
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "According to Robert Gunning's Ten Principles of Clear Writing, what is the first principle?",
+      "definition": "Keep sentences short, on the average",
+      "rationalization": "According to Robert Gunning's Ten Principles of Clear Writing, the first principle is to keep sentences short, on the average. Sentences must vary in length if the reader is to be saved from boredom.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "According to Robert Gunning, what should you prefer over the complex?",
+      "definition": "The simple",
+      "rationalization": "According to Robert Gunning's Ten Principles of Clear Writing, you should prefer the simple to the complex. Zinsser wrote: 'The secret to good writing is to strip every sentence to its cleanest form.'",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "According to Robert Gunning, what should you put into your verbs?",
+      "definition": "Action (use the active voice)",
+      "rationalization": "According to Robert Gunning's Ten Principles of Clear Writing, you should put action into your verbs and use the active voice. This makes writing more direct and vigorous.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    },
+    {
+      "term": "According to Robert Gunning, what should you write to, not to impress?",
+      "definition": "Write to express, not to impress",
+      "rationalization": "According to Robert Gunning's Ten Principles of Clear Writing, the tenth principle is to write to express, not to impress. Inform readers, that's all. This summarizes the essence of clear writing.",
+      "mnemonic": null,
+      "source": "PRC BLEPT Board Exam Reviewer",
+      "tosCompetency": "Apply principles and strategies in writing various parts of a campus paper",
+      "bloomsTaxonomy": "Remembering",
+      "highYield": true
+    }
+  ]
+}
