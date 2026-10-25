@@ -1,23 +1,18 @@
 @import "tailwindcss";
 
 /* ============================================================
-   LET Reviewer — Color Palette + Icon System
+   LET Reviewer — Neumorphic Design System + Gold Palette
    Sir JC Dela Cruz
    ============================================================ */
 
-/* ---------- 1. COLOR PALETTE (CSS Custom Properties) ---------- */
+/* ---------- 1. COLOR PALETTE & NEUMORPHIC TOKENS ---------- */
 :root {
-  /* ============================================================
-     MONOCHROMATIC GOLD PALETTE
-     Base hue: 48° (gold)
-     ============================================================ */
-
   /* ---------- GOLD SCALE (48° hue) ---------- */
   --gold-50:  #fefce8;
   --gold-100: #fef9c3;
   --gold-200: #fef08a;
   --gold-300: #fde047;
-  --gold-400: #facc15;   /* ⭐ Primary Brand Gold */
+  --gold-400: #fad707;    /* ⭐ Primary Brand Gold (#fad707) */
   --gold-500: #eab308;
   --gold-600: #ca8a04;
   --gold-700: #a16207;
@@ -37,22 +32,31 @@
   --brand-800:  var(--gold-800);
   --brand-900:  var(--gold-900);
   --brand-950:  var(--gold-950);
-  --brand-glow: rgba(250, 204, 21, 0.18);
-  --brand-tint: rgba(250, 204, 21, 0.08);
+  --brand-glow: rgba(250, 215, 7, 0.25);
+  --brand-tint: rgba(250, 215, 7, 0.10);
 
   --gold:       var(--gold-400);
   --gold-hover: var(--gold-500);
 
-  /* ---------- BACKGROUND (Dark Theme - Zinc) ---------- */
-  --bg:         #09090b;   /* zinc-950 */
-  --bg-soft:    #18181b;   /* zinc-900 */
-  --bg-elev:    #27272a;   /* zinc-800 */
-  --bg-hover:   #1f1f23;
-  --bg-overlay: rgba(9, 9, 11, 0.88);
+  /* ---------- BACKGROUND (Dark Neumorphic Theme - Zinc) ---------- */
+  --bg:         #0f0f13;   /* Deep charcoal-zinc base */
+  --bg-soft:    #16161a;
+  --bg-elev:    #1e1e24;
+  --bg-hover:   #25252d;
+  --bg-overlay: rgba(15, 15, 19, 0.88);
+
+  /* ---------- NEUMORPHIC SHADOWS (Dark Mode) ---------- */
+  --neu-light:  rgba(255, 255, 255, 0.04);
+  --neu-dark:   rgba(0, 0, 0, 0.65);
+  
+  --shadow-raised: 8px 8px 16px var(--neu-dark), -8px -8px 16px var(--neu-light);
+  --shadow-raised-sm: 4px 4px 8px var(--neu-dark), -4px -4px 8px var(--neu-light);
+  --shadow-inset: inset 4px 4px 8px var(--neu-dark), inset -4px -4px 8px var(--neu-light);
+  --shadow-pressed: inset 3px 3px 6px var(--neu-dark), inset -3px -3px 6px var(--neu-light);
 
   /* ---------- BORDER ---------- */
-  --border:        #27272a;   /* zinc-800 */
-  --border-strong: #3f3f46;   /* zinc-700 */
+  --border:        #27272a;
+  --border-strong: #3f3f46;
   --border-subtle: #18181b;
 
   /* ---------- TEXT ---------- */
@@ -78,45 +82,52 @@
   --blue-tint: rgba(96, 165, 250, 0.10);
 
   /* ---------- RADII ---------- */
-  --r-sm: 8px;
-  --r-md: 14px;
-  --r-lg: 20px;
-  --r-xl: 28px;
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 30px;
   --dur: 200ms;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ============================================================
-/* ============================================================
-   LIGHT THEME OVERRIDES (Warm off-white background, rich dark charcoal text)
+   LIGHT THEME OVERRIDES (Neumorphic Warm Off-White)
    ============================================================ */
 .light-theme,
 [data-theme="light"],
 html.light-theme,
 body.light-theme {
-  --bg:           #fbfbf9;   /* comfortable warm off-white background */
-  --bg-soft:      #ffffff;   /* crisp pure white card surfaces */
-  --bg-elev:      #f4f4f5;   /* zinc-100 soft elevated containers */
-  --bg-hover:     #e4e4e7;   /* zinc-200 */
-  --bg-overlay:   rgba(251, 251, 249, 0.96);
+  --bg:           #eef2f6;   /* Soft tactile neutral grey-blue */
+  --bg-soft:      #f8fafc;
+  --bg-elev:      #e2e8f0;
+  --bg-hover:     #cbd5e1;
+  --bg-overlay:   rgba(238, 242, 246, 0.96);
 
-  --border:        #e4e4e7;   /* zinc-200 clean borders */
-  --border-strong: #d4d4d8;   /* zinc-300 */
-  --border-subtle: #f4f4f5;
+  /* ---------- NEUMORPHIC SHADOWS (Light Mode) ---------- */
+  --neu-light:    #ffffff;
+  --neu-dark:     #cbd5e1;
+  
+  --shadow-raised: 8px 8px 16px var(--neu-dark), -8px -8px 16px var(--neu-light);
+  --shadow-raised-sm: 4px 4px 8px var(--neu-dark), -4px -4px 8px var(--neu-light);
+  --shadow-inset: inset 4px 4px 8px var(--neu-dark), inset -4px -4px 8px var(--neu-light);
+  --shadow-pressed: inset 3px 3px 6px var(--neu-dark), inset -3px -3px 6px var(--neu-light);
 
-  --text:         #18181b;   /* rich dark charcoal text for high contrast */
-  --text-dim:     #3f3f46;   /* dark zinc-700 secondary text */
-  --text-faint:   #52525b;   /* zinc-600 legible muted text */
-  --text-inverse: #ffffff;
+  --border:        #cbd5e1;
+  --border-strong: #94a3b8;
+  --border-subtle: #e2e8f0;
 
-  --brand-400: #b45309;      /* accessible amber-700 */
-  --brand-500: #92400e;      /* deep amber-800 */
-  --brand-600: #78350f;
-  --brand-glow: rgba(180, 83, 9, 0.14);
-  --brand-tint: rgba(180, 83, 9, 0.08);
+  --text:          #1e293b;   /* Rich dark slate */
+  --text-dim:      #475569;
+  --text-faint:    #64748b;
+  --text-inverse:  #ffffff;
 
-  --gold:       #b45309;
-  --gold-hover: #92400e;
+  --brand-400: #d9b504;      /* Adjusted amber-gold for accessibility on light */
+  --brand-500: #b89603;
+  --brand-glow: rgba(217, 181, 4, 0.25);
+  --brand-tint: rgba(217, 181, 4, 0.12);
+
+  --gold:       #d9b504;
+  --gold-hover: #b89603;
 
   --green-400: #15803d;
   --red-400:   #b91c1c;
@@ -125,163 +136,103 @@ body.light-theme {
   color-scheme: light;
 }
 
-/* Light Theme Root Body */
-.light-theme {
-  background-color: #fbfbf9 !important;
-  color: #18181b !important;
-}
-
-/* Card & Surface backgrounds in light mode */
-.light-theme .bg-zinc-950,
-.light-theme .bg-zinc-900 {
-  background-color: #ffffff !important;
-  border-color: #e4e4e7 !important;
-}
-
-.light-theme .bg-zinc-950\/95,
-.light-theme .bg-zinc-950\/90,
-.light-theme .bg-zinc-950\/85,
-.light-theme .bg-zinc-950\/80,
-.light-theme .bg-zinc-950\/70,
-.light-theme .bg-zinc-950\/60,
-.light-theme .bg-zinc-950\/50,
-.light-theme .bg-zinc-900\/95,
-.light-theme .bg-zinc-900\/90,
-.light-theme .bg-zinc-900\/80,
-.light-theme .bg-zinc-900\/70,
-.light-theme .bg-zinc-900\/60,
-.light-theme .bg-zinc-900\/50,
-.light-theme .bg-zinc-900\/40 {
-  background-color: #ffffff !important;
-}
-
-/* Secondary interactive surfaces in light mode (chips, tags, subtle buttons) */
-.light-theme .bg-zinc-800,
-.light-theme .bg-zinc-800\/80,
-.light-theme .bg-zinc-800\/60,
-.light-theme .bg-zinc-800\/40 {
-  background-color: #f4f4f5 !important;
-  color: #18181b !important;
-}
-
-.light-theme .hover\:bg-zinc-800:hover,
-.light-theme .hover\:bg-zinc-800\/90:hover,
-.light-theme .hover\:bg-zinc-800\/80:hover,
-.light-theme .hover\:bg-zinc-800\/40:hover {
-  background-color: #e4e4e7 !important;
-  color: #18181b !important;
-}
-
-.light-theme .hover\:bg-zinc-700:hover,
-.light-theme .hover\:bg-zinc-900:hover {
-  background-color: #e4e4e7 !important;
-  color: #18181b !important;
-}
-
-/* Borders in light mode */
-.light-theme .border-zinc-800,
-.light-theme .border-zinc-800\/80,
-.light-theme .border-zinc-800\/60,
-.light-theme .border-zinc-800\/40,
-.light-theme .border-zinc-700 {
-  border-color: #e4e4e7 !important;
-}
-
-/* Dark Charcoal Text in light mode */
-.light-theme .text-white,
-.light-theme .text-zinc-100,
-.light-theme .text-zinc-200 {
-  color: #18181b !important;
-}
-
-.light-theme .text-zinc-300 {
-  color: #27272a !important;
-}
-
-.light-theme .text-zinc-400 {
-  color: #3f3f46 !important;
-}
-
-.light-theme .text-zinc-500 {
-  color: #52525b !important;
-}
-
-/* Accessible Amber and Gold in light mode */
-.light-theme .text-amber-400,
-.light-theme .text-amber-300 {
-  color: #92400e !important;
-}
-
-.light-theme .border-amber-400,
-.light-theme .border-amber-400\/50,
-.light-theme .border-amber-400\/40,
-.light-theme .border-amber-400\/30,
-.light-theme .border-amber-400\/20 {
-  border-color: rgba(180, 83, 9, 0.35) !important;
-}
-
-.light-theme .bg-amber-400\/20,
-.light-theme .bg-amber-400\/15,
-.light-theme .bg-amber-400\/10 {
-  background-color: rgba(245, 158, 11, 0.14) !important;
-  color: #92400e !important;
-}
-
-/* Primary Amber Button in light mode */
-.light-theme .bg-amber-400 {
-  background-color: #f59e0b !important;
-  color: #18181b !important;
-}
-.light-theme .hover\:bg-amber-300:hover {
-  background-color: #fbbf24 !important;
-}
-
-/* Emerald in light mode */
-.light-theme .text-emerald-400,
-.light-theme .text-emerald-300 {
-  color: #15803d !important;
-}
-.light-theme .border-emerald-500\/30,
-.light-theme .border-emerald-500\/20 {
-  border-color: rgba(21, 128, 61, 0.3) !important;
-}
-.light-theme .bg-emerald-500\/15,
-.light-theme .bg-emerald-500\/10 {
-  background-color: rgba(21, 128, 61, 0.12) !important;
-}
-
-/* Sky/Blue in light mode */
-.light-theme .text-sky-400 {
-  color: #0369a1 !important;
-}
-.light-theme .border-sky-400\/30,
-.light-theme .border-sky-400\/20 {
-  border-color: rgba(3, 105, 161, 0.3) !important;
-}
-.light-theme .bg-sky-400\/15,
-.light-theme .bg-sky-400\/10 {
-  background-color: rgba(3, 105, 161, 0.1) !important;
-}
-
-/* Shadows and Header in light mode */
-.light-theme header {
-  background-color: rgba(251, 251, 249, 0.94) !important;
-  border-color: #e4e4e7 !important;
-}
-
-.light-theme .shadow-2xl,
-.light-theme .shadow-xl {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
-}
-
 body {
   background-color: var(--bg);
   color: var(--text);
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ---------- 2. SEMANTIC COLOR CLASSES ---------- */
+/* ============================================================
+   NEUMORPHIC UTILITY CLASSES (Soft UI Components)
+   ============================================================ */
+
+/* Raised Surface / Cards / Modals */
+.neu-card {
+  background-color: var(--bg);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-raised);
+  transition: all var(--dur) var(--ease);
+}
+
+.neu-card-sm {
+  background-color: var(--bg);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-raised-sm);
+}
+
+/* Inset / Pressed Containers / Inputs / Search Bars */
+.neu-inset {
+  background-color: var(--bg);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-inset);
+}
+
+/* Interactive Neumorphic Buttons */
+.neu-btn {
+  background-color: var(--bg);
+  color: var(--text);
+  border: none;
+  border-radius: var(--r-md);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-raised-sm);
+  transition: all var(--dur) var(--ease);
+}
+
+.neu-btn:hover {
+  box-shadow: 2px 2px 4px var(--neu-dark), -2px -2px 4px var(--neu-light);
+}
+
+.neu-btn:active, 
+.neu-btn.active {
+  box-shadow: var(--shadow-pressed);
+  color: var(--brand-400);
+}
+
+/* Primary Accent Button (#fad707) */
+.neu-btn-accent {
+  background: var(--brand-400);
+  color: #1e293b;
+  border: none;
+  border-radius: var(--r-md);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-raised-sm);
+  transition: all var(--dur) var(--ease);
+}
+
+.neu-btn-accent:hover {
+  background: var(--gold-hover);
+  box-shadow: 2px 2px 6px var(--neu-dark), -2px -2px 6px var(--neu-light);
+}
+
+.neu-btn-accent:active {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Circular Badges / Icon Buttons */
+.neu-circle {
+  border-radius: 50%;
+  background-color: var(--bg);
+  box-shadow: var(--shadow-raised-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--dur) var(--ease);
+}
+
+.neu-circle:active {
+  box-shadow: var(--shadow-pressed);
+}
+
+/* ============================================================
+   2. SEMANTIC COLOR CLASSES
+   ============================================================ */
 .text-gold   { color: var(--brand-400); }
 .text-green  { color: var(--green-400); }
 .text-red    { color: var(--red-400); }
@@ -299,7 +250,9 @@ body {
 .border-green { border-color: var(--green-400); }
 .border-red   { border-color: var(--red-400); }
 
-/* ---------- 3. ICON SYSTEM ---------- */
+/* ============================================================
+   3. ICON SYSTEM & HELPERS
+   ============================================================ */
 .icon {
   display: inline-flex;
   align-items: center;
