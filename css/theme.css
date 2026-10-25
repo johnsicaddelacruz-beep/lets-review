@@ -23,6 +23,19 @@
   --gold-900: #713f12;   /* HSL 28°, 73%, 26% · rgb(113,63,18)   Dark text on light */
   --gold-950: #422006;   /* HSL 26°, 83%, 14% · rgb(66,32,6)     Near-black gold */
 
+  /* ---------- ZINC NEUTRALS SCALE ---------- */
+  --zinc-50:  #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+
   /* ---------- BRAND / GOLD (Mapped to Monochromatic Gold) ---------- */
   --brand-50:   var(--gold-50);
   --brand-100:  var(--gold-100);
@@ -83,19 +96,6 @@
   --amber-400: var(--gold-400);
   --amber-glow: rgba(250, 204, 21, 0.18);
 
-  /* ---------- ZINC NEUTRALS SCALE ---------- */
-  --zinc-50:  #fafafa;
-  --zinc-100: #f4f4f5;
-  --zinc-200: #e4e4e7;
-  --zinc-300: #d4d4d8;
-  --zinc-400: #a1a1aa;
-  --zinc-500: #71717a;
-  --zinc-600: #52525b;
-  --zinc-700: #3f3f46;
-  --zinc-800: #27272a;
-  --zinc-900: #18181b;
-  --zinc-950: #09090b;
-
   /* ---------- RADII & TIMING ---------- */
   --r-sm: 8px;
   --r-md: 14px;
@@ -121,7 +121,7 @@
                   linear-gradient(160deg, var(--bg-soft), var(--bg));
   --grad-card:    linear-gradient(155deg, var(--bg-soft), var(--bg));
   --grad-card-back: linear-gradient(155deg, var(--bg-soft),
-                    color-mix(in srgb, var(--bg) 95%, var(--gold-400) 5%));
+                  color-mix(in srgb, var(--bg) 95%, var(--gold-400) 5%));
 }
 
 /* ---------- LIGHT THEME OVERRIDES ---------- */
@@ -137,9 +137,9 @@
   --border-strong: #d4d4d8;
   --border-subtle: #f4f4f5;
 
-  --text:         #18181b;
-  --text-dim:     #52525b;
-  --text-faint:   #71717a;
+  --text:          #18181b;
+  --text-dim:      #52525b;
+  --text-faint:    #71717a;
   --text-inverse: #ffffff;
 
   --brand-400: #ca8a04;
@@ -174,9 +174,9 @@
     --border-strong: #d4d4d8;
     --border-subtle: #f4f4f5;
 
-    --text:         #18181b;
-    --text-dim:     #52525b;
-    --text-faint:   #71717a;
+    --text:          #18181b;
+    --text-dim:      #52525b;
+    --text-faint:    #71717a;
     --text-inverse: #ffffff;
 
     --brand-400: #ca8a04;
@@ -220,7 +220,6 @@
 
 /* ---------- 3. ICON SYSTEM (FontAwesome) ---------- */
 
-/* Base icon — inherits color, scales with text */
 .icon {
   display: inline-flex;
   align-items: center;
@@ -231,7 +230,6 @@
   color: inherit;
 }
 
-/* Sized variants */
 .icon-xs  { font-size: 12px; width: 12px; height: 12px; }
 .icon-sm  { font-size: 14px; width: 14px; height: 14px; }
 .icon-md  { font-size: 16px; width: 16px; height: 16px; }
@@ -240,7 +238,6 @@
 .icon-2xl { font-size: 32px; width: 32px; height: 32px; }
 .icon-3xl { font-size: 42px; width: 42px; height: 42px; }
 
-/* Icon in a circular chip (used in mode rows, headers) */
 .icon-chip {
   display: inline-flex;
   align-items: center;
@@ -259,7 +256,6 @@
   color: var(--text-inverse);
 }
 
-/* Larger chip (used in hero / brand) */
 .icon-chip-lg {
   width: 48px;
   height: 48px;
@@ -267,9 +263,11 @@
   font-size: 22px;
   background: var(--brand-tint);
   color: var(--brand-400);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Filled icon (solid gold background) */
 .icon-filled {
   background: var(--brand-400);
   color: var(--text-inverse);
@@ -277,13 +275,11 @@
   padding: 6px;
 }
 
-/* Icon in status colors */
 .icon-success { color: var(--green-400); }
 .icon-error   { color: var(--red-400); }
 .icon-info    { color: var(--blue-400); }
 .icon-gold    { color: var(--brand-400); }
 
-/* Icon with badge count */
 .icon-badge-wrap {
   position: relative;
   display: inline-flex;
@@ -306,7 +302,6 @@
   line-height: 1;
 }
 
-/* Icon with pulse animation (for attention) */
 .icon-pulse {
   animation: iconPulse 2s ease-in-out infinite;
 }
@@ -315,7 +310,6 @@
   50%      { transform: scale(1.1); opacity: 0.85; }
 }
 
-/* Icon with spin animation (for loading) */
 .icon-spin {
   animation: iconSpin 1.2s linear infinite;
 }
@@ -323,7 +317,6 @@
   to { transform: rotate(360deg); }
 }
 
-/* ---------- 5. ICON WITH TEXT UTILITY ---------- */
 .icon-text {
   display: inline-flex;
   align-items: center;
@@ -332,12 +325,10 @@
 .icon-text-sm { gap: 6px; }
 .icon-text-lg { gap: 12px; }
 
-/* Left icon (before text) */
 .icon-text i:first-child {
   flex-shrink: 0;
 }
 
-/* ---------- 6. ICON IN BUTTONS (auto-sized) ---------- */
 .btn-primary i,
 .btn-outline i,
 .btn-ghost i {
@@ -353,7 +344,6 @@
   transform: translateX(-2px);
 }
 
-/* ---------- 7. ICON-ONLY BUTTON ---------- */
 .btn-icon {
   width: 40px;
   height: 40px;
@@ -366,6 +356,7 @@
   border: 1px solid var(--border);
   color: var(--text-dim);
   transition: all 150ms var(--ease);
+  cursor: pointer;
 }
 .btn-icon:hover {
   background: var(--brand-tint);
@@ -378,7 +369,6 @@
 .btn-icon-lg { width: 48px; height: 48px; }
 .btn-icon-sm { width: 32px; height: 32px; }
 
-/* ---------- 8. ICON GROUP (row of icons) ---------- */
 .icon-group {
   display: inline-flex;
   align-items: center;
@@ -391,7 +381,6 @@
 .icon-group .btn-icon:first-child { border-top-left-radius: var(--r-sm); border-bottom-left-radius: var(--r-sm); }
 .icon-group .btn-icon:last-child  { border-top-right-radius: var(--r-sm); border-bottom-right-radius: var(--r-sm); border-right-width: 1px; }
 
-/* ---------- 9. ICON AS BULLET ---------- */
 .icon-list {
   display: grid;
   gap: 8px;
@@ -415,7 +404,6 @@
   text-align: center;
 }
 
-/* ---------- 10. ICON + LABEL (HUD cells, stat cards) ---------- */
 .icon-label {
   display: flex;
   align-items: center;
@@ -433,16 +421,14 @@
   color: var(--text-faint);
 }
 
-/* ---------- 11. ICON COLOR SCHEMES ---------- */
 .icon-easy     { color: var(--green-400); }
 .icon-medium   { color: var(--brand-400); }
 .icon-advanced { color: var(--red-400); }
 
-.icon-easy-bg   { background: var(--green-tint);   color: var(--green-400); }
+.icon-easy-bg    { background: var(--green-tint);   color: var(--green-400); }
 .icon-medium-bg { background: var(--brand-tint);   color: var(--brand-400); }
 .icon-advanced-bg { background: var(--red-tint);   color: var(--red-400); }
 
-/* ---------- 12. RESPONSIVE ICON SIZING ---------- */
 @media (max-width: 640px) {
   .icon-chip { width: 32px; height: 32px; font-size: 14px; }
   .icon-chip-lg { width: 40px; height: 40px; font-size: 18px; }
@@ -452,7 +438,6 @@
   .icon-3xl { font-size: 36px; }
 }
 
-/* ---------- 13. DARK MODE ICON ADJUSTMENTS ---------- */
 @media (prefers-color-scheme: light) {
   .icon-chip {
     background: color-mix(in srgb, var(--brand-400) 15%, transparent);
@@ -463,7 +448,6 @@
   }
 }
 
-/* ---------- 14. ACCESSIBILITY ---------- */
 .icon[aria-hidden="true"] {
   pointer-events: none;
 }
