@@ -1,27 +1,22 @@
 /* ============================================================
-   LET Reviewer — Color Palette + Icon System
-   Sir JC Dela Cruz
+    LET Reviewer — Neumorphic Design System + Icon System
+    Sir JC Dela Cruz
    ============================================================ */
 
-/* ---------- 1. COLOR PALETTE (CSS Custom Properties) ---------- */
+/* ---------- 1. COLOR PALETTE & NEUMORPHIC TOKENS ---------- */
 :root {
-  /* ============================================================
-     MONOCHROMATIC GOLD PALETTE
-     Base hue: 48° (gold)
-     ============================================================ */
-
-  /* ---------- GOLD SCALE (48° hue) ---------- */
-  --gold-50:  #fefce8;   /* HSL 54°, 92%, 95% · rgb(254,252,232) */
-  --gold-100: #fef9c3;   /* HSL 55°, 97%, 88% · rgb(254,249,195) */
-  --gold-200: #fef08a;   /* HSL 53°, 98%, 77% · rgb(254,240,138) */
-  --gold-300: #fde047;   /* HSL 50°, 98%, 64% · rgb(253,224,71)  */
-  --gold-400: #facc15;   /* HSL 48°, 96%, 53% · rgb(250,204,21)  ⭐ Primary */
-  --gold-500: #eab308;   /* HSL 45°, 93%, 47% · rgb(234,179,8)   Hover */
-  --gold-600: #ca8a04;   /* HSL 40°, 96%, 40% · rgb(202,138,4)   Active / Light Primary */
-  --gold-700: #a16207;   /* HSL 35°, 92%, 33% · rgb(161,98,7)    Light Hover */
-  --gold-800: #854d0e;   /* HSL 32°, 81%, 29% · rgb(133,77,14)   Light Active */
-  --gold-900: #713f12;   /* HSL 28°, 73%, 26% · rgb(113,63,18)   Dark text on light */
-  --gold-950: #422006;   /* HSL 26°, 83%, 14% · rgb(66,32,6)     Near-black gold */
+  /* ---------- GOLD SCALE ---------- */
+  --gold-50:  #fefce8;   
+  --gold-100: #fef9c3;   
+  --gold-200: #fef08a;   
+  --gold-300: #fde047;   
+  --gold-400: #facc15;   /* ⭐ Primary */
+  --gold-500: #eab308;   /* Hover */
+  --gold-600: #ca8a04;   
+  --gold-700: #a16207;   
+  --gold-800: #854d0e;   
+  --gold-900: #713f12;   
+  --gold-950: #422006;   
 
   /* ---------- ZINC NEUTRALS SCALE ---------- */
   --zinc-50:  #fafafa;
@@ -36,189 +31,120 @@
   --zinc-900: #18181b;
   --zinc-950: #09090b;
 
-  /* ---------- BRAND / GOLD (Mapped to Monochromatic Gold) ---------- */
-  --brand-50:   var(--gold-50);
-  --brand-100:  var(--gold-100);
-  --brand-200:  var(--gold-200);
-  --brand-300:  var(--gold-300);
-  --brand-400:  var(--gold-400);   /* Primary brand */
-  --brand-500:  var(--gold-500);   /* Hover gold */
-  --brand-600:  var(--gold-600);   /* Active gold */
-  --brand-700:  var(--gold-700);
-  --brand-800:  var(--gold-800);
-  --brand-900:  var(--gold-900);
-  --brand-950:  var(--gold-950);
+  /* ---------- BRAND / GOLD MAPPINGS ---------- */
+  --brand-400:  var(--gold-400);
+  --brand-500:  var(--gold-500);
+  --brand-600:  var(--gold-600);
   --brand-glow: rgba(250, 204, 21, 0.18);
   --brand-tint: rgba(250, 204, 21, 0.08);
 
-  /* Aliases */
   --gold:       var(--gold-400);
   --gold-hover: var(--gold-500);
 
-  /* ---------- BACKGROUND (Dark Theme - Monochromatic Zinc) ---------- */
-  --bg:         var(--zinc-950);   /* #09090b page background */
-  --bg-soft:    var(--zinc-900);   /* #18181b cards, panels */
-  --bg-elev:    var(--zinc-800);   /* #27272a elevated surfaces */
-  --bg-hover:   #1f1f23;           /* hover state */
-  --bg-overlay: rgba(9, 9, 11, 0.85);
+  /* ---------- NEUMORPHIC DARK BACKGROUNDS ---------- */
+  --bg:         #121215;   /* Base surface */
+  --bg-soft:    #121215;   /* Cards share same color for true neumorphism */
+  --bg-elev:    #121215;   
+  --bg-hover:   #161619;   
+  --bg-overlay: rgba(18, 18, 21, 0.85);
 
-  /* ---------- BORDER ---------- */
-  --border:        var(--zinc-800);   /* #27272a default border */
-  --border-strong: var(--zinc-700);   /* #3f3f46 emphasized border */
-  --border-subtle: var(--zinc-900);   /* #18181b hairline dividers */
+  /* ---------- NEUMORPHIC DUAL SHADOWS (DARK) ---------- */
+  /* Top-left light source vs bottom-right dark drop shadow */
+  --neu-shadow-raised: 
+    -6px -6px 16px rgba(255, 255, 255, 0.03), 
+     6px  6px 16px rgba(0, 0, 0, 0.6);
+     
+  --neu-shadow-raised-lg: 
+    -10px -10px 24px rgba(255, 255, 255, 0.04), 
+     10px  10px 24px rgba(0, 0, 0, 0.75);
+
+  --neu-shadow-inset: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.6), 
+    inset -3px -3px 6px rgba(255, 255, 255, 0.03);
+
+  /* ---------- BORDERS (Subtle/Zeroed for Neumorphism) ---------- */
+  --border:        transparent;
+  --border-strong: rgba(255, 255, 255, 0.05);
+  --border-subtle: transparent;
 
   /* ---------- TEXT ---------- */
-  --text:          #fafafa;           /* primary */
-  --text-dim:      var(--zinc-400);   /* #a1a1aa secondary */
-  --text-faint:    var(--zinc-500);   /* #71717a muted, captions */
-  --text-inverse:  var(--zinc-950);   /* #09090b on gold */
+  --text:          #fafafa;
+  --text-dim:      #a1a1aa;
+  --text-faint:    #71717a;
+  --text-inverse:  #121215;
 
   /* ---------- STATUS ---------- */
-  --green-50:  #f0fdf4;
   --green-400: #4ade80;
-  --green-500: #22c55e;
-  --green-600: #16a34a;
-  --green-glow: rgba(74, 222, 128, 0.18);
   --green-tint: rgba(74, 222, 128, 0.10);
-
-  --red-50:   #fef2f2;
-  --red-400:  #f87171;
-  --red-500:  #ef4444;
-  --red-600:  #dc2626;
-  --red-glow: rgba(248, 113, 113, 0.18);
-  --red-tint: rgba(248, 113, 113, 0.10);
-
-  --blue-400: #60a5fa;
-  --blue-500: #3b82f6;
-  --blue-glow: rgba(96, 165, 250, 0.18);
+  --red-400:   #f87171;
+  --red-tint:  rgba(248, 113, 113, 0.10);
+  --blue-400:  #60a5fa;
   --blue-tint: rgba(96, 165, 250, 0.10);
 
-  --amber-400: var(--gold-400);
-  --amber-glow: rgba(250, 204, 21, 0.18);
-
   /* ---------- RADII & TIMING ---------- */
-  --r-sm: 8px;
-  --r-md: 14px;
-  --r-lg: 20px;
-  --r-xl: 28px;
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
   --dur: 200ms;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* ---------- SHADOWS ---------- */
-  --shadow-sm:   0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md:   0 6px 18px -6px rgba(0, 0, 0, 0.5);
-  --shadow-lg:   0 20px 40px -18px rgba(0, 0, 0, 0.7);
-  --shadow-xl:   0 32px 64px -24px rgba(0, 0, 0, 0.8);
-  --shadow-gold: 0 0 0 1px rgba(250, 204, 21, 0.25),
-                 0 20px 40px -15px rgba(250, 204, 21, 0.15);
-  --shadow-green: 0 0 0 1px rgba(74, 222, 128, 0.3);
-  --shadow-red:   0 0 0 1px rgba(248, 113, 113, 0.3);
-
-  /* ---------- GRADIENTS ---------- */
-  --grad-gold:    linear-gradient(135deg, var(--gold-500), var(--gold-400));
-  --grad-progress: linear-gradient(90deg, var(--gold-500), var(--gold-400));
-  --grad-hero:    radial-gradient(ellipse at top right, var(--brand-glow), transparent 60%),
-                  linear-gradient(160deg, var(--bg-soft), var(--bg));
-  --grad-card:    linear-gradient(155deg, var(--bg-soft), var(--bg));
-  --grad-card-back: linear-gradient(155deg, var(--bg-soft),
-                  color-mix(in srgb, var(--bg) 95%, var(--gold-400) 5%));
+  /* Aliased standard shadow variables to neumorphic equivalents */
+  --shadow-sm:  var(--neu-shadow-raised);
+  --shadow-md:  var(--neu-shadow-raised);
+  --shadow-lg:  var(--neu-shadow-raised-lg);
+  --shadow-xl:  var(--neu-shadow-raised-lg);
+  --shadow-gold: 0 0 0 1px rgba(250, 204, 21, 0.25), var(--neu-shadow-raised);
 }
 
-/* ---------- LIGHT THEME OVERRIDES ---------- */
+/* ---------- LIGHT THEME OVERRIDES (NEUMORPHIC) ---------- */
 .light-theme,
 [data-theme="light"] {
-  --bg:         #ffffff;
-  --bg-soft:    #f4f4f5;
+  --bg:         #e4e4e7;
+  --bg-soft:    #e4e4e7;
   --bg-elev:    #e4e4e7;
-  --bg-hover:   #ebebed;
-  --bg-overlay: rgba(255, 255, 255, 0.85);
+  --bg-hover:   #dcdce0;
+  --bg-overlay: rgba(228, 228, 231, 0.85);
 
-  --border:        #e4e4e7;
-  --border-strong: #d4d4d8;
-  --border-subtle: #f4f4f5;
+  /* Light mode soft dual shadows */
+  --neu-shadow-raised: 
+    -6px -6px 16px rgba(255, 255, 255, 0.8), 
+     6px  6px 16px rgba(160, 160, 170, 0.4);
+     
+  --neu-shadow-raised-lg: 
+    -10px -10px 24px rgba(255, 255, 255, 0.9), 
+     10px  10px 24px rgba(160, 160, 170, 0.5);
 
-  --text:          #18181b;
-  --text-dim:      #52525b;
-  --text-faint:    #71717a;
+  --neu-shadow-inset: 
+    inset 3px 3px 6px rgba(160, 160, 170, 0.4), 
+    inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+
+  --text:         #18181b;
+  --text-dim:     #52525b;
+  --text-faint:   #71717a;
   --text-inverse: #ffffff;
 
   --brand-400: #ca8a04;
   --brand-500: #a16207;
-  --brand-600: #854d0e;
-  --brand-glow: rgba(202, 138, 4, 0.15);
-  --brand-tint: rgba(202, 138, 4, 0.08);
-
-  --gold:       var(--brand-400);
-  --gold-hover: var(--brand-500);
-
-  --green-400: #16a34a;
-  --red-400:   #dc2626;
-  --blue-400:  #2563eb;
-
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 6px 18px -6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 20px 40px -18px rgba(0, 0, 0, 0.15);
 
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: light) {
-  :root:not(.dark-theme) {
-    --bg:         #ffffff;
-    --bg-soft:    #f4f4f5;
-    --bg-elev:    #e4e4e7;
-    --bg-hover:   #ebebed;
-    --bg-overlay: rgba(255, 255, 255, 0.85);
-
-    --border:        #e4e4e7;
-    --border-strong: #d4d4d8;
-    --border-subtle: #f4f4f5;
-
-    --text:          #18181b;
-    --text-dim:      #52525b;
-    --text-faint:    #71717a;
-    --text-inverse: #ffffff;
-
-    --brand-400: #ca8a04;
-    --brand-500: #a16207;
-    --brand-600: #854d0e;
-    --brand-glow: rgba(202, 138, 4, 0.15);
-    --brand-tint: rgba(202, 138, 4, 0.08);
-
-    --gold:       var(--brand-400);
-    --gold-hover: var(--brand-500);
-
-    --green-400: #16a34a;
-    --red-400:   #dc2626;
-    --blue-400:  #2563eb;
-
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 6px 18px -6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 40px -18px rgba(0, 0, 0, 0.15);
-
-    color-scheme: light;
-  }
-}
-
 /* ---------- 2. SEMANTIC COLOR CLASSES ---------- */
-.text-gold   { color: var(--brand-400); }
-.text-green  { color: var(--green-400); }
-.text-red    { color: var(--red-400); }
-.text-blue   { color: var(--blue-400); }
-.text-dim    { color: var(--text-dim); }
-.text-faint  { color: var(--text-faint); }
+.text-gold    { color: var(--brand-400); }
+.text-green   { color: var(--green-400); }
+.text-red     { color: var(--red-400); }
+.text-blue    { color: var(--blue-400); }
+.text-dim     { color: var(--text-dim); }
+.text-faint   { color: var(--text-faint); }
 
-.bg-gold     { background: var(--brand-400); color: var(--text-inverse); }
-.bg-gold-tint{ background: var(--brand-tint); }
-.bg-green    { background: var(--green-tint); color: var(--green-400); }
-.bg-red      { background: var(--red-tint);   color: var(--red-400); }
-.bg-blue     { background: var(--blue-tint);  color: var(--blue-400); }
+.bg-gold      { background: var(--brand-400); color: var(--text-inverse); box-shadow: var(--neu-shadow-raised); }
+.bg-gold-tint { background: var(--bg-soft); box-shadow: var(--neu-shadow-inset); }
+.bg-green     { background: var(--green-tint); color: var(--green-400); }
+.bg-red       { background: var(--red-tint);   color: var(--red-400); }
+.bg-blue      { background: var(--blue-tint);  color: var(--blue-400); }
 
-.border-gold  { border-color: var(--brand-400); }
-.border-green { border-color: var(--green-400); }
-.border-red   { border-color: var(--red-400); }
-
-/* ---------- 3. ICON SYSTEM (FontAwesome) ---------- */
+/* ---------- 3. ICON SYSTEM & NEUMORPHIC CONTROLS ---------- */
 
 .icon {
   display: inline-flex;
@@ -238,30 +164,37 @@
 .icon-2xl { font-size: 32px; width: 32px; height: 32px; }
 .icon-3xl { font-size: 42px; width: 42px; height: 42px; }
 
+/* Neumorphic Chips / Buttons use raised soft shadows */
 .icon-chip {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: var(--r-sm);
-  background: var(--brand-tint);
+  background: var(--bg);
+  box-shadow: var(--neu-shadow-raised);
   color: var(--brand-400);
   font-size: 16px;
-  transition: transform var(--dur) var(--ease), background var(--dur) var(--ease), color var(--dur) var(--ease);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 .icon-chip:hover {
-  transform: scale(1.1);
-  background: var(--brand-400);
-  color: var(--text-inverse);
+  transform: translateY(-1px);
+  color: var(--brand-500);
+  box-shadow: var(--neu-shadow-raised-lg);
+}
+.icon-chip:active {
+  transform: translateY(1px);
+  box-shadow: var(--neu-shadow-inset);
 }
 
 .icon-chip-lg {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: var(--r-md);
   font-size: 22px;
-  background: var(--brand-tint);
+  background: var(--bg);
+  box-shadow: var(--neu-shadow-raised);
   color: var(--brand-400);
   display: inline-flex;
   align-items: center;
@@ -269,16 +202,12 @@
 }
 
 .icon-filled {
-  background: var(--brand-400);
-  color: var(--text-inverse);
+  background: var(--bg);
+  box-shadow: var(--neu-shadow-inset);
+  color: var(--brand-400);
   border-radius: var(--r-sm);
-  padding: 6px;
+  padding: 8px;
 }
-
-.icon-success { color: var(--green-400); }
-.icon-error   { color: var(--red-400); }
-.icon-info    { color: var(--blue-400); }
-.icon-gold    { color: var(--brand-400); }
 
 .icon-badge-wrap {
   position: relative;
@@ -286,8 +215,8 @@
 }
 .icon-badge {
   position: absolute;
-  top: -6px;
-  right: -6px;
+  top: -4px;
+  right: -4px;
   min-width: 18px;
   height: 18px;
   padding: 0 5px;
@@ -299,98 +228,74 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-shadow: var(--neu-shadow-raised);
   line-height: 1;
 }
 
-.icon-pulse {
-  animation: iconPulse 2s ease-in-out infinite;
-}
-@keyframes iconPulse {
-  0%, 100% { transform: scale(1);   opacity: 1;    }
-  50%      { transform: scale(1.1); opacity: 0.85; }
-}
-
-.icon-spin {
-  animation: iconSpin 1.2s linear infinite;
-}
-@keyframes iconSpin {
-  to { transform: rotate(360deg); }
-}
-
-.icon-text {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.icon-text-sm { gap: 6px; }
-.icon-text-lg { gap: 12px; }
-
-.icon-text i:first-child {
-  flex-shrink: 0;
-}
-
-.btn-primary i,
-.btn-outline i,
-.btn-ghost i {
-  font-size: 0.95em;
-  transition: transform var(--dur) var(--ease);
-}
-.btn-primary:hover i,
-.btn-outline:hover i {
-  transform: translateX(2px);
-}
-.btn-primary:hover i.fa-arrow-left,
-.btn-outline:hover i.fa-arrow-left {
-  transform: translateX(-2px);
-}
-
+/* Neumorphic Icon Buttons */
 .btn-icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   padding: 0;
   border-radius: var(--r-sm);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-soft);
-  border: 1px solid var(--border);
+  background: var(--bg);
+  border: none;
+  box-shadow: var(--neu-shadow-raised);
   color: var(--text-dim);
   transition: all 150ms var(--ease);
   cursor: pointer;
 }
 .btn-icon:hover {
-  background: var(--brand-tint);
   color: var(--brand-400);
-  border-color: var(--brand-400);
+  box-shadow: var(--neu-shadow-raised-lg);
 }
 .btn-icon:active {
-  transform: scale(0.95);
+  box-shadow: var(--neu-shadow-inset);
+  transform: scale(0.97);
 }
-.btn-icon-lg { width: 48px; height: 48px; }
-.btn-icon-sm { width: 32px; height: 32px; }
+.btn-icon-lg { width: 50px; height: 50px; }
+.btn-icon-sm { width: 34px; height: 34px; }
 
+/* Grouped buttons merge cleanly without outer lines */
 .icon-group {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 0px;
+  background: var(--bg);
+  border-radius: var(--r-sm);
+  box-shadow: var(--neu-shadow-raised);
+  overflow: hidden;
 }
 .icon-group .btn-icon {
   border-radius: 0;
-  border-right-width: 0;
+  box-shadow: none;
+  background: transparent;
+  border-right: 1px solid var(--border-strong);
 }
-.icon-group .btn-icon:first-child { border-top-left-radius: var(--r-sm); border-bottom-left-radius: var(--r-sm); }
-.icon-group .btn-icon:last-child  { border-top-right-radius: var(--r-sm); border-bottom-right-radius: var(--r-sm); border-right-width: 1px; }
+.icon-group .btn-icon:last-child {
+  border-right: none;
+}
+.icon-group .btn-icon:hover {
+  background: var(--bg-hover);
+  box-shadow: none;
+}
+.icon-group .btn-icon:active {
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.4);
+}
 
 .icon-list {
   display: grid;
-  gap: 8px;
+  gap: 10px;
   list-style: none;
   padding: 0;
 }
 .icon-list li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 12px;
   font-size: 14px;
   color: var(--text-dim);
   line-height: 1.5;
@@ -404,59 +309,7 @@
   text-align: center;
 }
 
-.icon-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.icon-label i {
-  font-size: 16px;
-  color: var(--text-faint);
-}
-.icon-label .label-text {
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-faint);
-}
-
-.icon-easy     { color: var(--green-400); }
-.icon-medium   { color: var(--brand-400); }
-.icon-advanced { color: var(--red-400); }
-
-.icon-easy-bg    { background: var(--green-tint);   color: var(--green-400); }
-.icon-medium-bg { background: var(--brand-tint);   color: var(--brand-400); }
-.icon-advanced-bg { background: var(--red-tint);   color: var(--red-400); }
-
-@media (max-width: 640px) {
-  .icon-chip { width: 32px; height: 32px; font-size: 14px; }
-  .icon-chip-lg { width: 40px; height: 40px; font-size: 18px; }
-  .icon-lg  { font-size: 18px; }
-  .icon-xl  { font-size: 20px; }
-  .icon-2xl { font-size: 26px; }
-  .icon-3xl { font-size: 36px; }
-}
-
-@media (prefers-color-scheme: light) {
-  .icon-chip {
-    background: color-mix(in srgb, var(--brand-400) 15%, transparent);
-  }
-  .icon-chip:hover {
-    background: var(--brand-400);
-    color: #fff;
-  }
-}
-
-.icon[aria-hidden="true"] {
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .icon-pulse,
-  .icon-spin {
-    animation: none;
-  }
   .icon-chip,
   .btn-icon {
     transition: none;
